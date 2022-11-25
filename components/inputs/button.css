@@ -1,0 +1,3 @@
+.btn-primary {
+   @apply text-white bg-blue-500  hover:bg-blue-700 px-10 py-2 rounded-xl;
+}
