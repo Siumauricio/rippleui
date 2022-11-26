@@ -29,23 +29,23 @@
   @apply border border-slate-700 bg-transparent text-slate-700 transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-slate-700 hover:text-white;
 }
 .btn-outline-primary {
-  @apply border-primary text-primary hover:bg-primary border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke]  hover:text-white;
+  @apply border border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
 }
 
 .btn-outline-secondary {
-  @apply border-secondary text-secondary hover:bg-secondary border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+  @apply border border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white;
 }
 
 .btn-outline-success {
-  @apply border-success text-success hover:bg-success  border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+  @apply border border-success bg-transparent  text-success transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white;
 }
 
 .btn-outline-danger {
-  @apply border-error text-error hover:bg-error border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+  @apply border border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white;
 }
 
 .btn-outline-warning {
-  @apply border-warning text-warning hover:bg-warning  border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+  @apply border border-warning bg-transparent  text-warning transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white;
 }
 
 /* Button Sizes */
