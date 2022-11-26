@@ -735,6 +735,9 @@ video {
 .btn-disabled {
   pointer-events: none;
   cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   opacity: 0.5;
 }
 
@@ -747,6 +750,44 @@ video {
   width: 2.5rem;
   border-radius: 9999px;
   padding: 0px;
+}
+
+.btn-loading {
+  pointer-events: none;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.btn-loading::before {
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+  height: 1rem;
+  content: var(--tw-content);
+  width: 1rem;
+}
+
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(360deg);
+  }
+}
+
+.btn-loading::before {
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-top-color: rgb(51 65 85 / var(--tw-border-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.btn-no-animation:active {
+  transform: none;
 }
 
 .flex {
