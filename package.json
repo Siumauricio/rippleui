@@ -6,7 +6,9 @@
   "types": "build/server.d.ts",
   "scripts": {
     "start": "npx tailwindcss -i ./css/globals.css -o ./dist/output.css --watch",
-    "build:css": "tailwindcss --postcss -i ./components/styles.css -o ./dist/styles.css --watch",
+    "build:css": "tailwindcss --postcss -i ./components/styles.css -o ./dist/css/styles.css --watch",
+    "build:minified": "tailwindcss --postcss -i ./components/styles.css -o ./dist/css/styles.min.css --watch",
+    "build:production": "tailwindcss -i ./dist/css/styles.css -o ./dist/css/styles.production.css --minify ",
     "build:js": "tsc -b --watch"
   },
   "repository": {
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/Siumauricio/rippleui#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
     "live-server": "^1.2.2",
     "postcss": "^8.4.19",
     "postcss-import": "^15.0.0",
