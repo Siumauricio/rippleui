@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="/dist/output.css" rel="stylesheet" />
-   </head>
-   <body>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-   </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../dist/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex h-screen flex-col gap-6 pt-20">
+    <div>
+      <h2 class="text-2xl text-white">Buttons</h2>
+      <button class="btn bg-">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-sucess">Sucess</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+    </div>
+    <div>
+      <h2 class="text-2xl text-white">Buttons Sizes</h2>
+      <button class="btn btn-xs">Mini</button>
+      <button class="btn btn-sm">Small</button>
+      <button class="btn btn-md">Medium</button>
+      <button class="btn btn-lg">Large</button>
+      <button class="btn btn-xl">XLarge</button>
+    </div>
+    <div>
+      <h2 class="text-2xl text-white">Buttons Outlines</h2>
+      <button class="btn btn-outline">Default</button>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+    </div>
+    <div>
+      <h2 class="text-2xl text-white">Extra</h2>
+      <button class="btn btn-primary btn-disabled">Disabled</button>
+      <button class="btn btn-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
+      <button class="btn btn-block">Block</button>
+    </div>
+  </body>
 </html>

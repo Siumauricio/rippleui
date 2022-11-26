@@ -1,3 +1,84 @@
+/* Base Button */
+.btn {
+  @apply inline-flex h-10 w-min items-center justify-center rounded-xl bg-slate-700 px-5 text-center text-sm font-medium text-white transition-transform focus:outline-none active:scale-[0.97];
+}
+
+/* Primary Colors */
 .btn-primary {
-   @apply text-white bg-blue-500  hover:bg-blue-700 px-10 py-2 rounded-xl;
+  @apply bg-primary;
+}
+
+.btn-secondary {
+  @apply bg-secondary;
+}
+
+.btn-sucess {
+  @apply bg-success;
+}
+
+.btn-danger {
+  @apply bg-error;
+}
+
+.btn-warning {
+  @apply bg-warning;
+}
+
+/* Outline colors */
+.btn-outline {
+  @apply border border-slate-700 bg-transparent text-slate-700 transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-slate-700 hover:text-white;
+}
+.btn-outline-primary {
+  @apply border-primary text-primary hover:bg-primary border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke]  hover:text-white;
+}
+
+.btn-outline-secondary {
+  @apply border-secondary text-secondary hover:bg-secondary border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+}
+
+.btn-outline-success {
+  @apply border-success text-success hover:bg-success  border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+}
+
+.btn-outline-danger {
+  @apply border-error text-error hover:bg-error border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+}
+
+.btn-outline-warning {
+  @apply border-warning text-warning hover:bg-warning  border bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:text-white;
+}
+
+/* Button Sizes */
+.btn-xs {
+  @apply h-6 w-20 rounded-[7px] text-xs;
+}
+
+.btn-sm {
+  @apply h-8 w-36 rounded-[9px];
+}
+
+.btn-md {
+  @apply h-10 w-48 rounded-xl;
+}
+
+.btn-lg {
+  @apply h-12 w-60 rounded-[14px] text-lg;
+}
+
+.btn-xl {
+  @apply h-16 w-72 rounded-[18px] text-xl;
+}
+
+/*  */
+
+.btn-disabled {
+  @apply pointer-events-none cursor-not-allowed  opacity-50;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+.btn-circle {
+  @apply h-10 w-10 rounded-full p-0;
 }
