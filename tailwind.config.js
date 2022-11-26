@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { colors, boxShadows, dropShadows } = require("./dist/index");
+const { colors } = require("./dist/js/index");
 
 module.exports = {
   content: ["./components/**/*.{html,js}", "./experiments/**/*.{html,js}"],
