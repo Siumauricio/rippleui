@@ -1,11 +1,15 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 w-min items-center justify-center rounded-xl bg-slate-700 px-5 text-center text-sm font-medium text-white transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 w-min items-center justify-center rounded-xl bg-backgroundSecondary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+}
+
+.btn:where(.btn-primary, .btn-secondary, .btn-sucess, .btn-danger, .btn-warning) {
+  @apply text-white;
 }
 
 /* Primary Colors */
 .btn-primary {
-  @apply bg-primary;
+  @apply bg-primary ;
 }
 
 .btn-secondary {
@@ -13,20 +17,20 @@
 }
 
 .btn-sucess {
-  @apply bg-success;
+  @apply bg-success ;
 }
 
 .btn-danger {
-  @apply bg-error;
+  @apply bg-error ;
 }
 
 .btn-warning {
-  @apply bg-warning;
+  @apply bg-warning ;
 }
 
 /* Outline colors */
 .btn-outline {
-  @apply border border-slate-700 bg-transparent text-slate-700 transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-slate-700 hover:text-white;
+  @apply border border-gray-200 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-backgroundSecondary hover:border-backgroundSecondary ;
 }
 .btn-outline-primary {
   @apply border border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
