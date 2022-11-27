@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../dist/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="theme-change.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-backgroundPrimary h-screen">
+    <button
+      id="theme-toggle"
+      class="btn absolute top-2 right-2 h-12 w-12 cursor-pointer rounded-md px-4 py-3 uppercase transition duration-200 ease-in-out "
+      onclick="toggleDarkmode()"
+    >
+      <svg
+        class="fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,18V6C15.31,6 18,8.69 18,12C18,15.31 15.31,18 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z"
+        />
+      </svg>
+    </button>
+    <div>
+      <h2 class="text-2xl text-whiteInverted">Inputs</h2>
+      <input class="input" />
+      <button class="btn btn-primary">Default</button>
+      <button class="btn">Secondary</button>
+      <button class="btn btn-secondary">Tertiary</button>
+      <button class="btn btn-warning">Quaternary</button>
+
+      <button class="btn bg-">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-sucess">Sucess</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+
+      <button class="btn btn-outline">Default</button>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+    </div>
+  </body>
+</html>
