@@ -13,18 +13,26 @@ export default {
   colors: {
     // background
 
-    '--backgroundPrimary': '#1A1A1A',
-    '--backgroundSecondary': '#272727',
-    '--border': '#313131',
+    "--backgroundPrimary": "#1A1A1A",
+    "--backgroundSecondary": "#272727",
+    "--border": "#313131",
 
     "--background": "#000",
     "--backgroundAlpha": "rgba(0, 0, 0, 0.6)",
     "--foreground": "#fff",
 
     // Text
-    '--content1': '#E8E8E8',
-    '--content2': '#BABABA',
-    '--content3': '#767676',
+    "--content1": "#E8E8E8",
+    "--content2": "#BABABA",
+    "--content3": "#767676",
+
+    // Primary colors
+    "--neutral": "#697177",
+    "--primary": "#0072F5",
+    "--secondary": "#9750DD",
+    "--success": "#17C964",
+    "--error": "#F31260",
+    "--warning": "#FFB800",
 
     //semantic colors
     ...blueDark,
@@ -37,7 +45,6 @@ export default {
     ...grayDark,
 
     // brand colors
-    
 
     // misc
     "--whiteInverted": "#FFFFFF",
