@@ -1,3 +1,55 @@
 .input {
-  @apply w-full max-w-xs rounded-xl border border-none border-border  bg-red-100 px-3 py-2 outline-none;
+  @apply h-fit w-full max-w-xs rounded-xl border-2  border-border bg-backgroundPrimary  p-2.5 text-base text-content1 outline-none;
+}
+
+/* Colors */
+.input-primary {
+  @apply border-primary;
+}
+
+.input-secondary {
+  @apply border-secondary;
+}
+
+.input-success {
+  @apply border-success;
+}
+
+.input-warning {
+  @apply border-warning;
+}
+
+.input-error {
+  @apply border-error;
+}
+
+/* Size */
+
+.input-xs {
+  @apply h-8  text-xs;
+}
+
+.input-sm {
+  @apply h-10 text-sm;
+}
+
+.input-md {
+  @apply h-12 text-base;
+}
+
+.input-lg {
+  @apply h-14 text-lg;
+}
+
+.input-xl {
+  @apply h-16 text-xl;
+}
+
+/* Extra */
+.input::placeholder {
+  @apply text-content3;
+}
+
+.input-disabled {
+  @apply pointer-events-none cursor-not-allowed select-none  text-content3 opacity-50;
 }
