@@ -1,5 +1,5 @@
 .input {
-  @apply h-fit w-full max-w-xs rounded-xl border-2  border-border bg-backgroundPrimary  p-2.5 text-base text-content1 outline-none;
+  @apply h-fit w-full max-w-xs rounded-xl border-2  border-border bg-backgroundPrimary  py-2.5 px-3 text-base text-content1 outline-none;
 }
 
 /* Colors */
@@ -21,6 +21,28 @@
 
 .input-error {
   @apply border-error;
+}
+
+/* Ghost */
+
+.input-ghost-primary {
+  @apply bg-transparent transition-colors hover:border-primary focus:border-primary;
+}
+
+.input-ghost-secondary {
+  @apply bg-transparent transition-colors hover:border-secondary focus:border-secondary;
+}
+
+.input-ghost-success {
+  @apply bg-transparent transition-colors hover:border-success focus:border-success;
+}
+
+.input-ghost-warning {
+  @apply bg-transparent transition-colors hover:border-warning focus:border-warning;
+}
+
+.input-ghost-error {
+  @apply bg-transparent transition-colors hover:border-error focus:border-error;
 }
 
 /* Size */
@@ -50,6 +72,14 @@
   @apply text-content3;
 }
 
+.input-rounded {
+  @apply rounded-full px-4;
+}
+
 .input-disabled {
   @apply pointer-events-none cursor-not-allowed select-none  text-content3 opacity-50;
+}
+
+.input-block {
+  @apply max-w-full;
 }
