@@ -3,13 +3,19 @@
   @apply inline-flex h-10 w-min items-center justify-center rounded-xl bg-backgroundSecondary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
 }
 
-.btn:where(.btn-primary, .btn-secondary, .btn-sucess, .btn-danger, .btn-warning) {
+.btn:where(
+    .btn-primary,
+    .btn-secondary,
+    .btn-sucess,
+    .btn-danger,
+    .btn-warning
+  ) {
   @apply text-white;
 }
 
 /* Primary Colors */
 .btn-primary {
-  @apply bg-primary ;
+  @apply bg-primary;
 }
 
 .btn-secondary {
@@ -17,39 +23,39 @@
 }
 
 .btn-sucess {
-  @apply bg-success ;
+  @apply bg-success;
 }
 
 .btn-danger {
-  @apply bg-error ;
+  @apply bg-error;
 }
 
 .btn-warning {
-  @apply bg-warning ;
+  @apply bg-warning;
 }
 
 /* Outline colors */
 .btn-outline {
-  @apply border border-gray-200 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-backgroundSecondary hover:border-backgroundSecondary ;
+  @apply border-2 border-gray-200 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-backgroundSecondary hover:bg-backgroundSecondary;
 }
 .btn-outline-primary {
-  @apply border border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
+  @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
 }
 
 .btn-outline-secondary {
-  @apply border border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white;
+  @apply border-2 border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white;
 }
 
 .btn-outline-success {
-  @apply border border-success bg-transparent  text-success transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white;
+  @apply border-2 border-success bg-transparent  text-success transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white;
 }
 
 .btn-outline-danger {
-  @apply border border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white;
+  @apply border-2 border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white;
 }
 
 .btn-outline-warning {
-  @apply border border-warning bg-transparent  text-warning transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white;
+  @apply border-2 border-warning bg-transparent  text-warning transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white;
 }
 
 /* Button Sizes */
@@ -72,8 +78,6 @@
 .btn-xl {
   @apply h-16 w-72 rounded-[18px] text-xl;
 }
-
-/*  */
 
 .btn-disabled {
   @apply pointer-events-none cursor-not-allowed  select-none opacity-50;
