@@ -3,18 +3,19 @@ import { blue, cyan, gray, green, pink, purple, red, yellow } from "./colors";
 export default {
   colors: {
     // background colors
-    '--backgroundPrimary': '#FFFFFF',
-    '--backgroundSecondary': '#F7F7F7',
-    '--border': '#E8E8E8',
+    backgroundColor: "#FFFFFF",
+    "--backgroundPrimary": "#FFFFFF",
+    "--backgroundSecondary": "#F7F7F7",
+    "--border": "#E8E8E8",
 
     "--background": "#fff",
     "--backgroundAlpha": "rgba(255, 255, 255, 0.8)",
     "--foreground": "#000",
 
     // Text
-    '--content1': '#1C1C1C',
-    '--content2': '#585757',
-    '--content3': '#969696',
+    "--content1": "#1C1C1C",
+    "--content2": "#585757",
+    "--content3": "#969696",
 
     // Primary colors
     "--neutral": "#697177",
@@ -29,7 +30,7 @@ export default {
     ...green,
     ...yellow,
     ...red,
-    ... cyan,
+    ...cyan,
     ...pink,
     ...gray,
 

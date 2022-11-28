@@ -12,7 +12,7 @@ import {
 export default {
   colors: {
     // background
-
+    backgroundColor: "#1A1A1A",
     "--backgroundPrimary": "#1A1A1A",
     "--backgroundSecondary": "#272727",
     "--border": "#313131",
