@@ -5,7 +5,7 @@
   "main": "build/server.js",
   "types": "build/server.d.ts",
   "scripts": {
-    "start": "npx tailwindcss -i ./css/globals.css -o ./dist/output.css --watch",
+    "start": "start npm run build:css && start npm run build:js",
     "build:css": "tailwindcss --postcss -i ./components/styles.css -o ./dist/css/styles.css --watch",
     "build:minified": "tailwindcss --postcss -i ./components/styles.css -o ./dist/css/styles.min.css --watch",
     "build:production": "tailwindcss -i ./dist/css/styles.css -o ./dist/css/styles.production.css --minify ",
