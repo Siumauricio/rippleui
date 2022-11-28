@@ -16,7 +16,7 @@
       }
     </style>
   </head>
-  <body class="h-screen bg-backgroundPrimary p-12">
+  <body class="flex h-screen flex-col gap-10 p-12">
     <button
       id="theme-toggle"
       class="btn absolute top-2 right-2 h-12 w-12 cursor-pointer rounded-md px-4 py-3 uppercase transition duration-200 ease-in-out"
@@ -34,7 +34,7 @@
         />
       </svg>
     </button>
-    <div class="flex flex-row flex-wrap gap-5 pb-10">
+    <div class="flex flex-row flex-wrap gap-5">
       <h2 class="text-2xl text-whiteInverted">Inputs</h2>
       <input class="input" placeholder="Type here" />
       <input class="input input-primary" placeholder="Type here" />
@@ -42,7 +42,15 @@
       <input class="input input-warning" placeholder="Type here" />
       <input class="input input-success" placeholder="Type here" />
       <input class="input input-error" placeholder="Type here" />
-      <input class="input input-disabled" placeholder="Type here" />
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-5 pb-10">
+      <h2 class="text-2xl text-whiteInverted">Outline</h2>
+      <input class="input input-ghost-primary" placeholder="Type here" />
+      <input class="input input-ghost-secondary" placeholder="Type here" />
+      <input class="input input-ghost-warning" placeholder="Type here" />
+      <input class="input input-ghost-success" placeholder="Type here" />
+      <input class="input input-ghost-error" placeholder="Type here" />
     </div>
 
     <div class="flex flex-row flex-wrap gap-5">
@@ -52,6 +60,15 @@
       <input class="input input-md" placeholder="Type here MD" />
       <input class="input input-lg" placeholder="Type here LG" />
       <input class="input input-xl" placeholder="Type here XL" />
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-5">
+      <h2 class="text-2xl text-whiteInverted">Extra</h2>
+      <input class="input input-rounded" placeholder="Type here" />
+      <input class="input input-disabled" placeholder="Type here" />
+    </div>
+    <div>
+      <input class="input input-block" placeholder="Type here" />
     </div>
   </body>
 </html>
