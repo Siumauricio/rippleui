@@ -5,5 +5,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("./dist/js/index")],
+  plugins: [require("./dist/js")],
 };
