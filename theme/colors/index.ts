@@ -6,3 +6,6 @@ export * from "./red";
 export * from "./cyan";
 export * from "./pink";
 export * from "./gray";
+export * from './background';
+export * from './base-colors';
+export * from './text';
