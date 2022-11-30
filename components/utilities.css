@@ -1,0 +1,5 @@
+@import "tailwindcss/utilities";
+
+.content-auto {
+   content-visibility: auto;
+}
