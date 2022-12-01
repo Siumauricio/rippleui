@@ -1,19 +1,21 @@
 {
   "name": "rippleui",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/server.js",
-  "types": "dist/server.d.ts",
+  "description": "Cleanest, modern and beatifull Tailwind CSS library.",
+  "main": "dist/js/index.js",
+  "types": "dist/js/index.d.ts",
   "scripts": {
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",
     "create:files": "touch ./dist/css/styles.css && touch ./dist/css/base.css && touch ./dist/css/components.css && touch ./dist/css/utilities.css",
     "create:paths": "npm run create:folders && npm run create:files",
+    "clean": "rimraf ./dist",
     "js": "tsc -b",
+    "js:minify": "node ./scripts/minify.js",
     "styles": "tailwindcss --postcss -i ./components/styles.css -o ./dist/css/styles.css",
     "base": "tailwindcss --postcss -i ./components/base.css -o ./dist/css/base.css",
     "components": "tailwindcss --postcss -i ./components/components.css -o ./dist/css/components.css",
     "utilities": "tailwindcss --postcss -i ./components/utilities.css -o ./dist/css/utilities.css",
-    "build": "npm run create:paths && npm run js  && npm run styles -- --minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
+    "build": "npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run styles -- --minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
     "dev": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch",
     "dev:all": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch && start npm run base -- --watch && start npm run components -- --watch && start npm run utilities -- --watch"
   },
@@ -48,9 +50,12 @@
     "postcss-js": "^4.0.0",
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.2.0",
-    "rollup": "^3.5.0",
-    "tailwindcss": "^3.2.4",
+    "rimraf": "^3.0.2",
+    "terser": "^5.16.0",
     "touch-cli": "^0.0.1",
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
