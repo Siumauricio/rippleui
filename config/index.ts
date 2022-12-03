@@ -6,14 +6,21 @@ import fs from "fs";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
 
-const baseCSS = fs.readFileSync("./dist/css/base.css", "utf-8");
-const componentsCSS = fs.readFileSync("./dist/css/components.css", "utf-8");
-const utilitiesCSS = fs.readFileSync("./dist/css/utilities.css", "utf-8");
-
+const baseCSS = fs.readFileSync(
+  __dirname.replace("\\js", "\\css") + "\\base.css",
+  "utf-8"
+);
+const componentsCSS = fs.readFileSync(
+  __dirname.replace("\\js", "\\css") + "\\components.css",
+  "utf-8"
+);
+const utilitiesCSS = fs.readFileSync(
+  __dirname.replace("\\js", "\\css") + "\\utilities.css",
+  "utf-8"
+);
 
 export const config = plugin(
-  ({ addBase, addComponents, addUtilities, theme, config}) => {
-
+  ({ addBase, addComponents, addUtilities, theme, config }) => {
     const base = postcss.parse(baseCSS);
     const components = postcss.parse(componentsCSS);
     const utilities = postcss.parse(utilitiesCSS);
@@ -22,28 +29,30 @@ export const config = plugin(
     const utilitiesObj = postcssJs.objectify(utilities);
 
     // Add base styles/colors
-    addBase([{
-      ...baseObj,
-      [":root"]: {
-        colorScheme: "light",
-        ...lighTheme.colors,
-      },
-      ["@media (prefers-color-scheme: dark)"]: {
+    addBase([
+      {
+        ...baseObj,
         [":root"]: {
+          colorScheme: "light",
+          ...lighTheme.colors,
+        },
+        ["@media (prefers-color-scheme: dark)"]: {
+          [":root"]: {
+            colorScheme: "dark",
+            ...darkTheme.colors,
+          },
+        },
+        ["[data-theme=light]"]: {
+          colorScheme: "light",
+          ...lighTheme.colors,
+        },
+        ["[data-theme=dark]"]: {
           colorScheme: "dark",
           ...darkTheme.colors,
         },
       },
-      ["[data-theme=light]"]: {
-        colorScheme: "light",
-        ...lighTheme.colors,
-      },
-      ["[data-theme=dark]"]: {
-        colorScheme: "dark",
-        ...darkTheme.colors,
-      },
-    }]);
-   
+    ]);
+
     addComponents(componentsObj);
     addUtilities(utilitiesObj);
   },
