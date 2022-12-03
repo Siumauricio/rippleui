@@ -8,7 +8,8 @@
     "dist/js",
     "dist/css/base.css",
     "dist/css/components.css",
-    "dist/css/utilities.css"
+    "dist/css/utilities.css",
+    "package-lock.json"
   ],
   "scripts": {
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",
@@ -21,7 +22,7 @@
     "base": "tailwindcss --postcss -i ./components/base.css -o ./dist/css/base.css",
     "components": "tailwindcss --postcss -i ./components/components.css -o ./dist/css/components.css",
     "utilities": "tailwindcss --postcss -i ./components/utilities.css -o ./dist/css/utilities.css",
-    "build": "npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
+    "build": "SET NODE_ENV=production && npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
     "dev": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch",
     "dev:all": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch && start npm run base -- --watch && start npm run components -- --watch && start npm run utilities -- --watch",
     "release": "standard-version",
