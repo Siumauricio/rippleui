@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## 1.0.0 (2022-12-03)
+## 1.1.0 (2022-12-03)
 
 
 ### Features
@@ -26,6 +26,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * remove text breaking cause by w-fit ([b5c3d8b](https://github.com/Siumauricio/rippleui/commit/b5c3d8b42ba742f68c7dcef96c32eb9eded372fe))
+* resolve the path of each css layer ([3e43031](https://github.com/Siumauricio/rippleui/commit/3e43031e81d628fad997f03ec00fae7f33a0c0d1))
 
 # Changelog
 
