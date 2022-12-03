@@ -7,7 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require("./dist/js/index.js")
-  ],
-}
+  plugins: [require("rippleui")],
+};
