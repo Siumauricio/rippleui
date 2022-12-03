@@ -28,7 +28,9 @@
     "release:patch": "standard-version --release-as patch && npm run npm:publish",
     "release:minor": "standard-version --release-as minor && npm run npm:publish",
     "release:major": "standard-version --release-as major && npm run npm:publish",
-    "release:dry": "standard-version --dry-run"
+    "release:dry:patch": "standard-version --dry-run --release-as patch",
+    "release:dry:minor": "standard-version --dry-run --release-as minor",
+    "release:dry:major": "standard-version --dry-run --release-as major"
   },
   "repository": {
     "type": "git",
