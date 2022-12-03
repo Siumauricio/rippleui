@@ -1,18 +1,37 @@
-name: Tagged Release
+name: Deploy
 
 on:
   push:
     tags:
-      - "v*"
+      - v[0-9]+.[0-9]+.[0-9]+
 
 jobs:
-  tagged-release:
-    name: Tagged Release
-    runs-on: ubuntu-18.04
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
         with:
-          repo_token: "${{ github.token }}"
-          prerelease: false
-          
+          token: ${{ github.token }}
+          tag: ${{ github.ref_name }}
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          draft: false
+          name: ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.changes }}
+          token: ${{ github.token }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: "docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]"
+          file_pattern: CHANGELOG.md
