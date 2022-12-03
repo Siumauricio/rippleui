@@ -1,6 +1,6 @@
 {
   "name": "rippleui",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
@@ -25,10 +25,11 @@
     "build": "SET NODE_ENV=production && npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
     "dev": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch",
     "dev:all": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch && start npm run base -- --watch && start npm run components -- --watch && start npm run utilities -- --watch",
-    "release": "standard-version && git push --follow-tags origin main && npm publish",
-    "release:patch": "standard-version --release-as patch",
-    "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major",
+    "npm:publish": "git push --follow-tags origin main && npm publish",
+    "release": "standard-version && npm run npm:publish",
+    "release:patch": "standard-version --release-as patch && npm run npm:publish",
+    "release:minor": "standard-version --release-as minor && npm run npm:publish",
+    "release:major": "standard-version --release-as major && npm run npm:publish",
     "release:dry": "standard-version --dry-run"
   },
   "repository": {
