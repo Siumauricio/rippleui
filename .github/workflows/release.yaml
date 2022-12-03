@@ -2,8 +2,8 @@ name: Tagged Release
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - master
 
 jobs:
   tagged-release:
