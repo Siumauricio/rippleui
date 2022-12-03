@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [v1.0.0] - 2022-12-03
+### :wrench: Chores
+- [`d44ae08`](https://github.com/Siumauricio/rippleui/commit/d44ae089b8ba25ad9c83a3db2cd9150d6bb7eab9) - **release**: 1.1.0-alpha.0 *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`19303bf`](https://github.com/Siumauricio/rippleui/commit/19303bf3da9eb6216880f1ed878d3396e643cd36) - **release**: 1.0.0 *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+
 ## 1.0.0 (2022-12-03)
 
 
@@ -31,3 +37,5 @@ All notable changes to this project will be documented in this file. See [standa
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+[v1.0.0]: https://github.com/Siumauricio/rippleui/compare/v0.9.9...v1.0.0
