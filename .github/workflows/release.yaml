@@ -3,7 +3,7 @@ name: Tagged Release
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   tagged-release:
