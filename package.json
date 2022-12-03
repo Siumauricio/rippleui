@@ -1,9 +1,15 @@
 {
-  "name": "testing-project",
-  "version": "1.1.0",
+  "name": "testing-project-1",
+  "version": "1.1.1",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
+  "files": [
+    "dist/js",
+    "dist/css/base.css",
+    "dist/css/components.css",
+    "dist/css/utilities.css"
+  ],
   "scripts": {
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",
     "create:files": "touch ./dist/css/styles.css && touch ./dist/css/base.css && touch ./dist/css/components.css && touch ./dist/css/utilities.css",
@@ -15,10 +21,13 @@
     "base": "tailwindcss --postcss -i ./components/base.css -o ./dist/css/base.css",
     "components": "tailwindcss --postcss -i ./components/components.css -o ./dist/css/components.css",
     "utilities": "tailwindcss --postcss -i ./components/utilities.css -o ./dist/css/utilities.css",
-    "build": "npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run styles -- --minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
+    "build": "npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run components -- --minify && npm run utilities -- --minify",
     "dev": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch",
     "dev:all": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch && start npm run base -- --watch && start npm run components -- --watch && start npm run utilities -- --watch",
-    "release": "standard-version"
+    "release": "standard-version",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
   },
   "repository": {
     "type": "git",
@@ -42,13 +51,10 @@
   },
   "homepage": "https://github.com/Siumauricio/rippleui#readme",
   "devDependencies": {
-    "@types/postcss-js": "^4.0.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "mkdirp": "^1.0.4",
-    "postcss": "^8.4.19",
     "postcss-import": "^15.0.0",
-    "postcss-js": "^4.0.0",
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.2.0",
     "rimraf": "^3.0.2",
@@ -58,6 +64,9 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "tailwindcss": "^3.2.4"
+    "@types/postcss-js": "^4.0.0",
+    "tailwindcss": "^3.2.4",
+    "postcss": "^8.4.19",
+    "postcss-js": "^4.0.0"
   }
 }
