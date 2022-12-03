@@ -1,6 +1,6 @@
 {
   "name": "testing-project-1",
-  "version": "1.1.4",
+  "version": "1.1.5-0",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
@@ -27,7 +27,8 @@
     "release": "standard-version",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major"
+    "release:major": "standard-version --release-as major",
+    "release:prerelease": "standard-version --prerelease"
   },
   "repository": {
     "type": "git",
