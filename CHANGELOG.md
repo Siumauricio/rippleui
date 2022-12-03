@@ -2,9 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [2.0.0](https://github.com/Siumauricio/rippleui/compare/v1.1.0-alpha.0...v2.0.0) (2022-12-03)
-
-## 1.1.0-alpha.0 (2022-12-03)
+## 1.1.0 (2022-12-03)
 
 
 ### Features
@@ -30,3 +28,5 @@ All notable changes to this project will be documented in this file. See [standa
 * remove text breaking cause by w-fit ([b5c3d8b](https://github.com/Siumauricio/rippleui/commit/b5c3d8b42ba742f68c7dcef96c32eb9eded372fe))
 
 # Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
