@@ -1,6 +1,6 @@
 {
   "name": "rippleui",
-  "version": "1.1.0-alpha.0",
+  "version": "1.0.0",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
@@ -31,8 +31,7 @@
     "release:dry:patch": "standard-version --dry-run --release-as patch",
     "release:dry:minor": "standard-version --dry-run --release-as minor",
     "release:dry:major": "standard-version --dry-run --release-as major",
-    "release:dry:first": "standard-version --dry-run --first-release",
-    "release:alpha": "standard-version --prerelease alpha"
+    "release:dry:first": "standard-version --dry-run --first-release"
   },
   "repository": {
     "type": "git",
