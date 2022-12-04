@@ -1,0 +1,89 @@
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg class='select-icon' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: %237E868C;transform: ;msFilter:;'%3E%3Cpath d='M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+  @apply h-fit w-full max-w-xs rounded-xl border-2 border-border  bg-backgroundPrimary bg-no-repeat  py-2.5 px-3 text-base text-content1 text-content1 outline-none;
+}
+
+.select-primary {
+  @apply border-primary;
+}
+
+.select-secondary {
+  @apply border-secondary;
+}
+
+.select-success {
+  @apply border-success;
+}
+
+.select-danger {
+  @apply border-error;
+}
+
+.select-warning {
+  @apply border-warning;
+}
+
+/* Ghost */
+
+.select-ghost-primary {
+  @apply transition-colors hover:border-primary focus:border-primary;
+}
+
+.select-ghost-secondary {
+  @apply transition-colors hover:border-secondary focus:border-secondary;
+}
+
+.select-ghost-success {
+  @apply transition-colors hover:border-success focus:border-success;
+}
+
+.select-ghost-warning {
+  @apply transition-colors hover:border-warning focus:border-warning;
+}
+
+.select-ghost-error {
+  @apply transition-colors hover:border-error focus:border-error;
+}
+
+/* Size */
+
+.select-xs {
+  @apply h-8 py-1 text-xs;
+}
+
+.select-sm {
+  @apply h-10 py-1 text-sm;
+}
+
+.select-md {
+  @apply h-12 text-base;
+}
+
+.select-lg {
+  @apply h-14 text-lg;
+}
+
+.select-xl {
+  @apply h-16 text-xl;
+}
+
+/* Extra */
+.select::placeholder {
+  @apply text-content3;
+}
+
+.select-rounded {
+  @apply rounded-full px-4;
+}
+
+.select-disabled {
+  @apply pointer-events-none cursor-not-allowed select-none  text-content3 opacity-50;
+}
+
+.select-block {
+  @apply max-w-full;
+}

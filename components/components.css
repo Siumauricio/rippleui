@@ -1,3 +1,4 @@
 @import "tailwindcss/components";
 @import "./inputs/button.css";
 @import "./inputs/input.css";
+@import "./inputs/select.css";
