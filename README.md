@@ -1,1 +1,53 @@
-# rippleui
+# Ripple UI
+
+Welcome to the RippleUI repository! This is the home for all of the components, guidelines, and tools that make up our design system.
+
+## Documentation
+
+Visit https://rippleui.com to view the full documentation.
+
+
+## Usage
+
+To use the RippleUI components, you will need to install the package from npm.
+
+```bash
+npm install rippleui
+```
+
+Once you have installed the package, you can import the plugin into your `tailwind.config.js`.
+
+```js
+module.exports = {
+  // ... the rest of your config
+  plugins: [require('rippleui')],
+}
+```
+
+To use a component, simply include the appropriate HTML markup in your project and apply the relevant classes using the class naming.
+
+```html
+<button class="btn btn-primary">Click me!</button>
+```
+
+## Components
+
+Here is a list of all of the components that are currently available in RippleUI.
+
+- Button
+- Input
+- Select
+- Checkbox
+- Radio
+- Switch
+- Textarea
+- Textarea
+
+
+## Contributing
+
+We welcome contributions to the design system! If you have ideas for new components, improvements to existing ones, or updates to the guidelines and tools, please open a pull request with your proposed changes.
+
+## License
+
+RippleUI is licensed under the [MIT License](LICENSE).
