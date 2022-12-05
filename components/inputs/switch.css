@@ -8,11 +8,9 @@
   --switch-border-hover: var(--border);
   --switch-bg-hover: inherit;
   --checkline-color: white;
-  width: 38px;
-  border-radius: 11px;
-  height: 21px;
+
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block  cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
+  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
 }
 
 .switch::after {
@@ -54,7 +52,6 @@
 }
 
 .switch:checked {
-  --ab: var(--active-inner);
   --x: 17px;
 }
 
@@ -167,41 +164,56 @@
 /* Sizes */
 
 .switch-xs {
-  @apply h-3 w-3;
+  @apply h-4 w-6;
 }
 
+.switch.switch-xs:checked {
+  --x: 8px;
+}
 .switch.switch-xs::after {
-  @apply left-[2.5px] top-[0.5px] h-[8px] w-[5px];
+  @apply left-[1.4px] top-[1px] h-[12px] w-[12px];
 }
 
 .switch-sm {
-  @apply h-4 w-4;
+  @apply h-5 w-8;
+}
+
+.switch.switch-sm:checked {
+  --x: 14px;
 }
 
 .switch.switch-sm::after {
-  @apply left-[5px] top-[2px] h-[8px] w-[5px];
+  @apply left-[1.7px] top-[2px] h-[13px] w-[13px];
 }
 
 .switch-md {
-  @apply h-5 w-5;
+  @apply h-[21px] w-[38px];
 }
 
 .switch.switch-md::after {
-  @apply left-[7px] top-[4px] h-[9px] w-[5px];
+  @apply left-[2px] top-[2px] h-[15px] w-[15px];
 }
 
 .switch-lg {
-  @apply h-6 w-6;
+  @apply h-7 w-12 rounded-full;
+}
+
+.switch.switch-lg:checked {
+  --x: 22px;
 }
 
 .switch.switch-lg::after {
-  @apply left-[9px] top-[4px] h-[12px] w-[6px];
+  @apply left-[2.5px] top-[2.5px] h-[20px] w-[20px];
 }
 
 .switch-xl {
-  @apply h-7 w-7;
+  @apply h-8 w-14 rounded-full;
+}
+
+.switch.switch-xl:checked {
+  --x: 26px;
 }
 
 .switch.switch-xl::after {
-  @apply left-[10px] top-[5px] h-[14px] w-[6px];
+  @apply left-[2.5px] top-[3px] h-[23px] w-[23px];
 }
