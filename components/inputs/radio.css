@@ -1,0 +1,156 @@
+.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  --radio-bg: var(--backgroundPrimary);
+  --radio-border: var(--border);
+  --radio-bg-checked: var(--primary);
+  --radio-border-checked: var(--primary);
+  --radio-border-hover: var(--border);
+  --radio-bg-hover: var(--backgroundSecondary);
+  --checkline-color: white;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)]   align-top   accent-backgroundPrimary outline-none;
+}
+.radio:after {
+  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+    opacity var(--d-o, 0.2s);
+  @apply absolute top-0 left-0 block content-[""];
+}
+.radio:checked {
+  @apply border-[var(--radio-border-checked)] bg-[var(--radio-bg-checked)];
+  --d-o: 0.3s;
+  --d-t: 0.6s;
+  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  --o: 1;
+  --r: 43deg;
+}
+.radio:disabled {
+  @apply cursor-not-allowed bg-backgroundSecondary opacity-90;
+}
+.radio:disabled:checked {
+  @apply border-border bg-gray-300;
+}
+
+.radio:disabled + label {
+  @apply cursor-not-allowed;
+}
+
+.radio:hover:not(:checked):not(:disabled) {
+  @apply border-[var(--radio-border-hover)] bg-[var(--radio-bg-hover)];
+}
+
+.radio:not(.switch):after {
+  opacity: var(--o, 0);
+}
+.radio:checked {
+  --o: 1;
+  --s: 0.5;
+}
+
+.radio::after {
+  @apply h-[19px] w-[19px] rounded-full bg-[var(--checkline-color)] opacity-0;
+  transform: scale(var(--s, 0.7));
+}
+
+.radio-primary {
+  --radio-bg-checked: var(--primary);
+  --radio-border-checked: var(--primary);
+}
+
+.radio-secondary {
+  --radio-bg-checked: var(--secondary);
+  --radio-border-checked: var(--secondary);
+}
+
+.radio-success {
+  --radio-bg-checked: var(--success);
+  --radio-border-checked: var(--success);
+}
+
+.radio-error {
+  --radio-bg-checked: var(--error);
+  --radio-border-checked: var(--error);
+}
+
+.radio-warning {
+  --radio-bg-checked: var(--warning);
+  --radio-border-checked: var(--warning);
+}
+
+/* Marked */
+.radio-marked-primary {
+  --radio-border: var(--primary);
+  --radio-bg-checked: var(--primary);
+  --radio-border-checked: var(--primary);
+  --radio-border-hover: var(--primary);
+}
+
+.radio-marked-secondary {
+  --radio-border: var(--secondary);
+  --radio-bg-checked: var(--secondary);
+  --radio-border-checked: var(--secondary);
+  --radio-border-hover: var(--secondary);
+}
+
+.radio-marked-success {
+  --radio-border: var(--success);
+  --radio-bg-checked: var(--success);
+  --radio-border-checked: var(--success);
+  --radio-border-hover: var(--success);
+}
+
+.radio-marked-error {
+  --radio-border: var(--error);
+  --radio-bg-checked: var(--error);
+  --radio-border-checked: var(--error);
+  --radio-border-hover: var(--error);
+}
+
+.radio-marked-warning {
+  --radio-border: var(--warning);
+  --radio-bg-checked: var(--warning);
+  --radio-border-checked: var(--warning);
+  --radio-border-hover: var(--warning);
+}
+
+/* Sizes */
+
+.radio-xs {
+  @apply h-3 w-3;
+}
+
+.radio.radio-xs::after {
+  @apply h-[10px] w-[10px];
+}
+
+.radio-sm {
+  @apply h-4 w-4;
+}
+
+.radio.radio-sm::after {
+  @apply h-[14px] w-[14px];
+}
+
+.radio-md {
+  @apply h-5 w-5;
+}
+
+.radio.radio-md::after {
+  @apply h-[19px] w-[19px];
+}
+
+.radio-lg {
+  @apply h-6 w-6;
+}
+
+.radio.radio-lg::after {
+  @apply h-[22px] w-[22px];
+}
+
+.radio-xl {
+  @apply h-7 w-7;
+}
+
+.radio.radio-xl::after {
+  @apply h-[26px] w-[26px];
+}

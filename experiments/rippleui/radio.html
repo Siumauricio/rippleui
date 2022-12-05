@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../dist/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="theme-change.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body class="flex h-screen flex-col gap-10 p-12">
+    <button
+      id="theme-toggle"
+      class="btn absolute top-2 right-2 h-12 w-12 cursor-pointer rounded-md px-4 py-3 uppercase transition duration-200 ease-in-out"
+      onclick="toggleDarkmode()"
+    >
+      <svg
+        class="fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,18V6C15.31,6 18,8.69 18,12C18,15.31 15.31,18 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z"
+        />
+      </svg>
+    </button>
+    <div class="flex flex-row flex-wrap gap-5">
+      <h2 class="text-2xl text-whiteInverted">Radio</h2>
+      <input type="radio" class="radio" />
+      <input type="radio" class="radio radio-primary" />
+
+      <input type="radio" class="radio radio-secondary" />
+      <input type="radio" class="radio radio-success" />
+      <input type="radio" class="radio radio-error" />
+
+      <input type="radio" class="radio radio-warning" />
+
+      <input type="radio" class="radio" disabled />
+
+      <input type="radio" class="radio" disabled checked />
+    </div>
+    <div class="flex flex-row flex-wrap gap-5">
+      <h2 class="text-2xl text-whiteInverted">Radio</h2>
+      <input type="radio" class="radio radio-marked-primary" />
+      <input type="radio" class="radio radio-marked-secondary" />
+      <input type="radio" class="radio radio-marked-success" />
+      <input type="radio" class="radio radio-marked-warning" />
+      <input type="radio" class="radio radio-marked-error" />
+
+      <input
+        id="r1"
+        type="radio"
+        name="radio"
+        value="1"
+        class="radio radio-warning"
+      />
+      <input
+        id="r2"
+        type="radio"
+        name="radio"
+        value="2"
+        checked
+        class="radio radio-secondary"
+      />
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-5">
+      <h2 class="text-2xl text-whiteInverted">Sizes</h2>
+      <input type="radio" class="radio radio-xs" checked />
+      <input type="radio" class="radio radio-sm" checked />
+      <input type="radio" class="radio radio-md" checked />
+      <input type="radio" class="radio radio-lg" checked />
+      <input type="radio" class="radio radio-xl" checked />
+    </div>
+  </body>
+</html>
