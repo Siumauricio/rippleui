@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 items-center justify-center rounded-xl bg-backgroundSecondary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 items-center justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
 }
 
 .btn:where(
@@ -10,7 +10,7 @@
     .btn-danger,
     .btn-warning
   ) {
-  @apply text-white;
+  @apply border-none text-white;
 }
 
 /* Primary Colors */
