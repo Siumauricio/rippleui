@@ -31,7 +31,7 @@ export const config = plugin(
     // Add base styles/colors
     addBase([
       {
-        ...baseObj,
+        ...(process.env.NODE_ENV === "production" ? baseObj : null),
         [":root"]: {
           colorScheme: "light",
           ...lighTheme.colors,
