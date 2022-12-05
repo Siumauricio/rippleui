@@ -8,7 +8,6 @@
   --switch-border-hover: var(--border);
   --switch-bg-hover: inherit;
   --checkline-color: white;
-
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
 }
@@ -20,6 +19,7 @@
 }
 
 .switch:checked {
+  --ab: #fff;
   @apply border-[var(--switch-border-checked)] bg-[var(--switch-bg-checked)];
   --d-o: 0.3s;
   --d-t: 0.6s;
