@@ -77,42 +77,73 @@
   --radio-border-checked: var(--warning);
 }
 
-/* Marked */
-.radio-marked-primary {
+/* bordered */
+.radio-bordered-primary {
   --radio-border: var(--primary);
   --radio-bg-checked: var(--primary);
   --radio-border-checked: var(--primary);
   --radio-border-hover: var(--primary);
 }
 
-.radio-marked-secondary {
+.radio-bordered-secondary {
   --radio-border: var(--secondary);
   --radio-bg-checked: var(--secondary);
   --radio-border-checked: var(--secondary);
   --radio-border-hover: var(--secondary);
 }
 
-.radio-marked-success {
+.radio-bordered-success {
   --radio-border: var(--success);
   --radio-bg-checked: var(--success);
   --radio-border-checked: var(--success);
   --radio-border-hover: var(--success);
 }
 
-.radio-marked-error {
+.radio-bordered-error {
   --radio-border: var(--error);
   --radio-bg-checked: var(--error);
   --radio-border-checked: var(--error);
   --radio-border-hover: var(--error);
 }
 
-.radio-marked-warning {
+.radio-bordered-warning {
   --radio-border: var(--warning);
   --radio-bg-checked: var(--warning);
   --radio-border-checked: var(--warning);
   --radio-border-hover: var(--warning);
 }
 
+/* Ghost */
+
+.radio-ghost-primary {
+  --radio-bg-checked: var(--primary);
+  --radio-border-checked: var(--primary);
+  --radio-border-hover: var(--primary);
+}
+
+.radio-ghost-secondary {
+  --radio-bg-checked: var(--secondary);
+  --radio-border-checked: var(--secondary);
+  --radio-border-hover: var(--secondary);
+}
+
+.radio-ghost-success {
+  --radio-bg-checked: var(--success);
+  --radio-border-checked: var(--success);
+  --radio-border-hover: var(--success);
+}
+
+.radio-ghost-error {
+  --radio-bg-checked: var(--error);
+  --radio-border-checked: var(--error);
+  --radio-border-hover: var(--error);
+}
+
+.radio-ghost-warning {
+  --radio-bg-checked: var(--warning);
+  --radio-border-checked: var(--warning);
+  --radio-border-hover: var(--warning);
+}
 /* Sizes */
 
 .radio-xs {

@@ -1,0 +1,219 @@
+.switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  --switch-bg: var(--backgroundPrimary);
+  --switch-border: var(--border);
+  --switch-bg-checked: var(--primary);
+  --switch-border-checked: var(--primary);
+  --switch-border-hover: var(--border);
+  --switch-bg-hover: inherit;
+  --checkline-color: white;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
+}
+
+.switch::after {
+  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+    opacity var(--d-o, 0.2s);
+  @apply absolute top-0 left-0 block content-[""];
+}
+
+.switch:checked {
+  --ab: #fff;
+  @apply border-[var(--switch-border-checked)] bg-[var(--switch-bg-checked)];
+  --d-o: 0.3s;
+  --d-t: 0.6s;
+  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  --o: 1;
+  --r: 43deg;
+}
+
+.switch:disabled {
+  @apply cursor-not-allowed bg-gray-600 opacity-40;
+}
+
+.switch:disabled:checked {
+  @apply border-border bg-gray-600;
+}
+
+.switch:disabled + label {
+  @apply cursor-not-allowed;
+}
+
+.switch:hover:not(:checked):not(:disabled) {
+  @apply border-[var(--switch-border-hover)] bg-[var(--switch-bg-hover)];
+}
+
+/* CheckLine */
+.switch::after {
+  background: var(--ab, var(--border));
+  transform: translateX(var(--x, 0));
+  @apply left-[2px] top-[2px] h-[15px] w-[15px] rounded-full;
+}
+
+.switch:checked {
+  --x: 17px;
+}
+
+.switch:disabled:not(:checked):after {
+  opacity: 0.6;
+}
+
+/* Base */
+
+.switch-primary {
+  --switch-bg-checked: var(--primary);
+  --switch-border-checked: var(--primary);
+}
+
+.switch-secondary {
+  --switch-bg-checked: var(--secondary);
+  --switch-border-checked: var(--secondary);
+}
+
+.switch-success {
+  --switch-bg-checked: var(--success);
+  --switch-border-checked: var(--success);
+}
+
+.switch-error {
+  --switch-bg-checked: var(--error);
+  --switch-border-checked: var(--error);
+}
+
+.switch-warning {
+  --switch-bg-checked: var(--warning);
+  --switch-border-checked: var(--warning);
+}
+
+/* bordered */
+
+.switch-bordered-primary {
+  --switch-bg-checked: var(--primary);
+  --switch-border-checked: var(--primary);
+  --switch-border: var(--primary);
+  --switch-border-hover: var(--primary);
+  /* --switch-bg-hover: var(--backgroundPrimary); */
+}
+
+.switch-bordered-secondary {
+  --switch-bg-checked: var(--secondary);
+  --switch-border-checked: var(--secondary);
+  --switch-border: var(--secondary);
+  --switch-border-hover: var(--secondary);
+}
+
+.switch-bordered-success {
+  --switch-bg-checked: var(--success);
+  --switch-border-checked: var(--success);
+  --switch-border: var(--success);
+  --switch-border-hover: var(--success);
+}
+
+.switch-bordered-error {
+  --switch-bg-checked: var(--error);
+  --switch-border-checked: var(--error);
+  --switch-border: var(--error);
+  --switch-border-hover: var(--error);
+}
+
+.switch-bordered-warning {
+  --switch-bg-checked: var(--warning);
+  --switch-border-checked: var(--warning);
+  --switch-border: var(--warning);
+  --switch-border-hover: var(--warning);
+}
+
+/* Ghost */
+
+.switch-ghost-primary {
+  --switch-bg-checked: var(--primary);
+  --switch-border-checked: var(--primary);
+  --switch-border-hover: var(--primary);
+  --checkline-color: var(--primary);
+}
+
+.switch-ghost-secondary {
+  --switch-bg-checked: var(--secondary);
+  --switch-border-checked: var(--secondary);
+  --switch-border-hover: var(--secondary);
+  --checkline-color: var(--secondary);
+}
+
+.switch-ghost-success {
+  --switch-bg-checked: var(--success);
+  --switch-border-checked: var(--success);
+  --switch-border-hover: var(--success);
+  --checkline-color: var(--success);
+}
+
+.switch-ghost-error {
+  --switch-bg-checked: var(--error);
+  --switch-border-checked: var(--error);
+  --switch-border-hover: var(--error);
+  --checkline-color: var(--error);
+}
+
+.switch-ghost-warning {
+  --switch-bg-checked: var(--warning);
+  --switch-border-checked: var(--warning);
+  --switch-border-hover: var(--warning);
+  --checkline-color: var(--warning);
+}
+
+/* Sizes */
+
+.switch-xs {
+  @apply h-4 w-6;
+}
+
+.switch.switch-xs:checked {
+  --x: 8px;
+}
+.switch.switch-xs::after {
+  @apply left-[1.4px] top-[1px] h-[12px] w-[12px];
+}
+
+.switch-sm {
+  @apply h-5 w-8;
+}
+
+.switch.switch-sm:checked {
+  --x: 14px;
+}
+
+.switch.switch-sm::after {
+  @apply left-[1.7px] top-[2px] h-[13px] w-[13px];
+}
+
+.switch-md {
+  @apply h-[21px] w-[38px];
+}
+
+.switch.switch-md::after {
+  @apply left-[2px] top-[2px] h-[15px] w-[15px];
+}
+
+.switch-lg {
+  @apply h-7 w-12 rounded-full;
+}
+
+.switch.switch-lg:checked {
+  --x: 22px;
+}
+
+.switch.switch-lg::after {
+  @apply left-[2.5px] top-[2.5px] h-[20px] w-[20px];
+}
+
+.switch-xl {
+  @apply h-8 w-14 rounded-full;
+}
+
+.switch.switch-xl:checked {
+  --x: 26px;
+}
+
+.switch.switch-xl::after {
+  @apply left-[2.5px] top-[3px] h-[23px] w-[23px];
+}

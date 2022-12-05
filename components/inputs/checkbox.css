@@ -78,9 +78,9 @@
   --checkbox-border-checked: var(--warning);
 }
 
-/* marked */
+/* bordered */
 
-.checkbox-marked-primary {
+.checkbox-bordered-primary {
   --checkbox-bg-checked: var(--primary);
   --checkbox-border-checked: var(--primary);
   --checkbox-border: var(--primary);
@@ -88,33 +88,66 @@
   /* --checkbox-bg-hover: var(--backgroundPrimary); */
 }
 
-.checkbox-marked-secondary {
+.checkbox-bordered-secondary {
   --checkbox-bg-checked: var(--secondary);
   --checkbox-border-checked: var(--secondary);
   --checkbox-border: var(--secondary);
   --checkbox-border-hover: var(--secondary);
 }
 
-.checkbox-marked-success {
+.checkbox-bordered-success {
   --checkbox-bg-checked: var(--success);
   --checkbox-border-checked: var(--success);
   --checkbox-border: var(--success);
   --checkbox-border-hover: var(--success);
 }
 
-.checkbox-marked-error {
+.checkbox-bordered-error {
   --checkbox-bg-checked: var(--error);
   --checkbox-border-checked: var(--error);
   --checkbox-border: var(--error);
   --checkbox-border-hover: var(--error);
 }
 
-.checkbox-marked-warning {
+.checkbox-bordered-warning {
   --checkbox-bg-checked: var(--warning);
   --checkbox-border-checked: var(--warning);
   --checkbox-border: var(--warning);
   --checkbox-border-hover: var(--warning);
 }
+
+/* Ghost */
+
+.checkbox-ghost-primary {
+  --checkbox-bg-checked: var(--primary);
+  --checkbox-border-checked: var(--primary);
+  --checkbox-border-hover: var(--primary);
+}
+
+.checkbox-ghost-secondary {
+  --checkbox-bg-checked: var(--secondary);
+  --checkbox-border-checked: var(--secondary);
+  --checkbox-border-hover: var(--secondary);
+}
+
+.checkbox-ghost-success {
+  --checkbox-bg-checked: var(--success);
+  --checkbox-border-checked: var(--success);
+  --checkbox-border-hover: var(--success);
+}
+
+.checkbox-ghost-error {
+  --checkbox-bg-checked: var(--error);
+  --checkbox-border-checked: var(--error);
+  --checkbox-border-hover: var(--error);
+}
+
+.checkbox-ghost-warning {
+  --checkbox-bg-checked: var(--warning);
+  --checkbox-border-checked: var(--warning);
+  --checkbox-border-hover: var(--warning);
+}
+
 /* Sizes */
 
 .checkbox-xs {

@@ -1,2 +1,8 @@
+
 node_modules
 dist
+experiments/*
+!experiments/rippleui
+experiments/rippleui/*
+!experiments/rippleui/base.html
+!experiments/rippleui/theme-change.js
