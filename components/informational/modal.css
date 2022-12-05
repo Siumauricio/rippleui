@@ -1,0 +1,44 @@
+.modal {
+  @apply invisible fixed  inset-0  z-40 items-center  justify-center  overscroll-none bg-[rgba(0,0,0,0.6)] text-left opacity-0  transition-all flex px-4;
+}
+
+.modal-overlay {
+  @apply inset-0 absolute;
+}
+
+.modal-state {
+  @apply hidden;
+}
+.modal-state:checked + .modal {
+  @apply visible  translate-y-0 scale-100 opacity-100;
+}
+
+html:has(.modal-state:checked) {
+  @apply overflow-hidden;
+}
+
+.modal-state:checked + .modal .modal-content {
+  @apply translate-y-0 scale-100;
+}
+
+.modal-content {
+  @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-backgroundSecondary p-6 duration-75 transition ease-in-out;
+}
+
+.modal-close {
+  @apply right-[1em] top-[1em] h-[1.1em] w-[1.1em] absolute cursor-pointer;
+}
+
+.modal-close:after,
+.modal-close:before {
+  @apply left-1/2 top-0 -mt-1.5 w-0.5 rotate-45 transform bg-gray-700 content-[""] absolute h-6;
+}
+
+.modal-close:hover:after,
+.modal-close:hover:before {
+  @apply bg-gray-600;
+}
+
+.modal-close:before {
+  transform: rotate(-45deg);
+}

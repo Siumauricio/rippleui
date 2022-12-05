@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 items-center justify-center rounded-xl bg-backgroundSecondary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 items-center justify-center rounded-xl border border-border px-5 text-center text-sm font-medium transition-transform cursor-pointer  bg-backgroundPrimary focus:outline-none active:scale-[0.97];
 }
 
 .btn:where(
@@ -10,7 +10,7 @@
     .btn-danger,
     .btn-warning
   ) {
-  @apply text-white;
+  @apply border-none text-white;
 }
 
 /* Primary Colors */
@@ -36,7 +36,7 @@
 
 /* Outline colors */
 .btn-outline {
-  @apply border-2 border-gray-200 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-backgroundSecondary hover:bg-backgroundSecondary;
+  @apply border-2 border-gray-200 bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] text-whiteInverted hover:border-backgroundSecondary hover:bg-backgroundSecondary;
 }
 .btn-outline-primary {
   @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
@@ -60,7 +60,7 @@
 
 /* Button Sizes */
 .btn-xs {
-  @apply h-6 w-20 rounded-[7px] text-xs;
+  @apply w-20 rounded-[7px] text-xs h-6;
 }
 
 .btn-sm {
@@ -72,7 +72,7 @@
 }
 
 .btn-lg {
-  @apply h-12 w-60 rounded-[14px] text-lg;
+  @apply w-60 rounded-[14px] text-lg h-12;
 }
 
 .btn-xl {
