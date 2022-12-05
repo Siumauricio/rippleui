@@ -8,7 +8,8 @@
   --checkbox-border-hover: var(--border);
   --checkbox-bg-hover: var(--backgroundSecondary);
   --checkline-color: white;
-  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none  transition-colors;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none;
 }
 
 .checkbox::after {
