@@ -1,0 +1,95 @@
+.btn-group {
+  @apply w-full max-w-fit flex flex-row flex-wrap;
+}
+
+.btn-group-scrollable {
+  @apply flex-nowrap overflow-auto;
+}
+
+/* Horizontal */
+.btn-group > *:first-child {
+  @apply rounded-none rounded-l-xl;
+}
+
+.btn-group > *:last-child {
+  @apply rounded-none rounded-r-xl;
+}
+
+.btn-group > *:not(:first-child):not(:last-child) {
+  @apply rounded-none;
+}
+
+.btn-group > *:only-child {
+  @apply rounded-xl;
+}
+
+.btn-group-horizontal > *:first-child {
+  @apply rounded-none rounded-l-xl;
+}
+
+.btn-group-horizontal > *:last-child {
+  @apply rounded-none rounded-r-xl;
+}
+
+.btn-group-horizontal > *:not(:first-child):not(:last-child) {
+  @apply rounded-none;
+}
+
+.btn-group-horizontal > *:only-child {
+  @apply rounded-xl;
+}
+
+/* Vertical */
+
+.btn-group-vertical {
+  @apply flex-col;
+}
+
+.btn-group-vertical > *:first-child {
+  @apply rounded-none rounded-t-xl;
+}
+
+.btn-group-vertical > *:last-child {
+  @apply rounded-none rounded-b-xl;
+}
+
+.btn-group-vertical > *:not(:first-child):not(:last-child) {
+  @apply rounded-none;
+}
+
+.btn-group-vertical > *:only-child {
+  @apply rounded-xl;
+}
+
+/* Radio Type */
+
+.btn-group > input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.btn-group > input[type="radio"]::after {
+  @apply content-[attr(data-content)];
+}
+
+.btn-group > input[type="radio"]:checked {
+  @apply bg-border;
+}
+
+/* For rounded btn-group */
+
+.btn-group-rounded > *:first-child {
+  @apply rounded-none rounded-l-full;
+}
+
+.btn-group-rounded > *:last-child {
+  @apply rounded-none rounded-r-full;
+}
+
+.btn-group-rounded.btn-group-vertical > *:first-child {
+  @apply rounded-none rounded-t-full;
+}
+
+.btn-group-rounded.btn-group-vertical > *:last-child {
+  @apply rounded-none rounded-b-full;
+}
