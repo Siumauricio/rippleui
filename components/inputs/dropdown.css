@@ -3,7 +3,7 @@
 }
 
 .dropdown {
-  @apply relative inline-block text-left;
+  @apply relative z-10 inline-block text-left;
 }
 
 .dropdown-menu {
