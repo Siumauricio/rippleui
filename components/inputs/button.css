@@ -1,13 +1,13 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 items-center justify-center rounded-xl border border-border px-5 text-center text-sm font-medium transition-transform cursor-pointer  bg-backgroundPrimary focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer items-center justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
 }
 
 .btn:where(
     .btn-primary,
     .btn-secondary,
     .btn-sucess,
-    .btn-danger,
+    .btn-error,
     .btn-warning
   ) {
   @apply border-none text-white;
@@ -26,7 +26,7 @@
   @apply bg-success;
 }
 
-.btn-danger {
+.btn-error {
   @apply bg-error;
 }
 
@@ -36,7 +36,7 @@
 
 /* Outline colors */
 .btn-outline {
-  @apply border-2 border-gray-200 bg-transparent transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] text-whiteInverted hover:border-backgroundSecondary hover:bg-backgroundSecondary;
+  @apply border-2 border-gray-200 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-backgroundSecondary hover:bg-backgroundSecondary;
 }
 .btn-outline-primary {
   @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
@@ -50,7 +50,7 @@
   @apply border-2 border-success bg-transparent  text-success transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white;
 }
 
-.btn-outline-danger {
+.btn-outline-error {
   @apply border-2 border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white;
 }
 
@@ -60,7 +60,7 @@
 
 /* Button Sizes */
 .btn-xs {
-  @apply w-20 rounded-[7px] text-xs h-6;
+  @apply h-6 w-20 rounded-[7px] text-xs;
 }
 
 .btn-sm {
@@ -72,7 +72,7 @@
 }
 
 .btn-lg {
-  @apply w-60 rounded-[14px] text-lg h-12;
+  @apply h-12 w-60 rounded-[14px] text-lg;
 }
 
 .btn-xl {
