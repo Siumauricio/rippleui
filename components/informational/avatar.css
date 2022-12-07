@@ -3,7 +3,7 @@
 }
 
 .avatar > * {
-  @apply flex w-full items-center justify-center;
+  @apply flex w-full items-center justify-center truncate;
 }
 
 .avatar:where(:not(.avatar-squared)) img {
