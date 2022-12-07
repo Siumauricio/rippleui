@@ -1,0 +1,105 @@
+.avatar {
+  @apply relative  inline-flex h-10 w-10   max-w-xs bg-backgroundSecondary align-top text-xs;
+}
+
+.avatar > * {
+  @apply flex w-full items-center justify-center;
+}
+
+.avatar:where(:not(.avatar-squared)) img {
+  @apply h-full w-full overflow-hidden rounded-full object-cover object-center;
+}
+
+.avatar:where(.avatar-squared) img {
+  @apply h-full w-full overflow-hidden rounded-[3px] object-cover object-center;
+}
+
+.avatar:where(:not(.avatar-square, .avatar-online)) {
+  @apply rounded-full;
+}
+
+.avatar-squared {
+  @apply rounded;
+}
+
+.avatar-ring {
+  @apply ring-2 ring-border;
+}
+.avatar-ring-primary {
+  @apply ring-2 ring-primary;
+}
+
+.avatar-ring-secondary {
+  @apply ring-2 ring-secondary;
+}
+
+.avatar-ring-success {
+  @apply ring-2 ring-success;
+}
+
+.avatar-ring-error {
+  @apply ring-2 ring-error;
+}
+
+.avatar-ring-warning {
+  @apply rounded-full ring-2 ring-warning;
+}
+
+.avatar-online:not(.avatar-squared).avatar-ring,
+.avatar-online:not(.avatar-squared).avatar-ring-primary,
+.avatar-online:not(.avatar-squared).avatar-ring-secondary,
+.avatar-online:not(.avatar-squared).avatar-ring-success,
+.avatar-online:not(.avatar-squared).avatar-ring-error,
+.avatar-online:not(.avatar-squared).avatar-ring-warning {
+  @apply rounded-full;
+}
+
+.avatar-online.avatar-squared::before {
+  transform: translate(50%, -50%);
+  @apply absolute right-0 top-0 flex h-2 w-2    items-center justify-center overflow-auto rounded-full border-2 border-success bg-green-500 content-[""];
+}
+
+.avatar-online:not(.avatar-squared)::before {
+  @apply absolute right-0  block h-2 w-2 overflow-auto rounded-full border-2 border-success bg-green-500 content-[""];
+}
+
+.avatar-group {
+  @apply relative inline-flex;
+}
+
+.avatar-group :where(.avatar) {
+  @apply -ml-1 ring-2;
+}
+
+.avatar-group
+  :where(
+    :not(
+        .avatar-ring-primary,
+        .avatar-ring-secondary,
+        .avatar-ring-success,
+        .avatar-ring-error,
+        .avatar-ring-warning
+      )
+  ) {
+  @apply ring-border;
+}
+
+.avatar-xs {
+  @apply h-5 w-5;
+}
+
+.avatar-sm {
+  @apply h-7 w-7;
+}
+
+.avatar-md {
+  @apply h-10 w-10;
+}
+
+.avatar-lg {
+  @apply h-12 w-12;
+}
+
+.avatar-xl {
+  @apply h-14 w-14;
+}
