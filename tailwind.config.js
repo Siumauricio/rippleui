@@ -2,7 +2,7 @@
 module.exports = {
   content:
     process.env.NODE_ENV === "production"
-      ? []
+      ? [{ raw: "" }]
       : ["./components/**/*.{html,js}", "./experiments/**/*.{html,js}"],
   darkMode: "class",
   theme: {
