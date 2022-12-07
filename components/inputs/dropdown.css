@@ -55,6 +55,10 @@
 }
 
 /* Activate Dropdown on click */
+
+.dropdown-hover:hover .dropdown-menu,
+.dropdown-hover:hover .dropdown-menu-bottom-right,
+.dropdown-hover:hover .dropdown-menu-bottom-left,
 .dropdown-open.dropdown-menu,
 .dropdown-open.dropdown-menu-bottom-right,
 .dropdown-open.dropdown-menu-bottom-left,
@@ -70,6 +74,8 @@
 }
 
 /* Activate Dropdown for top side */
+.dropdown-hover:hover .dropdown-menu-top-right,
+.dropdown-hover:hover .dropdown-menu-top-left,
 .dropdown-open.dropdown-menu-top-right,
 .dropdown-open.dropdown-menu-top-left,
 .dropdown:focus .dropdown-menu-top-right,
@@ -83,6 +89,8 @@
 
 /* Activate for left side and right side */
 
+.dropdown-hover:hover .dropdown-menu-right,
+.dropdown-hover:hover .dropdown-menu-left,
 .dropdown-open.dropdown-menu-right,
 .dropdown-open.dropdown-menu-left,
 .dropdown:focus .dropdown-menu-right,
@@ -94,6 +102,8 @@
   visibility: visible;
 }
 
+.dropdown-hover:hover .dropdown-menu-right-bottom,
+.dropdown-hover:hover .dropdown-menu-left-bottom,
 .dropdown-open.dropdown-menu-right-bottom,
 .dropdown-open.dropdown-menu-left-bottom,
 .dropdown:focus .dropdown-menu-right-bottom,
@@ -105,6 +115,8 @@
   visibility: visible;
 }
 
+.dropdown-hover:hover .dropdown-menu-right-top,
+.dropdown-hover:hover .dropdown-menu-left-top,
 .dropdown-open.dropdown-menu-right-top,
 .dropdown-open.dropdown-menu-left-top,
 .dropdown:focus .dropdown-menu-right-top,
