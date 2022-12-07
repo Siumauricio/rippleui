@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Siumauricio/rippleui/compare/v1.0.0...v1.1.0) (2022-12-07)
+
+
+### Features
+
+* badge component ([7a403f1](https://github.com/Siumauricio/rippleui/commit/7a403f16897ea5b30ff9db7c573753842670201a))
+* button-group component ([6f22df2](https://github.com/Siumauricio/rippleui/commit/6f22df2fb13237651e9613492a76ae6c2bef7190))
+* checkbox component ([606ce9b](https://github.com/Siumauricio/rippleui/commit/606ce9b4934d5cb36fe4af5023b560deac5d137f))
+* dropdown component ([2597a6d](https://github.com/Siumauricio/rippleui/commit/2597a6da725030cec8207edee05541206f677d3b))
+* modal component ([a954055](https://github.com/Siumauricio/rippleui/commit/a95405554a29b9476de4dfefbee5c7529aff77e2))
+* radio component ([688b796](https://github.com/Siumauricio/rippleui/commit/688b79602aca5b537c3e19c812ce05ef1679fbce))
+* select component ([d72b170](https://github.com/Siumauricio/rippleui/commit/d72b1702e694337eb0aaed5e772f916e02962532))
+* switch component ([a484c09](https://github.com/Siumauricio/rippleui/commit/a484c09b8b46a552e0321fa148fe5d2ab023d598))
+* textarea component ([17e1deb](https://github.com/Siumauricio/rippleui/commit/17e1deb59d579634fb0961826dce9e71e1953460))
+* tooltip component ([2995b66](https://github.com/Siumauricio/rippleui/commit/2995b6625c374b5721e8ead99d93ea1c86dbe8a6))
+
+
+### Bug Fixes
+
+* remove scroll when modal opened, remove lag issues on IOS ([c759cc7](https://github.com/Siumauricio/rippleui/commit/c759cc761b3ee05dcd55086a9b79a9dd171dc049))
+
 ## 1.0.0 (2022-12-03)
 
 
