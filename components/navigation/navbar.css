@@ -1,0 +1,59 @@
+.navbar {
+  @apply flex w-full items-center  bg-backgroundSecondary px-2 py-2.5 shadow-xl sm:px-4;
+}
+.navbar-bordered {
+  @apply border-b border-border;
+}
+
+.navbar-sticky {
+  @apply fixed top-0 left-0 right-0 z-50;
+}
+
+.navbar-floating {
+  @apply fixed top-0 left-0 right-0 z-50 mx-auto mt-5 max-w-7xl rounded-xl;
+}
+
+.navbar-floating.navbar-bordered {
+  @apply border;
+}
+
+.navbar-glass {
+  background-color: rgba(var(--backgroundSecondary), 0.4);
+  @apply backdrop-blur-[50px];
+}
+
+.navbar-rounded {
+  @apply rounded-b-xl;
+}
+
+.navbar-no-boxShadow {
+  @apply shadow-none;
+}
+
+.navbar-start {
+  @apply flex w-full items-center justify-start  gap-5;
+}
+
+.navbar-center {
+  @apply flex w-full items-center  justify-center gap-5;
+}
+
+.navbar-end {
+  @apply flex w-full items-center justify-end gap-5;
+}
+
+.navbar-brand {
+  @apply flex items-center gap-2 whitespace-nowrap;
+}
+
+.navbar-item {
+  @apply cursor-pointer rounded-lg py-2 px-3 transition-colors;
+}
+
+.navbar-item:hover {
+  @apply bg-border;
+}
+
+.navbar-active {
+  @apply bg-border;
+}
