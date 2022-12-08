@@ -1,12 +1,12 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 cursor-pointer items-center justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer items-center  justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
 }
 
 .btn:where(
     .btn-primary,
     .btn-secondary,
-    .btn-sucess,
+    .btn-success,
     .btn-error,
     .btn-warning
   ) {
@@ -22,7 +22,7 @@
   @apply bg-secondary;
 }
 
-.btn-sucess {
+.btn-success {
   @apply bg-success;
 }
 
@@ -101,4 +101,8 @@
 
 .btn-no-animation {
   @apply active:transform-none;
+}
+
+.btn-ghost {
+  @apply border-none bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-border;
 }

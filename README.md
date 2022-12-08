@@ -46,6 +46,8 @@ Here is a list of all of the components that are currently available in RippleUI
 - Tooltip
 - Dropdown
 - Badge
+- Navbar
+- Avatar
 
 
 ## Contributing
