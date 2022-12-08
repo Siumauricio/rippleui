@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [v1.2.0] - 2022-12-08
+### :sparkles: New Features
+- [`8e3285c`](https://github.com/Siumauricio/rippleui/commit/8e3285c3a97f514e281dc8dbc50bc353a39fa12d) - avatar component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`896543c`](https://github.com/Siumauricio/rippleui/commit/896543cc8a48cdc013a8149f8b5802adf86a05c2) - navbar component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+### :bug: Bug Fixes
+- [`8a7b513`](https://github.com/Siumauricio/rippleui/commit/8a7b513f4a4dcc578ca5a21c80a35c3f11f7539c) - remove truncate for not break dropdown or tooltips *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+### :recycle: Refactors
+- [`f47b671`](https://github.com/Siumauricio/rippleui/commit/f47b671c1f7dc413c7378fc462fe5b1e04065677) - set z index to prevent go to the back *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`a70271c`](https://github.com/Siumauricio/rippleui/commit/a70271cdcdca884c022aef0aaea395c213a93a14) - set truncate prop to text when text overflow *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`e35285b`](https://github.com/Siumauricio/rippleui/commit/e35285bb3c88ad0e35cb94173978e2b7cf4858fc) - change sucess class to success and added ghost class *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`67b5163`](https://github.com/Siumauricio/rippleui/commit/67b5163dab5122a2529cac9fa7d8cd5228a164a9) - set w-max to dropdown *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`641f2df`](https://github.com/Siumauricio/rippleui/commit/641f2df7c01a6cca5706ac5c5862d8bdadb34674) - add selectors to make center the navbar-center everytime if nav-start and nav-end are not present *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`89d4f6b`](https://github.com/Siumauricio/rippleui/commit/89d4f6b4b8847b8b4d2fc9cd99de76c89c64fe28) - removed unnecesary prop *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+### :wrench: Chores
+- [`467ec83`](https://github.com/Siumauricio/rippleui/commit/467ec836516f47978a5c985718f28cee0170abd7) - add new components *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`1c38a36`](https://github.com/Siumauricio/rippleui/commit/1c38a3692bec6b0ee4d610eaa653a9d0181e3992) - **release**: 1.2.0 *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+
 ## [1.2.0](https://github.com/Siumauricio/rippleui/compare/v1.1.0...v1.2.0) (2022-12-08)
 
 
@@ -67,3 +88,4 @@ All notable changes to this project will be documented in this file. See [standa
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 [v1.1.0]: https://github.com/Siumauricio/rippleui/compare/v1.0.0...v1.1.0
+[v1.2.0]: https://github.com/Siumauricio/rippleui/compare/v1.1.0...v1.2.0
