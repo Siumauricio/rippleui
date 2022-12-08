@@ -57,3 +57,19 @@
 .navbar-active {
   @apply bg-border;
 }
+
+.navbar:not(:has(.navbar-end)) .navbar-center {
+  @apply items-start justify-start;
+}
+
+.navbar:not(:has(.navbar-start)) .navbar-center {
+  @apply items-center justify-center;
+}
+
+.navbar:not(:has(.navbar-start)) .navbar-center {
+  @apply items-end justify-end;
+}
+
+.navbar:not(:has(.navbar-start, .navbar-end)) .navbar-center {
+  @apply items-center justify-center;
+}
