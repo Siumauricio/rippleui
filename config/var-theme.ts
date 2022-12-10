@@ -1,4 +1,13 @@
- const blue = {
+import {
+  BackgroundColors,
+  BaseColors,
+  Pallete,
+  PalleteColors,
+  TextColors,
+  Theme,
+} from "./types";
+
+const blue: PalleteColors = {
   50: "var(--blue-50)",
   100: "var(--blue-100)",
   200: "var(--blue-200)",
@@ -11,7 +20,7 @@
   900: "var(--blue-900)",
 };
 
- const green = {
+const green: PalleteColors = {
   50: "var(--green-50)",
   100: "var(--green-100)",
   200: "var(--green-200)",
@@ -24,7 +33,7 @@
   900: "var(--green-900)",
 };
 
- const cyan = {
+const cyan: PalleteColors = {
   50: "var(--cyan-50)",
   100: "var(--cyan-100)",
   200: "var(--cyan-200)",
@@ -37,7 +46,7 @@
   900: "var(--cyan-900)",
 };
 
- const gray = {
+const gray: PalleteColors = {
   50: "var(--gray-50)",
   100: "var(--gray-100)",
   200: "var(--gray-200)",
@@ -50,7 +59,7 @@
   900: "var(--gray-900)",
 };
 
- const pink = {
+const pink: PalleteColors = {
   50: "var(--pink-50)",
   100: "var(--pink-100)",
   200: "var(--pink-200)",
@@ -63,7 +72,7 @@
   900: "var(--pink-900)",
 };
 
- const purple = {
+const purple: PalleteColors = {
   50: "var(--purple-50)",
   100: "var(--purple-100)",
   200: "var(--purple-200)",
@@ -76,7 +85,7 @@
   900: "var(--purple-900)",
 };
 
- const yellow = {
+const yellow: PalleteColors = {
   50: "var(--yellow-50)",
   100: "var(--yellow-100)",
   200: "var(--yellow-200)",
@@ -89,7 +98,7 @@
   900: "var(--yellow-900)",
 };
 
- const red = {
+const red: PalleteColors = {
   50: "var(--red-50)",
   100: "var(--red-100)",
   200: "var(--red-200)",
@@ -102,47 +111,48 @@
   900: "var(--red-900)",
 };
 
-const background = {
-  backgroundPrimary : "var(--backgroundPrimary)",
-  backgroundSecondary : "var(--backgroundSecondary)",
+const background: BackgroundColors = {
+  backgroundPrimary: "var(--backgroundPrimary)",
+  backgroundSecondary: "var(--backgroundSecondary)",
   border: "var(--border)",
-}
+};
 
-const text = {
+const text: TextColors = {
   content1: "var(--content1)",
   content2: "var(--content2)",
   content3: "var(--content3)",
   whiteInverted: "var(--whiteInverted)",
-}
+};
 
-const baseColors = {
+const baseColors: BaseColors = {
   neutral: "var(--neutral)",
   primary: "var(--primary)",
   secondary: "var(--secondary)",
   success: "var(--success)",
   error: "var(--error)",
   warning: "var(--warning)",
-}
+};
+
+const pallete: Pallete = {
+  blue,
+  purple,
+  green,
+  yellow,
+  red,
+  cyan,
+  pink,
+  gray,
+};
+
+export const theme: Theme = {
+  colors: {
+    ...background,
+    ...text,
+    ...baseColors,
+    ...pallete,
+  },
+};
 
 export default {
-  colors: {
-    // background colors
-    ...background,
-
-    // Text
-    ...text,
-
-    // Primary colors
-    ...baseColors,
-
-    //semantic colors
-    blue,
-    purple,
-    green,
-    yellow,
-    red,
-    cyan,
-    pink,
-    gray,
-  },
+  ...theme,
 };
