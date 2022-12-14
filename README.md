@@ -1,4 +1,23 @@
-# Ripple UI
+
+
+![alt text for screen readers](https://raw.githubusercontent.com/Siumauricio/rippleui/refactor/readme/docs/public/logo.png "Text to show on mouseover")
+
+<h1 align="center">Ripple UI</h1>
+
+<a href="https://www.npmjs.com/package/rippleui">
+    <img src="https://img.shields.io/npm/dm/rippleui.svg?style=flat-round" alt="npm downloads">
+  </a>
+<a href="https://www.npmjs.com/package/rippleui">
+    <img src="https://img.shields.io/npm/v/rippleui?color=green" alt="npm downloads">
+  </a>
+  <a href="https://www.npmjs.com/package/rippleui">
+    <img src="  https://img.shields.io/npm/l/rippleui" alt="npm downloads">
+  </a>
+
+  <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/siumauricio/rippleui?color=green" ></a>
+
+
+  ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/siumauricio/rippleui)
 
 Welcome to the RippleUI repository! This is the home for all of the components, guidelines, and tools that make up our design system.
 
@@ -7,7 +26,7 @@ Welcome to the RippleUI repository! This is the home for all of the components, 
 Visit https://rippleui.com to view the full documentation.
 
 
-## Usage
+## 🚀 Usage
 
 To use the RippleUI components, you will need to install the package from npm.
 
@@ -30,7 +49,7 @@ To use a component, simply include the appropriate HTML markup in your project a
 <button class="btn btn-primary">Click me!</button>
 ```
 
-## Components
+## 🎨 Components
 
 Here is a list of all of the components that are currently available in RippleUI.
 
@@ -48,9 +67,10 @@ Here is a list of all of the components that are currently available in RippleUI
 - Badge
 - Navbar
 - Avatar
+- Breadcrumb
 
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to the design system! If you have ideas for new components, improvements to existing ones, or updates to the guidelines and tools, please open a pull request with your proposed changes.
 
