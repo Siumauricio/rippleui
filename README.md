@@ -67,6 +67,7 @@ Here is a list of all of the components that are currently available in RippleUI
 - Badge
 - Navbar
 - Avatar
+- Breadcrumb
 
 
 ## 🤝 Contributing
