@@ -9,6 +9,17 @@ All notable changes to this project will be documented in this file. See [standa
 
 * breadcrumb component ([c65ef71](https://github.com/Siumauricio/rippleui/commit/c65ef71da68e8b7a76571a8a3511362de638992f))
 
+## [v1.2.2] - 2022-12-14
+### :sparkles: New Features
+- [`c65ef71`](https://github.com/Siumauricio/rippleui/commit/c65ef71da68e8b7a76571a8a3511362de638992f) - breadcrumb component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+### :wrench: Chores
+- [`9ec7777`](https://github.com/Siumauricio/rippleui/commit/9ec7777c20c20e3f9716eba07f8c08d666b42d80) - update docs *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`88553d1`](https://github.com/Siumauricio/rippleui/commit/88553d1c4a85ce764b3a486bd9d32dc533b7e06e) - update logo *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`c40dfd5`](https://github.com/Siumauricio/rippleui/commit/c40dfd55dc961dd66d67212b0940bae4ca9c465a) - breadcrumb component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+- [`40731fd`](https://github.com/Siumauricio/rippleui/commit/40731fd3260809883b4cc4746a9846f318930dab) - **release**: 1.2.2 *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+
+
 ## [1.2.0](https://github.com/Siumauricio/rippleui/compare/v1.1.0...v1.2.0) (2022-12-08)
 
 
@@ -75,3 +86,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 [v1.1.0]: https://github.com/Siumauricio/rippleui/compare/v1.0.0...v1.1.0
 [v1.2.0]: https://github.com/Siumauricio/rippleui/compare/v1.1.0...v1.2.0
+[v1.2.2]: https://github.com/Siumauricio/rippleui/compare/v1.2.1...v1.2.2
