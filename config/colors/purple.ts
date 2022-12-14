@@ -1,4 +1,6 @@
-export const purple = {
+import { PalleteVariables } from "../types";
+
+export const purple: PalleteVariables<"purple"> = {
   "--purple-50": "#F7F2FD",
   "--purple-100": "#F1E8FB",
   "--purple-200": "#EADCF8",
@@ -11,7 +13,7 @@ export const purple = {
   "--purple-900": "#290E44",
 };
 
-export const purpleDark = {
+export const purpleDark: PalleteVariables<"purple"> = {
   "--purple-50": "#1F0A33",
   "--purple-100": "#240C3C",
   "--purple-200": "#2E0F4D",

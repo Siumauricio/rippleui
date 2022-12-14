@@ -115,6 +115,8 @@ const background: BackgroundColors = {
   backgroundPrimary: "var(--backgroundPrimary)",
   backgroundSecondary: "var(--backgroundSecondary)",
   border: "var(--border)",
+  black: "var(--black)",
+  white: "var(--white)",
 };
 
 const text: TextColors = {
@@ -122,6 +124,7 @@ const text: TextColors = {
   content2: "var(--content2)",
   content3: "var(--content3)",
   whiteInverted: "var(--whiteInverted)",
+  blackInverted: "var(--blackInverted)",
 };
 
 const baseColors: BaseColors = {

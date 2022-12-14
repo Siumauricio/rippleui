@@ -1,4 +1,6 @@
-export const cyan = {
+import { PalleteVariables } from "../types";
+
+export const cyan: PalleteVariables<"cyan"> = {
   "--cyan-50": "#F0FCFF",
   "--cyan-100": "#E6FAFE",
   "--cyan-200": "#D7F8FE",
@@ -11,7 +13,7 @@ export const cyan = {
   "--cyan-900": "#053B48",
 };
 
-export const cyanDark = {
+export const cyanDark: PalleteVariables<"cyan"> = {
   "--cyan-50": "#012A32",
   "--cyan-100": "#023A46",
   "--cyan-200": "#024B5A",

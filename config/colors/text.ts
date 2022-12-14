@@ -1,4 +1,6 @@
-export const text = {
+import { TextVariables } from "../types";
+
+export const text: TextVariables = {
   "--content1": "#1C1C1C",
   "--content2": "#585757",
   "--content3": "#969696",
@@ -6,7 +8,7 @@ export const text = {
   "--blackInverted": "#FFFFFF",
 };
 
-export const textDark = {
+export const textDark: TextVariables = {
   "--content1": "#E8E8E8",
   "--content2": "#BABABA",
   "--content3": "#767676",

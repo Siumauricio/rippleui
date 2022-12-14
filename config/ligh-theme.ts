@@ -1,24 +1,38 @@
-import { blue, cyan, gray, green, pink, purple, red, yellow,background,baseColors,text } from "./colors";
+import {
+  blue,
+  cyan,
+  gray,
+  green,
+  pink,
+  purple,
+  red,
+  yellow,
+  background,
+  baseColors,
+  text,
+} from "./colors";
+import { ThemeVariables, Variables } from "./types";
+
+const pallete: Variables = {
+  ...blue,
+  ...purple,
+  ...green,
+  ...yellow,
+  ...red,
+  ...cyan,
+  ...pink,
+  ...gray,
+};
+
+export const theme: ThemeVariables = {
+  colors: {
+    ...background,
+    ...text,
+    ...baseColors,
+    ...pallete,
+  },
+};
 
 export default {
-  colors: {
-    // background colors
-    ...background,
-
-    // Text
-    ...text,
-
-    // Primary colors
-    ...baseColors,
-
-    // semantic colors
-    ...blue,
-    ...purple,
-    ...green,
-    ...yellow,
-    ...red,
-    ...cyan,
-    ...pink,
-    ...gray,
-  },
+  ...theme,
 };
