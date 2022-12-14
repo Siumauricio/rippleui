@@ -1,0 +1,35 @@
+.breadcrumbs {
+  @apply flex flex-row  gap-2 overflow-x-auto px-3 text-sm text-content2 sm:px-0;
+}
+
+.breadcrumbs > ul > li > a {
+  @apply flex  flex-row items-center;
+}
+
+.breadcrumbs > ul {
+  @apply flex flex-row items-center  whitespace-nowrap;
+}
+
+.breadcrumbs > ul > li {
+  @apply flex cursor-pointer flex-row items-center;
+}
+
+.breadcrumbs > ul > :not(li:last-child) > a {
+  @apply hover:underline;
+}
+
+.breadcrumbs > ul > li + *:before {
+  @apply ml-2 mr-3 block opacity-40 content-["/"];
+}
+
+.breadcrumbs-active {
+  @apply text-content3;
+}
+
+.breadcrumbs > ul > li:last-child {
+  @apply cursor-auto text-content3;
+}
+
+.breadcrumbs > ul > li:first-child {
+  @apply cursor-pointer text-content2 hover:underline;
+}
