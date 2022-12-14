@@ -1,13 +1,14 @@
 {
   "name": "rippleui",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
   "files": [
     "dist/js",
     "dist/css",
-    "package-lock.json"
+    "package-lock.json",
+    "README.md"
   ],
   "scripts": {
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",

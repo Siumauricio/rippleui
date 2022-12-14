@@ -5,19 +5,12 @@ import plugin from "tailwindcss/plugin";
 import fs from "fs";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
+import path from "path";
 
-const baseCSS = fs.readFileSync(
-  __dirname.replace("\\js", "\\css") + "\\base.css",
-  "utf-8"
-);
-const componentsCSS = fs.readFileSync(
-  __dirname.replace("\\js", "\\css") + "\\components.css",
-  "utf-8"
-);
-const utilitiesCSS = fs.readFileSync(
-  __dirname.replace("\\js", "\\css") + "\\utilities.css",
-  "utf-8"
-);
+const basePath = path.resolve(__dirname, path.join("..", "css"));
+const baseCSS = fs.readFileSync(basePath + "/base.css", "utf-8");
+const componentsCSS = fs.readFileSync(basePath + "/components.css", "utf-8");
+const utilitiesCSS = fs.readFileSync(basePath + "/utilities.css", "utf-8");
 
 export const config = plugin(
   ({ addBase, addComponents, addUtilities, theme, config }) => {

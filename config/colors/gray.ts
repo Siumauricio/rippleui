@@ -1,4 +1,6 @@
-export const gray = {
+import { PalleteVariables } from "../types";
+
+export const gray: PalleteVariables<"gray"> = {
   "--gray-50": "#F1F3F5",
   "--gray-100": "#ECEEF0",
   "--gray-200": "#E6E8EB",
@@ -11,7 +13,7 @@ export const gray = {
   "--gray-900": "#11181C",
 };
 
-export const grayDark = {
+export const grayDark: PalleteVariables<"gray"> = {
   "--gray-50": "#16181A",
   "--gray-100": "#26292B",
   "--gray-200": "#2B2F31",
