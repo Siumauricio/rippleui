@@ -4,3 +4,16 @@
 html {
   font-family: "Inter", sans-serif;
 }
+
+html {
+  background-color: var(--backgroundPrimary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--content1);
+}
