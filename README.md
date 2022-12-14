@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/npm/v/rippleui?color=green" alt="npm downloads">
   </a>
   <a href="https://www.npmjs.com/package/rippleui">
-    <img src="  https://img.shields.io/npm/l/rippleui" alt="npm downloads">
+    <img src="https://img.shields.io/npm/l/rippleui" alt="npm downloads">
   </a>
 
   <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/siumauricio/rippleui?color=green" ></a>
