@@ -70,6 +70,7 @@ Here is a list of all of the components that are currently available in RippleUI
 - Breadcrumb
 - Drawer
 - Alert
+- Table
 
 ## 🤝 Contributing
 

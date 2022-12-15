@@ -1,0 +1,66 @@
+.table {
+  border-collapse: initial;
+  @apply w-full border-spacing-0;
+}
+
+.table > thead > tr th:first-child {
+  @apply rounded-l-md border-y border-l border-border;
+}
+
+.table > thead > tr th:last-child {
+  @apply rounded-r-md border-y border-r border-border;
+}
+
+.table > thead > tr :not(.th:first-child, .th:last-child) {
+  @apply border-y  border-border;
+}
+
+.table > thead > tr > th {
+  @apply bg-backgroundSecondary py-4 px-2.5 text-start text-sm font-normal text-content1;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  @apply border-b border-border py-4 px-2.5 text-start text-sm text-content2;
+}
+
+/* Compact */
+.table.table-compact > tbody > tr > td,
+.table.table-compact > tbody > tr > th {
+  @apply py-2.5;
+}
+
+.table.table-compact > tbody > tr > td:first-child,
+.table.table-compact > tbody > tr > th:first-child {
+  @apply px-2.5;
+}
+
+.table.table-compact > tbody > tr > td:last-child,
+.table.table-compact > tbody > tr > th:last-child {
+  @apply px-2.5;
+}
+
+.table.table-compact > tbody > tr > td:not(:first-child):not(:last-child),
+.table.table-compact > tbody > tr > th:not(:first-child):not(:last-child) {
+  @apply px-2.5;
+}
+
+.table.table-compact > thead > tr > th {
+  @apply py-2.5;
+}
+
+.table.table-compact > thead > tr > th:first-child {
+  @apply px-2.5;
+}
+
+/* Zebra */
+.table.table-zebra > tbody > tr:nth-child(even) > td,
+.table.table-zebra > tbody > tr:nth-child(even) > th {
+  @apply bg-backgroundSecondary;
+}
+
+/* Hover */
+.table.table-hover > tbody > tr:hover > td,
+.table.table-hover > tbody > tr:hover > th {
+  @apply bg-backgroundSecondary;
+}
