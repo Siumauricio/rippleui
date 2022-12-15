@@ -71,6 +71,7 @@ Here is a list of all of the components that are currently available in RippleUI
 - Drawer
 - Alert
 - Table
+- Card
 
 ## 🤝 Contributing
 
