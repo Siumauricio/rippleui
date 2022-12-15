@@ -1,0 +1,48 @@
+.card {
+  @apply flex w-full max-w-sm flex-col gap-2 rounded-lg bg-backgroundPrimary p-8 shadow-xl;
+}
+
+.card.card-image-cover {
+  @apply gap-0 rounded-t-lg bg-backgroundPrimary p-0;
+}
+
+.card.card-image-cover img {
+  @apply w-full max-w-sm rounded-t-lg;
+}
+
+.card.card-image-cover .card-header {
+  @apply px-8 pt-8;
+}
+
+.card.card-image-cover .card-body {
+  @apply px-8;
+}
+
+.card.card-image-cover .card-footer {
+  @apply px-8 pb-8;
+}
+
+.card-header {
+  @apply flex flex-row items-center justify-between text-xl font-semibold;
+}
+
+.card-body {
+  @apply flex flex-col;
+}
+
+.card-border {
+  @apply border border-border;
+}
+
+.card-footer {
+  @apply flex flex-row items-center justify-between;
+}
+
+.card.card-image-cover:not(
+    :has(.card-header),
+    :has(.card-body),
+    :has(.card-footer)
+  )
+  img {
+  @apply rounded-lg;
+}
