@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Siumauricio/rippleui/compare/v1.2.2...v1.3.0) (2022-12-15)
+
+
+### Features
+
+* alert component ([a453e35](https://github.com/Siumauricio/rippleui/commit/a453e35d7d99ea612f95f93e46e86565492a8f03))
+* card component ([b891366](https://github.com/Siumauricio/rippleui/commit/b8913666cdadf32677271d4ff625629cf029e314))
+* drawer component ([89082c2](https://github.com/Siumauricio/rippleui/commit/89082c250ab10eefa40ad8a6041edfeb35c8036d))
+* table component ([a4aa301](https://github.com/Siumauricio/rippleui/commit/a4aa3011d1af1e1f3f5c76f13e48b567d067e899))
+
 ### [1.2.2](https://github.com/Siumauricio/rippleui/compare/v1.2.1...v1.2.2) (2022-12-14)
 
 
