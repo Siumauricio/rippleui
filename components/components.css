@@ -12,6 +12,7 @@
 @import "./informational/badge.css";
 @import "./informational/tooltip.css";
 @import "./informational/avatar.css";
+@import "./informational/alert.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
