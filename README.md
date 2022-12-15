@@ -68,6 +68,7 @@ Here is a list of all of the components that are currently available in RippleUI
 - Navbar
 - Avatar
 - Breadcrumb
+- Drawer
 
 
 ## 🤝 Contributing
