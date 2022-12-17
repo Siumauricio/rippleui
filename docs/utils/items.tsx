@@ -48,7 +48,6 @@ export const items: Items[] = [
         children: "ButtonGroup",
       },
       { href: "/docs/components/radio", children: "Radio" },
-      { href: "/docs/components/label", children: "Label" },
       { href: "/docs/components/drawer", children: "Drawer" },
       { href: "/docs/components/modal", children: "Modal" },
       { href: "/docs/components/select", children: "Select" },
