@@ -18,17 +18,17 @@ export const ExamplesRepositories = () => {
           <path
             d="M50.1045 68.6568C76.2312 68.6568 97.4111 60.5699 97.4111 50.5943C97.4111 40.6186 76.2312 32.5317 50.1045 32.5317C23.9778 32.5317 2.79788 40.6186 2.79788 50.5943C2.79788 60.5699 23.9778 68.6568 50.1045 68.6568Z"
             stroke="#61DAFB"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <path
             d="M34.4618 59.6255C47.5252 82.2519 65.1186 96.5508 73.7578 91.563C82.3969 86.5751 78.8104 64.1894 65.7471 41.563C52.6837 18.9366 35.0903 4.63767 26.4511 9.6255C17.812 14.6133 21.3985 36.9991 34.4618 59.6255Z"
             stroke="#61DAFB"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <path
             d="M34.4619 41.5629C21.3985 64.1894 17.812 86.5751 26.4512 91.5629C35.0903 96.5508 52.6837 82.2519 65.7471 59.6255C78.8104 36.9991 82.397 14.6133 73.7578 9.62547C65.1186 4.63764 47.5252 18.9365 34.4619 41.5629Z"
             stroke="#61DAFB"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
         <span className="text-center text-2xl font-medium">React</span>
@@ -118,8 +118,8 @@ export const ExamplesRepositories = () => {
         >
           <title>Remix Logo</title>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M133.85 124.16C135.3 142.762 135.3 151.482 135.3 161H92.2283C92.2283 158.927 92.2653 157.03 92.3028 155.107C92.4195 149.128 92.5411 142.894 91.5717 130.304C90.2905 111.872 82.3473 107.776 67.7419 107.776H54.8021H0V74.24H69.7918C88.2407 74.24 97.4651 68.632 97.4651 53.784C97.4651 40.728 88.2407 32.816 69.7918 32.816H0V0H77.4788C119.245 0 140 19.712 140 51.2C140 74.752 125.395 90.112 105.665 92.672C122.32 96 132.057 105.472 133.85 124.16Z"
             fill="currentColor"
           ></path>
@@ -168,12 +168,8 @@ export const ExamplesRepositories = () => {
               y2="161.28"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="currentColor"></stop>
-              <stop
-                offset="1"
-                stop-color="currentColor"
-                stop-opacity="0"
-              ></stop>
+              <stop stopColor="currentColor"></stop>
+              <stop offset="1" stopColor="currentColor" stopOpacity="0"></stop>
             </linearGradient>
             <linearGradient
               id="paint1_linear"
@@ -183,12 +179,8 @@ export const ExamplesRepositories = () => {
               y2="164.352"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="currentColor"></stop>
-              <stop
-                offset="1"
-                stop-color="currentColor"
-                stop-opacity="0"
-              ></stop>
+              <stop stopColor="currentColor"></stop>
+              <stop offset="1" stopColor="currentColor" stopOpacity="0"></stop>
             </linearGradient>
             <linearGradient
               id="paint2_linear"
@@ -198,12 +190,8 @@ export const ExamplesRepositories = () => {
               y2="161.28"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="currentColor"></stop>
-              <stop
-                offset="1"
-                stop-color="currentColor"
-                stop-opacity="0"
-              ></stop>
+              <stop stopColor="currentColor"></stop>
+              <stop offset="1" stopColor="currentColor" stopOpacity="0"></stop>
             </linearGradient>
             <linearGradient
               id="paint3_linear"
@@ -213,12 +201,8 @@ export const ExamplesRepositories = () => {
               y2="161.28"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="currentColor"></stop>
-              <stop
-                offset="1"
-                stop-color="currentColor"
-                stop-opacity="0"
-              ></stop>
+              <stop stopColor="currentColor"></stop>
+              <stop offset="1" stopColor="currentColor" stopOpacity="0"></stop>
             </linearGradient>
           </defs>
         </svg>
