@@ -1,0 +1,65 @@
+---
+title: Drawer
+description: Drawer component for Ripple UI
+---
+
+# Drawer
+
+Ripple UI comes with a Drawer component that can be used to display a list of items. The drawer can be opened and closed by clicking on the menu icon.
+
+<div>
+  <input type="checkbox" id="drawer1" className="drawer-toggle" />
+  <label htmlFor="drawer1" className="btn btn-primary">
+    Open
+  </label>
+  <label className="overlay" htmlFor="drawer1"></label>
+  <div className="drawer">
+    <div className="drawer-content">
+      <label className="close" htmlFor="drawer1">
+        X
+      </label>
+    </div>
+  </div>
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-toggle" className="drawer-toggle" />
+  <label htmlFor="drawer-toggle" className="btn btn-primary">Open</label>
+  <label className="overlay" htmlFor="drawer-toggle"></label>
+  <div className="drawer drawer-left">
+    <div className="drawer-content">
+      <label className="close" htmlFor="drawer-toggle">X</label>
+      <p>Hola MUNDO</p>
+    </div>
+  </div>
+</div>
+```
+
+### Default
+
+### Different placements
+
+You can change the placement of the drawer by passing the `placement` prop.
+
+### Mixed
+
+With different styles.
+
+### Drawer Props
+
+<Attributes >
+<Attributes.Title>Drawer Classes</Attributes.Title>
+
+| Attribute | Description | Type | Accepted values | Default |
+| --------- | ----------- | ---- | --------------- | ------- |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Radio"
+  hrefLeft="/docs/components/radio"
+  contentRight="Modal"
+  hrefRight="/docs/components/modal"
+/>
+```
