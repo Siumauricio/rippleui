@@ -52,13 +52,21 @@ export const items: Items[] = [
       { href: "/docs/components/modal", children: "Modal" },
       { href: "/docs/components/select", children: "Select" },
       { href: "/docs/components/switch", children: "Switch" },
-      { href: "/docs/components/collapse", children: "Collapse" },
       { href: "/docs/components/table", children: "Table" },
+      { href: "/docs/components/navbar", children: "Navbar" },
+
+      {
+        href: "/docs/components/collapse",
+        children: "Collapse",
+        disabled: true,
+      },
       { href: "/docs/components/breadcrumb", children: "Breadcrumb" },
       { href: "/docs/components/badge", children: "Badge" },
       { href: "/docs/components/alert", children: "Alert" },
       { href: "/docs/components/tooltip", children: "Tooltip" },
       { href: "/docs/components/avatar", children: "Avatar" },
+      { href: "/docs/components/dropdown", children: "Dropdown" },
+      { href: "/docs/components/card", children: "Card" },
     ],
   },
   {
