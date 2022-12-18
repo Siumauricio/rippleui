@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { LogoIcon } from "../icons/LogoIcon";
@@ -9,6 +11,11 @@ import { DarkModeToggle } from "./DarkModeToggle";
 import { Sidebar } from "./Sidebar";
 
 export const Navbar = () => {
+  const router = useRouter();
+  const [routerDefined, setRouterDefined] = useState("");
+  useEffect(() => {
+    setRouterDefined(router.asPath.split("#")[0]);
+  }, [router.asPath, routerDefined]);
   return (
     <nav className="navbar navbar-sticky navbar-glass z-30 py-3 shadow-none">
       <div className="mx-auto flex w-full max-w-7xl">
@@ -33,13 +40,34 @@ export const Navbar = () => {
         </div>
         <div className="navbar-center hidden gap-1 lg:flex">
           <label className="navbar-item">
-            <Link href={"/docs/get-started/installation"}>Docs</Link>
-          </label>
-          <label className="navbar-item text-primary">
-            <Link href={"/docs/get-started/installation"}>Components</Link>
+            <Link
+              className={clsx(
+                routerDefined.includes("/docs/get-started") && "text-primary"
+              )}
+              href={"/docs/get-started/installation"}
+            >
+              Docs
+            </Link>
           </label>
           <label className="navbar-item">
-            <Link href={"/license"}>License</Link>
+            <Link
+              className={clsx(
+                routerDefined.includes("/docs/components") && "text-primary"
+              )}
+              href={"/docs/components/button"}
+            >
+              Components
+            </Link>
+          </label>
+          <label className="navbar-item">
+            <Link
+              className={clsx(
+                routerDefined.includes("/docs/license") && "text-primary"
+              )}
+              href={"/docs/license/MIT"}
+            >
+              License
+            </Link>
           </label>
         </div>
         <div className="navbar-end  gap-3">
