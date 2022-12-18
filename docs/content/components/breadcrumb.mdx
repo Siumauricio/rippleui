@@ -1,0 +1,169 @@
+---
+title: Breadcrumb
+description: Breadcrumb component for Ripple UI
+---
+
+# Breadcrumb
+
+Ripple UI comes with a breadcrumb component that helps you to show the current page in a hierarchy.
+
+### Default
+
+Simple example of a breadcrumb.
+
+<div className="breadcrumbs text-sm">
+  <ul>
+    <li>
+      <a>Home</a>
+    </li>
+    <li>
+      <a>Library</a>
+    </li>
+    <li>Add Data</li>
+  </ul>
+</div>
+
+```html
+<div className="breadcrumbs text-sm">
+  <ul>
+    <li>
+      <a>Home</a>
+    </li>
+    <li>
+      <a>Library</a>
+    </li>
+    <li>Add Data</li>
+  </ul>
+</div>
+```
+
+### With Icons
+
+Breadcrumbs with icons.
+
+<div className="breadcrumbs text-sm">
+        <ul>
+          <li>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="mr-2 h-4 w-4 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                ></path>
+              </svg>
+                <p>Desktop</p>
+              </a>
+          </li>
+          <li>
+            <a>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="mr-2 h-4 w-4 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                ></path>
+              </svg>
+              <p>Documents</p>
+
+              </a>
+          </li>
+          <li>Add Folder</li>
+        </ul>
+
+</div>
+
+```html
+<div className="breadcrumbs text-sm">
+  <ul>
+    <li>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          className="mr-2 h-4 w-4 stroke-current"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+          ></path>
+        </svg>
+        <p>Desktop</p>
+      </a>
+    </li>
+    <li>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          className="mr-2 h-4 w-4 stroke-current"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+          ></path>
+        </svg>
+        <p>Documents</p>
+      </a>
+    </li>
+    <li>Add Folder</li>
+  </ul>
+</div>
+```
+
+### Overflow
+
+Breadcrumbs with overflow.
+
+<div className="breadcrumbs max-w-xs ">
+  <ul>
+    <li>
+      <a> Text 1</a>
+    </li>
+    <li>
+      <a> Text 2 </a>
+    </li>
+    <li>
+      <a> Text 3 </a>
+    </li>
+    <li>
+      <a> Text 4 </a>
+    </li>
+    <li> Text 5</li>
+  </ul>
+</div>
+
+<Attributes >
+<Attributes.Title>Breadcrumb Classes</Attributes.Title>
+
+| class              | Description           |
+| ------------------ | --------------------- |
+| breadcrumbs        | Breadcrumbs base      |
+| breadcrumbs-active | Set Active breadcrumb |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Navbar"
+  hrefLeft="/docs/components/navbar"
+  contentRight="Badge"
+  hrefRight="/docs/components/badge"
+/>

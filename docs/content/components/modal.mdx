@@ -1,0 +1,191 @@
+---
+title: Modal
+description: Modal component for Ripple UI
+---
+
+# Modal
+
+Ripple UI comes with Modal component that can be used to capture user modal.
+
+### Default
+
+Simple example of modal.
+
+ <div className="container">
+<label className="btn btn-primary" htmlFor="modal1">Open Modal</label>
+
+<input className="modal-state" id="modal1" type="checkbox" />
+<div className="modal">
+<label className="modal-overlay" htmlFor="modal1"></label>
+<div className="modal-content flex flex-col gap-5">
+    <label className="modal-close" htmlFor="modal1"></label>
+    <h2 className="text-xl">Modal title 1</h2>
+
+    <span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+    dolorum voluptate ratione dicta. Maxime cupiditate, est commodi
+    consectetur earum iure, optio, obcaecati in nulla saepe maiores
+    nobis iste quasi alias!
+    </span>
+    <div className="flex gap-3">
+    <button className="btn btn-error btn-block">Delete</button>
+
+    <button className="btn btn-block">Cancel</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+```html
+<div className="container">
+  <label className="btn btn-primary" htmlFor="modal1">Open Modal</label>
+  <input className="modal-state" id="modal1" type="checkbox" />
+  <div className="modal">
+    <label className="modal-overlay" htmlFor="modal1"></label>
+    <div className="modal-content flex flex-col gap-5">
+      <label className="modal-close" htmlFor="modal1"></label>
+      <h2 className="text-xl">Modal title 1</h2>
+
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum
+        voluptate ratione dicta. Maxime cupiditate, est commodi consectetur
+        earum iure, optio, obcaecati in nulla saepe maiores nobis iste quasi
+        alias!
+      </span>
+      <div className="flex gap-3">
+        <button className="btn btn-error btn-block">Delete</button>
+        <button className="btn btn-block">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Custom Size
+
+Modal can have a custom size.
+
+ <div className="container">
+<label className="btn btn-primary" htmlFor="modal2">Open Modal</label>
+
+<input className="modal-state" id="modal2" type="checkbox" />
+<div className="modal w-screen">
+<label className="modal-overlay" htmlFor="modal2"></label>
+<div className="modal-content flex flex-col gap-5 max-w-3xl">
+    <label className="modal-close" htmlFor="modal2"></label>
+    <h2 className="text-xl">Modal title 2</h2>
+
+    <span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+    dolorum voluptate ratione dicta. Maxime cupiditate, est commodi
+    consectetur earum iure, optio, obcaecati in nulla saepe maiores
+    nobis iste quasi alias!
+    </span>
+    <div className="flex gap-3">
+    <button className="btn btn-error btn-block">Delete</button>
+
+    <button className="btn btn-block">Cancel</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+```html
+<div className="container">
+  <label className="btn btn-primary" htmlFor="modal2">Open Modal</label>
+  <input className="modal-state" id="modal2" type="checkbox" />
+  <div className="modal w-screen">
+    <label className="modal-overlay" htmlFor="modal2"></label>
+    <div className="modal-content flex flex-col gap-5 max-w-3xl">
+      <label className="modal-close" htmlFor="modal2"></label>
+      <h2 className="text-xl">Modal title 2</h2>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum
+        voluptate ratione dicta. Maxime cupiditate, est commodi consectetur
+        earum iure, optio, obcaecati in nulla saepe maiores nobis iste quasi
+        alias!
+      </span>
+      <div className="flex gap-3">
+        <button className="btn btn-error btn-block">Delete</button>
+
+        <button className="btn btn-block">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### On click overlay not close.
+
+Overlay click will not close the drawer.
+
+ <div className="container">
+<label className="btn btn-primary" htmlFor="modal3">Open Modal</label>
+<input className="modal-state" id="modal3" type="checkbox" />
+<div className="modal">
+<label className="modal-overlay" ></label>
+<div className="modal-content flex flex-col gap-5">
+    <label className="modal-close" htmlFor="modal3"></label>
+    <h2 className="text-xl">Modal title 3</h2>
+    <span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+    dolorum voluptate ratione dicta. Maxime cupiditate, est commodi
+    consectetur earum iure, optio, obcaecati in nulla saepe maiores
+    nobis iste quasi alias!
+    </span>
+    <div className="flex gap-3">
+    <button className="btn btn-error btn-block">Delete</button>
+
+    <button className="btn btn-block">Cancel</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+```html
+<div className="container">
+  <label className="btn btn-primary" htmlFor="modal2">Open Modal</label>
+  <input className="modal-state" id="modal2" type="checkbox" />
+  <div className="modal">
+    <label className="modal-overlay"></label>
+    <div className="modal-content flex flex-col gap-5">
+      <label className="modal-close"></label>
+      <h2 className="text-xl">Modal title 1</h2>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum
+        voluptate ratione dicta. Maxime cupiditate, est commodi consectetur
+        earum iure, optio, obcaecati in nulla saepe maiores nobis iste quasi
+        alias!
+      </span>
+      <div className="flex gap-3">
+        <button className="btn btn-error btn-block">Delete</button>
+        <button className="btn btn-block">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+<Attributes>
+
+<Attributes.Title>Modal Classes</Attributes.Title>
+
+| className     | Description                               |
+| ------------- | ----------------------------------------- |
+| modal         | Modal base class                          |
+| modal-state   | Toggle to handle open and close of drawer |
+| modal-overlay | Overlay to cover the back of modal        |
+| modal-close   | Show Close button of modal                |
+| modal-content | Content of drawer                         |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Drawer"
+  hrefLeft="/docs/components/drawer"
+  contentRight="Select"
+  hrefRight="/docs/components/select"
+/>

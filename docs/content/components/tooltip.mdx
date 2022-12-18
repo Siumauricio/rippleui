@@ -1,0 +1,150 @@
+---
+title: Tooltip
+description: Tooltip component for Ripple UI
+---
+
+# Tooltip
+
+Ripple UI comes with a tooltip component that can be used to display additional information about an element.
+
+### Default
+
+Simple example of a tooltip.
+
+<span className="tooltip tooltip-top" data-tooltip="hello">
+  <button className="btn"> top</button>
+</span>
+
+```html
+<span className="tooltip tooltip-top" data-tooltip="hello">
+  <button className="btn">top</button>
+</span>
+```
+
+### Directions
+
+Tooltips can be positioned in 4 directions: top, right, bottom, left.
+
+<div className="flex flex-wrap gap-8">
+<span className="tooltip tooltip-top" data-tooltip="Top">
+  <button className="btn"> top</button>
+</span>
+
+<span className="tooltip tooltip-bottom " data-tooltip="Bottom">
+  <button className="btn"> bottom</button>
+</span>
+
+<span className="tooltip tooltip-left" data-tooltip="Left">
+  <button className="btn"> left</button>
+</span>
+<span className="tooltip tooltip-right" data-tooltip="Right">
+  <button className="btn"> right</button>
+</span>
+
+</div>
+
+```html
+<span className="tooltip tooltip-top" data-tooltip="Top">
+  <button className="btn">top</button>
+</span>
+
+<span className="tooltip tooltip-bottom " data-tooltip="Bottom">
+  <button className="btn">bottom</button>
+</span>
+
+<span className="tooltip tooltip-left" data-tooltip="Left">
+  <button className="btn">left</button>
+</span>
+<span className="tooltip tooltip-right" data-tooltip="Right">
+  <button className="btn">right</button>
+</span>
+```
+
+### Colors
+
+Tooltips can be styled with different colors.
+
+<div className="flex flex-wrap gap-8">
+
+<span className="tooltip tooltip-top tooltip-primary" data-tooltip="Top">
+  <button className="btn"> primary</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-secondary" data-tooltip="Bottom">
+  <button className="btn"> secondary</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-success" data-tooltip="Left">
+  <button className="btn"> success</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-error" data-tooltip="Right">
+  <button className="btn"> error</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-warning" data-tooltip="Top">
+  <button className="btn"> warning</button>
+</span>
+
+</div>
+
+### Open
+
+Tooltips can be opened by default.
+
+<span
+  className="tooltip tooltip-top tooltip-primary tooltip-open"
+  data-tooltip="Top"
+>
+  <button className="btn"> primary</button>
+</span>
+
+```html
+<span
+  className="tooltip tooltip-top tooltip-primary tooltip-open"
+  data-tooltip="Top"
+>
+  <button className="btn">primary</button>
+</span>
+```
+
+### On Click
+
+Tooltips can be opened on click.
+
+<span className="tooltip-click tooltip-top" data-tooltip="On Click">
+  <button className="btn">On Click</button>
+</span>
+
+```html
+<span className="tooltip-click tooltip-top" data-tooltip="On Click">
+  <button className="btn">On Click</button>
+</span>
+```
+
+<Attributes>
+<Attributes.Title>Tooltip Classes</Attributes.Title>
+
+| class             | Description             |
+| ----------------- | ----------------------- |
+| tooltip           | Base class for tooltip  |
+| tooltip-top       | Set position to top     |
+| tooltip-bottom    | Set position to bottom  |
+| tooltip-left      | Set position to left    |
+| tooltip-right     | Set position to right   |
+| tooltip-primary   | Set primary color       |
+| tooltip-secondary | Set secondary color     |
+| tooltip-success   | Set success color       |
+| tooltip-error     | Set error color         |
+| tooltip-warning   | Set warning color       |
+| tooltip-open      | Open tooltip by default |
+| tooltip-click     | Open tooltip on click   |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Alert"
+  hrefLeft="/docs/components/alert"
+  contentRight="Avatar"
+  hrefRight="/docs/components/avatar"
+/>
