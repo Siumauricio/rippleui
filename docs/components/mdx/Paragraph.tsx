@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const Paragraph = ({ children }: Props) => {
-  return <p className="pb-3 text-base leading-7 ">{children}</p>;
+  return <p className="pb-3 text-base leading-7 text-content1">{children}</p>;
 };
