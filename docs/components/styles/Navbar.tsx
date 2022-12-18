@@ -10,7 +10,7 @@ import { Sidebar } from "./Sidebar";
 
 export const Navbar = () => {
   return (
-    <div className="navbar navbar-sticky  navbar-glass py-3 shadow-none">
+    <nav className="navbar navbar-sticky navbar-glass z-30 py-3 shadow-none">
       <div className="mx-auto flex w-full max-w-7xl">
         <div className="navbar-start">
           <div className="navbar-brand gap-0">
@@ -78,6 +78,6 @@ export const Navbar = () => {
           />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
