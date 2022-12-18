@@ -1,11 +1,18 @@
+import clsx from "clsx";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { items } from "../../utils/items";
 import { MenuIcon } from "../icons/MenuIcon";
 import { SearchIcon } from "../icons/SearchIcon";
 import { XIcon } from "../icons/XIcon";
 
 export const Sidebar = () => {
+  const router = useRouter();
+  const [routerDefined, setRouterDefined] = useState("");
+  useEffect(() => {
+    setRouterDefined(router.asPath.split("#")[0]);
+  }, [router.asPath]);
   return (
     <div>
       <input type="checkbox" id="drawer-toggle" className="drawer-toggle" />
@@ -41,17 +48,35 @@ export const Sidebar = () => {
             {items.map((item) => (
               <div key={item.title} className=" pt-4">
                 <span className="font-semibold">{item.title}</span>
-                {item.links.map((link, index) => (
-                  <ul
-                    key={index}
-                    className="space-x-5 space-y-1 text-content2 "
-                  >
-                    <li></li>
-                    <li>
-                      <Link href={link.href}>{link.children}</Link>
-                    </li>
-                  </ul>
-                ))}
+                {item.links.map((link, index) => {
+                  const active = routerDefined === link.href;
+                  return (
+                    <ul
+                      key={index}
+                      className="space-x-5 space-y-1 text-content2 "
+                    >
+                      <li></li>
+                      <li>
+                        <label
+                          className={clsx(
+                            active && "text-content1",
+                            link.disabled && "pointer-events-none text-content3"
+                          )}
+                          htmlFor="drawer-toggle"
+                          onClick={() => {
+                            router.push(link.href);
+                          }}
+                        >
+                          {link.children}
+                        </label>
+                        {/* </Link> */}
+                        {link.disabled && (
+                          <span className="badge ml-1">Soon</span>
+                        )}
+                      </li>
+                    </ul>
+                  );
+                })}
               </div>
             ))}
           </div>
