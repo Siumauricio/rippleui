@@ -29,7 +29,7 @@ export const config = plugin(
           colorScheme: "light",
           ...lighTheme.colors,
         },
-        ["@media (prefers-color-scheme: dark)"]: {
+        ["@media (prefers-color-scheme:dark)"]: {
           [":root"]: {
             colorScheme: "dark",
             ...darkTheme.colors,
