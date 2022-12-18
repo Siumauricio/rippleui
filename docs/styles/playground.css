@@ -24,17 +24,9 @@
  * @syntax-selection-color: #3e4451
  */
 
-[data-theme="dark"] {
-  --backgroundTheme: var(--backgroundPrimary);
-}
-
-[data-theme="light"] {
-  --backgroundTheme: #363449;
-}
-
 code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--backgroundTheme);
+  background: #282c34;
   color: #abb2bf;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono",
