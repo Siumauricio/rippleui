@@ -1,0 +1,42 @@
+---
+title: "Install RippleUI in your project"
+description: "How to install RippleUI in your project"
+---
+
+# Install RippleUI in your project
+
+How to install Ripple UI in your project
+
+## Setup
+
+1. To install RippleUI plugin is required to have [TailwindCSS](https://tailwindcss.com/docs/installation) installed on your machine.
+
+```bash
+npm install rippleui
+```
+
+2. Add plugin to your `tailwind.config.js` file
+
+```js
+module.exports = {
+  // ... the rest of your config
+  plugins: [require("rippleui")],
+};
+```
+
+Now you are set to use RippleUI components in your project.
+
+```html
+<button className="btn btn-primary">Hello World!</button>
+```
+
+<button className="btn btn-primary">Hello World!</button>
+
+### RippleUI Examples Repositories
+
+<ExamplesRepositories />
+<LinkRedirect
+  contentRight="Usage"
+  hrefRight="/docs/get-started/usage"
+  hideLeft="{true}"
+/>

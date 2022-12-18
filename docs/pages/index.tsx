@@ -1,12 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { ReactElement } from "react";
+import { MainLayout } from "../components/layout/MainLayout";
+import { Navbar } from "../components/styles/Navbar";
 
 export default function Home() {
-  return (
-    <div>
-      <button className="btn btn-primary top-7">Click me</button>
-      <input type="text" className="input top-7  content-auto " />
-    </div>
-  );
+  return <>Init PAGE</>;
 }
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <MainLayout>
+      <Navbar />
+      {page}
+    </MainLayout>
+  );
+};

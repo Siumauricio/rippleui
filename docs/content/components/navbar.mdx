@@ -1,0 +1,433 @@
+---
+title: Navbar
+description: Navbar component for Ripple UI
+---
+
+# Navbar
+
+RippleUI comes with a navbar component.
+
+### Default
+
+Simple example of navbar.
+
+<div className="rounded-lg bg-border p-4">
+  <div className="navbar rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="navbar">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+</div>
+```
+
+### Start and End
+
+Navbar with elements at start and end.
+
+<div className="rounded-lg bg-border p-4">
+  <div className="navbar rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+    <div className="navbar-end hidden sm:flex">
+      <a className="navbar-item">Home</a>
+      <a className="navbar-item">About</a>
+      <a className="navbar-item">Contact</a>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="navbar">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+    <a className="navbar-item">About</a>
+    <a className="navbar-item">Contact</a>
+  </div>
+</div>
+```
+
+### Start, center and End
+
+Navbar with elements at start, center, end and active element.
+
+<div className="rounded-lg bg-border p-4">
+  <div className="navbar rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+    <div className="navbar-center hidden sm:flex">
+      <a className="navbar-item">Home</a>
+      <a className="navbar-item navbar-active">About</a>
+      <a className="navbar-item">Contact</a>
+    </div>
+    <div className="navbar-end ">
+      <a className="navbar-item">Home</a>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="navbar">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-center">
+    <a className="navbar-item">Home</a>
+    <a className="navbar-item">About</a>
+    <a className="navbar-item">Contact</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+```
+
+### With dropdown
+
+Navbar with dropdown.
+
+<div className="rounded-lg bg-border p-4">
+  <div className="navbar rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+    <div className="navbar-end ">
+      <div className="avatar-ring avatar avatar-md">
+        <div className="dropdown-container">
+          <div className="dropdown">
+            <label
+              className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
+              tabIndex="0"
+            >
+              <img
+                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+                alt="avatar"
+              />
+            </label>
+             <div className="dropdown-menu">
+                <div className="dropdown-item">
+                   <p className="text-sm leading-5 text-content1">Signed in as</p>
+                   <p className="truncate text-sm font-medium leading-5 text-content2">tom@example .com</p>
+                </div>
+                <div className="">
+                    <a
+                      tabIndex="-1"
+                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      role="menuitem"
+                      >Account settings</a>
+                      <a
+                      tabIndex="-1"
+                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      role="menuitem"
+                      >Profile</a>
+                      <a
+                      tabIndex="-1"
+                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      role="menuitem"
+                      >Subscriptions</a>
+                </div>
+                <div>
+                    <a
+                    className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                    role="menuitem"
+                    >Log Out</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+```html
+<div className="navbar">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <div className="avatar-ring avatar avatar-md">
+      <div className="dropdown-container">
+        <div className="dropdown">
+          <label
+            className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
+            tabindex="0"
+          >
+            <img
+              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              alt="avatar"
+            />
+          </label>
+          <div className="dropdown-menu">
+            <div className="dropdown-item">
+              <p className="text-sm leading-5 text-content1">Signed in as</p>
+              <p
+                className="truncate text-sm font-medium leading-5 text-content2"
+              >
+                tom@example .com
+              </p>
+            </div>
+            <div className="">
+              <a
+                tabindex="-1"
+                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                role="menuitem"
+                >Account settings</a
+              >
+              <a
+                tabindex="-1"
+                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                role="menuitem"
+                >Profile</a
+              >
+              <a
+                tabindex="-1"
+                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                role="menuitem"
+                >Subscriptions</a
+              >
+            </div>
+            <div>
+              <a
+                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                role="menuitem"
+                >Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Sticky
+
+Navbar sticky.
+
+<div className="sticky max-h-96 overflow-y-auto rounded-lg bg-border p-4">
+  <div className="navbar navbar-sticky sticky  rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+    <div className="navbar-end ">
+      <a className="navbar-item">Home</a>
+    </div>
+  </div>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+  unknown printer took a galley of type and scrambled it to make a type specimen
+  book. It has survived not only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+  the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+  with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+  an unknown printer took a galley of type and scrambled it to make a type specimen
+  book. It has survived not only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+  the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+  with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+  an unknown printer took a galley of type and scrambled it to make a type specimen
+  book. It has survived not only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+  the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+  with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+  an unknown printer took a galley of type and scrambled it to make a type specimen
+  book. It has survived not only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+  the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+  with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+  an unknown printer took a galley of type and scrambled it to make a type specimen
+  book. It has survived not only five centuries, but also the leap into electronic
+  typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+  the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+  with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum.
+</div>
+
+```html
+<div className="navbar navbar-sticky">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+```
+
+### Glass effect
+
+Navbar with glass effect.
+
+<div className="sticky max-h-96 overflow-y-auto rounded-lg bg-border p-4">
+
+<div className="navbar navbar-glass navbar-sticky sticky  rounded-lg">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum.
+
+</div>
+
+```html
+<div className="navbar navbar-glass">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+```
+
+### Floating
+
+Navbar with floating effect and width reduce to 80rem.
+
+<div className="sticky max-h-96 overflow-y-auto rounded-lg bg-border p-4">
+
+<div className="navbar navbar-floating nav sticky  rounded-lg">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+with desktop publishing software like Aldus PageMaker including versions of Lorem
+Ipsum.
+
+</div>
+
+```html
+<div className="navbar navbar-floating">
+  <div className="navbar-start">
+    <a className="navbar-item">Ripple UI</a>
+  </div>
+  <div className="navbar-end ">
+    <a className="navbar-item">Home</a>
+  </div>
+</div>
+```
+
+<Attributes>
+<Attributes.Title>Navbar Classes</Attributes.Title>
+
+| class               | Description                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------ |
+| navbar              | Navbar base class                                                                          |
+| navbar-start        | Will set the items inside this tag to the left                                             |
+| navbar-end          | Will set the items inside this tag to the right                                            |
+| navbar-center       | Will set the items inside this tag to the center                                           |
+| navbar-sticky       | Will set navbar attached to the top of the website                                         |
+| navbar-floating     | Will set navbar floating effect and will not take the whole width, 80 rem by default       |
+| navbar-bordered     | will set navbar with border to the bottom side                                             |
+| navbar-rounded      | Will set navbar rounded to the bottom side                                                 |
+| navbar-item         | Apply to items which are elements and will set a hover effect a more properties by default |
+| navbar-active       | Will set the active item with a background                                                 |
+| navbar-no-boxShadow | Will remove the boxShadow                                                                  |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Table"
+  hrefLeft="/docs/components/table"
+  contentRight="Breadcrumb"
+  hrefRight="/docs/components/breadcrumb"
+/>

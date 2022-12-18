@@ -1,0 +1,331 @@
+---
+title: Drawer
+description: Drawer component htmlFor Ripple UI
+---
+
+# Drawer
+
+Ripple UI comes with a Drawer component that can be used to display a list of items. The drawer can be opened and closed by clicking on the menu icon.
+
+<div className="alert border border-border">
+  <div>
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 34C22.9 34 22 33.1 22 32V24C22 22.9 22.9 22 24 22C25.1 22 26 22.9 26 24V32C26 33.1 25.1 34 24 34ZM26 18H22V14H26V18Z"
+        fill="#0085FF"
+      />
+    </svg>
+  </div>
+  <div className="flex flex-col">
+    <span className="text-content2">
+      <p>By default drawer className hiddes the scrollbar of `HTML`.</p>
+    </span>
+  </div>
+</div>
+
+### Default
+
+Simple example of drawer.
+
+<div >
+    <input type="checkbox" id="drawer-left" className="drawer-toggle" />
+    <label htmlFor="drawer-left" className="btn btn-primary">
+      <p>Open Left</p>
+    </label>
+    <label className="overlay " htmlFor="drawer-left"></label>
+    <div className="drawer ">
+      <div className="drawer-content ">
+        <label className=" btn btn-circle btn-ghost absolute top-1 right-1" htmlFor="drawer-left">
+          <svg
+
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path className="fill-content3" d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+          </svg>
+        </label>
+        <p> Hello World</p>
+      </div>
+    </div>
+
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-left" className="drawer-toggle" />
+  <label htmlFor="drawer-left" className="btn btn-primary">
+    <p>Open Left</p>
+  </label>
+  <label className="overlay " htmlFor="drawer-left"></label>
+  <div className="drawer ">
+    <div className="drawer-content ">
+      <label
+        className="btn btn-circle btn-ghost absolute top-1 right-1"
+        htmlFor="drawer-left"
+      >
+        X
+      </label>
+      <p>Hello World</p>
+    </div>
+  </div>
+</div>
+```
+
+### Right Position
+
+Drawer right side.
+
+<div >
+    <input type="checkbox" id="drawer-right" className="drawer-toggle" />
+    <label htmlFor="drawer-right" className="btn btn-primary">
+      <p>Open Right</p>
+    </label>
+    <label className="overlay " htmlFor="drawer-right"></label>
+    <div className="drawer drawer-right ">
+      <div className="drawer-content ">
+        <label className="btn btn-circle btn-ghost absolute top-1 right-1" htmlFor="drawer-right">
+          <svg
+
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path className="fill-content3" d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+          </svg>
+        </label>
+        <p> Hello World</p>
+      </div>
+    </div>
+
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-right" className="drawer-toggle" />
+  <label htmlFor="drawer-right" className="btn btn-primary">
+    <p>Open Right</p>
+  </label>
+  <label className="overlay " htmlFor="drawer-right"></label>
+  <div className="drawer drawer-right ">
+    <div className="drawer-content ">
+      <label
+        className="btn btn-circle btn-ghost absolute top-1 right-1"
+        htmlFor="drawer-right"
+      >
+        X
+      </label>
+      <p>Hello World</p>
+    </div>
+  </div>
+</div>
+```
+
+### Top Position
+
+Drawer top side.
+
+<div>
+    <input type="checkbox" id="drawer-top" className="drawer-toggle" />
+    <label htmlFor="drawer-top" className="btn btn-primary">Open Top</label>
+    <label className="overlay" htmlFor="drawer-top"></label>
+    <div className="drawer drawer-top">
+      <div className="drawer-content">
+          <label
+    className="close btn btn-circle btn-ghost absolute top-1 right-1"
+    htmlFor="drawer-top"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path
+        className="fill-content3"
+        d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+      ></path>
+    </svg>
+  </label>
+          <p>Hello World</p>
+  <p>Hello World</p>
+  <p>Hello World</p>
+  <p>Hello World</p>
+      </div>
+
+    </div>
+
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-top" className="drawer-toggle" />
+  <label htmlFor="drawer-top" className="btn btn-primary">
+    <p>Open Top</p>
+  </label>
+  <label className="overlay" htmlFor="drawer-top"></label>
+  <div className="drawer drawer-top h-24">
+    <div className="drawer-content">
+      <label
+        className="close btn btn-circle btn-ghost absolute top-1 right-1"
+        htmlFor="drawer-top"
+      >
+        X
+      </label>
+      <p>Hello World</p>
+      <p>Hello World</p>
+      <p>Hello World</p>
+      <p>Hello World</p>
+    </div>
+  </div>
+</div>
+```
+
+### Bottom Position
+
+Drawer bottom side.
+
+<div >
+    <input type="checkbox" id="drawer-bottom" className="drawer-toggle" />
+    <label htmlFor="drawer-bottom" className="btn btn-primary">
+      <p>Open Bottom</p>
+    </label>
+    <label className="overlay" htmlFor="drawer-bottom"></label>
+    <div className="drawer drawer-bottom ">
+      <div className="drawer-content ">
+        <label className="close btn btn-circle btn-ghost absolute top-1 right-1" htmlFor="drawer-bottom">
+          <svg
+
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path className="fill-content3" d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+          </svg>
+        </label>
+        <p> Hello World</p>
+        <p> Hello World</p>
+        <p> Hello World</p>
+        <p> Hello World</p>
+      </div>
+
+  </div>
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-bottom" className="drawer-toggle" />
+  <label htmlFor="drawer-bottom" className="btn btn-primary">
+    <p>Open Bottom</p>
+  </label>
+  <label className="overlay" htmlFor="drawer-bottom"></label>
+  <div className="drawer drawer-bottom ">
+    <div className="drawer-content ">
+      <label
+        className="close btn btn-circle btn-ghost absolute top-1 right-1"
+        htmlFor="drawer-bottom"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            className="fill-content3"
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+          ></path>
+        </svg>
+      </label>
+      <p>Hello World</p>
+      <p>Hello World</p>
+      <p>Hello World</p>
+      <p>Hello World</p>
+    </div>
+  </div>
+</div>
+```
+
+### On click overlay not close.
+
+Overlay click will not close the drawer.
+
+<div >
+    <input type="checkbox" id="drawer-overlay" className="drawer-toggle" />
+    <label htmlFor="drawer-overlay" className="btn btn-primary">
+      <p>Open</p>
+    </label>
+    <label className="overlay " ></label>
+    <div className="drawer ">
+      <div className="drawer-content ">
+        <label className="close btn btn-circle btn-ghost absolute top-1 right-1" htmlFor="drawer-overlay">
+          <svg
+
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path className="fill-content3" d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+          </svg>
+        </label>
+        <p> Hello World</p>
+      </div>
+    </div>
+
+</div>
+
+```html
+<div>
+  <input type="checkbox" id="drawer-overlay" className="drawer-toggle" />
+  <label htmlFor="drawer-overlay" className="btn btn-primary">
+    <p>Open</p>
+  </label>
+  <label className="overlay "></label>
+  <div className="drawer ">
+    <div className="drawer-content ">
+      <label
+        className="close btn btn-circle btn-ghost absolute top-1 right-1"
+        htmlFor="drawer-overlay"
+      >
+        X
+      </label>
+      <p>Hello World</p>
+    </div>
+  </div>
+</div>
+```
+
+<Attributes >
+<Attributes.Title>Drawer Classes</Attributes.Title>
+
+| className      | Description                                       |
+| -------------- | ------------------------------------------------- |
+| drawer         | Drawer base className to the left side by default |
+| drawer-toggle  | Toggle to handle open and close of drawer         |
+| drawer-right   | Drawer to the left side                           |
+| drawer-top     | Drawer to the top side                            |
+| drawer-bottom  | Drawer to the bottom side                         |
+| drawer-overlay | Overlay to cover the back of drawer               |
+| drawer-content | Content of drawer                                 |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Radio"
+  hrefLeft="/docs/components/radio"
+  contentRight="Modal"
+  hrefRight="/docs/components/modal"
+/>
+```

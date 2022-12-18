@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+html {
+  font-family: "Inter", sans-serif;
+}
+
+pre * {
+  font-family: "Roboto Mono" !important;
+  font-size: 15px !important;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

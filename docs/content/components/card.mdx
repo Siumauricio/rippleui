@@ -1,0 +1,100 @@
+---
+title: Card
+description: Card component for Ripple UI
+---
+
+# Card
+
+Ripple UI comes with a card component that can be used to display content in a card format.
+
+### Default
+
+Simple example of a card.
+
+<div className="card">Hello World</div>
+
+```html
+<div className="card">Hello World</div>
+```
+
+### Title, Body and Footer
+
+A card can have a title, body and footer.
+
+<div className="card">
+  <h2 className="card-header">Hello World!</h2>
+  <div className="card-body">
+    {/* prettier-ignore */}
+    <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div className="card-footer">
+    <button className="btn btn-secondary">Buy a Cat</button>
+  </div>
+</div>
+
+```html
+<div className="card">
+  <h2 className="card-header">Hello World!</h2>
+  <div className="card-body">
+    <p className="text-content2">
+      I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+    </p>
+  </div>
+  <div className="card-footer">
+    <button className="btn btn-secondary">Buy a Cat</button>
+  </div>
+</div>
+```
+
+### Image cover
+
+A card can have an image cover.
+
+<div className="card card-image-cover">
+  <img src="https://source.unsplash.com/random/300x200" alt="" />
+  <h2 className="card-header">Hello World!</h2>
+  <div className="card-body">
+    {/* prettier-ignore */}
+    <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div className="card-footer">
+    <button className="btn btn-secondary">Buy a Cat</button>
+  </div>
+</div>
+
+```html
+<div className="card card-image-cover">
+  <img src="https://source.unsplash.com/random/300x200" alt="" />
+  <h2 className="card-header">Hello World!</h2>
+  <div className="card-body">
+    <p className="text-content2">
+      I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing
+      elit.
+    </p>
+  </div>
+  <div className="card-footer">
+    <button className="btn btn-secondary">Buy a Cat</button>
+  </div>
+</div>
+```
+
+<Attributes>
+<Attributes.Title>Card class</Attributes.Title>
+
+| class            | Description                            |
+| ---------------- | -------------------------------------- |
+| card             | Card base class                        |
+| card-image-cover | Take the img tag and adapt to the card |
+| card-header      | Card header                            |
+| card-body        | Card body                              |
+| card-footer      | Card footer                            |
+| card-border      | Will set border color                  |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Dropdown"
+  hrefLeft="/docs/components/dropdown"
+  hideRight
+/>

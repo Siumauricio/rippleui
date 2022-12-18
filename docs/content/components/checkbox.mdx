@@ -1,0 +1,138 @@
+---
+title: Checkbox
+description: Checkbox component for Ripple UI
+---
+
+# Checkbox
+
+Ripple UI comes with Checkbox component that can be used to capture user checkbox.
+
+### Default
+
+Simple example of checkbox.
+
+<div>
+  <label className="flex cursor-pointer gap-2">
+    <input type="checkbox" className="checkbox" />
+    <span>Remember me?</span>
+  </label>
+</div>
+
+```html
+<div>
+  <label className="flex cursor-pointer gap-2">
+    <input type="checkbox" className="checkbox" />
+    <span>Remember me?</span>
+  </label>
+</div>
+```
+
+### Colors
+
+Checkbox colors
+
+<div className="flex flex-row gap-3">
+  <input type="checkbox" className="checkbox checkbox-primary" defaultChecked />
+  <input
+    type="checkbox"
+    className="checkbox checkbox-secondary"
+    defaultChecked
+  />
+  <input type="checkbox" className="checkbox checkbox-success" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-warning" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-error" defaultChecked />
+</div>
+
+```html
+<input type="checkbox" className="checkbox-primary checkbox" defaultChecked />
+<input type="checkbox" className="checkbox-secondary checkbox" defaultChecked />
+<input type="checkbox" className="checkbox-success checkbox" defaultChecked />
+<input type="checkbox" className="checkbox-warning checkbox" defaultChecked />
+<input type="checkbox" className="checkbox-error checkbox" defaultChecked />
+```
+
+### Bordered
+
+Checkbox bordered
+
+<div className="flex flex-row gap-3">
+  <input type="checkbox" className="checkbox checkbox-bordered-primary" />
+  <input type="checkbox" className="checkbox checkbox-bordered-secondary" />
+  <input type="checkbox" className="checkbox checkbox-bordered-success" />
+  <input type="checkbox" className="checkbox checkbox-bordered-warning" />
+  <input type="checkbox" className="checkbox checkbox-bordered-error" />
+</div>
+
+```html
+<input type="checkbox" className="checkbox checkbox-bordered-primary" />
+<input type="checkbox" className="checkbox checkbox-bordered-secondary" />
+<input type="checkbox" className="checkbox checkbox-bordered-success" />
+<input type="checkbox" className="checkbox checkbox-bordered-warning" />
+<input type="checkbox" className="checkbox checkbox-bordered-error" />
+```
+
+### Sizes
+
+Checkbox in different sizes
+
+<div className="flex flex-row gap-3">
+  <input type="checkbox" className="checkbox checkbox-xs" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-sm" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-md" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-lg" defaultChecked />
+  <input type="checkbox" className="checkbox checkbox-xl" defaultChecked />
+</div>
+
+```html
+<input type="checkbox" className="checkbox checkbox-xs" defaultChecked />
+<input type="checkbox" className="checkbox checkbox-sm" defaultChecked />
+<input type="checkbox" className="checkbox checkbox-md" defaultChecked />
+<input type="checkbox" className="checkbox checkbox-lg" defaultChecked />
+<input type="checkbox" className="checkbox checkbox-xl" defaultChecked />
+```
+
+### Disabled
+
+Checkbox disabled
+
+<div className="flex flex-row gap-3">
+  <input type="checkbox" className="checkbox" disabled />
+  <input type="checkbox" className="checkbox" disabled defaultChecked />
+</div>
+
+```html
+<input type="checkbox" className="checkbox" disabled />
+<input type="checkbox" className="checkbox" disabled defaultChecked />
+```
+
+<Attributes>
+
+<Attributes.Title>Checkbox Classes</Attributes.Title>
+
+| class                       | Description                      |
+| --------------------------- | -------------------------------- |
+| checkbox                    | Checkbox base class              |
+| checkbox-primary            | Set primary color                |
+| checkbox-secondary          | Set secondary color              |
+| checkbox-success            | Set success color                |
+| checkbox-error              | Set error color                  |
+| checkbox-warning            | Set warning color                |
+| checkbox-bordered-primary   | With primary border by default   |
+| checkbox-bordered-secondary | With secondary border by default |
+| checkbox-bordered-success   | With success border by default   |
+| checkbox-bordered-error     | With error border by default     |
+| checkbox-bordered-warning   | With warning border by default   |
+| checkbox-xs                 | Set extra small size             |
+| checkbox-sm                 | Set small size                   |
+| checkbox-md                 | Set medium size                  |
+| checkbox-lg                 | Set large size                   |
+| checkbox-xl                 | Set extra large size             |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Textarea"
+  hrefLeft="/docs/components/textarea"
+  contentRight="Button Group"
+  hrefRight="/docs/components/button-group"
+/>

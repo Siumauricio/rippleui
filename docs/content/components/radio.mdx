@@ -1,0 +1,151 @@
+---
+title: Radio
+description: Radio component for Ripple UI
+---
+
+# Radio
+
+Ripple UI comes with Radio component.
+
+### Default
+
+Simple example of Radio.
+
+<div>
+  <label className="flex cursor-pointer gap-2">
+    <input type="radio" className="radio" />
+    <span>Remember me?</span>
+  </label>
+</div>
+
+```html
+<div>
+  <label className="flex cursor-pointer gap-2">
+    <input type="radio" className="radio" />
+    <span>Remember me?</span>
+  </label>
+</div>
+```
+
+### Colors
+
+Radio colors.
+
+<div className="flex flex-row gap-3">
+  <input type="radio" className="radio radio-primary" defaultChecked />
+  <input type="radio" className="radio radio-secondary" defaultChecked />
+  <input type="radio" className="radio radio-success" defaultChecked />
+  <input type="radio" className="radio radio-warning" defaultChecked />
+  <input type="radio" className="radio radio-error" defaultChecked />
+</div>
+
+```html
+<input type="radio" className="radio-primary radio" defaultChecked />
+<input type="radio" className="radio-secondary radio" defaultChecked />
+<input type="radio" className="radio-success radio" defaultChecked />
+<input type="radio" className="radio-warning radio" defaultChecked />
+<input type="radio" className="radio-error radio" defaultChecked />
+```
+
+### Bordered
+
+Radio bordered.
+
+<div className="flex flex-row gap-3">
+  <input type="radio" className="radio radio-bordered-primary" />
+  <input type="radio" className="radio radio-bordered-secondary" />
+  <input type="radio" className="radio radio-bordered-success" />
+  <input type="radio" className="radio radio-bordered-warning" />
+  <input type="radio" className="radio radio-bordered-error" />
+</div>
+
+```html
+<input type="radio" className="radio radio-bordered-primary" />
+<input type="radio" className="radio radio-bordered-secondary" />
+<input type="radio" className="radio radio-bordered-success" />
+<input type="radio" className="radio radio-bordered-warning" />
+<input type="radio" className="radio radio-bordered-error" />
+```
+
+### Sizes
+
+Radio in different sizes.
+
+<div className="flex flex-row gap-3">
+  <input type="radio" className="radio radio-xs" defaultChecked />
+  <input type="radio" className="radio radio-sm" defaultChecked />
+  <input type="radio" className="radio radio-md" defaultChecked />
+  <input type="radio" className="radio radio-lg" defaultChecked />
+  <input type="radio" className="radio radio-xl" defaultChecked />
+</div>
+
+```html
+<input type="radio" className="radio radio-xs" defaultChecked />
+<input type="radio" className="radio radio-sm" defaultChecked />
+<input type="radio" className="radio radio-md" defaultChecked />
+<input type="radio" className="radio radio-lg" defaultChecked />
+<input type="radio" className="radio radio-xl" defaultChecked />
+```
+
+### Radio Group
+
+Radio Group.
+
+<div id="group1" className="flex flex-row gap-3">
+  <input type="radio" className="radio" name="group1" />
+  <input type="radio" className="radio" name="group1" />
+  <input type="radio" className="radio" name="group1" />
+</div>
+
+```html
+<div id="group1" className="flex flex-row gap-3">
+  <input type="radio" className="radio" name="group1" />
+  <input type="radio" className="radio" name="group1" />
+  <input type="radio" className="radio" name="group1" />
+</div>
+```
+
+### Disabled
+
+Radio disabled.
+
+<div className="flex flex-row gap-3">
+  <input type="radio" className="radio" disabled />
+  <input type="radio" className="radio" disabled defaultChecked />
+</div>
+
+```html
+<input type="radio" className="radio" disabled />
+<input type="radio" className="radio" disabled defaultChecked />
+```
+
+<Attributes >
+<Attributes.Title>Radio Classes</Attributes.Title>
+
+| class                    | Description                      |
+| ------------------------ | -------------------------------- |
+| radio                    | Radio base class                 |
+| radio-primary            | Set primary color                |
+| radio-secondary          | Set secondary color              |
+| radio-success            | Set success color                |
+| radio-error              | Set error color                  |
+| radio-warning            | Set warning color                |
+| radio-bordered-primary   | With primary border by default   |
+| radio-bordered-secondary | With secondary border by default |
+| radio-bordered-success   | With success border by default   |
+| radio-bordered-error     | With error border by default     |
+| radio-bordered-warning   | With warning border by default   |
+| radio-xs                 | Set extra small size             |
+| radio-sm                 | Set small size                   |
+| radio-md                 | Set medium size                  |
+| radio-lg                 | Set large size                   |
+| radio-xl                 | Set extra large size             |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Button Group"
+  hrefLeft="/docs/components/button-group"
+  contentRight="Drawer"
+  hrefRight="/docs/components/drawer"
+/>

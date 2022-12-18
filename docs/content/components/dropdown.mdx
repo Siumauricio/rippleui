@@ -1,0 +1,670 @@
+---
+title: Dropdown
+description: Dropdown component for Ripple UI
+---
+
+# Dropdown
+
+Ripple UI comes with a dropdown component that can be used to display a list of options.
+
+<div className="alert border border-border">
+  <div>
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 34C22.9 34 22 33.1 22 32V24C22 22.9 22.9 22 24 22C25.1 22 26 22.9 26 24V32C26 33.1 25.1 34 24 34ZM26 18H22V14H26V18Z"
+        fill="#0085FF"
+      />
+    </svg>
+  </div>
+  <div className="flex flex-col">
+    {/* prettier-ignore */}
+    <span className="text-content2"> If you want to prevent to close the dropdown when click on item add `tabIndex=-1`</span>
+  </div>
+</div>
+
+### Default
+
+Simple example of a dropdown.
+
+<div className="dropdown-container justify-center">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+      <svg
+        className="ml-2 -mr-1 h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clipRule="evenodd"
+        ></path>
+      </svg>
+    </label>
+    <div className="dropdown-menu">
+      <div className="dropdown-item">
+        <p className="text-sm leading-5 text-content1">Signed in as</p>
+        <p className="truncate text-sm leading-5 text-content2">
+          <strong>tom@example</strong>
+        </p>
+      </div>
+      <div className="">
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Subscriptions</span>
+        </a>
+      </div>
+      <a
+        className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+        role="menuitem"
+      >
+        <span>License</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+      <svg
+        className="ml-2 -mr-1 h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clipRule="evenodd"
+        ></path>
+      </svg>
+    </label>
+    <div className="dropdown-menu">
+      <div className="dropdown-item">
+        <p className="text-sm leading-5 text-content1">Signed in as</p>
+        <p className="truncate text-sm leading-5 text-content2">
+          <strong>tom@example</strong>
+        </p>
+      </div>
+      <div className="">
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Subscriptions</span>
+        </a>
+      </div>
+      <a
+        className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+        role="menuitem"
+      >
+        <span>License</span>
+      </a>
+    </div>
+  </div>
+</div>
+```
+
+### Bottom left and right
+
+Dropdowns can have different positions.
+
+<div className="flex gap-3 justify-center">
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-bottom-left">
+      <div>
+       <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-bottom-right" >
+      <div>
+       <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu">
+      <div>
+        <span
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+        >
+          Account settings
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-bottom-right">
+      <div>
+        <span
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+        >
+          Account settings
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Top left and right
+
+Dropdown in top left and right.
+
+<div className="flex gap-3 justify-center">
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-top-left">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-top-right">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-top-left">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-top-right">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Left and right
+
+Dropdown in left and right.
+
+<div className="flex gap-3 justify-center">
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left">
+      <div>
+       <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right">
+      <div>
+       <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Left bottom and top
+
+Dropdown in left bottom and top.
+
+<div className="flex gap-3 justify-center">
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left-bottom">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left-top">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left-bottom">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-left-top">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Right bottom and top
+
+Dropdown in right bottom and top.
+
+<div className="flex gap-3 justify-center">
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right-top">
+      <div>
+       <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="dropdown-container ">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-menu-right-top">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Opened
+
+Dropdown opened.
+
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-open dropdown-menu-bottom-right">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu dropdown-open dropdown-menu-bottom-right">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Hover
+
+Dropdown on hover.
+
+<div className="dropdown-container">
+  <div className="dropdown dropdown-hover">
+    <label className="btn flex" tabIndex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu  dropdown-menu-bottom-right">
+      <div>
+        <a
+          tabIndex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="dropdown-container">
+  <div className="dropdown dropdown-hover">
+    <label className="btn flex" tabindex="0">
+      <span>Options</span>
+    </label>
+    <div className="dropdown-menu  dropdown-menu-bottom-right">
+      <div>
+        <a
+          tabindex="-1"
+          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          role="menuitem"
+        >
+          <span>Account settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+<Attributes>
+<Attributes.Title>Dropdown Classes</Attributes.Title>
+
+| class                      | Description                           |
+| -------------------------- | ------------------------------------- |
+| dropdown-container         | Dropdown container base class         |
+| dropdown                   | Dropdown base class                   |
+| dropdown-menu              | Dropdown menu base class              |
+| dropdown-hover             | Will open the dropdown on hover       |
+| dropdown-open              | Will open the dropdown on load        |
+| dropdown-item              | Will style a element as dropdown item |
+| dropdown-menu-bottom-right | Will position to the bottom right     |
+| dropdown-menu-bottom-left  | Will position to the bottom left      |
+| dropdown-menu-top-right    | Will position to the top right        |
+| dropdown-menu-top-left     | Will position to the top left         |
+| dropdown-menu-left-bottom  | Will position to the left bottom      |
+| dropdown-menu-left-top     | Will position to the left top         |
+| dropdown-menu-right-bottom | Will position to the right bottom     |
+| dropdown-menu-right-top    | Will position to the right top        |
+| dropdown-menu-left         | Will position to the left             |
+| dropdown-menu-right        | Will position to the right            |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Avatar"
+  hrefLeft="/docs/components/avatar"
+  contentRight="Card"
+  hrefRight="/docs/components/card"
+/>
