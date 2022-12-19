@@ -2,18 +2,28 @@
   "types": [
     {
       "type": "chore",
-      "section": "Others",
-      "hidden": false
-    },
-    {
-      "type": "revert",
-      "section": "Reverts",
-      "hidden": false
+      "scope": "docs",
+      "hidden": true
     },
     {
       "type": "feat",
-      "section": "Features",
+      "scope": "docs",
       "hidden": true
+    },
+    {
+      "type": "refactor",
+      "scope": "docs",
+      "hidden": true
+    },
+    {
+      "type": "fix",
+      "scope": "docs",
+      "hidden": true
+    },
+    {
+      "type": "styles",
+      "scope": "docs",
+      "hidden": false
     },
     {
       "type": "fix",
@@ -21,43 +31,18 @@
       "hidden": false
     },
     {
-      "type": "improvement",
-      "section": "Feature Improvements",
-      "hidden": false
+      "type": "chore",
+      "section": "Chores",
+      "hidden": true
     },
     {
-      "type": "docs",
-      "section": "Docs",
-      "hidden": false
-    },
-    {
-      "type": "style",
-      "section": "Styling",
+      "type": "feat",
+      "section": "Features",
       "hidden": false
     },
     {
       "type": "refactor",
-      "section": "Code Refactoring",
-      "hidden": true
-    },
-    {
-      "type": "perf",
-      "section": "Performance Improvements",
-      "hidden": false
-    },
-    {
-      "type": "test",
-      "section": "Tests",
-      "hidden": false
-    },
-    {
-      "type": "build",
-      "section": "Build System",
-      "hidden": false
-    },
-    {
-      "type": "ci",
-      "section": "CI",
+      "section": "Refactor",
       "hidden": false
     }
   ]
