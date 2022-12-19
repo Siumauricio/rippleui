@@ -7,9 +7,15 @@ interface Props {
   children?: React.ReactNode;
   language?: "tsx" | "jsx" | "bash";
   linesOn?: boolean;
+  blockClass?: string;
+  iconClass?: string;
+  hideIcon?: boolean;
 }
 
 export const CodeBlock = ({
+  blockClass,
+  iconClass,
+  hideIcon = false,
   children,
   language = "tsx",
   linesOn = false,
@@ -25,12 +31,18 @@ export const CodeBlock = ({
 
   return (
     <>
-      <div
-        className="relative top-9 right-3 flex h-0 w-full cursor-pointer items-center justify-end"
-        onClick={clickHandler}
-      >
-        <CopyIcon />
-      </div>
+      {!hideIcon && (
+        <div
+          className={clsx(
+            iconClass,
+            "relative top-9 right-3 flex h-0 w-full cursor-pointer items-center justify-end"
+          )}
+          onClick={clickHandler}
+        >
+          <CopyIcon />
+        </div>
+      )}
+
       <Highlight
         {...defaultProps}
         theme={null as any}
@@ -41,7 +53,8 @@ export const CodeBlock = ({
           <pre
             className={clsx(
               className,
-              "overflow-auto rounded-xl  p-4 text-left "
+              "overflow-auto rounded-xl  p-4 text-left ",
+              blockClass
             )}
             style={style}
           >
