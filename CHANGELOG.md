@@ -2,16 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [v1.3.0] - 2022-12-15
-### :sparkles: New Features
-- [`89082c2`](https://github.com/Siumauricio/rippleui/commit/89082c250ab10eefa40ad8a6041edfeb35c8036d) - drawer component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
-- [`a453e35`](https://github.com/Siumauricio/rippleui/commit/a453e35d7d99ea612f95f93e46e86565492a8f03) - alert component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
-- [`a4aa301`](https://github.com/Siumauricio/rippleui/commit/a4aa3011d1af1e1f3f5c76f13e48b567d067e899) - table component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
-- [`b891366`](https://github.com/Siumauricio/rippleui/commit/b8913666cdadf32677271d4ff625629cf029e314) - card component *(commit by [@Siumauricio](https://github.com/Siumauricio))*
+### [1.3.1](https://github.com/Siumauricio/rippleui/compare/v1.3.0...v1.3.1) (2022-12-19)
 
-### :wrench: Chores
-- [`841a633`](https://github.com/Siumauricio/rippleui/commit/841a633d1be67308d1731d9e7189a33ef8dcb924) - **release**: 1.3.0 *(commit by [@Siumauricio](https://github.com/Siumauricio))*
 
+### Features
+
+* add layouts ([7475b58](https://github.com/Siumauricio/rippleui/commit/7475b58e0da519c6caa7baa065d468ff4ffdb52b))
+* add mdx base components ([f88bf05](https://github.com/Siumauricio/rippleui/commit/f88bf050d613eba4f3d2cb8b732a71c354298662))
+* add new docs components ([a90dfd4](https://github.com/Siumauricio/rippleui/commit/a90dfd47c0da214f4db2a8fb0c3ce1a19cc72eea))
+* base components ([7608a88](https://github.com/Siumauricio/rippleui/commit/7608a88e4020c40258f9b73d3dc47956a6bb0bc0))
+* codeblocks added ([a81d7c5](https://github.com/Siumauricio/rippleui/commit/a81d7c58fa017c3e79f13ffcbc34374d6eb926ef))
+* components docs added ([6acc665](https://github.com/Siumauricio/rippleui/commit/6acc665887f08b1d38914d2997b76373f9e59e2d))
+* document page ([3d37f4b](https://github.com/Siumauricio/rippleui/commit/3d37f4b30e71901da57d8050de37ca045275f819))
+* fn to convert string to slug ([f982143](https://github.com/Siumauricio/rippleui/commit/f982143b6f76f5703a10240f4001d771c5a506ef))
+* fn to get all paths of content dir ([31cab5d](https://github.com/Siumauricio/rippleui/commit/31cab5dcb3a3fbf3f9933ee7e49cf3bf863d5c3f))
+* hook to copy content ([9cabe3c](https://github.com/Siumauricio/rippleui/commit/9cabe3cfe9b2dfbaf477256a2b95a977657b0d13))
+* new icons ([23c8e5a](https://github.com/Siumauricio/rippleui/commit/23c8e5addabf98a106afdbefb677da9c90dba360))
+* one dark theme pro ([102d097](https://github.com/Siumauricio/rippleui/commit/102d09713f365d6584751066b5c3a7e8975f1873))
+* render mdx content of content dir ([bdee639](https://github.com/Siumauricio/rippleui/commit/bdee6398dedbd175a36188fbbc05dd6d364e71de))
+* textarea docs ([3f59aee](https://github.com/Siumauricio/rippleui/commit/3f59aeeba2c12b290abb77216bdf3a90053edeb8))
+
+
+### Bug Fixes
+
+* duplicate dark query css ([a8bf967](https://github.com/Siumauricio/rippleui/commit/a8bf967f7a6a89a7e7743e46d304a7e4f3df8d9e))
+
+
+### Refactor
+
+* add active state to navbar ([201c806](https://github.com/Siumauricio/rippleui/commit/201c8066fd353e0114bfcd09b49373c3548b06b1))
+* add by default color to p tag ([70ee73d](https://github.com/Siumauricio/rippleui/commit/70ee73d01f77942634cdd696fe8018da64095c3f))
+* add layout to initial screen ([77b00b1](https://github.com/Siumauricio/rippleui/commit/77b00b169774f25f8cd7474e38678730eebd6307))
+* add mdx path ([39f7499](https://github.com/Siumauricio/rippleui/commit/39f7499174c83ee7b6809babe7889799398dc4ec))
+* add new components ([3ed1a37](https://github.com/Siumauricio/rippleui/commit/3ed1a37495e0dce6fbb3a7f7422646408c6a065f))
+* add state and close on click item ([8146276](https://github.com/Siumauricio/rippleui/commit/81462764dfb691b0bdb44a4e9c907e758f4d0a83))
+* add types to have a getLayout fn ([6069eb6](https://github.com/Siumauricio/rippleui/commit/6069eb6a84910cc5e9b36b1de34ff6fb77c1930e))
+* change description to have more sense ([1f1e99c](https://github.com/Siumauricio/rippleui/commit/1f1e99ce93b68a037eec16c954185a5df052c917))
+* change property names ([41d3f5b](https://github.com/Siumauricio/rippleui/commit/41d3f5bf457c25af43206d8cf25af4d8971d6b15))
+* changed wrong title ([e61b6b4](https://github.com/Siumauricio/rippleui/commit/e61b6b401d85fe5c0ede83f52e1a6bbd9283e50b))
+* move navbar to main wrapper to prevent modal and drawers go behind the nav ([b2f9294](https://github.com/Siumauricio/rippleui/commit/b2f929464389ccd97c07f0ca00254050903f1ddf))
+* removed component item ([e1a48d5](https://github.com/Siumauricio/rippleui/commit/e1a48d587dd4d46312172b1c319966f8dc7f4177))
+* removed layout dir ([081f4a5](https://github.com/Siumauricio/rippleui/commit/081f4a5d6d2d4e12187316fa4b86acc851d9ef04))
 
 ## [1.3.0](https://github.com/Siumauricio/rippleui/compare/v1.2.2...v1.3.0) (2022-12-15)
 
