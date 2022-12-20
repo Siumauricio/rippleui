@@ -21,7 +21,9 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <NextNProgress color="#0069FF" />
-      <ThemeProvider>{getLayout(<Component {...pageProps} />)}</ThemeProvider>
+      <ThemeProvider defaultTheme="dark">
+        {getLayout(<Component {...pageProps} />)}
+      </ThemeProvider>
     </>
   );
 }
