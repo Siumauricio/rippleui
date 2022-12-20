@@ -13,7 +13,7 @@ interface Props {
 export const DocsLayout = ({ children, headings }: Props) => {
   return (
     <>
-      <GradientBackground />
+      <GradientBackground isDocsLayout />
 
       <div className="page sticky top-16 z-[2] mx-auto flex w-full max-w-[1390px] flex-grow">
         <Navbar />
