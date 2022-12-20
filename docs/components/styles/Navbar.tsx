@@ -39,36 +39,33 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden gap-1 lg:flex">
-          <label className="navbar-item">
-            <Link
-              className={clsx(
-                routerDefined.includes("/docs/get-started") && "text-primary"
-              )}
-              href={"/docs/get-started/installation"}
-            >
-              Docs
-            </Link>
-          </label>
-          <label className="navbar-item">
-            <Link
-              className={clsx(
-                routerDefined.includes("/docs/components") && "text-primary"
-              )}
-              href={"/docs/components/button"}
-            >
-              Components
-            </Link>
-          </label>
-          <label className="navbar-item">
-            <Link
-              className={clsx(
-                routerDefined.includes("/docs/license") && "text-primary"
-              )}
-              href={"/docs/license/MIT"}
-            >
-              License
-            </Link>
-          </label>
+          <Link
+            className={clsx(
+              routerDefined.includes("/docs/get-started") && "text-primary",
+              "navbar-item"
+            )}
+            href={"/docs/get-started/installation"}
+          >
+            Docs
+          </Link>
+          <Link
+            className={clsx(
+              routerDefined.includes("/docs/components") && "text-primary",
+              "navbar-item"
+            )}
+            href={"/docs/components/button"}
+          >
+            Components
+          </Link>
+          <Link
+            className={clsx(
+              routerDefined.includes("/docs/license") && "text-primary",
+              "navbar-item"
+            )}
+            href={"/docs/license/MIT"}
+          >
+            License
+          </Link>
         </div>
         <div className="navbar-end  gap-3">
           <Link

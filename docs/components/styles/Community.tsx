@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
@@ -10,7 +11,10 @@ export const Community = () => {
         Community Support
       </h2>
       <div className="mx-auto grid w-full max-w-7xl  grid-cols-1 justify-items-center gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
-        <div className="card ">
+        <Link
+          href={"/discord"}
+          className="card cursor-pointer transition-colors hover:bg-border"
+        >
           <div className="flex gap-2">
             <div className="w-fit pt-0.5">
               <DiscordIcon className="fill-blue-600" />
@@ -22,8 +26,12 @@ export const Community = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="card">
+        </Link>
+        <Link
+          href={"https://github.com/Siumauricio/rippleui"}
+          target="_blank"
+          className="card cursor-pointer transition-colors hover:bg-border"
+        >
           <div className="flex gap-2">
             <div className="w-fit pt-0.5">
               <GithubIcon className="fill-whiteInverted" />
@@ -35,8 +43,8 @@ export const Community = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="card">
+        </Link>
+        <div className="card cursor-pointer transition-colors hover:bg-border">
           <div className="flex gap-2">
             <div className="w-fit pt-0.5">
               <TwitterIcon className="fill-primary" />
