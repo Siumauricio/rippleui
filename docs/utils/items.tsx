@@ -32,6 +32,7 @@ export const items: Items[] = [
       {
         href: "/docs/get-started/dark-mode",
         children: "Dark mode",
+        disabled: true,
       },
     ],
   },
