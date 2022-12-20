@@ -6,12 +6,28 @@ import { Comparison } from "./Comparison";
 
 export const Reusable = () => {
   return (
-    <div className="flex flex-col gap-10  border-b border-border py-16 px-4 md:gap-20 xl:px-0">
-      <h2 className="text-center text-3xl font-semibold md:text-4xl">
-        Reusable Components and easy to implement
-      </h2>
+    <div className="flex flex-col gap-10  py-16 px-4 md:gap-12 xl:px-0">
+      <div className="flex flex-col items-center gap-3">
+        <div className="w-full max-w-[78rem]">
+          <span className="text-sm font-semibold text-primary">
+            Why Build with RippleUI?
+          </span>
+        </div>
+
+        <div className="w-full max-w-[78rem]">
+          <div className="max-w-xl">
+            <h2 className="w-full text-3xl font-bold md:text-4xl">
+              <span className="text-3xl text-primary  md:text-4xl">
+                Reusable
+              </span>{" "}
+              components and easy to implement.
+            </h2>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto grid w-full max-w-7xl  grid-cols-1 justify-items-center gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
-        <div className="card border border-border bg-transparent backdrop-blur-md ">
+        <div className="card overflow-hidden">
           <div className="flex gap-4">
             <div className="w-fit pt-1">
               <RecyleIcon />
@@ -21,14 +37,14 @@ export const Reusable = () => {
                 Reusable Components
               </span>
               <p className="text-content2">
-                RippleUI is a custom framework that comes with of reusable
-                components built on top of Tailwind CSS that includes
+                RippleUI is a custom TailwindCSS framework that comes with of
+                reusable components built on top of Tailwind CSS that includes
                 pre-defined styles and layout options.
               </p>
             </div>
           </div>
         </div>
-        <div className="card border border-border bg-transparent backdrop-blur-md">
+        <div className="card overflow-hidden">
           <div className="flex gap-4">
             <div className="w-fit pt-1">
               <BookIcon />
@@ -45,7 +61,7 @@ export const Reusable = () => {
             </div>
           </div>
         </div>
-        <div className="card border border-border bg-transparent backdrop-blur-md">
+        <div className="card overflow-hidden">
           <div className="flex gap-4 ">
             <div className="w-fit pt-1">
               <ToolsIcon />
