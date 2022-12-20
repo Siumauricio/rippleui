@@ -5,7 +5,7 @@ import { CodeBlock } from "../playground/CodeBlock";
 
 export const Hero = () => {
   return (
-    <section className="border-b border-border pb-10 sm:pb-20">
+    <section className="pb-10 sm:pb-20">
       <div className="flex flex-row justify-center px-4 md:gap-24">
         <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pt-20  lg:pt-52">
           <div className="flex flex-col gap-4">
@@ -41,7 +41,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="hidden w-full max-w-sm flex-col gap-3 lg:flex">
-          <div className="btn-group">
+          <div className="btn-group ">
             <button className="btn ">Primary</button>
             <button className="btn ">Primary</button>
             <button className="btn bg-border">Primary</button>
@@ -49,7 +49,7 @@ export const Hero = () => {
           </div>
           <div>
             <div className="relative hidden lg:flex">
-              <div className="pointer-events-none absolute top-3  left-0 flex items-center pl-2">
+              <div className="pointer-events-none absolute top-3  left-0 flex items-center pl-2 ">
                 <SearchIcon />
               </div>
             </div>
