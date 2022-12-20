@@ -2,8 +2,8 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import * as React from "react";
-import { ArrowLeft } from "../icons/ArrowLeft";
-import { ArrowRight } from "../icons/ArrowRight";
+import { ArrowLeft } from "../icons/ChevronLeft";
+import { ChevronRight } from "../icons/ChevronRight";
 interface Props {
   hrefLeft?: string;
   hrefRight?: string;
@@ -57,7 +57,7 @@ const LinkRedirect = ({
             className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-border"
           >
             {contentRight}
-            <ArrowRight />
+            <ChevronRight />
           </Link>
         )}
       </div>
