@@ -5,9 +5,9 @@ import React, { useEffect, useState } from "react";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { LogoIcon } from "../icons/LogoIcon";
-import { SearchIcon } from "../icons/SearchIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
 import { DarkModeToggle } from "./DarkModeToggle";
+import { Searcher } from "./Searcher";
 import { Sidebar } from "./Sidebar";
 
 export const Navbar = () => {
@@ -92,15 +92,7 @@ export const Navbar = () => {
             <DarkModeToggle />
           </div>
 
-          <div className="relative hidden lg:flex">
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-1">
-              <SearchIcon />
-            </div>
-          </div>
-          <input
-            className="input -ml-4 hidden max-w-[16rem] py-2 px-8 lg:flex"
-            placeholder="Search..."
-          />
+          <Searcher />
         </div>
       </div>
     </nav>

@@ -6,6 +6,7 @@ import { items } from "../../utils/items";
 import { MenuIcon } from "../icons/MenuIcon";
 import { SearchIcon } from "../icons/SearchIcon";
 import { XIcon } from "../icons/XIcon";
+import { Searcher } from "./Searcher";
 
 export const Sidebar = () => {
   const router = useRouter();
@@ -31,17 +32,7 @@ export const Sidebar = () => {
           </label>
           <div className="flex flex-col gap-2 border-b px-6 py-4">
             <p className="text-2xl font-bold">Components</p>
-            <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0  right-2 flex items-center">
-                <SearchIcon />
-              </div>
-              <div>
-                <input
-                  className="input  py-1.5  lg:flex"
-                  placeholder="Search..."
-                />
-              </div>
-            </div>
+            <Searcher isMobile />
           </div>
 
           <div className="flex flex-col gap-2 divide-y  px-6 pb-6">
