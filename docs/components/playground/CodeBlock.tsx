@@ -5,7 +5,7 @@ import { CopyIcon } from "../icons/CopyIcon";
 
 interface Props {
   children?: React.ReactNode;
-  language?: "tsx" | "jsx" | "bash";
+  language?: "tsx" | "jsx" | "bash" | "html";
   linesOn?: boolean;
   blockClass?: string;
   iconClass?: string;
@@ -47,6 +47,7 @@ export const CodeBlock = ({
         {...defaultProps}
         theme={null as any}
         code={code}
+        // @ts-ignore
         language={language}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
