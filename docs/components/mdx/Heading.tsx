@@ -1,4 +1,6 @@
+import clsx from "clsx";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { titleToSlug } from "../../utils/titleToSlug";
 
 interface Props {
@@ -10,6 +12,15 @@ interface Props {
 
 export const Heading = ({ id = "", level = 1, children, className }: Props) => {
   const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.split("#")[1] === id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, [id]);
 
   const calculateHeadingLevel = (level: number) => {
     switch (level) {
@@ -50,24 +61,26 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
   return (
     <>
       <CustomTag
-        className={
-          "flex cursor-pointer items-center gap-2 hover:text-gray-900 " +
-          getCSS(level) +
-          " " +
+        className={clsx(
+          "flex cursor-pointer items-center gap-2 hover:text-gray-900",
+          getCSS(level),
           calculateHeadingLevel(level)
-        }
+        )}
         onClick={seRouteId}
       >
         {children}
 
         <span
           className={
-            "hola text-xl font-semibold  text-content2 opacity-0 transition-opacity  ease-in-out"
+            "mark text-xl font-semibold  text-content2 opacity-0 transition-opacity ease-in-out"
           }
         >
           #
         </span>
-        <span className="pointer-events-none relative top-[-90px] left-0 opacity-0">
+        <span
+          className="pointer-events-none relative top-[-90px] left-0 opacity-0"
+          id={id}
+        >
           &nbsp;
         </span>
       </CustomTag>
