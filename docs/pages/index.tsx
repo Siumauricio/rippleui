@@ -23,9 +23,9 @@ Home.getLayout = function getLayout(page: ReactElement) {
     <MainLayout>
       <Meta
         meta={{
-          title: "Ripple UI | TailwindCSS Components",
+          title: " ",
           description:
-            "Ripple UI is a collection of TailwindCSS components that are reusable and easy to use.",
+            "Cleanest, modern and beatifull Tailwind CSS components, Ripple UI is a collection of components that can be easily integrated into your project to provide a consistent, responsive design and improve the user experience of your application.",
         }}
       />
       <Navbar />
