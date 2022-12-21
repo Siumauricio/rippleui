@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
-import Head from "next/head";
 import { NextSeo } from "next-seo";
 import { URL_WEB } from "../../../lib/constant";
+import { useRouter } from "next/router";
 
 export interface Meta {
   title: string;
@@ -21,6 +21,7 @@ const toCapitalize = (name: string) => {
 
 const Meta: React.FC<React.PropsWithChildren<LayoutProps>> = React.memo(
   ({ meta }) => {
+    const router = useRouter();
     const capitalizeTitle = useMemo(() => {
       if (!meta.title) return "";
       if (meta.title.toLowerCase().startsWith("use")) return `${meta.title} - `;
@@ -31,7 +32,7 @@ const Meta: React.FC<React.PropsWithChildren<LayoutProps>> = React.memo(
         title={capitalizeTitle}
         description={meta.description}
         themeColor="#000000"
-        canonical={URL_WEB}
+        canonical={URL_WEB + router.asPath}
         openGraph={{
           images: [
             {

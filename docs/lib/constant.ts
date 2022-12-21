@@ -1,4 +1,1 @@
-export const URL_WEB =
-  process.env.NODE_ENV === "production"
-    ? process.env.SITE_URL
-    : "http://localhost:3000";
+export const URL_WEB = "https://www.ripple-ui.com";
