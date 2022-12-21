@@ -23,7 +23,7 @@ Welcome to the RippleUI repository! This is the home for all of the components, 
 
 ## Documentation
 
-Visit https://rippleui.com to view the full documentation.
+Visit https://ripple-ui.com to view the full documentation.
 
 
 ## 🚀 Usage
