@@ -36,7 +36,7 @@ const Meta: React.FC<React.PropsWithChildren<LayoutProps>> = React.memo(
         openGraph={{
           images: [
             {
-              url: "logo.png",
+              url: URL_WEB + "/logo.png",
               alt: "RippleUI Logo",
             },
           ],
