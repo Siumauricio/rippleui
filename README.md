@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/npm/l/rippleui" alt="npm downloads">
   </a>
 
-  <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/siumauricio/rippleui?color=green" ></a>
+  <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/Siumauricio/rippleui" ></a>
 
 
   ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/siumauricio/rippleui)
