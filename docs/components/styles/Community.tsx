@@ -12,8 +12,9 @@ export const Community = () => {
       </h2>
       <div className="mx-auto grid w-full max-w-7xl  grid-cols-1 justify-items-center gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
         <Link
-          href={"/discord"}
+          href={"https://discord.gg/b9ZqWsmqsj"}
           className="card cursor-pointer transition-colors hover:bg-border"
+          target={"_blank"}
         >
           <div className="flex gap-2">
             <div className="w-fit pt-0.5">
@@ -44,7 +45,11 @@ export const Community = () => {
             </div>
           </div>
         </Link>
-        <div className="card cursor-pointer transition-colors hover:bg-border">
+        <Link
+          href={"https://twitter.com/Siumauricio"}
+          className="card cursor-pointer transition-colors hover:bg-border"
+          target={"_blank"}
+        >
           <div className="flex gap-2">
             <div className="w-fit pt-0.5">
               <TwitterIcon className="fill-primary" />
@@ -56,7 +61,7 @@ export const Community = () => {
               </p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

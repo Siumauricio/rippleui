@@ -69,14 +69,16 @@ export const Navbar = () => {
         </div>
         <div className="navbar-end  gap-3">
           <Link
-            href={"http://discord.com"}
+            href={"https://discord.gg/b9ZqWsmqsj"}
             className="hidden cursor-pointer lg:flex"
+            target={"_blank"}
           >
             <DiscordIcon />
           </Link>
 
           <Link
-            href={"http://twitter.com"}
+            href={"https://twitter.com/Siumauricio"}
+            target={"_blank"}
             className="hidden cursor-pointer lg:flex"
           >
             <TwitterIcon />
