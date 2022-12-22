@@ -1,6 +1,6 @@
 
 
-![alt text for screen readers](https://raw.githubusercontent.com/Siumauricio/rippleui/refactor/readme/docs/public/logo.png "Text to show on mouseover")
+![alt text for screen readers](https://raw.githubusercontent.com/Siumauricio/rippleui/main/docs/public/logo.png "RippleUI Logo")
 
 <h1 align="center">Ripple UI</h1>
 
@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/npm/l/rippleui" alt="npm downloads">
   </a>
 
-  <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/siumauricio/rippleui?color=green" ></a>
+  <a href="https://www.npmjs.com/package/rippleui"><img src="https://badgen.net/github/stars/Siumauricio/rippleui" ></a>
 
 
   ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/siumauricio/rippleui)
