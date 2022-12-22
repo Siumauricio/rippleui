@@ -21,7 +21,7 @@ export const Hero = () => {
             <p className="pr-10 text-base  text-content2">
               Ripple UI is a collection of components and utilities that are
               used to build modern interfaces. It is built on top of Tailwind
-              CSS .
+              CSS.
             </p>
           </div>
           <div className="flex flex-row flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-4">
