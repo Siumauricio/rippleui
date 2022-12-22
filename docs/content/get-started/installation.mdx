@@ -9,6 +9,8 @@ How to install Ripple UI in your project
 
 ## Setup
 
+You can install RippleUI using npm, yarn or CDN.
+
 1. To install RippleUI plugin is required to have [TailwindCSS](https://tailwindcss.com/docs/installation) installed on your machine.
 
 ```bash
@@ -24,6 +26,22 @@ module.exports = {
 };
 ```
 
+3. CDN
+
+If you prefer to use CDN, you can add the following link to your HTML file, but consider you can't remove the unused styles.
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/rippleui/dist/css/styles.css"
+/>
+
+<!-- And -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<button class="btn">Hello World!</button>
+```
+
 Now you are set to use RippleUI components in your project.
 
 ```html
@@ -33,6 +51,8 @@ Now you are set to use RippleUI components in your project.
 <button className="btn btn-primary">Hello World!</button>
 
 ### RippleUI Examples Repositories
+
+You can find examples of RippleUI in the following repositories:
 
 <ExamplesRepositories />
 <LinkRedirect

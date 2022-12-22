@@ -9,14 +9,14 @@ export const Hero = () => {
       <div className="flex flex-row justify-center px-4 md:gap-24">
         <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pt-20  lg:pt-52">
           <div className="flex flex-col gap-4">
-            <div>
+            <h1>
               <span className="text-[40px] font-bold leading-none text-primary  sm:text-5xl lg:text-6xl">
                 Ripple UI
               </span>{" "}
               <span className="text-[40px] font-bold leading-none sm:text-5xl lg:text-6xl">
                 Ultimate toolkit for modern interface design.
               </span>
-            </div>
+            </h1>
 
             <p className="pr-10 text-base  text-content2">
               Ripple UI is a collection of components and utilities that are

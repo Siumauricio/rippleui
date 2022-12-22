@@ -24,7 +24,7 @@ export const Pallete = () => {
     <>
       {arraySorted.map((item, index) => (
         <div className="flex flex-col gap-4" key={index}>
-          <Heading id={item.title} level={3}>
+          <Heading id={item.title} level={2}>
             {item.title}
           </Heading>
           <div
