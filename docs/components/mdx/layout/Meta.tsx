@@ -25,7 +25,7 @@ const Meta: React.FC<React.PropsWithChildren<LayoutProps>> = React.memo(
     const capitalizeTitle = useMemo(() => {
       if (!meta.title) return "";
       if (meta.title.toLowerCase().startsWith("use")) return `${meta.title} - `;
-      return `${toCapitalize(meta.title)} RippleUI | TailwindCSS Component`;
+      return `${toCapitalize(meta.title)} RippleUI | TailwindCSS Components`;
     }, [meta.title]);
     return (
       <NextSeo
