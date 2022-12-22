@@ -1,6 +1,6 @@
 
 
-![alt text for screen readers](https://raw.githubusercontent.com/Siumauricio/rippleui/refactor/readme/docs/public/logo.png "Text to show on mouseover")
+![alt text for screen readers](https://raw.githubusercontent.com/Siumauricio/rippleui/main/docs/public/logo.png "RippleUI Logo")
 
 <h1 align="center">Ripple UI</h1>
 
