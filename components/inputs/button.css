@@ -79,8 +79,8 @@
   @apply h-16 w-72 rounded-[18px] text-xl;
 }
 
-.btn-disabled {
-  @apply pointer-events-none cursor-not-allowed  select-none opacity-50;
+.btn:disabled {
+  @apply pointer-events-none opacity-50;
 }
 
 .btn-block {
