@@ -72,6 +72,6 @@ export const items: Items[] = [
   },
   {
     title: "Credits",
-    links: [{ href: "/docs", children: "Overview" }],
+    links: [{ href: "/docs/credits/overview", children: "Overview" }],
   },
 ];
