@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-type Folder = "get-started" | "components" | "license";
+type Folder = "get-started" | "components" | "license" | "credits";
 
 export type Folders = {
   [key in Folder]: string;
@@ -12,6 +12,7 @@ export const getRoutes = () => {
     components: path.join(process.cwd(), "content/components"),
     "get-started": path.join(process.cwd(), "content/get-started"),
     license: path.join(process.cwd(), "content/license"),
+    credits: path.join(process.cwd(), "content/credits"),
   };
 
   const routes = Object.keys(folders).map((folder: string) => {
