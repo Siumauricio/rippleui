@@ -80,8 +80,8 @@
   @apply rounded-full px-4;
 }
 
-.select-disabled {
-  @apply pointer-events-none cursor-not-allowed select-none  text-content3 opacity-50;
+.select:disabled {
+  @apply pointer-events-none select-none opacity-50;
 }
 
 .select-block {
