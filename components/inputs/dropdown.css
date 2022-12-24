@@ -3,11 +3,11 @@
 }
 
 .dropdown {
-  @apply relative z-10 inline-block w-max text-left;
+  @apply relative inline-block w-max text-left;
 }
 
 .dropdown-menu {
-  @apply invisible  absolute right-0 mt-2 w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible absolute right-0 z-[55] mt-2  w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
 }
 
 .dropdown-item {
@@ -15,47 +15,46 @@
 }
 
 .dropdown-menu-bottom-right {
-  @apply invisible  absolute left-0 mt-2 w-56 origin-top-left -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible left-0 mt-2 w-56 origin-top-left -translate-y-2;
 }
 
 .dropdown-menu-bottom-left {
-  @apply invisible  absolute right-0 mt-2 w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible right-0 mt-2 w-56 origin-top-right -translate-y-2;
 }
 
 .dropdown-menu-top-right {
-  @apply invisible absolute left-1/2 bottom-full ml-[-50%] mt-2 w-56 origin-bottom-left -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible left-1/2 bottom-full ml-[-50%] mb-2 mt-0 w-56 origin-bottom-left -translate-y-2;
 }
 
 .dropdown-menu-top-left {
-  @apply invisible  absolute left-1/2 bottom-full right-0 ml-auto mt-2 w-56 origin-bottom-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible left-1/2 bottom-full right-0 ml-auto mb-2 mt-0 w-56 origin-bottom-right -translate-y-2;
 }
 
 .dropdown-menu-left {
-  @apply invisible absolute right-[100%] mr-2 w-56 origin-right -translate-y-1/2  scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible bottom-auto top-1/2 right-[100%] mr-2  mt-0 w-56 origin-right -translate-y-1/2;
 }
 
 .dropdown-menu-right {
-  @apply invisible  absolute left-[100%] ml-2 w-56 origin-left -translate-y-1/2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible bottom-auto top-1/2 left-[100%] ml-2 mt-0 w-56 origin-left -translate-y-1/2;
 }
 
 .dropdown-menu-left-bottom {
-  @apply invisible absolute right-[100%] mr-2 w-56  origin-top-right -translate-y-10 scale-95 transform  divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0  shadow-2xl outline-none transition-all;
+  @apply invisible right-[100%] mr-2 mt-0 w-56  origin-top-right -translate-y-10;
 }
 
 .dropdown-menu-right-bottom {
-  @apply invisible absolute left-[100%] ml-2 w-56 origin-top-left -translate-y-10 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible left-[100%] ml-2 mt-0 w-56 origin-top-left -translate-y-10;
 }
 
 .dropdown-menu-left-top {
-  @apply invisible  absolute right-[100%] bottom-0 mr-2 mt-2 w-56 origin-bottom-right  scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible right-[100%] bottom-0 mr-2 mt-2 w-56 origin-bottom-right;
 }
 
 .dropdown-menu-right-top {
-  @apply invisible  absolute left-[100%] bottom-0 ml-2 mt-2 w-56 origin-bottom-left -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible left-[100%] bottom-0 ml-2 mt-2 w-56 origin-bottom-left -translate-y-2;
 }
 
-/* Activate Dropdown on click */
-
+/* Only Bottom Side  */
 .dropdown-hover:hover .dropdown-menu,
 .dropdown-hover:hover .dropdown-menu-bottom-right,
 .dropdown-hover:hover .dropdown-menu-bottom-left,
@@ -68,12 +67,10 @@
 .dropdown:focus .dropdown-menu-bottom-left,
 .dropdown:focus-within .dropdown-menu-bottom-right,
 .dropdown:focus-within .dropdown-menu-bottom-left {
-  opacity: 1;
-  transform: translate(0) scale(1);
-  visibility: visible;
+  @apply visible  translate-x-0 translate-y-0 scale-100 opacity-100;
 }
 
-/* Activate Dropdown for top side */
+/* Only Top Side  */
 .dropdown-hover:hover .dropdown-menu-top-right,
 .dropdown-hover:hover .dropdown-menu-top-left,
 .dropdown-open.dropdown-menu-top-right,
@@ -82,26 +79,28 @@
 .dropdown:focus .dropdown-menu-top-left,
 .dropdown:focus-within .dropdown-menu-top-right,
 .dropdown:focus-within .dropdown-menu-top-left {
-  opacity: 1;
-  transform: translate(0, -5px) scale(1);
-  visibility: visible;
+  @apply visible translate-x-0 -translate-y-0 scale-100 opacity-100;
 }
 
-/* Activate for left side and right side */
+/* Only Right   */
 
 .dropdown-hover:hover .dropdown-menu-right,
-.dropdown-hover:hover .dropdown-menu-left,
 .dropdown-open.dropdown-menu-right,
-.dropdown-open.dropdown-menu-left,
 .dropdown:focus .dropdown-menu-right,
-.dropdown:focus-within .dropdown-menu-right,
-.dropdown:focus .dropdown-menu-left,
-.dropdown:focus-within .dropdown-menu-left {
-  opacity: 1;
-  transform: translate(0, -50%) scale(1);
-  visibility: visible;
+.dropdown:focus-within .dropdown-menu-right {
+  @apply visible right-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
 }
 
+/* Only Left   */
+
+.dropdown-hover:hover .dropdown-menu-left,
+.dropdown-open.dropdown-menu-left,
+.dropdown:focus .dropdown-menu-left,
+.dropdown:focus-within .dropdown-menu-left {
+  @apply visible left-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
+}
+
+/* Only Left and right Bottom Side   */
 .dropdown-hover:hover .dropdown-menu-right-bottom,
 .dropdown-hover:hover .dropdown-menu-left-bottom,
 .dropdown-open.dropdown-menu-right-bottom,
@@ -110,11 +109,10 @@
 .dropdown:focus-within .dropdown-menu-right-bottom,
 .dropdown:focus .dropdown-menu-left-bottom,
 .dropdown:focus-within .dropdown-menu-left-bottom {
-  opacity: 1;
-  transform: translate(0, -40px) scale(1);
-  visibility: visible;
+  @apply visible translate-x-0 -translate-y-10 scale-100 opacity-100;
 }
 
+/* Only Left and right Top Side  */
 .dropdown-hover:hover .dropdown-menu-right-top,
 .dropdown-hover:hover .dropdown-menu-left-top,
 .dropdown-open.dropdown-menu-right-top,
@@ -123,7 +121,5 @@
 .dropdown:focus-within .dropdown-menu-right-top,
 .dropdown:focus .dropdown-menu-left-top,
 .dropdown:focus-within .dropdown-menu-left-top {
-  opacity: 1;
-  transform: translate(0) scale(1);
-  visibility: visible;
+  @apply visible translate-x-0 translate-y-0 scale-100 opacity-100;
 }
