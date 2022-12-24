@@ -31,15 +31,15 @@
 }
 
 .navbar-start {
-  @apply flex w-full items-center justify-start  gap-5;
+  @apply flex w-full items-center justify-start  gap-2;
 }
 
 .navbar-center {
-  @apply flex w-full items-center  justify-center gap-5;
+  @apply flex w-full items-center  justify-center gap-2;
 }
 
 .navbar-end {
-  @apply flex w-full items-center justify-end gap-5;
+  @apply flex w-full items-center justify-end gap-2;
 }
 
 .navbar-brand {
