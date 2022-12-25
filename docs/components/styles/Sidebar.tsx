@@ -3,8 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { items } from "../../utils/items";
+import { DiscordIcon } from "../icons/DiscordIcon";
+import { GithubIcon } from "../icons/GithubIcon";
 import { MenuIcon } from "../icons/MenuIcon";
 import { SearchIcon } from "../icons/SearchIcon";
+import { TwitterIcon } from "../icons/TwitterIcon";
 import { XIcon } from "../icons/XIcon";
 import { Searcher } from "./Searcher";
 
@@ -70,6 +73,30 @@ export const Sidebar = () => {
                 })}
               </div>
             ))}
+            <div className="flex gap-3  pt-4">
+              <Link
+                href={"https://discord.gg/b9ZqWsmqsj"}
+                className="cursor-pointer"
+                target={"_blank"}
+              >
+                <DiscordIcon />
+              </Link>
+              <Link
+                href={"https://twitter.com/Siumauricio"}
+                target={"_blank"}
+                className="cursor-pointer"
+              >
+                <TwitterIcon />
+              </Link>
+
+              <Link
+                href={"https://github.com/Siumauricio/rippleui"}
+                target="_blank"
+                className="cursor-pointer "
+              >
+                <GithubIcon />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
