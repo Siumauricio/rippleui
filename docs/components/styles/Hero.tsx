@@ -5,7 +5,7 @@ import { CodeBlock } from "../playground/CodeBlock";
 
 export const Hero = () => {
   return (
-    <section className="pb-10 sm:pb-20">
+    <section className="pb-6 sm:pb-20">
       <div className="flex flex-row justify-center px-4 md:gap-24">
         <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pt-20  lg:pt-52">
           <div className="flex flex-col gap-4">
@@ -27,7 +27,7 @@ export const Hero = () => {
           <div className="flex flex-row flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-4">
             <Link
               href={"/docs/get-started/installation"}
-              className="btn btn-primary btn-md btn-block btn-rounded whitespace-nowrap sm:w-48"
+              className="btn-rounded btn-primary btn-md btn btn-block whitespace-nowrap sm:w-48"
             >
               Get Started
             </Link>
@@ -121,7 +121,7 @@ export const Hero = () => {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <button className="btn btn-primary">Button</button>
+              <button className="btn-primary btn">Button</button>
 
               <label className="flex items-center">
                 <input className="checkbox" type={"checkbox"} defaultChecked />
@@ -145,7 +145,7 @@ export const Hero = () => {
               className="tooltip tooltip-bottom tooltip-secondary tooltip-open h-fit"
               data-tooltip="hello"
             >
-              <button className="btn btn-outline-secondary"> Tooltip</button>
+              <button className="btn-outline-secondary btn"> Tooltip</button>
             </span>
             <div className="flex flex-wrap gap-3">
               <span className="badge badge-primary h-fit">Primary</span>
@@ -160,7 +160,7 @@ export const Hero = () => {
               <img src="./card.webp" alt="Monster image" />
               <div className="absolute bottom-0 mt-5 flex h-14 w-44 flex-col justify-between overflow-hidden  rounded-lg bg-transparent backdrop-blur-md">
                 <div className=" flex h-full items-center justify-center gap-3  rounded-lg">
-                  <span className="btn btn-secondary btn-xs whitespace-nowrap">
+                  <span className="btn-secondary btn-xs btn whitespace-nowrap">
                     Buy a Cat!
                   </span>
                   <span className="badge">Cat</span>
