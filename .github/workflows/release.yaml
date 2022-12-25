@@ -28,10 +28,3 @@ jobs:
           name: ${{ github.ref_name }}
           body: ${{ steps.changelog.outputs.changes }}
           token: ${{ github.token }}
-
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          branch: main
-          commit_message: "docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]"
-          file_pattern: CHANGELOG.md
