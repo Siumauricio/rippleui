@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Highlight, { defaultProps, PrismTheme } from "prism-react-renderer";
+import { useState } from "react";
 import useCopyToClipboard from "../../hooks/useCopyToClipboard";
 import { CopyIcon } from "../icons/CopyIcon";
 
@@ -21,14 +22,17 @@ export const CodeBlock = ({
   linesOn = false,
 }: Props) => {
   const [value, copy] = useCopyToClipboard();
-  //   const { setToast } = useToasts();
+  const [tooltipText, setTooltipText] = useState("Copy to clipboard");
   const code = children ? children.toString().trim() : "";
 
   const clickHandler = () => {
     if (!code) return;
     copy(code);
+    setTooltipText("Copied!");
+    setTimeout(() => {
+      setTooltipText("Copy to clipboard");
+    }, 2000);
   };
-
   return (
     <>
       {!hideIcon && (
@@ -39,7 +43,12 @@ export const CodeBlock = ({
           )}
           onClick={clickHandler}
         >
-          <CopyIcon />
+          <span
+            className="tooltip tooltip-top tooltip-primary"
+            data-tooltip={tooltipText}
+          >
+            <CopyIcon />
+          </span>
         </div>
       )}
 

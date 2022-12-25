@@ -2,7 +2,7 @@ import React from "react";
 
 export const ExamplesRepositories = () => {
   return (
-    <div className="flex flex-row flex-wrap gap-4 pt-6">
+    <div className="flex flex-row flex-wrap justify-center gap-4 pt-6 sm:justify-start">
       <div className="flex w-fit  cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-border ">
         <svg
           width="100"
