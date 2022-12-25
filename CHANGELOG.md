@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/Siumauricio/rippleui/compare/v1.3.1...v1.3.2) (2022-12-25)
+
+
+### Bug Fixes
+
+* add h-screen to drawer and overlay ([5e4c7b8](https://github.com/Siumauricio/rippleui/commit/5e4c7b877b2bba64698fe7c41245e620e7c21d4d))
+* change disabled class to native disabled selector ([7b95eeb](https://github.com/Siumauricio/rippleui/commit/7b95eeb524c532b11b70f41bfc14c9fc5ca54466))
+* **dropdown:** left and right positions stay at center ([0c2ca61](https://github.com/Siumauricio/rippleui/commit/0c2ca61e3840b61e3f35aa372d16708d24dfb515))
+
+
+
+### Refactor
+
+
+* **button:** set min-height ([260691a](https://github.com/Siumauricio/rippleui/commit/260691ac9ca218e04fa81b527494164f621308ea))
+* reduced gap in navbar positions ([7a2f942](https://github.com/Siumauricio/rippleui/commit/7a2f942b079f9d14a89152a30c066c97b596b5b1))
+* set display  flex and set min-height by default ([2027922](https://github.com/Siumauricio/rippleui/commit/2027922659bb6d5b8f01e467437164f063f84d23))
+
+
 ### [1.3.1](https://github.com/Siumauricio/rippleui/compare/v1.3.0...v1.3.1) (2022-12-19)
 
 
