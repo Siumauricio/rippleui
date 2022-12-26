@@ -17,7 +17,7 @@ export const Navbar = () => {
     setRouterDefined(router.asPath.split("#")[0]);
   }, [router.asPath, routerDefined]);
   return (
-    <nav className="navbar navbar-sticky navbar-glass z-30 py-3 shadow-none">
+    <nav className="navbar navbar-sticky navbar-glass py-3 shadow-none">
       <div className="mx-auto flex w-full max-w-7xl">
         <div className="navbar-start">
           <div className="navbar-brand gap-0">
@@ -28,7 +28,7 @@ export const Navbar = () => {
               href={"/"}
               className="navbar-item   flex-row items-center gap-3 py-2"
             >
-              <label className=" hidden cursor-pointer text-3xl  font-semibold lg:flex">
+              <label className=" hidden cursor-pointer text-3xl  font-semibold text-whiteInverted lg:flex">
                 Ripple UI
               </label>
               <div className="flex lg:hidden">
@@ -41,8 +41,10 @@ export const Navbar = () => {
         <div className="navbar-center hidden gap-1 lg:flex">
           <Link
             className={clsx(
-              routerDefined.includes("/docs/get-started") && "text-primary",
-              "navbar-item"
+              "navbar-item",
+              routerDefined.includes("/docs/get-started")
+                ? "text-primary"
+                : "text-whiteInverted"
             )}
             href={"/docs/get-started/installation"}
           >
@@ -50,7 +52,9 @@ export const Navbar = () => {
           </Link>
           <Link
             className={clsx(
-              routerDefined.includes("/docs/components") && "text-primary",
+              routerDefined.includes("/docs/components")
+                ? "text-primary"
+                : "text-whiteInverted",
               "navbar-item"
             )}
             href={"/docs/components/button"}
@@ -59,7 +63,9 @@ export const Navbar = () => {
           </Link>
           <Link
             className={clsx(
-              routerDefined.includes("/docs/license") && "text-primary",
+              routerDefined.includes("/docs/license")
+                ? "text-primary"
+                : "text-whiteInverted",
               "navbar-item"
             )}
             href={"/docs/license/MIT"}
