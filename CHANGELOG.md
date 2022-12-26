@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/Siumauricio/rippleui/compare/v1.3.2...v1.3.3) (2022-12-26)
+
+
+### Features
+
+* **config:** utils function for convert and handle opacity ([45da8a1](https://github.com/Siumauricio/rippleui/commit/45da8a1e6317e0f85d8733d58ef95f2ee3d1ece3))
+
+
+### Refactor
+
+* **base:** removed base styles ([a40b60b](https://github.com/Siumauricio/rippleui/commit/a40b60b6a57ad2e629fe2a861e33e9a457ecc700))
+* **button:** change button size props ([491921e](https://github.com/Siumauricio/rippleui/commit/491921e6af8489bf147182987012061b938cdaac))
+* **components:** add rgb function to each variable ([5755038](https://github.com/Siumauricio/rippleui/commit/5755038ba01e80b1b4a4ade6f2448988a6117624))
+* **config:** change type return to colors ([76574d9](https://github.com/Siumauricio/rippleui/commit/76574d9cabdb209fbf92c40731015865a8402933))
+* **config:** convert hexa to rgb ([9ec6174](https://github.com/Siumauricio/rippleui/commit/9ec61744c856546205558afc0ce2b386174d6630))
+* **config:** inject base bg and text color by default ([d0cb4d5](https://github.com/Siumauricio/rippleui/commit/d0cb4d5049bf49a6b637fc3fbd9c83ac509247f4))
+* **config:** trigger function when color called ([68d8201](https://github.com/Siumauricio/rippleui/commit/68d82014126731a3571d7185f29f1639c4017530))
+* **dropdown:** reduce z-index to z-49 ([df5e6ce](https://github.com/Siumauricio/rippleui/commit/df5e6ceb3c82c76081ca43f8a803f5d481193bc1))
+* **modal:** increase z-index to be in front of navbar ([0fac4e0](https://github.com/Siumauricio/rippleui/commit/0fac4e0ca500a3700e3c53ac479b0b310886dc5d))
+* **utilites:** add hide-scrollbar ([4bb05b9](https://github.com/Siumauricio/rippleui/commit/4bb05b9f8467f6bbcdca6e17cb2855573f988566))
+
 ### [1.3.2](https://github.com/Siumauricio/rippleui/compare/v1.3.1...v1.3.2) (2022-12-25)
 
 
