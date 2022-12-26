@@ -52,14 +52,14 @@ export const Pallete = () => {
                           className={clsx(
                             "flex min-w-fit cursor-pointer  justify-start  rounded-lg  py-4 px-4 transition-all hover:-translate-y-1.5"
                           )}
-                          style={{ backgroundColor: `var(--${key})` }}
+                          style={{ backgroundColor: `rgb(var(--${key}))` }}
                           ref={element}
                           key={index}
                           onClick={() => getColorByDocument(key)}
                         >
                           <p
                             // @ts-ignore
-                            style={{ color: `var(--${item[key]})` }}
+                            style={{ color: `rgb(var(--${item[key]}))` }}
                             key={index}
                           >
                             {key}
