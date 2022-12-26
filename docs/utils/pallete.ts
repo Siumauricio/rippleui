@@ -1,5 +1,47 @@
 export const pallete = [
   {
+    title: "Base colors",
+    colors: [
+      {
+        title: "Base",
+        values: [
+          {
+            primary: "text-content1",
+            secondary: "text-content1",
+            error: "text-content1",
+            success: "text-content1",
+            warning: "text-content1",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Background",
+    colors: [
+      {
+        title: "Background",
+        values: [
+          {
+            backgroundPrimary: "text-content1",
+            backgroundSecondary: "text-content1",
+            border: "text-content1",
+          },
+        ],
+      },
+      {
+        title: "Content",
+        values: [
+          {
+            content1: "blackInverted",
+            content2: "blackInverted",
+            content3: "blackInverted",
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: "Brands",
     colors: [
       {
@@ -112,31 +154,6 @@ export const pallete = [
             "gray-600": "text-white",
             "gray-700": "text-white",
             "gray-800": "text-white",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Background",
-    colors: [
-      {
-        title: "Background",
-        values: [
-          {
-            backgroundPrimary: "text-content1",
-            backgroundSecondary: "text-content1",
-            border: "text-content1",
-          },
-        ],
-      },
-      {
-        title: "Content",
-        values: [
-          {
-            content1: "blackInverted",
-            content2: "blackInverted",
-            content3: "blackInverted",
           },
         ],
       },
