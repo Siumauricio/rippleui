@@ -6,6 +6,7 @@ import fs from "fs";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
 import path from "path";
+import { defaultSchema } from "./colors/default-schema";
 
 const basePath = path.resolve(__dirname, path.join("..", "css"));
 const baseCSS = fs.readFileSync(basePath + "/base.css", "utf-8");
@@ -20,11 +21,14 @@ export const config = plugin(
     const baseObj = postcssJs.objectify(base);
     const componentsObj = postcssJs.objectify(components);
     const utilitiesObj = postcssJs.objectify(utilities);
-
     // Add base styles/colors
     addBase([
       {
         ...(process.env.NODE_ENV === "production" ? baseObj : null),
+        // This will add by default bg-color and color
+        [":root, [data-theme]"]: {
+          ...defaultSchema,
+        },
         [":root"]: {
           colorScheme: "light",
           ...lighTheme.colors,
@@ -53,7 +57,8 @@ export const config = plugin(
   {
     theme: {
       extend: {
-        colors: varTheme.colors,
+        // @ts-ignore
+        colors: { ...varTheme.colors },
       },
     },
   }

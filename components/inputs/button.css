@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  @apply inline-flex  min-h-[2.5rem] cursor-pointer items-center  justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer items-center  justify-center rounded-xl border border-border bg-backgroundPrimary px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
 }
 
 .btn:where(
@@ -60,23 +60,23 @@
 
 /* Button Sizes */
 .btn-xs {
-  @apply h-6 w-20 rounded-[7px] text-xs;
+  @apply h-[1.5rem] min-h-[1.5rem] rounded-[7px] px-2 text-xs;
 }
 
 .btn-sm {
-  @apply h-8 w-36 rounded-[9px];
+  @apply h-[2rem] min-h-[2rem] rounded-lg  px-3 text-sm;
 }
 
 .btn-md {
-  @apply h-10 w-48 rounded-xl;
+  @apply h-10 min-h-[2.5rem]  px-5 text-sm;
 }
 
 .btn-lg {
-  @apply h-12 w-60 rounded-[14px] text-lg;
+  @apply h-[3rem] min-h-[3rem]  px-6 text-lg;
 }
 
 .btn-xl {
-  @apply h-16 w-72 rounded-[18px] text-xl;
+  @apply h-[4rem] min-h-[4rem]  rounded-2xl px-8 text-xl;
 }
 
 .btn:disabled {

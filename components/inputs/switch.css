@@ -1,13 +1,14 @@
 .switch {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --switch-bg: var(--backgroundPrimary);
-  --switch-border: var(--border);
-  --switch-bg-checked: var(--primary);
-  --switch-border-checked: var(--primary);
-  --switch-border-hover: var(--border);
+  --switch-bg: rgb(var(--backgroundPrimary));
+  --switch-border: rgb(var(--border));
+  --switch-bg-checked: rgb(var(--primary));
+  --switch-border-checked: rgb(var(--primary));
+  --switch-border-hover: rgb(var(--border));
   --switch-bg-hover: inherit;
-  --checkline-color: white;
+  --checkline-color: rgb(var(--white));
+  --circle-color: rgb(var(--border));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
 }
@@ -19,7 +20,7 @@
 }
 
 .switch:checked {
-  --ab: #fff;
+  --circle-color: rgb(var(--white));
   @apply border-[var(--switch-border-checked)] bg-[var(--switch-bg-checked)];
   --d-o: 0.3s;
   --d-t: 0.6s;
@@ -46,9 +47,9 @@
 
 /* CheckLine */
 .switch::after {
-  background: var(--ab, var(--border));
+  /* background: var(--ab, var(--border)); */
   transform: translateX(var(--x, 0));
-  @apply left-[2px] top-[2px] h-[15px] w-[15px] rounded-full;
+  @apply left-[2px] top-[2px] h-[15px] w-[15px] rounded-full bg-[var(--circle-color)];
 }
 
 .switch:checked {
@@ -62,103 +63,103 @@
 /* Base */
 
 .switch-primary {
-  --switch-bg-checked: var(--primary);
-  --switch-border-checked: var(--primary);
+  --switch-bg-checked: rgb(var(--primary));
+  --switch-border-checked: rgb(var(--primary));
 }
 
 .switch-secondary {
-  --switch-bg-checked: var(--secondary);
-  --switch-border-checked: var(--secondary);
+  --switch-bg-checked: rgb(var(--secondary));
+  --switch-border-checked: rgb(var(--secondary));
 }
 
 .switch-success {
-  --switch-bg-checked: var(--success);
-  --switch-border-checked: var(--success);
+  --switch-bg-checked: rgb(var(--success));
+  --switch-border-checked: rgb(var(--success));
 }
 
 .switch-error {
-  --switch-bg-checked: var(--error);
-  --switch-border-checked: var(--error);
+  --switch-bg-checked: rgb(var(--error));
+  --switch-border-checked: rgb(var(--error));
 }
 
 .switch-warning {
-  --switch-bg-checked: var(--warning);
-  --switch-border-checked: var(--warning);
+  --switch-bg-checked: rgb(var(--warning));
+  --switch-border-checked: rgb(var(--warning));
 }
 
 /* bordered */
 
 .switch-bordered-primary {
-  --switch-bg-checked: var(--primary);
-  --switch-border-checked: var(--primary);
-  --switch-border: var(--primary);
-  --switch-border-hover: var(--primary);
+  --switch-bg-checked: rgb(var(--primary));
+  --switch-border-checked: rgb(var(--primary));
+  --switch-border: rgb(var(--primary));
+  --switch-border-hover: rgb(var(--primary));
   /* --switch-bg-hover: var(--backgroundPrimary); */
 }
 
 .switch-bordered-secondary {
-  --switch-bg-checked: var(--secondary);
-  --switch-border-checked: var(--secondary);
-  --switch-border: var(--secondary);
-  --switch-border-hover: var(--secondary);
+  --switch-bg-checked: rgb(var(--secondary));
+  --switch-border-checked: rgb(var(--secondary));
+  --switch-border: rgb(var(--secondary));
+  --switch-border-hover: rgb(var(--secondary));
 }
 
 .switch-bordered-success {
-  --switch-bg-checked: var(--success);
-  --switch-border-checked: var(--success);
-  --switch-border: var(--success);
-  --switch-border-hover: var(--success);
+  --switch-bg-checked: rgb(var(--success));
+  --switch-border-checked: rgb(var(--success));
+  --switch-border: rgb(var(--success));
+  --switch-border-hover: rgb(var(--success));
 }
 
 .switch-bordered-error {
-  --switch-bg-checked: var(--error);
-  --switch-border-checked: var(--error);
-  --switch-border: var(--error);
-  --switch-border-hover: var(--error);
+  --switch-bg-checked: rgb(var(--error));
+  --switch-border-checked: rgb(var(--error));
+  --switch-border: rgb(var(--error));
+  --switch-border-hover: rgb(var(--error));
 }
 
 .switch-bordered-warning {
-  --switch-bg-checked: var(--warning);
-  --switch-border-checked: var(--warning);
-  --switch-border: var(--warning);
-  --switch-border-hover: var(--warning);
+  --switch-bg-checked: rgb(var(--warning));
+  --switch-border-checked: rgb(var(--warning));
+  --switch-border: rgb(var(--warning));
+  --switch-border-hover: rgb(var(--warning));
 }
 
 /* Ghost */
 
 .switch-ghost-primary {
-  --switch-bg-checked: var(--primary);
-  --switch-border-checked: var(--primary);
-  --switch-border-hover: var(--primary);
-  --checkline-color: var(--primary);
+  --switch-bg-checked: rgb(var(--primary));
+  --switch-border-checked: rgb(var(--primary));
+  --switch-border-hover: rgb(var(--primary));
+  --checkline-color: rgb(var(--primary));
 }
 
 .switch-ghost-secondary {
-  --switch-bg-checked: var(--secondary);
-  --switch-border-checked: var(--secondary);
-  --switch-border-hover: var(--secondary);
-  --checkline-color: var(--secondary);
+  --switch-bg-checked: rgb(var(--secondary));
+  --switch-border-checked: rgb(var(--secondary));
+  --switch-border-hover: rgb(var(--secondary));
+  --checkline-color: rgb(var(--secondary));
 }
 
 .switch-ghost-success {
-  --switch-bg-checked: var(--success);
-  --switch-border-checked: var(--success);
-  --switch-border-hover: var(--success);
-  --checkline-color: var(--success);
+  --switch-bg-checked: rgb(var(--success));
+  --switch-border-checked: rgb(var(--success));
+  --switch-border-hover: rgb(var(--success));
+  --checkline-color: rgb(var(--success));
 }
 
 .switch-ghost-error {
-  --switch-bg-checked: var(--error);
-  --switch-border-checked: var(--error);
-  --switch-border-hover: var(--error);
-  --checkline-color: var(--error);
+  --switch-bg-checked: rgb(var(--error));
+  --switch-border-checked: rgb(var(--error));
+  --switch-border-hover: rgb(var(--error));
+  --checkline-color: rgb(var(--error));
 }
 
 .switch-ghost-warning {
-  --switch-bg-checked: var(--warning);
-  --switch-border-checked: var(--warning);
-  --switch-border-hover: var(--warning);
-  --checkline-color: var(--warning);
+  --switch-bg-checked: rgb(var(--warning));
+  --switch-border-checked: rgb(var(--warning));
+  --switch-border-hover: rgb(var(--warning));
+  --checkline-color: rgb(var(--warning));
 }
 
 /* Sizes */

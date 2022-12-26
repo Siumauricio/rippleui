@@ -1,5 +1,5 @@
 @import "tailwindcss/utilities";
 
-.content-auto {
-   content-visibility: auto;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

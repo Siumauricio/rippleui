@@ -1,17 +1,17 @@
 import { BackgroundVariables } from "../types";
 
 export const background: BackgroundVariables = {
-  "--backgroundPrimary": "#FFFFFF",
-  "--backgroundSecondary": "#F7F7F7",
-  "--border": "#E8E8E8",
-  "--black": "#000000",
-  "--white": "#FFFFFF",
+  "--backgroundPrimary": "255 255 255",
+  "--backgroundSecondary": "247 247 247",
+  "--border": "232 232 232",
+  "--black": "0 0 0",
+  "--white": "255 255 255",
 };
 
 export const backgroundDark: BackgroundVariables = {
-  "--backgroundPrimary": "#1A1A1A",
-  "--backgroundSecondary": "#272727",
-  "--border": "#313131",
-  "--black": "#000000",
-  "--white": "#FFFFFF",
+  "--backgroundPrimary": "26 26 26",
+  "--backgroundSecondary": "39 39 39",
+  "--border": "49 49 49",
+  "--black": "0 0 0",
+  "--white": "255 255 255",
 };

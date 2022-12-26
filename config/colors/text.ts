@@ -1,17 +1,17 @@
 import { TextVariables } from "../types";
 
 export const text: TextVariables = {
-  "--content1": "#1C1C1C",
-  "--content2": "#585757",
-  "--content3": "#969696",
-  "--whiteInverted": "#000000",
-  "--blackInverted": "#FFFFFF",
+  "--content1": "28 28 28",
+  "--content2": "88 87 87",
+  "--content3": "150 150 150",
+  "--whiteInverted": "0 0 0",
+  "--blackInverted": "255 255 255",
 };
 
 export const textDark: TextVariables = {
-  "--content1": "#E8E8E8",
-  "--content2": "#BABABA",
-  "--content3": "#767676",
-  "--whiteInverted": "#FFFFFF",
-  "--blackInverted": "#000000",
+  "--content1": "232 232 232",
+  "--content2": "186 186 186",
+  "--content3": "118 118 118",
+  "--whiteInverted": "255 255 255",
+  "--blackInverted": "0 0 0",
 };

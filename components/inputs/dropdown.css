@@ -7,7 +7,7 @@
 }
 
 .dropdown-menu {
-  @apply invisible absolute right-0 z-[55] mt-2  w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible absolute right-0 z-[49] mt-2  w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
 }
 
 .dropdown-item {

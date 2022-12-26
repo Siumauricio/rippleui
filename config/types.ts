@@ -1,3 +1,4 @@
+import { applyOpacityValue } from "./utils/applyOpacityValue";
 export type Colors =
   | "blue"
   | "green"
@@ -42,6 +43,8 @@ type TextScale =
   | "whiteInverted"
   | "blackInverted";
 
+type DefaultSchema = "background-color" | "color";
+
 type BackgroundVariablesScale = `--${BackgroundScale}`;
 
 type BaseVariablesScale = `--${BaseScale}`;
@@ -52,20 +55,26 @@ type PalleteVariablesScale<T extends Colors> = `--${T}-${PalleteScale}`;
 
 type PalleteVariablesAll = `--${Colors}-${PalleteScale}`;
 
+type OpacityFunc = ReturnType<typeof applyOpacityValue>;
+
+export type DefaultSchemaColors = {
+  [key in DefaultSchema]: string;
+};
+
 export type PalleteColors = {
-  [key in PalleteScale]: string;
+  [key in PalleteScale]: OpacityFunc;
 };
 
 export type BackgroundColors = {
-  [key in BackgroundScale]: string;
+  [key in BackgroundScale]: OpacityFunc;
 };
 
 export type TextColors = {
-  [key in TextScale]: string;
+  [key in TextScale]: OpacityFunc;
 };
 
 export type BaseColors = {
-  [key in BaseScale]: string;
+  [key in BaseScale]: OpacityFunc;
 };
 
 export type Pallete = {
