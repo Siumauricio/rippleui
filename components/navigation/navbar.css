@@ -18,8 +18,7 @@
 }
 
 .navbar-glass {
-  background-color: rgba(var(--backgroundSecondary), 0.4);
-  @apply backdrop-blur-[50px];
+  @apply bg-transparent backdrop-blur-[50px];
 }
 
 .navbar-rounded {
