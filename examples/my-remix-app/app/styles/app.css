@@ -1,0 +1,978 @@
+/*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: rgb(var(--gray-200));
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: rgb(var(--gray-400));
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: rgb(var(--gray-400));
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+:root, [data-theme] {
+  background-color: rgb(var(--backgroundPrimary) / var(--tw-bg-opacity, 1));
+  color: rgb(var(--content1) / var(--tw-text-opacity, 1));
+}
+
+:root {
+  color-scheme: light;
+  --backgroundPrimary: 255 255 255;
+  --backgroundSecondary: 247 247 247;
+  --border: 232 232 232;
+  --black: 0 0 0;
+  --white: 255 255 255;
+  --content1: 28 28 28;
+  --content2: 88 87 87;
+  --content3: 150 150 150;
+  --whiteInverted: 0 0 0;
+  --blackInverted: 255 255 255;
+  --neutral: 105 113 119;
+  --primary: 0 114 245;
+  --secondary: 151 80 221;
+  --success: 23 201 100;
+  --error: 243 18 96;
+  --warning: 255 184 0;
+  --blue-50: 237 245 255;
+  --blue-100: 225 239 255;
+  --blue-200: 206 228 254;
+  --blue-300: 183 213 248;
+  --blue-400: 150 193 242;
+  --blue-500: 94 162 239;
+  --blue-600: 0 114 245;
+  --blue-700: 0 95 204;
+  --blue-800: 0 71 153;
+  --blue-900: 0 37 77;
+  --purple-50: 247 242 253;
+  --purple-100: 241 232 251;
+  --purple-200: 234 220 248;
+  --purple-300: 224 203 245;
+  --purple-400: 209 177 240;
+  --purple-500: 188 142 233;
+  --purple-600: 120 40 200;
+  --purple-700: 102 34 170;
+  --purple-800: 77 25 128;
+  --purple-900: 41 14 68;
+  --green-50: 241 253 247;
+  --green-100: 232 252 241;
+  --green-200: 218 251 232;
+  --green-300: 200 249 221;
+  --green-400: 173 245 204;
+  --green-500: 136 241 182;
+  --green-600: 23 201 100;
+  --green-700: 19 164 82;
+  --green-800: 16 137 68;
+  --green-900: 6 55 27;
+  --yellow-50: 254 249 240;
+  --yellow-100: 254 245 231;
+  --yellow-200: 253 239 216;
+  --yellow-300: 252 231 197;
+  --yellow-400: 251 219 167;
+  --yellow-500: 249 203 128;
+  --yellow-600: 245 165 36;
+  --yellow-700: 185 117 9;
+  --yellow-800: 146 93 7;
+  --yellow-900: 78 49 4;
+  --red-50: 254 240 245;
+  --red-100: 254 231 239;
+  --red-200: 253 216 229;
+  --red-300: 252 197 216;
+  --red-400: 250 168 197;
+  --red-500: 248 129 171;
+  --red-600: 243 18 96;
+  --red-700: 184 10 71;
+  --red-800: 145 8 56;
+  --red-900: 78 4 30;
+  --cyan-50: 240 252 255;
+  --cyan-100: 230 250 254;
+  --cyan-200: 215 248 254;
+  --cyan-300: 195 244 253;
+  --cyan-400: 165 238 253;
+  --cyan-500: 126 231 252;
+  --cyan-600: 6 183 219;
+  --cyan-700: 9 170 205;
+  --cyan-800: 14 138 170;
+  --cyan-900: 5 59 72;
+  --pink-50: 255 240 251;
+  --pink-100: 255 229 248;
+  --pink-200: 255 214 243;
+  --pink-300: 255 194 238;
+  --pink-400: 255 163 229;
+  --pink-500: 255 122 217;
+  --pink-600: 255 78 205;
+  --pink-700: 214 0 154;
+  --pink-800: 184 0 132;
+  --pink-900: 77 0 55;
+  --gray-50: 241 243 245;
+  --gray-100: 236 238 240;
+  --gray-200: 230 232 235;
+  --gray-300: 223 227 230;
+  --gray-400: 215 219 223;
+  --gray-500: 193 200 205;
+  --gray-600: 136 144 150;
+  --gray-700: 126 134 140;
+  --gray-800: 104 112 118;
+  --gray-900: 17 24 28;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    color-scheme: dark;
+    --backgroundPrimary: 26 26 26;
+    --backgroundSecondary: 39 39 39;
+    --border: 49 49 49;
+    --black: 0 0 0;
+    --white: 255 255 255;
+    --content1: 232 232 232;
+    --content2: 186 186 186;
+    --content3: 118 118 118;
+    --whiteInverted: 255 255 255;
+    --blackInverted: 0 0 0;
+    --neutral: 105 113 119;
+    --primary: 0 114 245;
+    --secondary: 151 80 221;
+    --success: 23 201 100;
+    --error: 243 18 96;
+    --warning: 255 184 0;
+    --blue-50: 16 37 62;
+    --blue-100: 16 44 76;
+    --blue-200: 15 49 88;
+    --blue-300: 13 56 104;
+    --blue-400: 10 66 129;
+    --blue-500: 9 82 165;
+    --blue-600: 0 114 245;
+    --blue-700: 54 148 255;
+    --blue-800: 54 148 255;
+    --blue-900: 234 244 255;
+    --green-50: 4 47 20;
+    --green-100: 6 56 27;
+    --green-200: 7 74 36;
+    --green-300: 10 97 48;
+    --green-400: 11 116 57;
+    --green-500: 15 149 73;
+    --green-600: 23 201 100;
+    --green-700: 65 236 139;
+    --green-800: 120 242 173;
+    --green-900: 236 253 244;
+    --purple-50: 31 10 51;
+    --purple-100: 36 12 60;
+    --purple-200: 46 15 77;
+    --purple-300: 59 19 98;
+    --purple-400: 69 23 115;
+    --purple-500: 87 29 145;
+    --purple-600: 120 40 200;
+    --purple-700: 151 80 221;
+    --purple-800: 181 131 231;
+    --purple-900: 247 236 252;
+    --yellow-50: 58 37 3;
+    --yellow-100: 68 43 3;
+    --yellow-200: 88 56 4;
+    --yellow-300: 112 71 5;
+    --yellow-400: 132 83 6;
+    --yellow-500: 166 105 8;
+    --yellow-600: 245 165 36;
+    --yellow-700: 246 173 55;
+    --yellow-800: 248 197 114;
+    --yellow-900: 254 247 236;
+    --red-50: 48 3 19;
+    --red-100: 48 3 19;
+    --red-200: 68 4 26;
+    --red-300: 92 5 35;
+    --red-400: 111 6 43;
+    --red-500: 145 8 56;
+    --red-600: 243 18 96;
+    --red-700: 244 37 109;
+    --red-800: 247 95 148;
+    --red-900: 253 216 229;
+    --cyan-50: 1 42 50;
+    --cyan-100: 2 58 70;
+    --cyan-200: 2 75 90;
+    --cyan-300: 3 96 114;
+    --cyan-400: 3 112 134;
+    --cyan-500: 4 142 169;
+    --cyan-600: 6 183 219;
+    --cyan-700: 51 217 250;
+    --cyan-800: 111 228 251;
+    --cyan-900: 235 251 254;
+    --pink-50: 51 0 37;
+    --pink-100: 71 0 51;
+    --pink-200: 92 0 66;
+    --pink-300: 117 0 84;
+    --pink-400: 138 0 99;
+    --pink-500: 173 0 124;
+    --pink-600: 255 78 205;
+    --pink-700: 255 46 196;
+    --pink-800: 255 107 213;
+    --pink-900: 255 235 249;
+    --gray-50: 22 24 26;
+    --gray-100: 38 41 43;
+    --gray-200: 43 47 49;
+    --gray-300: 49 53 56;
+    --gray-400: 58 63 66;
+    --gray-500: 76 81 85;
+    --gray-600: 105 113 119;
+    --gray-700: 120 127 133;
+    --gray-800: 155 161 166;
+    --gray-900: 236 237 238;
+  }
+}
+
+[data-theme=light] {
+  color-scheme: light;
+  --backgroundPrimary: 255 255 255;
+  --backgroundSecondary: 247 247 247;
+  --border: 232 232 232;
+  --black: 0 0 0;
+  --white: 255 255 255;
+  --content1: 28 28 28;
+  --content2: 88 87 87;
+  --content3: 150 150 150;
+  --whiteInverted: 0 0 0;
+  --blackInverted: 255 255 255;
+  --neutral: 105 113 119;
+  --primary: 0 114 245;
+  --secondary: 151 80 221;
+  --success: 23 201 100;
+  --error: 243 18 96;
+  --warning: 255 184 0;
+  --blue-50: 237 245 255;
+  --blue-100: 225 239 255;
+  --blue-200: 206 228 254;
+  --blue-300: 183 213 248;
+  --blue-400: 150 193 242;
+  --blue-500: 94 162 239;
+  --blue-600: 0 114 245;
+  --blue-700: 0 95 204;
+  --blue-800: 0 71 153;
+  --blue-900: 0 37 77;
+  --purple-50: 247 242 253;
+  --purple-100: 241 232 251;
+  --purple-200: 234 220 248;
+  --purple-300: 224 203 245;
+  --purple-400: 209 177 240;
+  --purple-500: 188 142 233;
+  --purple-600: 120 40 200;
+  --purple-700: 102 34 170;
+  --purple-800: 77 25 128;
+  --purple-900: 41 14 68;
+  --green-50: 241 253 247;
+  --green-100: 232 252 241;
+  --green-200: 218 251 232;
+  --green-300: 200 249 221;
+  --green-400: 173 245 204;
+  --green-500: 136 241 182;
+  --green-600: 23 201 100;
+  --green-700: 19 164 82;
+  --green-800: 16 137 68;
+  --green-900: 6 55 27;
+  --yellow-50: 254 249 240;
+  --yellow-100: 254 245 231;
+  --yellow-200: 253 239 216;
+  --yellow-300: 252 231 197;
+  --yellow-400: 251 219 167;
+  --yellow-500: 249 203 128;
+  --yellow-600: 245 165 36;
+  --yellow-700: 185 117 9;
+  --yellow-800: 146 93 7;
+  --yellow-900: 78 49 4;
+  --red-50: 254 240 245;
+  --red-100: 254 231 239;
+  --red-200: 253 216 229;
+  --red-300: 252 197 216;
+  --red-400: 250 168 197;
+  --red-500: 248 129 171;
+  --red-600: 243 18 96;
+  --red-700: 184 10 71;
+  --red-800: 145 8 56;
+  --red-900: 78 4 30;
+  --cyan-50: 240 252 255;
+  --cyan-100: 230 250 254;
+  --cyan-200: 215 248 254;
+  --cyan-300: 195 244 253;
+  --cyan-400: 165 238 253;
+  --cyan-500: 126 231 252;
+  --cyan-600: 6 183 219;
+  --cyan-700: 9 170 205;
+  --cyan-800: 14 138 170;
+  --cyan-900: 5 59 72;
+  --pink-50: 255 240 251;
+  --pink-100: 255 229 248;
+  --pink-200: 255 214 243;
+  --pink-300: 255 194 238;
+  --pink-400: 255 163 229;
+  --pink-500: 255 122 217;
+  --pink-600: 255 78 205;
+  --pink-700: 214 0 154;
+  --pink-800: 184 0 132;
+  --pink-900: 77 0 55;
+  --gray-50: 241 243 245;
+  --gray-100: 236 238 240;
+  --gray-200: 230 232 235;
+  --gray-300: 223 227 230;
+  --gray-400: 215 219 223;
+  --gray-500: 193 200 205;
+  --gray-600: 136 144 150;
+  --gray-700: 126 134 140;
+  --gray-800: 104 112 118;
+  --gray-900: 17 24 28;
+}
+
+[data-theme=dark] {
+  color-scheme: dark;
+  --backgroundPrimary: 26 26 26;
+  --backgroundSecondary: 39 39 39;
+  --border: 49 49 49;
+  --black: 0 0 0;
+  --white: 255 255 255;
+  --content1: 232 232 232;
+  --content2: 186 186 186;
+  --content3: 118 118 118;
+  --whiteInverted: 255 255 255;
+  --blackInverted: 0 0 0;
+  --neutral: 105 113 119;
+  --primary: 0 114 245;
+  --secondary: 151 80 221;
+  --success: 23 201 100;
+  --error: 243 18 96;
+  --warning: 255 184 0;
+  --blue-50: 16 37 62;
+  --blue-100: 16 44 76;
+  --blue-200: 15 49 88;
+  --blue-300: 13 56 104;
+  --blue-400: 10 66 129;
+  --blue-500: 9 82 165;
+  --blue-600: 0 114 245;
+  --blue-700: 54 148 255;
+  --blue-800: 54 148 255;
+  --blue-900: 234 244 255;
+  --green-50: 4 47 20;
+  --green-100: 6 56 27;
+  --green-200: 7 74 36;
+  --green-300: 10 97 48;
+  --green-400: 11 116 57;
+  --green-500: 15 149 73;
+  --green-600: 23 201 100;
+  --green-700: 65 236 139;
+  --green-800: 120 242 173;
+  --green-900: 236 253 244;
+  --purple-50: 31 10 51;
+  --purple-100: 36 12 60;
+  --purple-200: 46 15 77;
+  --purple-300: 59 19 98;
+  --purple-400: 69 23 115;
+  --purple-500: 87 29 145;
+  --purple-600: 120 40 200;
+  --purple-700: 151 80 221;
+  --purple-800: 181 131 231;
+  --purple-900: 247 236 252;
+  --yellow-50: 58 37 3;
+  --yellow-100: 68 43 3;
+  --yellow-200: 88 56 4;
+  --yellow-300: 112 71 5;
+  --yellow-400: 132 83 6;
+  --yellow-500: 166 105 8;
+  --yellow-600: 245 165 36;
+  --yellow-700: 246 173 55;
+  --yellow-800: 248 197 114;
+  --yellow-900: 254 247 236;
+  --red-50: 48 3 19;
+  --red-100: 48 3 19;
+  --red-200: 68 4 26;
+  --red-300: 92 5 35;
+  --red-400: 111 6 43;
+  --red-500: 145 8 56;
+  --red-600: 243 18 96;
+  --red-700: 244 37 109;
+  --red-800: 247 95 148;
+  --red-900: 253 216 229;
+  --cyan-50: 1 42 50;
+  --cyan-100: 2 58 70;
+  --cyan-200: 2 75 90;
+  --cyan-300: 3 96 114;
+  --cyan-400: 3 112 134;
+  --cyan-500: 4 142 169;
+  --cyan-600: 6 183 219;
+  --cyan-700: 51 217 250;
+  --cyan-800: 111 228 251;
+  --cyan-900: 235 251 254;
+  --pink-50: 51 0 37;
+  --pink-100: 71 0 51;
+  --pink-200: 92 0 66;
+  --pink-300: 117 0 84;
+  --pink-400: 138 0 99;
+  --pink-500: 173 0 124;
+  --pink-600: 255 78 205;
+  --pink-700: 255 46 196;
+  --pink-800: 255 107 213;
+  --pink-900: 255 235 249;
+  --gray-50: 22 24 26;
+  --gray-100: 38 41 43;
+  --gray-200: 43 47 49;
+  --gray-300: 49 53 56;
+  --gray-400: 58 63 66;
+  --gray-500: 76 81 85;
+  --gray-600: 105 113 119;
+  --gray-700: 120 127 133;
+  --gray-800: 155 161 166;
+  --gray-900: 236 237 238;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(var(--blue-500) / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(var(--blue-500) / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.btn {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  align-items: center;
+  background-color: rgb(var(--backgroundPrimary)/var(--tw-bg-opacity));
+  border-color: rgb(var(--border)/var(--tw-border-opacity));
+  border-radius: .75rem;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  justify-content: center;
+  line-height: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: center;
+  transition-duration: .15s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn:active {
+  --tw-scale-x: 0.97;
+  --tw-scale-y: 0.97;
+  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.btn:where(.btn-primary,.btn-secondary,.btn-success,.btn-error,.btn-warning) {
+  --tw-text-opacity: 1;
+  border-style: none;
+  color: rgb(var(--white)/var(--tw-text-opacity));
+}
+
+.btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--primary)/var(--tw-bg-opacity));
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  to {
+    content: var(--tw-content);
+    transform: rotate(1turn);
+  }
+}
