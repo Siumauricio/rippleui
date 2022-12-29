@@ -96,6 +96,7 @@
   "exclude": [
     "docs",
     "dist",
-    "examples"
+    "examples",
+    "__test__"
   ],
 }
