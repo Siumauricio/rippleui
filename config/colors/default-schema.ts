@@ -1,4 +1,4 @@
-import { DefaultSchemaColors } from "../types";
+import { DefaultSchemaColors } from "../types/theme.types";
 
 export const defaultSchema: DefaultSchemaColors = {
   "background-color": "rgb(var(--backgroundPrimary) / var(--tw-bg-opacity, 1))",
