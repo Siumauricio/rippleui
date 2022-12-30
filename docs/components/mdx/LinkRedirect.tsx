@@ -31,7 +31,7 @@ const LinkRedirect = ({
 
   return (
     <>
-      {showDivider && <div className="my-5 border-t" />}
+      {showDivider && <div className="my-5 border-t border-border" />}
       <div
         className={clsx(
           hideLeft

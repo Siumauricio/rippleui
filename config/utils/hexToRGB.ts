@@ -1,3 +1,5 @@
+import { ColorsMap, RecursivePartial } from "../types/theme.types";
+
 type Result = `${number} ${number} ${number}`;
 
 export const hexToRGB = (hex: string): Result => {
@@ -13,4 +15,16 @@ export const hexToRGB = (hex: string): Result => {
   }
   throw new Error("Invalid hexadecimal string");
   // Return null if the hexadecimal string is invalid
+};
+
+export const palleteToRGB = <T extends ColorsMap | RecursivePartial<ColorsMap>>(
+  pallete: T = {} as T
+): T => {
+  const transformedPallete: T = {} as T;
+  Object.keys(pallete).map((key) => {
+    transformedPallete[key as Extract<keyof T, string>] = hexToRGB(
+      pallete[key as Extract<keyof T, string>] as string
+    ) as T[Extract<keyof T, string>];
+  });
+  return transformedPallete;
 };
