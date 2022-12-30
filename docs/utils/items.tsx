@@ -21,18 +21,12 @@ export const items: Items[] = [
         children: "Usage",
       },
       {
-        href: "/docs/get-started/customization",
-        children: "Customization",
-        disabled: true,
-      },
-      {
         href: "/docs/get-started/theme",
         children: "Theme",
       },
       {
-        href: "/docs/get-started/dark-mode",
-        children: "Dark mode",
-        disabled: true,
+        href: "/docs/get-started/customization",
+        children: "Customization",
       },
     ],
   },
