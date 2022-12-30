@@ -1,0 +1,191 @@
+---
+title: Customization
+description: Customization allows users to personalize the appearance of their user interface by creating, modifying, or removing themes.
+---
+
+# Customization
+
+Customization allows users to personalize the appearance of their user interface by creating, modifying, or removing themes.
+
+## Theme
+
+The theme is the primary way to customize the appearance of your application. It is a collection of colors, that define the look and feel of your application.
+
+RippleUI includes a configuration with types that you allow you to customize the theme of your application. You can also create your own theme or delete the existing ones.
+
+To use this feature go to your `tailwind.config.js`:
+
+We provide types for all the colors that you can customize or change some flags to disable or remove current themes.
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    // You will have all the properties available
+  },
+};
+```
+
+#### How to customize default themes?
+
+To customize the default themes which is `light` and `dark` you can use the `theme` array property:
+
+```js
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    themes: [
+      {
+        themeName: "light",
+        colorScheme: "light",
+        colors: {
+          primary: "#235264",
+          backgroundPrimary: "#964643",
+        },
+      },
+      {
+        themeName: "dark",
+        colorScheme: "dark",
+        colors: {
+          primary: "#573242",
+          backgroundPrimary: "#1a1a1a",
+        },
+      },
+    ],
+  },
+};
+```
+
+#### How to add a new theme?
+
+To add a new theme you can use the `theme` array property:
+
+```js
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    themes: [
+      {
+        themeName: "custom",
+        colorScheme: "custom",
+        colors: {
+          primary: "#634673",
+          backgroundPrimary: "#583533",
+        },
+      },
+    ],
+  },
+};
+```
+
+#### How to remove a theme?
+
+To remove a theme you can use the `removeThemes` array property:
+
+```js
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    removeThemes: ["dark", "light", "whateverTheme"],
+  },
+};
+```
+
+#### How to create a new theme but with another variables?
+
+To create a new theme or existing ones but with another variables you can use the `theme` array property:
+
+```js
+/** @type {import('rippleui/dist/js/types/config.types').Config} */
+const config = {
+  themes: [
+    {
+      themeName: "custom",
+      colorScheme: "custom",
+      colors: {
+        info: "#634673",
+        accent: "#583533",
+        customVariable: "#000000",
+      },
+    },
+  ],
+};
+module.exports = {
+  plugins: [
+    require("./dist/js")({
+      ...config,
+    }),
+  ],
+};
+```
+
+#### How to disable the background color and color that comes by default?
+
+To disable the background color and color that comes by default you can use the `defaultStyle` boolean property:
+
+```js
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    defaultStyle: false,
+  },
+};
+```
+
+#### How to set a preference theme?
+
+To set a theme with preference you can use the `prefersColorScheme` boolean property:
+
+When you have devices with theme preference in `macOS`, `Windows` or `Linux` you can set a preference theme and this flag will enabled the preference theme.
+
+```js
+module.exports = {
+  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  rippleui: {
+    themes: [
+      {
+        themeName: "custom",
+        colorScheme: "custom",
+        prefersColorScheme: true,
+        colors: {
+          primary: "#634673",
+          backgroundPrimary: "#583533",
+        },
+      },
+    ],
+  },
+};
+```
+
+<Attributes >
+<Attributes.Title>Config Props</Attributes.Title>
+
+| className    | type        | Description                                                                     |
+| ------------ | ----------- | ------------------------------------------------------------------------------- |
+| defaultStyle | `boolean`   | Will apply by default bg-color and color to the root element `(default: true)`  |
+| removeThemes | `string []` | The list of themes to remove `(default: [])`                                    |
+| themes       | `Theme[]`   | The list of themes to add, modify you can also add new variables in each theme. |
+
+<Attributes.Title>Theme</Attributes.Title>
+
+```ts
+interface Theme {
+  themeName: string;
+  colorScheme: string;
+  prefersColorScheme?: boolean;
+  colors: {
+    [key: string]: string;
+  };
+}
+```
+
+</Attributes>
+
+<LinkRedirect
+  showDivider={true}
+  contentLeft="Theme"
+  hrefLeft="/docs/get-started/theme"
+  contentRight="Components - Button"
+  hrefRight="/docs/components/button"
+/>
