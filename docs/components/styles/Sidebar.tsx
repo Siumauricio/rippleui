@@ -33,12 +33,12 @@ export const Sidebar = () => {
           >
             <XIcon />
           </label>
-          <div className="flex flex-col gap-2 border-b px-6 py-4">
+          <div className="flex flex-col gap-2 border-b border-border px-6 py-4">
             <p className="text-2xl font-bold">Components</p>
             <Searcher isMobile />
           </div>
 
-          <div className="flex flex-col gap-2 divide-y  px-6 pb-6">
+          <div className="flex flex-col gap-2 divide-y divide-border  px-6 pb-6">
             {items.map((item) => (
               <div key={item.title} className=" pt-4">
                 <span className="font-semibold">{item.title}</span>
