@@ -11,6 +11,7 @@
     "README.md"
   ],
   "scripts": {
+    "test": "vitest __test__",
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",
     "create:files": "touch ./dist/css/styles.css && touch ./dist/css/base.css && touch ./dist/css/components.css && touch ./dist/css/utilities.css",
     "create:paths": "npm run create:folders && npm run create:files",
@@ -66,7 +67,8 @@
     "standard-version": "^9.5.0",
     "terser": "^5.16.0",
     "touch-cli": "^0.0.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "vitest": "^0.14.2"
   },
   "dependencies": {
     "@types/postcss-js": "^4.0.0",
