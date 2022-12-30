@@ -31,13 +31,11 @@ const config = plugin.withOptions(
       const componentsObj = postcssJs.objectify(components);
       const utilitiesObj = postcssJs.objectify(utilities);
 
-      const configValue =
-        (config("rippleui") as Config) || { ...options } || {};
+      const configValue: Config = config("rippleui") || { ...options } || {};
 
       const lightThemeExists = configValue.themes?.find(
         (theme) => theme.themeName === "light"
       );
-      // console.log(lightThemeExists);
 
       const darkThemeExists = configValue.themes?.find(
         (theme) => theme.themeName === "dark"
@@ -93,7 +91,6 @@ const config = plugin.withOptions(
               mergedTheme = mergeNestedObjects(lightTheme, themeUpdated);
             } else if (theme.themeName === "dark") {
               mergedTheme = mergeNestedObjects(darkTheme, themeUpdated);
-              console.log(mergedTheme);
             } else {
               mergedTheme = themeUpdated as Theme;
             }
