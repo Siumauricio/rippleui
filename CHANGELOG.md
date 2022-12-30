@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Siumauricio/rippleui/compare/v1.3.3...v1.4.0) (2022-12-30)
+
+
+### Features
+
+* **config:** support for theme customization ([9fa2904](https://github.com/Siumauricio/rippleui/commit/9fa2904c49b5844bdf03f12794fc75135fd24f13))
+* **config:** types for rippleui theme config ([e3a5910](https://github.com/Siumauricio/rippleui/commit/e3a5910ac2b39491d6a6b3d4ec050360abc710e4))
+
+
+
+### Refactor
+
+* **base:** removed duplicate selector ([97f80fa](https://github.com/Siumauricio/rippleui/commit/97f80fa5859921cbb3919e2d6f7a302559fe208b))
+* move the base  to separate config ([b376066](https://github.com/Siumauricio/rippleui/commit/b376066599e8e230062f6abb951263d22b9798ea))
+* set type to configValue ([a98490b](https://github.com/Siumauricio/rippleui/commit/a98490b2677e66d0fb2b3d2baca760431378da67))
+* update colors type ([b52afd5](https://github.com/Siumauricio/rippleui/commit/b52afd5c76b88ffe8d78f7f977c9074eea0f047e))
+* update themes type ([05440f6](https://github.com/Siumauricio/rippleui/commit/05440f67f4b4587f89b15265080a0c968fe7748b))
+
 ### [1.3.3](https://github.com/Siumauricio/rippleui/compare/v1.3.2...v1.3.3) (2022-12-26)
 
 
