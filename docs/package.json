@@ -29,10 +29,11 @@
     "prism-react-renderer": "^1.3.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rippleui": "latest",
+    "rippleui": "^1.4.0",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.8",
     "@types/prettier": "^2.7.1",
     "autoprefixer": "^10.4.13",
     "next-mdx-remote": "^4.2.0",
