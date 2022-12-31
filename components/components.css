@@ -15,6 +15,7 @@
 @import "./informational/alert.css";
 @import "./informational/table.css";
 @import "./informational/card.css";
+@import "./informational/accordion.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
