@@ -1,0 +1,44 @@
+.tabs {
+  @apply flex w-fit flex-row flex-wrap  items-center whitespace-nowrap;
+}
+
+.tab {
+  @apply min-h-[2rem] px-3 text-sm leading-loose;
+}
+
+.tab-disabled {
+  @apply pointer-events-none cursor-not-allowed text-content3;
+}
+
+.tab-bordered {
+  @apply border-b-2 border-border py-2;
+}
+
+.tab {
+  @apply flex  cursor-pointer  hover:text-primary focus:outline-none;
+}
+
+.tabs:has(.tab-underline) .tab {
+  @apply pb-2;
+}
+
+.tab-active {
+  @apply border-b-primary text-primary;
+}
+
+.tab-underline {
+  @apply relative  pb-2 text-primary;
+}
+
+.tab-underline::after {
+  @apply absolute bottom-0 left-0 z-10  h-0.5  w-full bg-primary content-[""];
+  transition: transform 0.3s ease;
+}
+
+.tab-pill {
+  @apply rounded-xl border  border-transparent py-2   leading-5;
+}
+
+.tab-pill.tab-active {
+  @apply border-blue-300 bg-blue-50;
+}
