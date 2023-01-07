@@ -19,6 +19,8 @@ const blue: ColorsVariables<"blue"> = {
   "blue-700": applyOpacityValue("--blue-700"),
   "blue-800": applyOpacityValue("--blue-800"),
   "blue-900": applyOpacityValue("--blue-900"),
+  "blue-1000": applyOpacityValue("--blue-1000"),
+  "blue-1100": applyOpacityValue("--blue-1100"),
 };
 
 const green: ColorsVariables<"green"> = {
@@ -32,6 +34,8 @@ const green: ColorsVariables<"green"> = {
   "green-700": applyOpacityValue("--green-700"),
   "green-800": applyOpacityValue("--green-800"),
   "green-900": applyOpacityValue("--green-900"),
+  "green-1000": applyOpacityValue("--green-1000"),
+  "green-1100": applyOpacityValue("--green-1100"),
 };
 
 const cyan: ColorsVariables<"cyan"> = {
@@ -45,6 +49,8 @@ const cyan: ColorsVariables<"cyan"> = {
   "cyan-700": applyOpacityValue("--cyan-700"),
   "cyan-800": applyOpacityValue("--cyan-800"),
   "cyan-900": applyOpacityValue("--cyan-900"),
+  "cyan-1000": applyOpacityValue("--cyan-1000"),
+  "cyan-1100": applyOpacityValue("--cyan-1100"),
 };
 
 const gray: ColorsVariables<"gray"> = {
@@ -58,6 +64,8 @@ const gray: ColorsVariables<"gray"> = {
   "gray-700": applyOpacityValue("--gray-700"),
   "gray-800": applyOpacityValue("--gray-800"),
   "gray-900": applyOpacityValue("--gray-900"),
+  "gray-1000": applyOpacityValue("--gray-1000"),
+  "gray-1100": applyOpacityValue("--gray-1100"),
 };
 
 const pink: ColorsVariables<"pink"> = {
@@ -71,6 +79,8 @@ const pink: ColorsVariables<"pink"> = {
   "pink-700": applyOpacityValue("--pink-700"),
   "pink-800": applyOpacityValue("--pink-800"),
   "pink-900": applyOpacityValue("--pink-900"),
+  "pink-1000": applyOpacityValue("--pink-1000"),
+  "pink-1100": applyOpacityValue("--pink-1100"),
 };
 
 const purple: ColorsVariables<"purple"> = {
@@ -84,6 +94,8 @@ const purple: ColorsVariables<"purple"> = {
   "purple-700": applyOpacityValue("--purple-700"),
   "purple-800": applyOpacityValue("--purple-800"),
   "purple-900": applyOpacityValue("--purple-900"),
+  "purple-1000": applyOpacityValue("--purple-1000"),
+  "purple-1100": applyOpacityValue("--purple-1100"),
 };
 
 const yellow: ColorsVariables<"yellow"> = {
@@ -97,6 +109,8 @@ const yellow: ColorsVariables<"yellow"> = {
   "yellow-700": applyOpacityValue("--yellow-700"),
   "yellow-800": applyOpacityValue("--yellow-800"),
   "yellow-900": applyOpacityValue("--yellow-900"),
+  "yellow-1000": applyOpacityValue("--yellow-1000"),
+  "yellow-1100": applyOpacityValue("--yellow-1100"),
 };
 
 const red: ColorsVariables<"red"> = {
@@ -110,8 +124,23 @@ const red: ColorsVariables<"red"> = {
   "red-700": applyOpacityValue("--red-700"),
   "red-800": applyOpacityValue("--red-800"),
   "red-900": applyOpacityValue("--red-900"),
+  "red-1000": applyOpacityValue("--red-1000"),
+  "red-1100": applyOpacityValue("--red-1100"),
 };
-
+const slate: ColorsVariables<"slate"> = {
+  "slate-50": applyOpacityValue("--slate-50"),
+  "slate-100": applyOpacityValue("--slate-100"),
+  "slate-200": applyOpacityValue("--slate-200"),
+  "slate-300": applyOpacityValue("--slate-300"),
+  "slate-400": applyOpacityValue("--slate-400"),
+  "slate-500": applyOpacityValue("--slate-500"),
+  "slate-600": applyOpacityValue("--slate-600"),
+  "slate-700": applyOpacityValue("--slate-700"),
+  "slate-800": applyOpacityValue("--slate-800"),
+  "slate-900": applyOpacityValue("--slate-900"),
+  "slate-1000": applyOpacityValue("--slate-1000"),
+  "slate-1100": applyOpacityValue("--slate-1100"),
+};
 const background: BackgroundVariables = {
   backgroundPrimary: applyOpacityValue("--backgroundPrimary"),
   backgroundSecondary: applyOpacityValue("--backgroundSecondary"),
@@ -146,6 +175,7 @@ const pallete: PalleteVariables = {
   ...cyan,
   ...pink,
   ...gray,
+  ...slate,
 };
 
 export const varTheme: ThemeVariables = {
