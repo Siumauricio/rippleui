@@ -3,7 +3,7 @@
 }
 
 .tab {
-  @apply min-h-[2rem] px-3 text-sm leading-loose;
+  @apply min-h-[2rem] px-3 text-sm leading-loose text-content2;
 }
 
 .tab-disabled {
@@ -15,7 +15,11 @@
 }
 
 .tab {
-  @apply flex  cursor-pointer  hover:text-primary focus:outline-none;
+  @apply flex  cursor-pointer   focus:outline-none;
+}
+
+.tab:not(.tab-active) {
+  @apply hover:text-content1;
 }
 
 .tabs:has(.tab-underline) .tab {
@@ -27,7 +31,7 @@
 }
 
 .tab-underline {
-  @apply relative  pb-2 text-primary;
+  @apply relative  pb-2;
 }
 
 .tab-underline::after {
@@ -36,9 +40,29 @@
 }
 
 .tab-pill {
-  @apply rounded-xl border  border-transparent py-2   leading-5;
+  @apply rounded-xl  border-transparent py-2   leading-5;
+}
+
+.tab-pill:not(.tab-active) {
+  @apply hover:bg-gray-300 active:bg-gray-400;
 }
 
 .tab-pill.tab-active {
-  @apply border-blue-500 bg-blue-300;
+  @apply border-gray-500 bg-gray-400 text-content1;
+}
+
+.tabs-boxed {
+  @apply rounded-xl bg-gray-200 p-1;
+}
+
+.tabs-boxed .tab {
+  @apply rounded-xl py-2 leading-5;
+}
+
+.tabs-boxed .tab:not(.tab-active) {
+  @apply hover:bg-gray-300 hover:text-content1 active:bg-gray-400;
+}
+
+.tabs-boxed .tab.tab-active {
+  @apply bg-gray-400 text-content1;
 }
