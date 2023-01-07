@@ -22,23 +22,5 @@ html:has(.modal-state:checked) {
 }
 
 .modal-content {
-  @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-backgroundSecondary p-6 transition duration-75 ease-in-out;
-}
-
-.modal-close {
-  @apply absolute right-[1em] top-[1em] h-[1.1em] w-[1.1em] cursor-pointer;
-}
-
-.modal-close:after,
-.modal-close:before {
-  @apply absolute left-1/2 top-0 -mt-1.5 h-6 w-0.5 rotate-45 transform bg-gray-700 content-[""];
-}
-
-.modal-close:hover:after,
-.modal-close:hover:before {
-  @apply bg-gray-600;
-}
-
-.modal-close:before {
-  transform: rotate(-45deg);
+  @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-gray-50 p-6 transition duration-75 ease-in-out;
 }

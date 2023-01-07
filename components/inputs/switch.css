@@ -1,16 +1,16 @@
 .switch {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --switch-bg: rgb(var(--backgroundPrimary));
-  --switch-border: rgb(var(--border));
+  --switch-bg: rgb(var(--gray-50));
+  --switch-border: rgb(var(--gray-500));
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
-  --switch-border-hover: rgb(var(--border));
+  --switch-border-hover: rgb(var(--gray-600));
   --switch-bg-hover: inherit;
   --checkline-color: rgb(var(--white));
-  --circle-color: rgb(var(--border));
+  --circle-color: rgb(var(--gray-500));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top   accent-backgroundPrimary outline-none;
+  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top  outline-none;
 }
 
 .switch::after {
@@ -30,11 +30,12 @@
 }
 
 .switch:disabled {
-  @apply cursor-not-allowed bg-gray-600 opacity-40;
+  --circle-color: rgb(var(--gray-200));
+  @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
 }
 
 .switch:disabled:checked {
-  @apply border-border bg-gray-600;
+  --circle-color: rgb(var(--white));
 }
 
 .switch:disabled + label {

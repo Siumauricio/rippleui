@@ -1,5 +1,5 @@
 .badge {
-  @apply inline-flex items-center  whitespace-nowrap rounded-full border border-border  bg-backgroundPrimary  py-[0.3rem] px-2 text-center align-middle text-xs  leading-none text-content1;
+  @apply inline-flex items-center  whitespace-nowrap rounded-full border border-gray-200 bg-gray-200  py-[0.3rem]  px-2 text-center align-middle text-xs font-bold  leading-none text-content1;
 }
 
 .badge-primary {
@@ -22,6 +22,10 @@
   @apply border-warning bg-warning text-white;
 }
 
+.badge-outline {
+  @apply border border-gray-500 bg-transparent text-content1;
+}
+
 .badge-outline-primary {
   @apply border-primary bg-transparent text-primary;
 }
@@ -40,6 +44,30 @@
 
 .badge-outline-warning {
   @apply border-warning bg-transparent text-warning;
+}
+
+.badge-flat {
+  @apply border-none bg-transparent bg-gray-300 text-gray-1000;
+}
+
+.badge-flat-primary {
+  @apply border-none bg-blue-300 text-blue-1000;
+}
+
+.badge-flat-secondary {
+  @apply border-none bg-purple-300 text-purple-1000;
+}
+
+.badge-flat-success {
+  @apply border-none bg-green-300 text-green-1000;
+}
+
+.badge-flat-error {
+  @apply border-none bg-red-300 text-red-1000;
+}
+
+.badge-flat-warning {
+  @apply border-none bg-yellow-300 text-yellow-1000;
 }
 
 .badge-xs {

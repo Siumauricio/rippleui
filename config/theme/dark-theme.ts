@@ -13,6 +13,7 @@ import {
   baseColorsDark,
 } from "../colors";
 import { PalleteTheme, Theme } from "../types/theme.types";
+import { slateDark } from "../colors/slate";
 
 const pallete: PalleteTheme = {
   ...blueDark,
@@ -23,6 +24,7 @@ const pallete: PalleteTheme = {
   ...cyanDark,
   ...pinkDark,
   ...grayDark,
+  ...slateDark,
 };
 
 const colors = {

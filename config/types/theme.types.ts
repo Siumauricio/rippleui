@@ -8,7 +8,8 @@ export type ColorScale =
   | "cyan"
   | "pink"
   | "purple"
-  | "gray";
+  | "gray"
+  | "slate";
 
 export type PalleteScale =
   | "50"
@@ -20,7 +21,9 @@ export type PalleteScale =
   | "600"
   | "700"
   | "800"
-  | "900";
+  | "900"
+  | "1000"
+  | "1100";
 
 export type BaseScale =
   | "primary"

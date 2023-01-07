@@ -11,6 +11,7 @@ import {
   baseColors,
   text,
 } from "../colors";
+import { slate } from "../colors/slate";
 import { PalleteTheme, Theme } from "../types/theme.types";
 import { addPrefix } from "../utils/prefix";
 
@@ -23,6 +24,7 @@ const pallete: PalleteTheme = {
   ...cyan,
   ...pink,
   ...gray,
+  ...slate,
 };
 
 const colors = {

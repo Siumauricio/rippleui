@@ -1,12 +1,12 @@
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --checkbox-bg: rgb(var(--backgroundPrimary));
-  --checkbox-border: rgb(var(--border));
+  --checkbox-bg: rgb(var(--gray-50));
+  --checkbox-border: rgb(var(--gray-500));
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
-  --checkbox-border-hover: rgb(var(--border));
-  --checkbox-bg-hover: rgb(var(--backgroundSecondary));
+  --checkbox-border-hover: rgb(var(--gray-600));
+  --checkbox-bg-hover: rgb(var(--gray-200));
   --checkline-color: rgb(var(--white));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none;
@@ -28,11 +28,7 @@
 }
 
 .checkbox:disabled {
-  @apply cursor-not-allowed bg-backgroundSecondary opacity-90;
-}
-
-.checkbox:disabled:checked {
-  @apply border-border bg-gray-300;
+  @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
 }
 
 .checkbox:disabled + label {
@@ -113,7 +109,7 @@
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
   --checkbox-border: rgb(var(--warning));
-  --checkbox-border-hover: rgb(ar(--warning));
+  --checkbox-border-hover: rgb(var(--warning));
 }
 
 /* Ghost */

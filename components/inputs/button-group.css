@@ -1,5 +1,5 @@
 .btn-group {
-  @apply w-full max-w-fit flex flex-row flex-wrap;
+  @apply flex w-full max-w-fit flex-row flex-wrap;
 }
 
 .btn-group-scrollable {
@@ -9,6 +9,10 @@
 /* Horizontal */
 .btn-group > *:first-child {
   @apply rounded-none rounded-l-xl;
+}
+
+.btn-group > .btn:not(.btn-active) {
+  @apply hover:bg-gray-300 active:bg-gray-400;
 }
 
 .btn-group > *:last-child {
@@ -72,10 +76,10 @@
   @apply content-[attr(data-content)];
 }
 
-.btn-group > input[type="radio"]:checked {
-  @apply bg-border;
+.btn-group > input[type="radio"]:checked.btn,
+.btn-group > .btn-active {
+  @apply bg-gray-400;
 }
-
 /* For rounded btn-group */
 
 .btn-group-rounded > *:first-child {
