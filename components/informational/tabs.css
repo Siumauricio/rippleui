@@ -1,0 +1,68 @@
+.tabs {
+  @apply flex w-fit flex-row flex-wrap  items-center whitespace-nowrap;
+}
+
+.tab {
+  @apply min-h-[2rem] px-3 text-sm leading-loose text-content2;
+}
+
+.tab-disabled {
+  @apply pointer-events-none cursor-not-allowed  text-content3;
+}
+
+.tab-bordered {
+  @apply border-b-2 border-gray-500 py-2;
+}
+
+.tab {
+  @apply flex  cursor-pointer   focus:outline-none;
+}
+
+.tab:not(.tab-active) {
+  @apply hover:text-content1;
+}
+
+.tabs:has(.tab-underline) .tab {
+  @apply pb-2;
+}
+
+.tab-active {
+  @apply border-b-primary text-primary;
+}
+
+.tab-underline {
+  @apply relative  pb-2;
+}
+
+.tab-underline::after {
+  @apply absolute bottom-0 left-0 z-10  h-0.5  w-full bg-primary content-[""];
+  transition: transform 0.3s ease;
+}
+
+.tab-pill {
+  @apply rounded-xl  border-transparent py-2   leading-5;
+}
+
+.tab-pill:not(.tab-active) {
+  @apply hover:bg-gray-300 active:bg-gray-400;
+}
+
+.tab-pill.tab-active {
+  @apply border-gray-500 bg-gray-400 text-content1;
+}
+
+.tabs-boxed {
+  @apply rounded-xl bg-gray-200 p-1;
+}
+
+.tabs-boxed .tab {
+  @apply rounded-xl py-2 leading-5;
+}
+
+.tabs-boxed .tab:not(.tab-active) {
+  @apply hover:bg-gray-300 hover:text-content1 active:bg-gray-400;
+}
+
+.tabs-boxed .tab.tab-active {
+  @apply bg-gray-400 text-content1;
+}

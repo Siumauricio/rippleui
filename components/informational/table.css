@@ -4,24 +4,24 @@
 }
 
 .table > thead > tr th:first-child {
-  @apply rounded-l-md border-y border-l border-border;
+  @apply rounded-l-md border-y border-l border-gray-500;
 }
 
 .table > thead > tr th:last-child {
-  @apply rounded-r-md border-y border-r border-border;
+  @apply rounded-r-md border-y border-r border-gray-500;
 }
 
 .table > thead > tr :not(.th:first-child, .th:last-child) {
-  @apply border-y  border-border;
+  @apply border-y  border-gray-500;
 }
 
 .table > thead > tr > th {
-  @apply bg-gray-200 py-4 px-2.5 text-start text-sm font-normal text-content1;
+  @apply whitespace-nowrap bg-gray-200 py-4 px-2.5 text-start text-sm font-normal text-content1;
 }
 
 .table > tbody > tr > td,
 .table > tbody > tr > th {
-  @apply border-b border-border py-4 px-2.5 text-start text-sm text-content2;
+  @apply whitespace-nowrap border-b border-gray-500 py-4 px-2.5 text-start text-sm text-content2;
 }
 
 /* Compact */
