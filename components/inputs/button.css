@@ -96,7 +96,7 @@
 }
 
 .btn-loading {
-  @apply pointer-events-none cursor-not-allowed select-none before:mr-2 before:box-border before:h-4 before:w-4 before:animate-spin before:rounded-[50%] before:border-2 before:border-white before:border-t-slate-700 before:content-[''];
+  @apply pointer-events-none cursor-not-allowed select-none before:mr-2 before:box-border before:h-4 before:w-4 before:animate-spin before:rounded-[50%] before:border-2 before:border-gray-500 before:border-t-gray-800 before:content-[''];
 }
 
 .btn-no-animation {
