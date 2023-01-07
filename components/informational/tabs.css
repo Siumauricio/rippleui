@@ -7,11 +7,11 @@
 }
 
 .tab-disabled {
-  @apply pointer-events-none cursor-not-allowed text-content3;
+  @apply pointer-events-none cursor-not-allowed  text-content3;
 }
 
 .tab-bordered {
-  @apply border-b-2 border-border py-2;
+  @apply border-b-2 border-gray-500 py-2;
 }
 
 .tab {
@@ -40,5 +40,5 @@
 }
 
 .tab-pill.tab-active {
-  @apply border-blue-300 bg-blue-50;
+  @apply border-blue-500 bg-blue-300;
 }
