@@ -1,5 +1,5 @@
 .navbar {
-  @apply flex w-full items-center  bg-gray-100 px-2 py-2.5 shadow-xl sm:px-4;
+  @apply flex w-full items-center  bg-gray-50 px-2 py-2.5 shadow-xl sm:px-4;
 }
 .navbar-bordered {
   @apply border-b border-gray-500;
@@ -18,7 +18,7 @@
 }
 
 .navbar-glass {
-  @apply bg-gray-100/70 backdrop-blur-[8px] backdrop-saturate-[50%];
+  @apply bg-gray-50/70 backdrop-blur-[8px] backdrop-saturate-[50%];
 }
 
 .navbar-rounded {
