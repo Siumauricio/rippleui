@@ -1,5 +1,5 @@
 .input {
-  @apply h-fit w-full max-w-xs rounded-xl border-2  border-border bg-backgroundPrimary  py-2.5 px-3 text-base text-content1 outline-none;
+  @apply h-fit w-full max-w-xs rounded-xl border-2  border-gray-500 bg-gray-50  py-2.5 px-3 text-base text-content1 outline-none;
 }
 
 /* Colors */

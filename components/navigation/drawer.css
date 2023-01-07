@@ -7,7 +7,7 @@ html:has(.drawer-toggle:checked) {
 }
 
 .drawer {
-  @apply fixed top-0 left-0 z-[9999] h-screen w-full max-w-xs -translate-x-full overflow-auto bg-backgroundPrimary transition-transform duration-150 ease-out;
+  @apply fixed top-0 left-0 z-[9999] h-screen w-full max-w-xs -translate-x-full overflow-auto bg-gray-50 transition-transform duration-150 ease-out;
 }
 
 .drawer-right {
@@ -34,7 +34,7 @@ html:has(.drawer-toggle:checked) {
 
 .overlay {
   transition: visibility 0.15s ease-out, opacity 0.15s ease-out;
-  @apply invisible fixed top-0 left-0 z-[9998] h-screen w-full bg-black bg-opacity-60 opacity-0;
+  @apply invisible fixed top-0 left-0 z-[9998] h-screen w-full bg-black/60  opacity-0;
 }
 
 .drawer-toggle:checked ~ .overlay {

@@ -1,5 +1,5 @@
 .avatar {
-  @apply relative  inline-flex h-10 w-10   max-w-xs bg-backgroundSecondary align-top text-xs;
+  @apply relative  inline-flex h-10 w-10   max-w-xs bg-gray-200 align-top text-xs;
 }
 
 .avatar > * {
@@ -23,7 +23,7 @@
 }
 
 .avatar-ring {
-  @apply ring-2 ring-border;
+  @apply ring-2 ring-gray-500;
 }
 .avatar-ring-primary {
   @apply ring-2 ring-primary;
@@ -81,7 +81,7 @@
         .avatar-ring-warning
       )
   ) {
-  @apply ring-border;
+  @apply ring-gray-500;
 }
 
 .avatar-xs {

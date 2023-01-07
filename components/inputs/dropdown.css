@@ -7,11 +7,27 @@
 }
 
 .dropdown-menu {
-  @apply invisible absolute right-0 z-[49] mt-2  w-56 origin-top-right -translate-y-2 scale-95 transform divide-y divide-border rounded-md border border-border bg-backgroundSecondary opacity-0 shadow-2xl outline-none transition-all;
+  @apply invisible absolute right-0 z-[49] mt-2 flex w-56 origin-top-right  -translate-y-2  scale-95 transform flex-col rounded-xl   bg-gray-200 p-2 py-2 opacity-0 shadow-2xl outline-none transition-all;
 }
 
 .dropdown-item {
-  @apply cursor-pointer px-4 py-2;
+  @apply flex w-full cursor-pointer flex-col rounded-[5px] p-2 transition-colors hover:bg-gray-300 active:bg-gray-400;
+}
+
+.dropdown-item.dropdown-active {
+  @apply hover:bg-gray-400;
+}
+
+.dropdown-divider {
+  @apply relative my-px;
+}
+
+.dropdown-divider::before {
+  @apply absolute top-0 right-0  -left-2 h-px w-56  bg-gray-500 content-[""];
+}
+
+.dropdown-active {
+  @apply bg-gray-400;
 }
 
 .dropdown-menu-bottom-right {
@@ -58,9 +74,9 @@
 .dropdown-hover:hover .dropdown-menu,
 .dropdown-hover:hover .dropdown-menu-bottom-right,
 .dropdown-hover:hover .dropdown-menu-bottom-left,
-.dropdown-open.dropdown-menu,
-.dropdown-open.dropdown-menu-bottom-right,
-.dropdown-open.dropdown-menu-bottom-left,
+.dropdown.dropdown-open .dropdown-menu,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-bottom-right,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-bottom-left,
 .dropdown:focus .dropdown-menu,
 .dropdown:focus-within .dropdown-menu,
 .dropdown:focus .dropdown-menu-bottom-right,
@@ -73,8 +89,8 @@
 /* Only Top Side  */
 .dropdown-hover:hover .dropdown-menu-top-right,
 .dropdown-hover:hover .dropdown-menu-top-left,
-.dropdown-open.dropdown-menu-top-right,
-.dropdown-open.dropdown-menu-top-left,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-top-right,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-top-left,
 .dropdown:focus .dropdown-menu-top-right,
 .dropdown:focus .dropdown-menu-top-left,
 .dropdown:focus-within .dropdown-menu-top-right,
@@ -85,7 +101,7 @@
 /* Only Right   */
 
 .dropdown-hover:hover .dropdown-menu-right,
-.dropdown-open.dropdown-menu-right,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-right,
 .dropdown:focus .dropdown-menu-right,
 .dropdown:focus-within .dropdown-menu-right {
   @apply visible right-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
@@ -94,7 +110,7 @@
 /* Only Left   */
 
 .dropdown-hover:hover .dropdown-menu-left,
-.dropdown-open.dropdown-menu-left,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-left,
 .dropdown:focus .dropdown-menu-left,
 .dropdown:focus-within .dropdown-menu-left {
   @apply visible left-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
@@ -103,8 +119,8 @@
 /* Only Left and right Bottom Side   */
 .dropdown-hover:hover .dropdown-menu-right-bottom,
 .dropdown-hover:hover .dropdown-menu-left-bottom,
-.dropdown-open.dropdown-menu-right-bottom,
-.dropdown-open.dropdown-menu-left-bottom,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-right-bottom,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-left-bottom,
 .dropdown:focus .dropdown-menu-right-bottom,
 .dropdown:focus-within .dropdown-menu-right-bottom,
 .dropdown:focus .dropdown-menu-left-bottom,
@@ -115,8 +131,8 @@
 /* Only Left and right Top Side  */
 .dropdown-hover:hover .dropdown-menu-right-top,
 .dropdown-hover:hover .dropdown-menu-left-top,
-.dropdown-open.dropdown-menu-right-top,
-.dropdown-open.dropdown-menu-left-top,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-right-top,
+.dropdown.dropdown-open .dropdown-menu.dropdown-menu-left-top,
 .dropdown:focus .dropdown-menu-right-top,
 .dropdown:focus-within .dropdown-menu-right-top,
 .dropdown:focus .dropdown-menu-left-top,
