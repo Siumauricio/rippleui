@@ -1,8 +1,8 @@
 .navbar {
-  @apply flex w-full items-center  bg-backgroundSecondary px-2 py-2.5 shadow-xl sm:px-4;
+  @apply flex w-full items-center  bg-gray-100 px-2 py-2.5 shadow-xl sm:px-4;
 }
 .navbar-bordered {
-  @apply border-b border-border;
+  @apply border-b border-gray-500;
 }
 
 .navbar-sticky {
@@ -18,7 +18,7 @@
 }
 
 .navbar-glass {
-  @apply bg-transparent backdrop-blur-[50px];
+  @apply bg-gray-100/70 backdrop-blur-[8px] backdrop-saturate-[50%];
 }
 
 .navbar-rounded {
@@ -30,31 +30,31 @@
 }
 
 .navbar-start {
-  @apply flex w-full items-center justify-start  gap-2;
+  @apply flex w-full items-center justify-start  gap-1;
 }
 
 .navbar-center {
-  @apply flex w-full items-center  justify-center gap-2;
+  @apply flex w-full items-center  justify-center gap-1;
 }
 
 .navbar-end {
-  @apply flex w-full items-center justify-end gap-2;
+  @apply flex w-full items-center justify-end gap-1;
 }
 
 .navbar-brand {
-  @apply flex items-center gap-2 whitespace-nowrap;
+  @apply flex items-center gap-1 whitespace-nowrap;
 }
 
 .navbar-item {
-  @apply cursor-pointer rounded-lg py-2 px-3 transition-colors;
+  @apply cursor-pointer rounded-lg py-2 px-3 text-content1 transition-colors;
 }
 
-.navbar-item:hover {
-  @apply bg-border;
+.navbar-item:not(.navbar-active):hover {
+  @apply text-content2;
 }
 
 .navbar-active {
-  @apply bg-border;
+  @apply text-primary;
 }
 
 .navbar:not(:has(.navbar-end)) .navbar-center {
