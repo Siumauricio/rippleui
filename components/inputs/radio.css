@@ -1,12 +1,12 @@
 .radio {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --radio-bg: rgb(var(--backgroundPrimary));
-  --radio-border: rgb(var(--border));
+  --radio-bg: rgb(var(--gray-50));
+  --radio-border: rgb(var(--gray-500));
   --radio-bg-checked: rgb(var(--primary));
   --radio-border-checked: rgb(var(--primary));
-  --radio-border-hover: rgb(var(--border));
-  --radio-bg-hover: rgb(var(--backgroundSecondary));
+  --radio-border-hover: rgb(var(--gray-600));
+  --radio-bg-hover: rgb(var(--gray-200));
   --checkline-color: rgb(var(--white));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)]   align-top   accent-backgroundPrimary outline-none;
@@ -25,10 +25,7 @@
   --r: 43deg;
 }
 .radio:disabled {
-  @apply cursor-not-allowed bg-backgroundSecondary opacity-90;
-}
-.radio:disabled:checked {
-  @apply border-border bg-gray-300;
+  @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
 }
 
 .radio:disabled + label {

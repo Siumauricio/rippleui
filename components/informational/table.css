@@ -16,7 +16,7 @@
 }
 
 .table > thead > tr > th {
-  @apply bg-backgroundSecondary py-4 px-2.5 text-start text-sm font-normal text-content1;
+  @apply bg-gray-200 py-4 px-2.5 text-start text-sm font-normal text-content1;
 }
 
 .table > tbody > tr > td,
@@ -56,11 +56,11 @@
 /* Zebra */
 .table.table-zebra > tbody > tr:nth-child(even) > td,
 .table.table-zebra > tbody > tr:nth-child(even) > th {
-  @apply bg-backgroundSecondary;
+  @apply bg-gray-200;
 }
 
 /* Hover */
 .table.table-hover > tbody > tr:hover > td,
 .table.table-hover > tbody > tr:hover > th {
-  @apply bg-backgroundSecondary;
+  @apply bg-gray-200;
 }

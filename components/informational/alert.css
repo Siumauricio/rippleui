@@ -1,19 +1,19 @@
 .alert {
-  @apply relative flex  w-full flex-row items-center gap-3  rounded-lg bg-backgroundSecondary p-4;
+  @apply relative flex w-full flex-row items-center gap-3  rounded-xl bg-gray-300 p-4;
 }
 
 .alert-info {
-  @apply bg-blue-100;
+  @apply bg-blue-300;
 }
 
 .alert-success {
-  @apply bg-green-100;
+  @apply bg-green-300;
 }
 
 .alert-warning {
-  @apply bg-yellow-100;
+  @apply bg-yellow-300;
 }
 
 .alert-error {
-  @apply bg-red-100;
+  @apply bg-red-300;
 }

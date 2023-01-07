@@ -7,15 +7,15 @@
 }
 
 .accordion-group-secondary .accordion-title {
-  @apply bg-backgroundSecondary;
+  @apply bg-gray-200;
 }
 
 .accordion-group-bordered {
-  @apply overflow-auto rounded-xl border border-border;
+  @apply overflow-auto rounded-xl border border-gray-500;
 }
 
 .accordion-title {
-  @apply relative flex w-full cursor-pointer flex-col  border-b border-border bg-backgroundPrimary py-5 text-left text-xl font-semibold transition-none;
+  @apply relative flex w-full cursor-pointer flex-col  border-b border-gray-500 bg-gray-50 py-5 text-left text-xl font-semibold transition-none;
 }
 
 .accordion-group.accordion-group-bordered
@@ -54,15 +54,15 @@
 }
 
 .accordion-group .accordion.accordion-open .accordion-content {
-  @apply grid-rows-[1fr] border-b border-border py-5;
+  @apply grid-rows-[1fr] border-b border-gray-500 py-5;
 }
 
 .accordion-toggle:checked ~ .accordion-content {
-  @apply grid-rows-[1fr] border-b border-border py-5;
+  @apply grid-rows-[1fr] border-b border-gray-500 py-5;
 }
 
 .accordion:focus .accordion-content {
-  @apply grid-rows-[1fr] border-b border-border py-5;
+  @apply grid-rows-[1fr] border-b border-gray-500 py-5;
 }
 
 .accordion-group.accordion-group-hover .accordion-title,
@@ -80,11 +80,11 @@
 .accordion-group.accordion-group-hover
   > .accordion.accordion-open
   .accordion-title {
-  @apply bg-backgroundSecondary;
+  @apply bg-gray-200;
 }
 
 .accordion-group.accordion-group-hover > .accordion .accordion-title {
-  @apply hover:bg-backgroundSecondary;
+  @apply hover:bg-gray-200;
 }
 
 .accordion-icon {
