@@ -1,9 +1,10 @@
 {
   "name": "rippleui",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Cleanest, modern and beatifull Tailwind CSS library.",
   "main": "dist/js/index.js",
-  "types": "dist/js/index.d.ts",
+  "types": "dist/js/types/config.types.d.ts",
+  "typings": "dist/js/types/config.types.d.ts",
   "files": [
     "dist/js",
     "dist/css",
@@ -22,8 +23,8 @@
     "base": "npx tailwindcss -c ./components/base/tailwind.config.js -i ./components/base/base.css -o ./dist/css/base.css",
     "components": "tailwindcss --postcss -i ./components/components.css -o ./dist/css/components.css",
     "utilities": "npx tailwindcss -c ./components/utilities/tailwind.config.js -i ./components/utilities/utilities.css -o ./dist/css/utilities.css",
-    "build": "SET NODE_ENV=production&& npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run utilities -- --minify && npm run styles -- --minify &&  npm run components -- --minify ",
-    "dev": "npm run clean && npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch",
+    "build": "export NODE_ENV=production  npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run utilities -- --minify && npm run styles -- --minify &&  npm run components -- --minify ",
+    "dev": " npm run create:paths &  npm run js -- --watch &  npm run styles -- --watch",
     "dev:all": "npm run create:paths && start npm run js -- --watch && start npm run styles -- --watch && start npm run base -- --watch && start npm run components -- --watch && start npm run utilities -- --watch",
     "npm:publish": "npm run build && git push --follow-tags origin main && npm publish",
     "release": "standard-version && npm run npm:publish",
