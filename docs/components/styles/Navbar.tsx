@@ -27,7 +27,7 @@ export const Navbar = ({ className }: Props) => {
   return (
     <nav
       className={clsx(
-        scrollY > 35 && "border border-gray-500",
+        scrollY > 35 && "border-b border-gray-500",
         className ? className : "bg-backgroundSecondary/70",
         "navbar-sticky navbar-glass navbar  py-3 shadow-none"
       )}
