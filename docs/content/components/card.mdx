@@ -11,10 +11,14 @@ Ripple UI comes with a card component that can be used to display content in a c
 
 Simple example of a card.
 
-<div className="card">Hello World</div>
+<div className="card">
+  <div className="card-body">Hello World</div>
+ </div>
 
 ```html
-<div className="card">Hello World</div>
+<div className="card">
+  <div className="card-body">Hello World</div>
+ </div>
 ```
 
 ### Title, Body and Footer
@@ -22,27 +26,23 @@ Simple example of a card.
 A card can have a title, body and footer.
 
 <div className="card">
-  <h2 className="card-header">Hello World!</h2>
   <div className="card-body">
-    {/* prettier-ignore */}
+      <h2 className="card-header">Hello World!</h2>
     <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-  <div className="card-footer">
+      <div className="card-footer">
     <button className="btn-secondary btn">Buy a Cat</button>
+  </div>
   </div>
 </div>
 
 ```html
 <div className="card">
-  <h2 className="card-header">Hello World!</h2>
   <div className="card-body">
-    <p className="text-content2">
-      I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.
-    </p>
+      <h2 className="card-header">Hello World!</h2>
+      <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="card-footer">
+    <button className="btn-secondary btn">Buy a Cat</button>
   </div>
-  <div className="card-footer">
-    <button className="btn btn-secondary">Buy a Cat</button>
   </div>
 </div>
 ```
@@ -53,29 +53,55 @@ A card can have an image cover.
 
 <div className="card card-image-cover">
   <img src="https://source.unsplash.com/random/300x200" alt="" />
-  <h2 className="card-header">Hello World!</h2>
   <div className="card-body">
-    {/* prettier-ignore */}
+    <h2 className="card-header">Hello World!</h2>
     <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-  <div className="card-footer">
+      <div className="card-footer">
     <button className="btn-secondary btn">Buy a Cat</button>
+  </div>
   </div>
 </div>
 
 ```html
 <div className="card card-image-cover">
   <img src="https://source.unsplash.com/random/300x200" alt="" />
-  <h2 className="card-header">Hello World!</h2>
   <div className="card-body">
-    <p className="text-content2">
-      I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing
-      elit.
-    </p>
+    <h2 className="card-header">Hello World!</h2>
+    <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="card-footer">
+    <button className="btn-secondary btn">Buy a Cat</button>
   </div>
-  <div className="card-footer">
-    <button className="btn btn-secondary">Buy a Cat</button>
   </div>
+</div>
+```
+
+### Image cover bottom
+
+A card can have an image cover at the bottom.
+
+<div className="card card-image-cover">
+
+  <div className="card-body">
+    <h2 className="card-header">Hello World!</h2>
+    <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="card-footer">
+    <button className="btn-secondary btn">Buy a Cat</button>
+  </div>
+  </div>
+    <img src="https://source.unsplash.com/random/300x200" alt="" />
+</div>
+
+```html
+<div className="card card-image-cover">
+
+  <div className="card-body">
+    <h2 className="card-header">Hello World!</h2>
+    <p className="text-content2">I really like the cats! lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="card-footer">
+    <button className="btn-secondary btn">Buy a Cat</button>
+  </div>
+  </div>
+    <img src="https://source.unsplash.com/random/300x200" alt="" />
 </div>
 ```
 
@@ -96,6 +122,5 @@ A card can have an image cover.
 <LinkRedirect
   contentLeft="Dropdown"
   hrefLeft="/docs/components/dropdown"
-  contentRight="Credits - Overview"
-  hrefRight="/docs/credits/overview"
+  hideRight
 />

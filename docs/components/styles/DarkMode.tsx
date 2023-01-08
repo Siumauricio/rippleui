@@ -6,32 +6,48 @@ import { DarkModeToggle } from "./DarkModeToggle";
 
 export const DarkMode = () => {
   return (
-    <div className="flex flex-col gap-10  py-16 px-4 md:gap-12 xl:px-0">
+    <section className="flex flex-col gap-10  bg-backgroundSecondary px-4 py-28 md:gap-12 ">
       <div className="flex flex-col items-center gap-4">
-        <div className="flex w-full max-w-[78rem] flex-col  gap-6">
-          <div className="w-full max-w-full text-center lg:ml-8 lg:max-w-lg  lg:text-left">
-            <h2 className="w-full text-3xl font-semibold md:text-4xl">
-              Dark mode support out of the{" "}
-              <span className="text-3xl font-bold text-secondary  md:text-4xl">
-                box.
-              </span>
+        <div className="flex w-full max-w-[78rem] flex-col  gap-12">
+          <div className="flex w-full flex-col gap-2  text-center  ">
+            <h2 className="w-full text-center text-3xl font-semibold md:text-4xl">
+              Dark mode support out of the box.{" "}
             </h2>
-            <span className="text-content2">
+            <p className="mx-auto max-w-lg text-content2">
               Ripple UI comes with dark mode support automatically. When you
               toggle the dark mode switch, the entire UI will change to colors
               specified by config of RippleUI.
-            </span>
+            </p>
           </div>
           <div className="flex flex-col items-center justify-around gap-4 lg:flex-row ">
             <div className="w-full max-w-lg">
-              <div className="card sticky max-h-96 w-full max-w-2xl overflow-y-auto rounded-lg  p-4">
-                <div className="navbar-sticky navbar sticky  rounded-lg">
-                  <div className="navbar-start">
-                    <a className="navbar-item">Ripple UI</a>
-                  </div>
-                  <div className="navbar-end ">
-                    <a className="navbar-item">Home</a>
-                  </div>
+              <div className="card sticky max-h-96 w-full max-w-2xl gap-6 overflow-y-auto rounded-lg  p-4">
+                <div className="flex justify-evenly">
+                  <input
+                    type="radio"
+                    className="radio-primary radio"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    className="radio-secondary radio"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    className="radio-success radio"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    className="radio-warning radio"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    className="radio-error radio"
+                    defaultChecked
+                  />
                 </div>
                 <div className="alert">
                   <div>
@@ -59,22 +75,27 @@ export const DarkMode = () => {
                   <input
                     type="checkbox"
                     className="switch-bordered-primary switch"
+                    defaultChecked
                   />
                   <input
                     type="checkbox"
                     className="switch-bordered-secondary switch"
+                    defaultChecked
                   />
                   <input
                     type="checkbox"
                     className="switch-bordered-success switch"
+                    defaultChecked
                   />
                   <input
                     type="checkbox"
                     className="switch-bordered-error switch"
+                    defaultChecked
                   />
                   <input
                     type="checkbox"
                     className="switch-bordered-warning switch"
+                    defaultChecked
                   />
                 </div>
               </div>
@@ -88,14 +109,33 @@ export const DarkMode = () => {
               </span>
             </div>
             <div className="w-full max-w-lg">
-              <div className="card sticky max-h-96 w-full max-w-2xl overflow-y-auto rounded-lg  p-4">
-                <div className="navbar-sticky navbar-glass navbar sticky  rounded-lg">
-                  <div className="navbar-start">
-                    <a className="navbar-item">Ripple UI</a>
-                  </div>
-                  <div className="navbar-end ">
-                    <a className="navbar-item">Home</a>
-                  </div>
+              <div className="card sticky max-h-96 w-full max-w-2xl gap-6 overflow-y-auto rounded-lg   p-4">
+                <div className="flex justify-evenly">
+                  <input
+                    type="checkbox"
+                    className="checkbox-primary checkbox"
+                    defaultChecked
+                  />
+                  <input
+                    type="checkbox"
+                    className="checkbox-secondary checkbox"
+                    defaultChecked
+                  />
+                  <input
+                    type="checkbox"
+                    className="checkbox-success checkbox"
+                    defaultChecked
+                  />
+                  <input
+                    type="checkbox"
+                    className="checkbox-warning checkbox"
+                    defaultChecked
+                  />
+                  <input
+                    type="checkbox"
+                    className="checkbox-error checkbox"
+                    defaultChecked
+                  />
                 </div>
                 <div className="alert  alert-info">
                   <div>
@@ -120,21 +160,11 @@ export const DarkMode = () => {
                   </div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-2">
-                  <div className="avatar-ring-primary avatar truncate">
-                    <div>JS</div>
-                  </div>
-                  <div className="avatar-ring-secondary avatar truncate">
-                    <div>MC</div>
-                  </div>
-                  <div className="avatar-ring-success avatar truncate">
-                    <div>PO</div>
-                  </div>
-                  <div className="avatar-ring-error avatar truncate">
-                    <div>CS</div>
-                  </div>
-                  <div className="avatar-ring-warning avatar truncate">
-                    <div>JL</div>
-                  </div>
+                  <span className="badge badge-flat-primary">Primary</span>
+                  <span className="badge badge-flat-secondary">Secondary</span>
+                  <span className="badge badge-flat-success">Success</span>
+                  <span className="badge badge-flat-error">Danger</span>
+                  <span className="badge badge-flat-warning">Warning</span>
                 </div>
               </div>
             </div>
@@ -144,12 +174,12 @@ export const DarkMode = () => {
       <div className="flex justify-center pt-16">
         <Link
           href={"/docs/get-started/installation"}
-          className="btn btn-secondary btn-ghost w-fit text-content2"
+          className="btn-secondary btn btn-ghost w-fit text-content2"
         >
           Go to Documentation
           <ArrowRight />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };

@@ -9,7 +9,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/my-react-app"
         }
         target="_blank"
-        className="flex w-fit  cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-border "
+        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-border"
       >
         <svg
           width="100"

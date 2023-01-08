@@ -60,7 +60,7 @@ Simple example of a dropdown.
       <div className="">
         <a
           tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
           role="menuitem"
         >
           <span>Account settings</span>
@@ -110,7 +110,7 @@ Simple example of a dropdown.
       <div className="">
         <a
           tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+          className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
           role="menuitem"
         >
           <span>Account settings</span>
@@ -554,12 +554,12 @@ Dropdown in right bottom and top.
 
 Dropdown opened.
 
-<div className="dropdown-container">
-  <div className="dropdown">
+<div className="dropdown-container ">
+  <div className="dropdown dropdown-open ">
     <label className="btn flex" tabIndex="0">
       <span>Options</span>
     </label>
-    <div className="dropdown-menu dropdown-open dropdown-menu-bottom-right">
+    <div className="dropdown-menu dropdown-menu-bottom-right">
       <div>
         <a
           tabIndex="-1"
@@ -574,12 +574,12 @@ Dropdown opened.
 </div>
 
 ```html
-<div className="dropdown-container">
-  <div className="dropdown">
+<div className="dropdown-container ">
+  <div className="dropdown dropdown-open ">
     <label className="btn flex" tabindex="0">
       <span>Options</span>
     </label>
-    <div className="dropdown-menu dropdown-open dropdown-menu-bottom-right">
+    <div className="dropdown-menu dropdown-menu-bottom-right">
       <div>
         <a
           tabindex="-1"
@@ -649,6 +649,7 @@ Dropdown on hover.
 | dropdown-hover             | Will open the dropdown on hover       |
 | dropdown-open              | Will open the dropdown on load        |
 | dropdown-item              | Will style a element as dropdown item |
+| dropdown-active            |  Will style a element as active        |
 | dropdown-menu-bottom-right | Will position to the bottom right     |
 | dropdown-menu-bottom-left  | Will position to the bottom left      |
 | dropdown-menu-top-right    | Will position to the top right        |

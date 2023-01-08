@@ -1,3 +1,5 @@
+import version from "../../package.json";
+
 interface Items {
   title: string;
   links: Link[];
@@ -6,6 +8,8 @@ interface Link {
   href: string;
   children: string | React.ReactNode;
   disabled?: boolean;
+  isNew?: boolean;
+  isUpdated?: boolean;
 }
 
 export const items: Items[] = [
@@ -51,9 +55,10 @@ export const items: Items[] = [
       { href: "/docs/components/navbar", children: "Navbar" },
 
       {
-        href: "/docs/components/collapse",
-        children: "Collapse",
+        href: "/docs/components/accordion",
+        children: "Accordion",
         disabled: true,
+        // isNew: true,
       },
       { href: "/docs/components/breadcrumb", children: "Breadcrumb" },
       { href: "/docs/components/badge", children: "Badge" },
@@ -62,10 +67,14 @@ export const items: Items[] = [
       { href: "/docs/components/avatar", children: "Avatar" },
       { href: "/docs/components/dropdown", children: "Dropdown" },
       { href: "/docs/components/card", children: "Card" },
+      {
+        href: "/docs/components/tabs",
+        children: "Tabs",
+        disabled: true,
+        // isNew: true,
+      },
     ],
   },
-  {
-    title: "Credits",
-    links: [{ href: "/docs/credits/overview", children: "Overview" }],
-  },
 ];
+
+export const RippleUIVersion = version.version;
