@@ -20,7 +20,7 @@ We provide types for all the colors that you can customize or change some flags 
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     // You will have all the properties available
   },
@@ -33,7 +33,7 @@ To customize the default themes which is `light` and `dark` you can use the `the
 
 ```js
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     themes: [
       {
@@ -63,7 +63,7 @@ To add a new theme you can use the `theme` array property:
 
 ```js
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     themes: [
       {
@@ -85,7 +85,7 @@ To remove a theme you can use the `removeThemes` array property:
 
 ```js
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     removeThemes: ["dark", "light", "whateverTheme"],
   },
@@ -97,7 +97,7 @@ module.exports = {
 To create a new theme or existing ones but with another variables you can use the `theme` array property:
 
 ```js
-/** @type {import('rippleui/dist/js/types/config.types').Config} */
+/** @type {import('rippleui').Config} */
 const config = {
   themes: [
     {
@@ -126,7 +126,7 @@ To disable the background color and color that comes by default you can use the 
 
 ```js
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     defaultStyle: false,
   },
@@ -141,7 +141,7 @@ When you have devices with theme preference in `macOS`, `Windows` or `Linux` you
 
 ```js
 module.exports = {
-  /** @type {import('rippleui/dist/js/types/config.types').Config} */
+  /** @type {import('rippleui').Config} */
   rippleui: {
     themes: [
       {
@@ -164,15 +164,15 @@ module.exports = {
 | className    | type        | Description                                                                     |
 | ------------ | ----------- | ------------------------------------------------------------------------------- |
 | defaultStyle | `boolean`   | Will apply by default bg-color and color to the root element `(default: true)`  |
-| removeThemes | `string []` | The list of themes to remove `(default: [])`                                    |
+| removeThemes | `string[]` | The list of themes to remove `(default: [])`                                    |
 | themes       | `Theme[]`   | The list of themes to add, modify you can also add new variables in each theme. |
 
 <Attributes.Title>Theme</Attributes.Title>
 
 ```ts
 interface Theme {
-  themeName: string;
-  colorScheme: string;
+  themeName: "light" | "dark" | string;
+  colorScheme: "dark" | "light";
   prefersColorScheme?: boolean;
   colors: {
     [key: string]: string;

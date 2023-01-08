@@ -1,6 +1,6 @@
 ---
 title: Modal
-description: Display aditional information content or prompt users for an action in a modal.
+description: Display aditional information content or prompt users htmlFor an action in a modal.
 ---
 
 # Modal
@@ -18,7 +18,7 @@ Simple example of modal.
 <div className="modal">
 <label className="modal-overlay" htmlFor="modal1"></label>
 <div className="modal-content flex flex-col gap-5">
-    <label className="modal-close" htmlFor="modal1"></label>
+    <label htmlFor="modal1"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
     <h2 className="text-xl">Modal title 1</h2>
 
     <span>
@@ -44,7 +44,8 @@ Simple example of modal.
   <div className="modal">
     <label className="modal-overlay" htmlFor="modal1"></label>
     <div className="modal-content flex flex-col gap-5">
-      <label className="modal-close" htmlFor="modal1"></label>
+    <label htmlFor="modal1"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+
       <h2 className="text-xl">Modal title 1</h2>
 
       <span>
@@ -73,7 +74,8 @@ Modal can have a custom size.
 <div className="modal w-screen">
 <label className="modal-overlay" htmlFor="modal2"></label>
 <div className="modal-content flex flex-col gap-5 max-w-3xl">
-    <label className="modal-close" htmlFor="modal2"></label>
+    <label htmlFor="modal2"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+
     <h2 className="text-xl">Modal title 2</h2>
 
     <span>
@@ -99,7 +101,8 @@ Modal can have a custom size.
   <div className="modal w-screen">
     <label className="modal-overlay" htmlFor="modal2"></label>
     <div className="modal-content flex flex-col gap-5 max-w-3xl">
-      <label className="modal-close" htmlFor="modal2"></label>
+    <label htmlFor="modal2"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+
       <h2 className="text-xl">Modal title 2</h2>
       <span>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum
@@ -127,7 +130,8 @@ Overlay click will not close the drawer.
 <div className="modal">
 <label className="modal-overlay" ></label>
 <div className="modal-content flex flex-col gap-5">
-    <label className="modal-close" htmlFor="modal3"></label>
+    <label htmlFor="modal3"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+
     <h2 className="text-xl">Modal title 3</h2>
     <span>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
