@@ -75,10 +75,6 @@ export const items: Items[] = [
       },
     ],
   },
-  {
-    title: "Credits",
-    links: [{ href: "/docs/credits/overview", children: "Overview" }],
-  },
 ];
 
 export const RippleUIVersion = version.version;
