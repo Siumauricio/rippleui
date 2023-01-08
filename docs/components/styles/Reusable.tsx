@@ -6,33 +6,27 @@ import { Comparison } from "./Comparison";
 
 export const Reusable = () => {
   return (
-    <div className="flex flex-col gap-10  py-16 px-4 md:gap-12 xl:px-0">
+    <section className="flex flex-col gap-10  bg-backgroundPrimary px-4 md:gap-12 lg:py-28 xl:px-0">
       <div className="flex flex-col items-center gap-3">
-        <div className="w-full max-w-[78rem]">
-          <span className="text-sm font-semibold text-primary">
-            Why Build with RippleUI?
-          </span>
-        </div>
+        <span className="text-center text-2xl font-semibold text-primary">
+          Why Build with RippleUI?
+        </span>
 
-        <div className="w-full max-w-[78rem]">
-          <div className="max-w-xl">
-            <h2 className="w-full text-3xl font-bold md:text-4xl">
-              <span className="text-3xl text-primary  md:text-4xl">
-                Reusable
-              </span>{" "}
-              components and easy to implement.
-            </h2>
-          </div>
+        <div className="max-w-lg">
+          <h2 className="w-full text-center text-3xl font-bold md:text-4xl">
+            <span className="text-center text-3xl md:text-4xl">Reusable</span>{" "}
+            components and easy to implement.
+          </h2>
         </div>
       </div>
 
-      <div className="mx-auto grid w-full max-w-7xl  grid-cols-1 justify-items-center gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
-        <div className="card overflow-hidden">
-          <div className="flex gap-4">
-            <div className="w-fit pt-1">
-              <RecyleIcon />
-            </div>
-            <div className="flex flex-col gap-2">
+      <div className="mx-auto  flex w-full   max-w-7xl flex-wrap  justify-center justify-items-start gap-4">
+        <div className="card gap-6 overflow-hidden  p-8 shadow-md">
+          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-success p-2 ">
+            <RecyleIcon />
+          </div>
+          <div className="flex gap-4 ">
+            <div className="flex flex-col gap-3">
               <span className="text-2xl font-semibold">
                 Reusable Components
               </span>
@@ -44,12 +38,12 @@ export const Reusable = () => {
             </div>
           </div>
         </div>
-        <div className="card overflow-hidden">
+        <div className="card gap-6 overflow-hidden  p-8 shadow-md">
+          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-warning p-2 ">
+            <BookIcon />
+          </div>
           <div className="flex gap-4">
-            <div className="w-fit pt-1">
-              <BookIcon />
-            </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
               <span className="text-2xl font-semibold ">
                 Easy Documentation
               </span>
@@ -61,23 +55,22 @@ export const Reusable = () => {
             </div>
           </div>
         </div>
-        <div className="card overflow-hidden">
+        <div className="card gap-6 overflow-hidden p-8 shadow-md">
+          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-error p-2 ">
+            <ToolsIcon />
+          </div>
           <div className="flex gap-4 ">
-            <div className="w-fit pt-1">
-              <ToolsIcon />
-            </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
               <span className="text-2xl font-semibold">Easy Configuration</span>
               <p className="text-content2">
                 Easy configuration is a key feature of RippleUI, allowing you to
                 quickly set up and customize the tool to meet your specific
-                needs and preferences..
+                needs and preferences.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Comparison />
-    </div>
+    </section>
   );
 };

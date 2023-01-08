@@ -45,7 +45,7 @@ const LinkRedirect = ({
         {!hideLeft && (
           <Link
             href={hrefLeft}
-            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-border"
+            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-gray-300"
           >
             <ArrowLeft />
             {contentLeft}
@@ -54,7 +54,7 @@ const LinkRedirect = ({
         {!hideRight && (
           <Link
             href={hrefRight}
-            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-border"
+            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-gray-300"
           >
             {contentRight}
             <ChevronRight />

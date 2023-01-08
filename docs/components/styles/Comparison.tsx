@@ -3,18 +3,18 @@ import { CodeBlock } from "../playground/CodeBlock";
 
 export const Comparison = () => {
   return (
-    <div className="flex flex-col gap-8 pt-8">
+    <section className="flex flex-col gap-8 py-28 px-4">
       <h2 className="text-center text-3xl font-semibold md:text-4xl">
         Compare with base Tailwind CSS
       </h2>
-      <p className="mx-auto max-w-lg text-center text-content2">
+      <p className="mx-auto max-w-2xl text-left text-content2">
         RippleUI is a custom TailwindCSS framework that comes with of reusable
         components built on top of Tailwind CSS that includes pre-defined styles
         and layout options, instead of having infinite classes to choose from,
         RippleUI comes with a set of pre-defined classes that you can use to
         build your UI.
       </p>
-      <div className="flex  flex-col justify-center gap-10 px-4 xl:flex-row xl:gap-20">
+      <div className="flex  flex-col justify-center gap-10  xl:flex-row xl:gap-20">
         <div className="flex flex-col items-center ">
           <CodeBlock
             hideIcon
@@ -22,7 +22,7 @@ export const Comparison = () => {
             language="html"
           >
             {`<button 
-        class="bg-purple-500 hover:bg-purple-700 
+        class="bg-purple-800 hover:bg-purple-700 
         focus:bg-purple-800 active:bg-purple-900 
         text-white py-2 px-4 rounded-lg shadow-lg 
         hover:shadow-xl focus:shadow-2xl 
@@ -32,7 +32,7 @@ export const Comparison = () => {
 </button>`}
           </CodeBlock>
           <button
-            className="active:shadow-3xl w-fit rounded-lg bg-purple-500 
+            className="active:shadow-3xl w-fit rounded-lg bg-purple-800 
               py-2  px-4 text-white shadow-lg hover:bg-purple-700 hover:text-purple-100 hover:shadow-xl 
               focus:bg-purple-800 focus:text-purple-200 focus:shadow-2xl active:bg-purple-900 active:text-purple-300"
           >
@@ -52,11 +52,11 @@ export const Comparison = () => {
     Click me 
 </button>`}
           </CodeBlock>
-          <button className="btn btn-secondary">Click</button>
+          <button className="btn-secondary btn">Click</button>
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
-      <div className="flex  flex-col justify-center gap-10 px-4 xl:flex-row xl:gap-20">
+      <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
         <div className="flex flex-col items-center">
           <CodeBlock
             hideIcon
@@ -95,7 +95,7 @@ export const Comparison = () => {
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
-      <div className="flex  flex-col justify-center gap-10 px-4 xl:flex-row xl:gap-20">
+      <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
         <div className="flex flex-col items-center">
           <CodeBlock
             hideIcon
@@ -149,6 +149,6 @@ export const Comparison = () => {
           <input className="switch" type={"checkbox"} defaultChecked />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

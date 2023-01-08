@@ -62,7 +62,7 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
     <>
       <CustomTag
         className={clsx(
-          "flex cursor-pointer items-center gap-2 hover:text-gray-900",
+          "flex cursor-pointer items-center gap-2 hover:text-gray-1100",
           getCSS(level),
           calculateHeadingLevel(level)
         )}
