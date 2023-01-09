@@ -10,6 +10,7 @@ html {
 pre * {
   font-family: "Roboto Mono" !important;
   font-size: 14px !important;
+  line-height: 24px;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
