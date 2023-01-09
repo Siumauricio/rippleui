@@ -99,6 +99,14 @@ const Components: IComponent[] = [
     name: "Textarea",
     link: "/docs/components/textarea",
   },
+  {
+    name: "Tabs",
+    link: "/docs/components/tabs",
+  },
+  {
+    name: "Accordion",
+    link: "/docs/components/accordion",
+  },
 ];
 
 interface Props {
@@ -171,12 +179,12 @@ export const Searcher = ({ isMobile = false }: Props) => {
             <>
               <div
                 ref={wrapperRef}
-                className="absolute z-10 mt-1 max-h-72 w-full divide-y divide-border overflow-y-auto rounded-lg border border-border bg-backgroundSecondary shadow"
+                className="absolute z-10 mt-1 max-h-72 w-full divide-y divide-gray-500 overflow-y-auto rounded-lg border border-gray-500 bg-backgroundSecondary shadow"
               >
                 {suggestions.map((component) => (
                   <label
                     key={component.name}
-                    className="block cursor-pointer p-2 hover:bg-border"
+                    className="block cursor-pointer p-2 hover:bg-gray-300"
                     onClick={() => onClick(component.link)}
                   >
                     {component.name}
