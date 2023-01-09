@@ -29,7 +29,7 @@ export const Navbar = ({ className }: Props) => {
       className={clsx(
         scrollY > 35 && "border-b border-gray-500",
         className ? className : "bg-backgroundSecondary/70",
-        "navbar-sticky navbar-glass navbar  py-3 shadow-none"
+        "navbar navbar-sticky navbar-glass  py-3 shadow-none"
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl">
@@ -57,7 +57,7 @@ export const Navbar = ({ className }: Props) => {
             className={clsx(
               "navbar-item",
               routerDefined.includes("/docs/get-started")
-                ? "text-primary"
+                ? "navbar-active"
                 : "text-whiteInverted"
             )}
             href={"/docs/get-started/installation"}
@@ -67,7 +67,7 @@ export const Navbar = ({ className }: Props) => {
           <Link
             className={clsx(
               routerDefined.includes("/docs/components")
-                ? "text-primary"
+                ? "navbar-active"
                 : "text-whiteInverted",
               "navbar-item"
             )}
@@ -78,7 +78,7 @@ export const Navbar = ({ className }: Props) => {
           <Link
             className={clsx(
               routerDefined.includes("/docs/license")
-                ? "text-primary"
+                ? "navbar-active"
                 : "text-whiteInverted",
               "navbar-item"
             )}
