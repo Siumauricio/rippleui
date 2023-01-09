@@ -24,7 +24,7 @@ export const GetStarted = () => {
             Install RippleUI choosing your favorite package manager like npm,
             yarn, or pnpm.
           </div>
-          <div className="DIV">
+          <div>
             <CodeBlock
               iconClass="sm:max-w-md top-10"
               blockClass="sm:max-w-md"
@@ -51,6 +51,7 @@ export const GetStarted = () => {
           </div>
           <div className="flex w-full flex-col ">
             <CodeBlock
+              disabledFormat
               iconClass="sm:max-w-md top-10"
               blockClass="sm:max-w-md"
               language="html"

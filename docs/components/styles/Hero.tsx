@@ -28,11 +28,11 @@ export const Hero = () => {
             <div className="flex flex-row flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-4">
               <Link
                 href={"/docs/get-started/installation"}
-                className="btn-rounded btn-primary btn-md btn btn-block whitespace-nowrap sm:w-48"
+                className="btn-primary btn-md btn btn-block btn-rounded whitespace-nowrap sm:w-48"
               >
                 Get Started
               </Link>
-              <div className="w-full overflow-hidden">
+              <div className="w-full overflow-hidden lg:overflow-visible">
                 <CodeBlock
                   iconClass="sm:max-w-md top-10"
                   blockClass="sm:max-w-md"
@@ -83,11 +83,11 @@ export const Hero = () => {
             </div>
             <div className="flex justify-between">
               <div className="dropdown-container">
-                <div className="dropdown dropdown-open">
+                <div className="dropdown-open dropdown">
                   <label className="btn flex" tabIndex={0}>
                     <span>Dropdown</span>
                   </label>
-                  <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
+                  <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
                     <div className="dropdown-item">
                       <p className="text-sm leading-5 text-content1">
                         Signed in as
