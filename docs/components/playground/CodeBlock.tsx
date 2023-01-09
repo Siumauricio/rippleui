@@ -3,14 +3,17 @@ import Highlight, { defaultProps, PrismTheme } from "prism-react-renderer";
 import { useState } from "react";
 import useCopyToClipboard from "../../hooks/useCopyToClipboard";
 import { CopyIcon } from "../icons/CopyIcon";
-
+import prettier from "prettier/standalone";
+import htmlParser from "prettier/parser-html";
+import js from "prettier/parser-babel";
 interface Props {
   children?: React.ReactNode;
-  language?: "tsx" | "jsx" | "bash" | "html";
+  language?: "tsx" | "js" | "bash" | "html";
   linesOn?: boolean;
   blockClass?: string;
   iconClass?: string;
   hideIcon?: boolean;
+  disabledFormat?: boolean;
 }
 
 export const CodeBlock = ({
@@ -19,6 +22,7 @@ export const CodeBlock = ({
   hideIcon = false,
   children,
   language = "tsx",
+  disabledFormat,
   linesOn = false,
 }: Props) => {
   const [value, copy] = useCopyToClipboard();
@@ -33,6 +37,24 @@ export const CodeBlock = ({
       setTooltipText("Copy to clipboard");
     }, 2000);
   };
+  const parserPlugin =
+    language === "html" ? htmlParser : language === "js" ? js : null;
+  const parser =
+    language === "html" ? "html" : language === "js" ? "babel" : null;
+  let formattedCode = code;
+  if (parser && parserPlugin && !disabledFormat) {
+    formattedCode = prettier
+      .format(code, {
+        parser: parser,
+        plugins: [parserPlugin],
+        useTabs: true,
+        printWidth: 800,
+        htmlWhitespaceSensitivity: "ignore",
+      })
+      .trim()
+      .replace(/;$/, "");
+  }
+
   return (
     <>
       {!hideIcon && (
@@ -44,7 +66,7 @@ export const CodeBlock = ({
           onClick={clickHandler}
         >
           <span
-            className="tooltip tooltip-top tooltip-primary"
+            className="tooltip tooltip-bottom tooltip-primary "
             data-tooltip={tooltipText}
           >
             <CopyIcon />
@@ -55,7 +77,7 @@ export const CodeBlock = ({
       <Highlight
         {...defaultProps}
         theme={null as any}
-        code={code}
+        code={formattedCode}
         // @ts-ignore
         language={language}
       >
@@ -63,7 +85,7 @@ export const CodeBlock = ({
           <pre
             className={clsx(
               className,
-              "overflow-auto rounded-xl  p-4 text-left ",
+              "max-h-[32rem] overflow-auto  rounded-xl p-4 text-left",
               blockClass
             )}
             style={style}
@@ -82,7 +104,7 @@ export const CodeBlock = ({
                       {...getTokenProps({
                         token,
                         key,
-                        className: "text-white",
+                        className: "text-white ",
                       })}
                       // css={{ color: "white" }}
                     />
