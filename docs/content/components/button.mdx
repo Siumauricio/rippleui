@@ -111,20 +111,22 @@ Button rounded.
 </div>
 ```html
 <button className="btn-rounded btn btn-primary">Default</button>
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  class="h-6 w-6"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
->
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth="2"
-    d="M6 18L18 6M6 6l12 12"
-  />
-</svg>
+<button className="btn btn-circle">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </svg>
+</button>
 ```
 
 ### Button Block
@@ -198,8 +200,8 @@ Button disabled.
 </Attributes>
 
 <LinkRedirect
-  contentLeft="Get Started - Customization"
-  hrefLeft="/docs/get-started/customization"
-  contentRight="Input"
-  hrefRight="/docs/components/input"
+  contentLeft="Breadcrumb"
+  hrefLeft="/docs/components/breadcrumb"
+  contentRight="Button Group"
+  hrefRight="/docs/components/button-group"
 />

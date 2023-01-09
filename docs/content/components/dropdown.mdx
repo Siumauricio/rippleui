@@ -36,102 +36,26 @@ Simple example of a dropdown.
 
 <div className="dropdown-container justify-center">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-      <svg
-        className="ml-2 -mr-1 h-5 w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-          clipRule="evenodd"
-        ></path>
-      </svg>
-    </label>
+    <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu">
-      <div className="dropdown-item">
-        <p className="text-sm leading-5 text-content1">Signed in as</p>
-        <p className="truncate text-sm leading-5 text-content2">
-          <strong>tom@example</strong>
-        </p>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
       </div>
-      <div className="">
-        <a
-          tabIndex="-1"
-          className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Subscriptions</span>
-        </a>
-      </div>
-      <a
-        className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-        role="menuitem"
-      >
-        <span>License</span>
-      </a>
-    </div>
   </div>
 </div>
 
 ```html
-<div className="dropdown-container ">
-  <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-      <svg
-        className="ml-2 -mr-1 h-5 w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-          clipRule="evenodd"
-        ></path>
-      </svg>
+<div className="dropdown">
+    <label className="btn" tabIndex="0">
+     Options
     </label>
     <div className="dropdown-menu">
-      <div className="dropdown-item">
-        <p className="text-sm leading-5 text-content1">Signed in as</p>
-        <p className="truncate text-sm leading-5 text-content2">
-          <strong>tom@example</strong>
-        </p>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
       </div>
-      <div className="">
-        <a
-          tabindex="-1"
-          className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Subscriptions</span>
-        </a>
-      </div>
-      <a
-        className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-        role="menuitem"
-      >
-        <span>License</span>
-      </a>
-    </div>
   </div>
-</div>
 ```
 
 ### Bottom left and right
@@ -141,76 +65,45 @@ Dropdowns can have different positions.
 <div className="flex gap-3 justify-center">
 <div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+    <label className="btn flex" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-bottom-left">
-      <div>
-       <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
 </div>
 
 <div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+    <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-bottom-right" >
-      <div>
-       <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
 </div>
 </div>
 
 ```html
-<div className="dropdown-container">
-  <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu">
-      <div>
-        <span
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-        >
-          Account settings
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu dropdown-menu-bottom-right">
-      <div>
-        <span
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-        >
-          Account settings
-        </span>
-      </div>
+    <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu">
+      <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
+
+  <div className="dropdown">
+    <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
 </div>
 ```
 
@@ -219,83 +112,47 @@ Dropdowns can have different positions.
 Dropdown in top left and right.
 
 <div className="flex gap-3 justify-center">
-<div className="dropdown-container">
-  <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu dropdown-menu-top-left">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu dropdown-menu-top-right">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+    <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-top-left">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
+
+
+
+  <div className="dropdown">
+    <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-top-right">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+  </div>
+
 </div>
 
 ```html
-<div className="dropdown-container">
-  <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+<div className="dropdown">
+    <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-top-left">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+    <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-top-right">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 ```
 
 ### Left and right
@@ -303,83 +160,43 @@ Dropdown in top left and right.
 Dropdown in left and right.
 
 <div className="flex gap-3 justify-center">
-<div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left">
-      <div>
-       <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
 </div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-right">
-      <div>
-       <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+         <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 </div>
 
 ```html
-<div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
 </div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-right">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+         <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 ```
 
 ### Left bottom and top
@@ -387,81 +204,41 @@ Dropdown in left and right.
 Dropdown in left bottom and top.
 
 <div className="flex gap-3 justify-center">
-<div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left-bottom">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left-top">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
   </div>
 </div>
 </div>
 
 ```html
-<div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left-bottom">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-left-top">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
   </div>
 </div>
 ```
@@ -471,171 +248,179 @@ Dropdown in left bottom and top.
 Dropdown in right bottom and top.
 
 <div className="flex gap-3 justify-center">
-<div className="dropdown-container">
-  <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu dropdown-menu-right-bottom">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
-    <div className="dropdown-menu dropdown-menu-right-top">
-      <div>
-       <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
+
+
+
+  <div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-right-top">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+  </div>
+
 </div>
 
 ```html
-<div className="dropdown-container">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-right-bottom">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-right-top">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-</div>
+
 ```
 
 ### Opened
 
 Dropdown opened.
 
-<div className="dropdown-container ">
-  <div className="dropdown dropdown-open ">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+<div className="mb-32 justify-center flex">
+  <div className="dropdown dropdown-open">
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-bottom-right">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
   </div>
+    </div>
 </div>
 
 ```html
-<div className="dropdown-container ">
-  <div className="dropdown dropdown-open ">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+<div className="dropdown dropdown-open">
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu dropdown-menu-bottom-right">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
-    </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
   </div>
-</div>
 ```
 
 ### Hover
 
 Dropdown on hover.
-
-<div className="dropdown-container">
+<div className="justify-center flex">
   <div className="dropdown dropdown-hover">
-    <label className="btn flex" tabIndex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu  dropdown-menu-bottom-right">
-      <div>
-        <a
-          tabIndex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
+</div>
 </div>
 
 ```html
-<div className="dropdown-container">
   <div className="dropdown dropdown-hover">
-    <label className="btn flex" tabindex="0">
-      <span>Options</span>
-    </label>
+  <label className="btn" tabIndex="0">Options</label>
     <div className="dropdown-menu  dropdown-menu-bottom-right">
-      <div>
-        <a
-          tabindex="-1"
-          className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-          role="menuitem"
-        >
-          <span>Account settings</span>
-        </a>
-      </div>
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
 </div>
+```
+
+
+### Divider
+
+Dropdown with divider.
+
+<div className="justify-center flex">
+  <div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
+       <a className="dropdown-item text-sm">Profile</a>
+        <div className="dropdown-divider" role="separator"></div>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+</div>
+</div>
+
+```html
+<div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
+       <a className="dropdown-item text-sm">Profile</a>
+        <div className="dropdown-divider" role="separator"></div>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+</div>
+```
+
+### Bordered 
+
+Dropdown with border.
+
+<div className="justify-center flex">
+  <div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right border border-gray-500">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+    </div>
+    </div>
+
+```html
+ <div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right border border-gray-500">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+    </div>
+    </div>
+```
+
+### With active item
+
+Dropdown with active item.
+
+<div className="justify-center flex">
+  <div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm dropdown-active"> Subscriptions</a>
+    </div>
+    </div>
+    </div>
+
+```html
+<div className="dropdown">
+  <label className="btn" tabIndex="0">Options</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right  gap-1">
+       <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm dropdown-active"> Subscriptions</a>
+    </div>
+    </div>
 ```
 
 <Attributes>
@@ -649,7 +434,8 @@ Dropdown on hover.
 | dropdown-hover             | Will open the dropdown on hover       |
 | dropdown-open              | Will open the dropdown on load        |
 | dropdown-item              | Will style a element as dropdown item |
-| dropdown-active            |  Will style a element as active        |
+| dropdown-active            | Will style a element as active        |
+| dropdown-divider           | Will apply a border separator         |
 | dropdown-menu-bottom-right | Will position to the bottom right     |
 | dropdown-menu-bottom-left  | Will position to the bottom left      |
 | dropdown-menu-top-right    | Will position to the top right        |
@@ -664,8 +450,8 @@ Dropdown on hover.
 </Attributes>
 
 <LinkRedirect
-  contentLeft="Avatar"
-  hrefLeft="/docs/components/avatar"
-  contentRight="Card"
-  hrefRight="/docs/components/card"
+  contentLeft="Drawer"
+  hrefLeft="/docs/components/drawer"
+  contentRight="Input"
+  hrefRight="/docs/components/input"
 />

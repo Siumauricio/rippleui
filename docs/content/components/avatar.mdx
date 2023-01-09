@@ -233,7 +233,7 @@ Avatar with dropdown.
 
 <div className="avatar avatar-ring avatar-md">
   <div className="dropdown-container">
-    <div className="dropdown dropdown-open">
+    <div className="dropdown">
       <label
         className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
         tabIndex="0"
@@ -244,43 +244,9 @@ Avatar with dropdown.
         />
       </label>
       <div className="dropdown-menu dropdown-menu-bottom-right">
-        <div className="dropdown-item">
-          <p className="text-sm leading-5 text-content1">Signed in as</p>
-          <p className="truncate text-sm leading-5 text-content2">
-            <strong>tom@example</strong>
-          </p>
-        </div>
-        <div className="">
-          <a
-            tabIndex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Account settings</span>
-          </a>
-          <a
-            tabIndex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Profile</span>
-          </a>
-          <a
-            tabIndex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Subscriptions</span>
-          </a>
-        </div>
-        <div>
-          <a
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Log Out</span>
-          </a>
-        </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
       </div>
     </div>
   </div>
@@ -289,10 +255,10 @@ Avatar with dropdown.
 ```html
 <div className="avatar avatar-ring avatar-md">
   <div className="dropdown-container">
-    <div className="dropdown dropdown-open">
+    <div className="dropdown">
       <label
         className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
-        tabindex="0"
+        tabIndex="0"
       >
         <img
           src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
@@ -300,43 +266,9 @@ Avatar with dropdown.
         />
       </label>
       <div className="dropdown-menu dropdown-menu-bottom-right">
-        <div className="dropdown-item">
-          <p className="text-sm leading-5 text-content1">Signed in as</p>
-          <p className="truncate text-sm leading-5 text-content2">
-            <strong>tom@example</strong>
-          </p>
-        </div>
-        <div className="">
-          <a
-            tabindex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Account settings</span>
-          </a>
-          <a
-            tabindex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Profile</span>
-          </a>
-          <a
-            tabindex="-1"
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-            role="menuitem"
-          >
-            <span>Subscriptions</span>
-          </a>
-        </div>
-        <div>
-          <a
-            className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2 avatar"
-            role="menuitem"
-          >
-            <span>Log Out</span>
-          </a>
-        </div>
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
       </div>
     </div>
   </div>
@@ -367,8 +299,8 @@ Avatar with dropdown.
 </Attributes>
 
 <LinkRedirect
-  contentLeft="Tooltip"
-  hrefLeft="/docs/components/tooltip"
-  contentRight="Dropdown"
-  hrefRight="/docs/components/dropdown"
+  contentLeft="Alert"
+  hrefLeft="/docs/components/alert"
+  contentRight="Badge"
+  hrefRight="/docs/components/badge"
 />
