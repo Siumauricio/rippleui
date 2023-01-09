@@ -1,0 +1,507 @@
+---
+title: Accordion
+description: An accordion is a UI element that allows users to toggle the display of content within it. It is often used to display a large amount of information in a small space.
+---
+
+# Accordion
+
+An accordion is a UI element that allows users to toggle the display of content within it. It is often used to display a large amount of information in a small space.
+
+### Default
+
+Simple example of a accordion.
+
+<div className="accordion-group">
+  <div className="accordion">
+    <input type="checkbox" id="accordion-1" className="accordion-toggle" />
+    <label htmlFor="accordion-1" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore eius
+          deleniti reprehenderit? Numquam commodi totam mollitia quod
+        </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="accordion-2" className="accordion-toggle" />
+    <label htmlFor="accordion-2" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore eius
+          deleniti reprehenderit? Numquam commodi totam mollitia quo
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="accordion-group">
+  <div className="accordion">
+    <input type="checkbox" id="accordion-1" className="accordion-toggle" />
+    <label htmlFor="accordion-1" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore eius
+          deleniti reprehenderit? Numquam commodi totam mollitia quod
+        </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="accordion-2" className="accordion-toggle" />
+    <label htmlFor="accordion-2" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore eius
+          deleniti reprehenderit? Numquam commodi totam mollitia quo
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Focusable
+
+Accordion on click will collapse the other 
+
+<div className="accordion-group accordion-group-bordered">
+
+        <div className="accordion" tabIndex="0">
+          <label className="accordion-title">Toggle Accordion 1 </label>
+          <div className="accordion-content">
+            <div className="min-h-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                necessitatibus iusto laborum autem placeat aspernatur inventore
+                eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+            </div>
+          </div>
+        </div>
+        <div className="accordion" tabIndex="0">
+          <label className="accordion-title"> Toggle Accordion 2</label>
+          <div className="accordion-content">
+            <div className="min-h-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                necessitatibus iusto laborum autem placeat aspernatur inventore
+                eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+                iure quod iure quibusdam corrupti eos quos quod iure quibusdam
+            </div>
+          </div>
+        </div>
+      </div>
+
+```html
+   <div className="accordion-group accordion-group-bordered">
+        <div className="accordion" tabIndex="0">
+          <label className="accordion-title">Toggle Accordion 1 </label>
+          <div className="accordion-content">
+            <div className="min-h-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                necessitatibus iusto laborum autem placeat aspernatur inventore
+                eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+            </div>
+          </div>
+        </div>
+        <div className="accordion" tabIndex="0">
+          <label className="accordion-title"> Toggle Accordion 2</label>
+          <div className="accordion-content">
+            <div className="min-h-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                necessitatibus iusto laborum autem placeat aspernatur inventore
+                eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+                iure quod iure quibusdam corrupti eos quos quod iure quibusdam
+            </div>
+          </div>
+        </div>
+      </div>
+```
+ 
+
+
+
+### Hover
+
+Accordion with hover effect
+
+<div className="accordion-group accordion-group-hover">
+  <div className="accordion">
+    <input type="checkbox" id="toggle-5" className="accordion-toggle" />
+    <label htmlFor="toggle-5" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-6" className="accordion-toggle" />
+    <label htmlFor="toggle-6" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="accordion-group accordion-group-hover">
+  <div className="accordion">
+    <input type="checkbox" id="toggle-5" className="accordion-toggle" />
+    <label htmlFor="toggle-5" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-6" className="accordion-toggle" />
+    <label htmlFor="toggle-6" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Bordered
+
+Accordion with border
+
+ <div className="accordion-group accordion-group-bordered ">
+  <div className="accordion">
+    <input type="checkbox" id="toggle-7" className="accordion-toggle" />
+    <label htmlFor="toggle-7" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-8" className="accordion-toggle" />
+    <label htmlFor="toggle-8" className="accordion-title">Toggle Accordion 2 </label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+          iure quod iure quibusdam corrupti eos quos quod iure quibusdam
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+ <div className="accordion-group accordion-group-bordered ">
+  <div className="accordion">
+    <input type="checkbox" id="toggle-7" className="accordion-toggle" />
+    <label htmlFor="toggle-7" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-8" className="accordion-toggle" />
+    <label htmlFor="toggle-8" className="accordion-title">Toggle Accordion 2 </label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+          iure quod iure quibusdam corrupti eos quos quod iure quibusdam
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Hover and bordered
+
+Accordion with border and hover effect and description
+
+<div className="accordion-group accordion-group-hover accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-9" className="accordion-toggle" />
+    <label htmlFor="toggle-9" className="accordion-title">
+      <span>Toggle Accordion 1</span>
+      <span className="text-sm text-content3 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus</span>
+    </label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+
+  <div className="accordion">
+    <input type="checkbox" id="toggle-10" className="accordion-toggle" />
+    <label htmlFor="toggle-10" className="accordion-title">
+      <span>Toggle Accordion 2</span>
+      <span className="text-sm text-content3 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus</span>
+    </label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="accordion-group accordion-group-hover accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-9" className="accordion-toggle" />
+    <label htmlFor="toggle-9" className="accordion-title">
+      <span>Toggle Accordion 1</span>
+      <span className="text-sm text-content3 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus</span>
+    </label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-10" className="accordion-toggle" />
+    <label htmlFor="toggle-10" className="accordion-title">
+      <span>Toggle Accordion 2</span>
+      <span className="text-sm text-content3 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus</span>
+    </label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Forced opened
+
+You can force to accordion be opened.
+
+<div className="accordion-group accordion-group-hover accordion-group-bordered" >
+  <div className="accordion accordion-open">
+    <label className="accordion-title">Forced Opened </label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox"  id="toggle-12" className="accordion-toggle"/>
+    <label htmlFor="toggle-12" className="accordion-title">Toggle Accordion</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="accordion-group accordion-group-hover accordion-group-bordered" >
+  <div className="accordion accordion-open">
+    <label className="accordion-title">Forced Opened </label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox"  id="toggle-12" className="accordion-toggle"/>
+    <label htmlFor="toggle-12" className="accordion-title">Toggle Accordion</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Secondary
+
+Will apply a secondary color to the title section.
+
+<div className="accordion-group accordion-group-secondary accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-13" className="accordion-toggle" />
+    <label htmlFor="toggle-13" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-14" className="accordion-toggle" />
+    <label htmlFor="toggle-14" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div className="accordion-group accordion-group-secondary accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-13" className="accordion-toggle" />
+    <label htmlFor="toggle-13" className="accordion-title">Toggle Accordion 1</label>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-14" className="accordion-toggle" />
+    <label htmlFor="toggle-14" className="accordion-title">Toggle Accordion 2</label>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### With icon
+
+With a icon on the right side of the title.
+
+<div className="accordion-group accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-15" className="accordion-toggle" />
+    <label htmlFor="toggle-15" className="accordion-title">Toggle Accordion 1</label>
+        <span className="accordion-icon">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+      </span>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-16" className="accordion-toggle" />
+    <label htmlFor="toggle-16" className="accordion-title">Toggle Accordion 2</label>
+     <span className="accordion-icon">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+      </span>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  </div>
+
+```html
+<div className="accordion-group accordion-group-bordered" >
+  <div className="accordion">
+    <input type="checkbox" id="toggle-15" className="accordion-toggle" />
+    <label htmlFor="toggle-15" className="accordion-title">Toggle Accordion 1</label>
+        <span className="accordion-icon">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+      </span>
+    <div className="accordion-content text-content2">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  <div className="accordion">
+    <input type="checkbox" id="toggle-16" className="accordion-toggle" />
+    <label htmlFor="toggle-16" className="accordion-title">Toggle Accordion 2</label>
+     <span className="accordion-icon">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+      </span>
+    <div className="accordion-content">
+      <div className="min-h-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          necessitatibus iusto laborum autem placeat aspernatur inventore
+          eius deleniti reprehenderit? Numquam commodi totam mollitia quod
+      </div>
+    </div>
+  </div>
+  </div>
+  ```
+  
+<Attributes>
+  <Attributes.Title>Accordion Classes</Attributes.Title>
+
+| className                 | Description                              |
+| ------------------------- | ---------------------------------------- |
+| accordion-group           | Wrapper htmlFor accordion group              |
+| accordion-group-secondary | Set secondary color to the title section |
+| accordion-group-bordered  | All the accordion will have a border     |
+| accordion-group-hover     | Title section will have a hover effect   |
+| accordion-toggle          | Toggle htmlFor accordion                     |
+| accordion                 | Wrapper htmlFor the title and content        |
+| accordion-title           | Title section of the accordion           |
+| accordion-icon            | Icon htmlFor the accordion on the right side |
+| accordion-content         | Content section of the accordion         |
+| accordion-open            | The accordion will be opened by default  |
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Get Started - Customization"
+  hrefLeft="/docs/get-started/customization"
+  contentRight="Alert"
+  hrefRight="/docs/components/alert"
+/>

@@ -1,0 +1,162 @@
+---
+title: Tabs
+description:  Tabs are used to organize content into different sections. They are used to switch between different views.
+---
+
+# Tabs
+
+Ripple UI comes with a set of tabs that can be used to organize content into different sections. They are used to switch between different views.
+
+### Default
+
+Simple example of a tabs.
+
+<div className="tabs">
+  <div className="tab">Tab 1</div>
+  <div className="tab">Tab 2</div>
+  <div className="tab tab-active ">Tab 3</div>
+</div>
+
+```html
+<div className="tabs">
+  <div className="tab p-4">Tab 1</div>
+  <div className="tab p-4">Tab 2</div>
+  <div className="tab tab-active p-4">Tab 3</div>
+</div>
+```
+
+### Bordered
+
+Bordered tabs.
+
+<div className="tabs">
+    <div className="tab tab-bordered px-6">Tab 1</div>
+    <div className="tab tab-bordered tab-active px-6">Tab 3</div>
+    <div className="tab tab-bordered px-6">Tab 3</div>
+</div>
+
+```html
+<div className="tabs">
+    <div className="tab tab-bordered px-6">Tab 1</div>
+    <div className="tab tab-bordered px-6 tab-active">Tab 3</div>
+    <div className="tab tab-bordered px-6">Tab 3</div>
+</div>
+```
+
+### Underline
+
+Underline tabs.
+
+<div className="tabs">
+    <div className="tab px-6">Tab 1</div>
+    <div className="tab tab-underline tab-active px-6">Tab 2</div>
+    <div className="tab px-6">Tab 3</div>
+</div>
+
+```html
+<div className="tabs">
+    <div className="tab">Tab 1</div>
+    <div className="tab tab-underline tab-active">Tab 2</div>
+    <div className="tab">Tab 3</div>
+</div>
+```
+
+### Pill
+
+Pill tabs.
+
+<div className="tabs gap-1">
+    <div className="tab tab-pill">Tab 1</div>
+    <div className="tab tab-pill tab-active">Tab 2</div>
+    <div className="tab tab-pill tab-disabled">Tab 3</div>
+</div>
+
+```html
+<div className="tabs gap-1">
+    <div className="tab tab-pill">Tab 1</div>
+    <div className="tab tab-pill tab-active">Tab 2</div>
+    <div className="tab tab-pill tab-disabled">Tab 3</div>
+</div>
+```
+
+### Boxed
+
+Boxed tabs.
+
+<div class="w-full">
+    <div class="tabs tabs-boxed flex-nowrap gap-1">
+        <div class="tab">Tab 1</div>
+        <div class="tab tab-active">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tab">Tab 4</div>
+        <div class="tab">Tab 5</div>
+        <div class="tab">Tab 6</div>
+    </div>
+</div>
+
+```html
+<div class="w-full">
+    <div class="tabs tabs-boxed flex-nowrap gap-1">
+        <div class="tab">Tab 1</div>
+        <div class="tab tab-active">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tab">Tab 4</div>
+        <div class="tab">Tab 5</div>
+        <div class="tab">Tab 6</div>
+    </div>
+</div>
+```
+
+### Responsive
+
+Responsive tabs with overflow.
+
+<div className=" w-full max-w-xs overflow-auto">
+    <div className="tabs w-full flex-nowrap">
+        <div className="tab">Tab 1</div>
+        <div className="tab tab-underline tab-active">Tab 3</div>
+        <div className="tab">Tab 3</div>
+        <div className="tab">Tab 4</div>
+        <div className="tab">Tab 5</div>
+        <div className="tab">Tab 6</div>
+    </div>
+</div>
+
+```html
+<div className=" w-full max-w-xs overflow-auto">
+    <div className="tabs w-full flex-nowrap">
+        <div className="tab">Tab 1</div>
+        <div className="tab tab-underline tab-active">Tab 3</div>
+        <div className="tab">Tab 3</div>
+        <div className="tab">Tab 4</div>
+        <div className="tab">Tab 5</div>
+        <div className="tab">Tab 6</div>
+    </div>
+</div>
+```
+
+
+<Attributes>
+<Attributes.Title>Tabs Classes</Attributes.Title>
+
+| class         | Description                               |
+| ------------- | ----------------------------------------- |
+| tabs          | Wrapper for tabs                          |
+| tab           | Tab base style                            |
+| tabs-boxed    | Will apply a background color to the tabs |
+| tab-bordered  | All tabs will have a border by default    |
+| tab-underline | Will apply border bottom to a element     |
+| tab-pill      | Will have a hover and active effect       |
+| tab-active    | Will mark a tab as active                 |
+| tab-disabled  | Will disable the tab                      |
+
+
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Switch"
+  hrefLeft="/docs/components/switch"
+  contentRight="Table"
+  hrefRight="/docs/components/table"
+/>

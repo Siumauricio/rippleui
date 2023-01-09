@@ -37,73 +37,86 @@ Simple example of drawer.
 
 <div >
     <input type="checkbox" id="drawer-left" className="drawer-toggle" />
-    <label htmlFor="drawer-left" className="btn btn-primary">
-      <p>Open Left</p>
-    </label>
+    <label htmlFor="drawer-left" className="btn btn-primary"> Open Left</label>
     <label className="overlay " htmlFor="drawer-left"></label>
-    <div className="drawer ">
-      <div className="drawer-content ">
-          <label htmlFor="drawer-left"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-        <p> Hello World</p>
+    <div className="drawer">
+      <div className="drawer-content pt-10 flex flex-col  h-full">
+        <label htmlFor="drawer-left" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+        <div>
+          <h2 className="text-xl font-medium"> Create your account</h2>
+          <input className="input py-1.5 my-3" placeholder="Type here..."/>
+        </div>
+         <div class="h-full flex flex-row justify-end items-end gap-2">
+          <button className="btn btn-ghost">Cancel</button>
+          <button className="btn btn-primary">Create</button>
+        </div>
       </div>
     </div>
-
 </div>
 
 ```html
-<div>
   <input type="checkbox" id="drawer-left" className="drawer-toggle" />
-  <label htmlFor="drawer-left" className="btn btn-primary">
-    <p>Open Left</p>
+
+<label htmlFor="drawer-left" className="btn btn-primary">
+   Open Left
   </label>
-  <label className="overlay " htmlFor="drawer-left"></label>
-  <div className="drawer ">
-    <div className="drawer-content ">
-      <label
-        className="btn btn-circle btn-ghost absolute top-1 right-1"
-        htmlFor="drawer-left"
-      >
-        X
-      </label>
-      <p>Hello World</p>
+  <label className="overlay" htmlFor="drawer-left"></label>
+  <div className="drawer">
+      <div className="drawer-content pt-10 flex flex-col  h-full">
+        <label htmlFor="drawer-left" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+        <div>
+          <h2 className="text-xl font-medium"> Create your account</h2>
+          <input className="input py-1.5 my-3" placeholder="Type here..."/>
+        </div>
+         <div class="h-full flex flex-row justify-end items-end gap-2">
+          <button className="btn btn-ghost">Cancel</button>
+          <button className="btn btn-primary">Create</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 ```
 
 ### Right Position
 
 Drawer right side.
 
-<div >
-    <input type="checkbox" id="drawer-right" className="drawer-toggle" />
-    <label htmlFor="drawer-right" className="btn btn-primary">
-      <p>Open Right</p>
-    </label>
-    <label className="overlay " htmlFor="drawer-right"></label>
-    <div className="drawer drawer-right ">
-      <div className="drawer-content ">
-         <label htmlFor="drawer-right"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-        <p> Hello World</p>
+  <input type="checkbox" id="drawer-right" className="drawer-toggle" />
+ 
+  <label htmlFor="drawer-right" className="btn btn-primary">Open Right</label>
+  <label className="overlay" htmlFor="drawer-right"></label>
+  <div className="drawer drawer-right ">
+    <div className="drawer-content pt-10 flex flex-col  h-full">
+        <label htmlFor="drawer-right" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+        <div>
+          <h2 className="text-xl font-medium"> Create your account</h2>
+          <input className="input py-1.5 my-3" placeholder="Type here..."/>
+        </div>
+         <div class="h-full flex flex-row justify-end items-end gap-2">
+          <button className="btn btn-ghost">Cancel</button>
+          <button className="btn btn-primary">Create</button>
+        </div>
       </div>
-    </div>
+  </div>
 
-</div>
 
 ```html
-<div>
   <input type="checkbox" id="drawer-right" className="drawer-toggle" />
-  <label htmlFor="drawer-right" className="btn btn-primary">
-    <p>Open Right</p>
-  </label>
-  <label className="overlay " htmlFor="drawer-right"></label>
-  <div className="drawer drawer-right ">
-    <div className="drawer-content ">
-      <label htmlFor="drawer-right"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-      <p>Hello World</p>
-    </div>
+ 
+ <label htmlFor="drawer-right" className="btn btn-primary"> Open Right</label>
+  <label className="overlay" htmlFor="drawer-right"></label>
+  <div className="drawer drawer-right">
+    <div className="drawer-content pt-10 flex flex-col  h-full">
+        <label htmlFor="drawer-right" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+        <div>
+          <h2 className="text-xl font-medium"> Create your account</h2>
+          <input className="input py-1.5 my-3" placeholder="Type here..."/>
+        </div>
+         <div class="h-full flex flex-row justify-end items-end gap-2">
+          <button className="btn btn-ghost">Cancel</button>
+          <button className="btn btn-primary">Create</button>
+        </div>
+      </div>
   </div>
-</div>
 ```
 
 ### Top Position
@@ -117,29 +130,24 @@ Drawer top side.
     <div className="drawer drawer-top">
       <div className="drawer-content ">
         <label htmlFor="drawer-top"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-         <p className="max-w-xl mx-auto">     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries.  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-
+         <p className="max-w-xl mx-auto"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries.  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
       </div>
-
     </div>
-
 </div>
 
 ```html
-<div>
   <input type="checkbox" id="drawer-top" className="drawer-toggle" />
+
   <label htmlFor="drawer-top" className="btn btn-primary">
-    <p>Open Top</p>
+    Open Top
   </label>
   <label className="overlay" htmlFor="drawer-top"></label>
   <div className="drawer drawer-top h-24">
     <div className="drawer-content">
       <label htmlFor="drawer-top"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
          <p className="max-w-xl mx-auto">     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries.  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-
     </div>
   </div>
-</div>
 ```
 
 ### Bottom Position
@@ -153,7 +161,7 @@ Drawer bottom side.
     </label>
     <label className="overlay" htmlFor="drawer-bottom"></label>
     <div className="drawer drawer-bottom ">
-      <div className="drawer-content ">
+      <div className="drawer-content">
         <label htmlFor="drawer-bottom"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
          <p className="max-w-xl mx-auto">     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries.  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
       </div>
@@ -162,21 +170,18 @@ Drawer bottom side.
 </div>
 
 ```html
-<div>
   <input type="checkbox" id="drawer-bottom" className="drawer-toggle" />
+
   <label htmlFor="drawer-bottom" className="btn btn-primary">
     <p>Open Bottom</p>
   </label>
   <label className="overlay" htmlFor="drawer-bottom"></label>
-  <div className="drawer drawer-bottom ">
+  <div className="drawer drawer-bottom">
     <div className="drawer-content ">
        <label htmlFor="drawer-bottom"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
                <p className="max-w-xl mx-auto">     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries.  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of        type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-
-     
     </div>
   </div>
-</div>
 ```
 
 ### On click overlay not close.
@@ -185,34 +190,28 @@ Overlay click will not close the drawer.
 
 <div >
     <input type="checkbox" id="drawer-overlay" className="drawer-toggle" />
-    <label htmlFor="drawer-overlay" className="btn btn-primary">
-      <p>Open</p>
-    </label>
-    <label className="overlay " ></label>
-    <div className="drawer ">
+    <label htmlFor="drawer-overlay" className="btn btn-primary">Open  </label>
+    <label className="overlay" ></label>
+    <div className="drawer">
       <div className="drawer-content ">
         <label htmlFor="drawer-overlay"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-        <p> Hello World</p>
       </div>
     </div>
 
 </div>
 
 ```html
-<div>
   <input type="checkbox" id="drawer-overlay" className="drawer-toggle" />
-  <label htmlFor="drawer-overlay" className="btn btn-primary">
-    <p>Open</p>
-  </label>
-  <label className="overlay "></label>
-  <div className="drawer ">
-    <div className="drawer-content ">
-         <label htmlFor="drawer-overlay"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
 
-      <p>Hello World</p>
+  <label htmlFor="drawer-overlay" className="btn btn-primary">
+   Open
+  </label>
+  <label className="overlay"></label>
+  <div className="drawer">
+    <div className="drawer-content">
+         <label htmlFor="drawer-overlay"className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
     </div>
   </div>
-</div>
 ```
 
 <Attributes >
@@ -231,9 +230,9 @@ Overlay click will not close the drawer.
 </Attributes>
 
 <LinkRedirect
-  contentLeft="Radio"
-  hrefLeft="/docs/components/radio"
-  contentRight="Modal"
-  hrefRight="/docs/components/modal"
+  contentLeft="Checkbox"
+  hrefLeft="/docs/components/checkbox"
+  contentRight="Dropdown"
+  hrefRight="/docs/components/dropdown"
 />
 ```

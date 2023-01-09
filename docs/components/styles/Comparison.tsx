@@ -18,8 +18,9 @@ export const Comparison = () => {
         <div className="flex flex-col items-center ">
           <CodeBlock
             hideIcon
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
             language="html"
+            disabledFormat
           >
             {`<button 
         class="bg-purple-800 hover:bg-purple-700 
@@ -43,6 +44,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+            disabledFormat
             hideIcon
             iconClass="sm:max-w-xl top-10"
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
@@ -59,6 +61,7 @@ export const Comparison = () => {
       <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
         <div className="flex flex-col items-center">
           <CodeBlock
+            disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
             language="html"
@@ -81,6 +84,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+            disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
             language="html"
@@ -99,7 +103,8 @@ export const Comparison = () => {
         <div className="flex flex-col items-center">
           <CodeBlock
             hideIcon
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            disabledFormat
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
             language="html"
           >
             {`<div 
@@ -136,6 +141,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+            disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
             language="html"

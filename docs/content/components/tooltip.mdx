@@ -88,6 +88,28 @@ Tooltips can be styled with different colors.
 
 </div>
 
+```html
+<span className="tooltip tooltip-top tooltip-primary" data-tooltip="Top">
+  <button className="btn"> primary</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-secondary" data-tooltip="Bottom">
+  <button className="btn"> secondary</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-success" data-tooltip="Left">
+  <button className="btn"> success</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-error" data-tooltip="Right">
+  <button className="btn"> error</button>
+</span>
+
+<span className="tooltip tooltip-top tooltip-warning" data-tooltip="Top">
+  <button className="btn"> warning</button>
+</span>
+```
+
 ### Open
 
 Tooltips can be opened by default.
@@ -143,8 +165,7 @@ Tooltips can be opened on click.
 </Attributes>
 
 <LinkRedirect
-  contentLeft="Alert"
-  hrefLeft="/docs/components/alert"
-  contentRight="Avatar"
-  hrefRight="/docs/components/avatar"
+  contentLeft="TextArea"
+  hrefLeft="/docs/components/textarea"
+  hideRight
 />
