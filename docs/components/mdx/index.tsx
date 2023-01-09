@@ -7,6 +7,7 @@ import Attributes from "./attributes";
 import LinkRedirect from "./LinkRedirect";
 import { ExamplesRepositories } from "./ExamplesRepositories";
 import { Pallete } from "../styles/Pallete";
+import { CDN } from "./CDN";
 export { default as Attributes } from "./attributes";
 
 export const MDXcomponents = {
@@ -24,6 +25,7 @@ export const MDXcomponents = {
   ExamplesRepositories: ExamplesRepositories,
   Pallete: Pallete,
   table: (props: any) => <table className="table" {...props} />,
+  CDN: CDN,
   // thead: (props) => <thead className="table-header" {...props} />,
   // tbody: (props) => <tbody className="table-body" {...props} />,
   // tr: (props) => <tr className="table-row" {...props} />,
