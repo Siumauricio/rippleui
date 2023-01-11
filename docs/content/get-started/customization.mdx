@@ -17,7 +17,7 @@ To use this feature go to your `tailwind.config.js`:
 
 We provide types for all the colors that you can customize or change some flags to disable or remove current themes.
 
-```js
+```js disableTabs={true}
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   /** @type {import('rippleui').Config} */
@@ -31,7 +31,7 @@ module.exports = {
 
 To customize the default themes which is `light` and `dark` you can use the `theme` array property:
 
-```js
+```js disableTabs={true}
 module.exports = {
   /** @type {import('rippleui').Config} */
   rippleui: {
@@ -61,7 +61,7 @@ module.exports = {
 
 To add a new theme you can use the `theme` array property:
 
-```js
+```js disableTabs={true}
 module.exports = {
   /** @type {import('rippleui').Config} */
   rippleui: {
@@ -83,7 +83,7 @@ module.exports = {
 
 To remove a theme you can use the `removeThemes` array property:
 
-```js
+```js disableTabs={true}
 module.exports = {
   /** @type {import('rippleui').Config} */
   rippleui: {
@@ -96,7 +96,7 @@ module.exports = {
 
 To create a new theme or existing ones but with another variables you can use the `theme` array property:
 
-```js
+```js disableTabs={true}
 /** @type {import('rippleui').Config} */
 const config = {
   themes: [
@@ -124,7 +124,7 @@ module.exports = {
 
 To disable the background color and color that comes by default you can use the `defaultStyle` boolean property:
 
-```js
+```js disableTabs={true}
 module.exports = {
   /** @type {import('rippleui').Config} */
   rippleui: {
@@ -139,7 +139,7 @@ To set a theme with preference you can use the `prefersColorScheme` boolean prop
 
 When you have devices with theme preference in `macOS`, `Windows` or `Linux` you can set a preference theme and this flag will enabled the preference theme.
 
-```js
+```js disableTabs={true}
 module.exports = {
   /** @type {import('rippleui').Config} */
   rippleui: {

@@ -103,115 +103,46 @@ Navbar with dropdown.
       <a className="navbar-item">Ripple UI</a>
     </div>
     <div className="navbar-end ">
-      <div className="avatar-ring avatar avatar-md">
-        <div className="dropdown-container">
-          <div className="dropdown">
-            <label
-              className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
-              tabIndex="0"
-            >
-              <img
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                alt="avatar"
-              />
-            </label>
-             <div className="dropdown-menu">
-                <div className="dropdown-item">
-                   <p className="text-sm leading-5 text-content1">Signed in as</p>
-                   <p className="truncate text-sm font-medium leading-5 text-content2">tom@example .com</p>
-                </div>
-                <div className="">
-                    <a
-                      tabIndex="-1"
-                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                      role="menuitem"
-                      >Account settings</a>
-                      <a
-                      tabIndex="-1"
-                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                      role="menuitem"
-                      >Profile</a>
-                      <a
-                      tabIndex="-1"
-                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                      role="menuitem"
-                      >Subscriptions</a>
-                </div>
-                <div>
-                    <a
-                    className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                    role="menuitem"
-                    >Log Out</a>
-                  </div>
-            </div>
+    <div className="avatar avatar-ring avatar-md">
+      <div className="dropdown-container">
+        <div className="dropdown">
+          <label className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit" tabIndex="0">
+            <img src="https://i.pravatar.cc/150?u=a042581f4e29026024d" alt="avatar" />
+          </label>
+          <div className="dropdown-menu dropdown-menu-bottom-left">
+            <a className="dropdown-item text-sm">Profile</a>
+            <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+            <a tabIndex="-1" className="dropdown-item text-sm">Subscriptions</a>
           </div>
         </div>
       </div>
     </div>
-
+    </div>
   </div>
 </div>
 
 ```html
-<div className="navbar">
-  <div className="navbar-start">
-    <a className="navbar-item">Ripple UI</a>
-  </div>
-  <div className="navbar-end ">
-    <div className="avatar-ring avatar avatar-md">
+<div className="navbar rounded-lg">
+    <div className="navbar-start">
+      <a className="navbar-item">Ripple UI</a>
+    </div>
+    <div className="navbar-end ">
+    <div className="avatar avatar-ring avatar-md">
       <div className="dropdown-container">
         <div className="dropdown">
-          <label
-            className="btn btn-ghost flex cursor-pointer px-0 hover:bg-inherit"
-            tabindex="0"
-          >
-            <img
-              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-              alt="avatar"
-            />
+          <label className="btn btn-ghost flex cursor-pointer px-0" tabIndex="0">
+            <img src="https://i.pravatar.cc/150?u=a042581f4e29026024d" alt="avatar" />
           </label>
-          <div className="dropdown-menu">
-            <div className="dropdown-item">
-              <p className="text-sm leading-5 text-content1">Signed in as</p>
-              <p
-                className="truncate text-sm font-medium leading-5 text-content2"
-              >
-                tom@example .com
-              </p>
-            </div>
-            <div className="">
-              <a
-                tabindex="-1"
-                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                role="menuitem"
-                >Account settings</a
-              >
-              <a
-                tabindex="-1"
-                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                role="menuitem"
-                >Profile</a
-              >
-              <a
-                tabindex="-1"
-                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                role="menuitem"
-                >Subscriptions</a
-              >
-            </div>
-            <div>
-              <a
-                className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
-                role="menuitem"
-                >Log Out</a
-              >
-            </div>
+          <div className="dropdown-menu dropdown-menu-bottom-left">
+            <a className="dropdown-item text-sm">Profile</a>
+            <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+            <a tabIndex="-1" className="dropdown-item text-sm">Subscriptions</a>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </div>
-</div>
 ```
 
 ### Sticky

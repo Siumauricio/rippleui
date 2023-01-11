@@ -11,7 +11,7 @@ export const Hero = () => {
           <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pb-24 sm:pt-20  lg:pt-52">
             <div className="flex flex-col gap-4">
               <h1>
-                <span className="text-[40px] font-bold leading-none text-primary  sm:text-5xl lg:text-6xl">
+                <span className="text-primary text-[40px] font-bold leading-none  sm:text-5xl lg:text-6xl">
                   Ripple UI
                 </span>{" "}
                 <span className="text-[40px] font-bold leading-none sm:text-5xl lg:text-6xl">
@@ -19,7 +19,7 @@ export const Hero = () => {
                 </span>
               </h1>
 
-              <p className="pr-10 text-base  text-content2">
+              <p className="text-content2 pr-10  text-base">
                 Ripple UI is a collection of components and utilities that are
                 used to build modern interfaces. It is built on top of Tailwind
                 CSS.
@@ -28,12 +28,13 @@ export const Hero = () => {
             <div className="flex flex-row flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-4">
               <Link
                 href={"/docs/get-started/installation"}
-                className="btn-primary btn-md btn btn-block btn-rounded whitespace-nowrap sm:w-48"
+                className="btn-rounded btn-primary btn-md btn btn-block whitespace-nowrap sm:w-48"
               >
                 Get Started
               </Link>
               <div className="w-full overflow-hidden lg:overflow-visible">
                 <CodeBlock
+                  disableTabs
                   iconClass="sm:max-w-md top-10"
                   blockClass="sm:max-w-md"
                   language="bash"
@@ -89,30 +90,30 @@ export const Hero = () => {
                   </label>
                   <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
                     <div className="dropdown-item">
-                      <p className="text-sm leading-5 text-content1">
+                      <p className="text-content1 text-sm leading-5">
                         Signed in as
                       </p>
-                      <p className="truncate text-sm leading-5 text-content2">
+                      <p className="text-content2 truncate text-sm leading-5">
                         <strong>tom@example</strong>
                       </p>
                     </div>
                     <a
                       tabIndex={-1}
-                      className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      className="dropdown-item dropdown-active text-content2 flex w-full justify-between text-left text-sm leading-5"
                       role="menuitem"
                     >
                       <span>Account settings</span>
                     </a>
                     <a
                       tabIndex={-1}
-                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      className="dropdown-item text-content2 flex w-full justify-between text-left text-sm leading-5"
                       role="menuitem"
                     >
                       <span>Subscriptions</span>
                     </a>
 
                     <a
-                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
+                      className="dropdown-item text-content2 flex w-full justify-between text-left text-sm leading-5"
                       role="menuitem"
                     >
                       <span>License</span>

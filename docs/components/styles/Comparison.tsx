@@ -18,6 +18,7 @@ export const Comparison = () => {
         <div className="flex flex-col items-center ">
           <CodeBlock
             hideIcon
+            disableTabs
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
             language="html"
             disabledFormat
@@ -44,6 +45,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+            disableTabs
             disabledFormat
             hideIcon
             iconClass="sm:max-w-xl top-10"
@@ -61,6 +63,7 @@ export const Comparison = () => {
       <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
         <div className="flex flex-col items-center">
           <CodeBlock
+            disableTabs
             disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
@@ -84,6 +87,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+           disableTabs
             disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
@@ -106,6 +110,7 @@ export const Comparison = () => {
             disabledFormat
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
             language="html"
+            disableTabs
           >
             {`<div 
     class="relative inline-block w-10 mr-2 
@@ -141,6 +146,7 @@ export const Comparison = () => {
 
         <div className="flex flex-col items-center">
           <CodeBlock
+           disableTabs
             disabledFormat
             hideIcon
             blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"

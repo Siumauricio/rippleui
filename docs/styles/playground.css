@@ -71,10 +71,7 @@ pre[class*="language-"] *::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: 1rem 0rem 1.25rem 0rem;
   overflow: auto;
-  border-radius: 12px;
 }
 
 /* Inline code */

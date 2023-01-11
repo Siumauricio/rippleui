@@ -8,6 +8,7 @@ import LinkRedirect from "./LinkRedirect";
 import { ExamplesRepositories } from "./ExamplesRepositories";
 import { Pallete } from "../styles/Pallete";
 import { CDN } from "./CDN";
+import { CodeBlock } from "../playground/CodeBlock";
 export { default as Attributes } from "./attributes";
 
 export const MDXcomponents = {
@@ -19,6 +20,7 @@ export const MDXcomponents = {
   h5: headingDynamic({ level: 5 }),
   a: Link,
   li: Li,
+  pre: CodeBlock,
   code: Code,
   Attributes: Attributes,
   LinkRedirect: LinkRedirect,
@@ -26,9 +28,4 @@ export const MDXcomponents = {
   Pallete: Pallete,
   table: (props: any) => <table className="table" {...props} />,
   CDN: CDN,
-  // thead: (props) => <thead className="table-header" {...props} />,
-  // tbody: (props) => <tbody className="table-body" {...props} />,
-  // tr: (props) => <tr className="table-row" {...props} />,
-  // th: (props) => <th className="table-cell" {...props} />,
-  // td: (props) => <td className="table-cell" {...props} />,
 };

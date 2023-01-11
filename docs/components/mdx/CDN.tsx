@@ -4,7 +4,7 @@ import { CodeBlock } from "../playground/CodeBlock";
 
 export const CDN = () => {
   return (
-    <CodeBlock hideIcon language="html" disabledFormat>
+    <CodeBlock language="html" disabledFormat disableTabs={true}>
       {`
 <link
    rel="stylesheet"
