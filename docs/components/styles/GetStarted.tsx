@@ -5,14 +5,14 @@ import { CodeBlock } from "../playground/CodeBlock";
 
 export const GetStarted = () => {
   return (
-    <section className="w-full  overflow-hidden bg-backgroundSecondary py-28 px-4 md:gap-20 xl:px-0">
+    <section className="bg-backgroundSecondary  w-full overflow-hidden py-28 px-4 md:gap-20 xl:px-0">
       <div className="flex flex-col items-center gap-4 pb-5">
         <div className="w-full ">
           <h2 className="mx-auto w-full text-center text-3xl font-bold md:text-4xl">
             Get Started Any Way You Want
           </h2>
         </div>
-        <p className=" mx-auto w-full max-w-xl text-center text-base text-content3">
+        <p className=" text-content3 mx-auto w-full max-w-xl text-center text-base">
           Get started with RippleUI quickly by using the CDN, installing it
           through a package manager, or downloading the source code.
         </p>
@@ -26,16 +26,17 @@ export const GetStarted = () => {
           </div>
           <div>
             <CodeBlock
+              disableTabs
               iconClass="sm:max-w-md top-10"
               blockClass="sm:max-w-md"
               language="bash"
             >{`npm install rippleui`}</CodeBlock>
           </div>
-          <p className="mx-auto w-full max-w-lg  pt-10 text-content2">
+          <p className="text-content2 mx-auto w-full  max-w-lg pt-10">
             Read our{" "}
             <Link
               href={"/docs/get-started/installation"}
-              className="cursor-pointer text-primary"
+              className="text-primary cursor-pointer"
             >
               installation
             </Link>{" "}
@@ -51,13 +52,14 @@ export const GetStarted = () => {
           </div>
           <div className="flex w-full flex-col ">
             <CodeBlock
+              disableTabs
               disabledFormat
               iconClass="sm:max-w-md top-10"
               blockClass="sm:max-w-md"
               language="html"
             >{`<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/rippleui@${RippleUIVersion}/dist/css/styles.css"
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/rippleui@${RippleUIVersion}/dist/css/styles.css"
 />`}</CodeBlock>
           </div>
         </div>
