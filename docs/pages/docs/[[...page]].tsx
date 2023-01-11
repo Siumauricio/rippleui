@@ -13,6 +13,7 @@ import { DocsLayout } from "../../components/layout/DocsLayout";
 import { getRoutes } from "../../utils/getRoutes";
 import Meta from "../../components/mdx/layout/Meta";
 import rehypeExtractHeadings, { Headings } from "../../utils/getToc";
+import remarkMdxCodeMeta from 'remark-mdx-code-meta';
 
 const components = {
   ...MDXcomponents,
@@ -63,8 +64,8 @@ export async function getStaticProps(context: any) {
   const mdxSource = await serialize(source, {
     parseFrontmatter: true,
     mdxOptions: {
-      remarkPlugins: [remarkGfm],
-      rehypePlugins: [[rehypeExtractHeadings, { rank: 1, headings }]],
+      remarkPlugins: [remarkMdxCodeMeta,remarkGfm],
+      rehypePlugins: [[rehypeExtractHeadings, { rank: 1, headings },]],
     },
   });
   return { props: { source: mdxSource, headings } };
