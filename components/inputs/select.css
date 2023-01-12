@@ -4,7 +4,7 @@
   background-image: url("data:image/svg+xml,%3Csvg class='select-icon' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: %237E868C;transform: ;msFilter:;'%3E%3Cpath d='M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z'%3E%3C/path%3E%3C/svg%3E");
   background-position: right 0.5rem center;
   background-size: 1.5em 1.5em;
-  @apply h-fit w-full max-w-xs rounded-xl border-2 border-gray-500  bg-gray-50 bg-no-repeat  py-2.5 px-3 text-base text-content1 outline-none;
+  @apply h-10 w-full max-w-xs rounded-xl border-2 border-gray-500  bg-gray-50 bg-no-repeat  px-3 text-base text-content1 outline-none;
 }
 
 .select-primary {
@@ -52,23 +52,23 @@
 /* Size */
 
 .select-xs {
-  @apply h-8 py-1 text-xs;
+  @apply h-6 rounded-lg text-xs;
 }
 
 .select-sm {
-  @apply h-10 py-1 text-sm;
+  @apply h-8 text-sm;
 }
 
 .select-md {
-  @apply h-12 text-base;
+  @apply h-10 text-base;
 }
 
 .select-lg {
-  @apply h-14 text-lg;
+  @apply h-11 text-base;
 }
 
 .select-xl {
-  @apply h-16 text-xl;
+  @apply h-12 text-lg;
 }
 
 /* Extra */

@@ -1,5 +1,5 @@
 .input {
-  @apply h-fit w-full max-w-xs rounded-xl border-2  border-gray-500 bg-gray-50  py-2.5 px-3 text-base text-content1 outline-none;
+  @apply h-10 w-full max-w-xs rounded-xl border-2  border-gray-500 bg-gray-50 px-3 text-base text-content1 outline-none;
 }
 
 /* Colors */
@@ -48,23 +48,23 @@
 /* Size */
 
 .input-xs {
-  @apply h-8  text-xs;
+  @apply h-6 rounded-lg text-xs;
 }
 
 .input-sm {
-  @apply h-10 text-sm;
+  @apply h-8 text-sm;
 }
 
 .input-md {
-  @apply h-12 text-base;
+  @apply h-10 text-base;
 }
 
 .input-lg {
-  @apply h-14 text-lg;
+  @apply h-11 text-base;
 }
 
 .input-xl {
-  @apply h-16 text-xl;
+  @apply h-12 text-lg;
 }
 
 /* Extra */
