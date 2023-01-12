@@ -1,5 +1,5 @@
 .card {
-  @apply flex w-full max-w-sm flex-col gap-2 rounded-xl bg-gray-200 shadow-xl;
+  @apply flex w-full max-w-sm flex-col gap-2 rounded-xl bg-gray-200 shadow-md;
 }
 
 .card.card-image-cover img:first-child {
