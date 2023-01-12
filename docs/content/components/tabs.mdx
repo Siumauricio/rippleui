@@ -55,9 +55,9 @@ Underline tabs.
 
 ```html
 <div className="tabs">
-    <div className="tab">Tab 1</div>
-    <div className="tab tab-underline tab-active">Tab 2</div>
-    <div className="tab">Tab 3</div>
+    <div className="tab px-6">Tab 1</div>
+    <div className="tab tab-underline tab-active px-6">Tab 2</div>
+    <div className="tab px-6">Tab 3</div>
 </div>
 ```
 
@@ -134,6 +134,155 @@ Responsive tabs with overflow.
     </div>
 </div>
 ```
+
+### Tabs default as radio
+
+Tabs can be used as radio buttons.
+
+<div className="tabs">
+    <input type="radio" id="tab-1" name="tab-1" className="tab-toggle tab" defaultChecked/>
+    <label htmlFor="tab-1" className="tab">Tab 1</label>
+    <input type="radio" id="tab-2" name="tab-1" className="tab-toggle"/>
+    <label htmlFor="tab-2" className="tab">Tab 2</label>
+
+    <input type="radio" id="tab-3" name="tab-1" className="tab-toggle"/>
+    <label htmlFor="tab-3" className="tab">Tab 3</label>
+</div>
+
+```html
+<div className="tabs">
+
+    <input type="radio" id="tab-1" name="tab-1" className="tab-toggle tab" defaultChecked/>
+    <label htmlFor="tab-1" className="tab">Tab 1</label>
+
+    <input type="radio" id="tab-2" name="tab-1" className="tab-toggle"/>
+    <label htmlFor="tab-2" className="tab">Tab 2</label>
+
+    <input type="radio" id="tab-3" name="tab-1" className="tab-toggle"/>
+    <label htmlFor="tab-3" className="tab">Tab 3</label>
+</div>
+```
+
+### Tabs bordered with radio
+
+Tabs borderd in radio mode.
+
+<div className="tabs">
+    <input type="radio" id="tab-4" name="tab-2" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-4" className="tab tab-bordered px-6">Tab 1</label>
+    <input type="radio" id="tab-5" name="tab-2" className="tab-toggle"/>
+    <label htmlFor="tab-5" className="tab tab-bordered px-6">Tab 2</label>
+
+    <input type="radio" id="tab-6" name="tab-2" className="tab-toggle"/>
+    <label htmlFor="tab-6" className="tab tab-bordered px-6">Tab 3</label>
+
+    </div>
+
+```html
+<div className="tabs">
+    <input type="radio" id="tab-4" name="tab-2" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-4" className="tab tab-bordered px-6">Tab 1</label>
+
+    <input type="radio" id="tab-5" name="tab-2" className="tab-toggle"/>
+    <label htmlFor="tab-5" className="tab tab-bordered px-6">Tab 2</label>
+
+    <input type="radio" id="tab-6" name="tab-2" className="tab-toggle"/>
+    <label htmlFor="tab-6" className="tab tab-bordered px-6">Tab 3</label>
+
+    </div>
+```
+
+### Tabs with underline with radio
+
+Tabs with underline with radio.
+
+
+<div className="tabs tabs-underline">
+    <input type="radio" id="tab-7" name="tab-3" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-7" className="tab px-6">Tab 1</label>
+
+    <input type="radio" id="tab-8" name="tab-3" className="tab-toggle"/>
+    <label htmlFor="tab-8" className="tab px-6">Tab 2</label>
+
+    <input type="radio" id="tab-9" name="tab-3" className="tab-toggle"/>
+    <label htmlFor="tab-9" className="tab px-6">Tab 3</label>
+
+</div>
+
+```html
+<div className="tabs tabs-underline">
+    <input type="radio" id="tab-7" name="tab-3" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-7" className="tab px-6">Tab 1</label>
+
+    <input type="radio" id="tab-8" name="tab-3" className="tab-toggle"/>
+    <label htmlFor="tab-8" className="tab px-6">Tab 2</label>
+
+    <input type="radio" id="tab-9" name="tab-3" className="tab-toggle"/>
+    <label htmlFor="tab-9" className="tab px-6">Tab 3</label>
+
+</div>
+```
+
+### Tabs pill with radio
+
+Tabs pill with radio.
+
+<div className="tabs gap-1">
+    <input type="radio" id="tab-10" name="tab-4" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-10" className="tab tab-pill ">Tab 1</label>
+
+    <input type="radio" id="tab-11" name="tab-4" className="tab-toggle"/>
+    <label htmlFor="tab-11" className="tab tab-pill">Tab 2</label>
+
+    <input type="radio" id="tab-12" name="tab-4" className="tab-toggle"/>
+    <label htmlFor="tab-12" className="tab tab-pill">Tab 3</label>
+  </div>  
+
+```html
+<div className="tabs gap-1">
+    <input type="radio" id="tab-10" name="tab-4" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-10" className="tab tab-pill">Tab 1</label>
+
+    <input type="radio" id="tab-11" name="tab-4" className="tab-toggle"/>
+    <label htmlFor="tab-11" className="tab tab-pill">Tab 2</label>
+
+    <input type="radio" id="tab-12" name="tab-4" className="tab-toggle"/>
+    <label htmlFor="tab-12" className="tab tab-pill">Tab 3</label>
+  </div>  
+  ```
+
+### Tabs boxed with radio
+
+Tabs boxed with radio.
+
+<div className="tabs tabs-boxed gap-1">
+    <input type="radio" id="tab-13" name="tab-5" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-13" className="tab">Tab 1</label>
+
+    <input type="radio" id="tab-14" name="tab-5" className="tab-toggle"/>
+    <label htmlFor="tab-14" className="tab">Tab 2</label>
+
+    <input type="radio" id="tab-15" name="tab-5" className="tab-toggle"/>
+    <label htmlFor="tab-15" className="tab">Tab 3</label>
+  </div>
+
+```html
+<div className="tabs tabs-boxed gap-1">
+    <input type="radio" id="tab-13" name="tab-5" className="tab-toggle" defaultChecked/>
+    <label htmlFor="tab-13" className="tab">Tab 1</label>
+
+    <input type="radio" id="tab-14" name="tab-5" className="tab-toggle"/>
+    <label htmlFor="tab-14" className="tab">Tab 2</label>
+
+    <input type="radio" id="tab-15" name="tab-5" className="tab-toggle"/>
+    <label htmlFor="tab-15" className="tab">Tab 3</label>
+  </div>
+```
+
+
+
+
+
 
 
 <Attributes>
