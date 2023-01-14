@@ -11,10 +11,11 @@ import path from "path";
 import { defaultSchema } from "./colors/default-schema";
 import { palleteToRGB } from "./utils/hexToRGB";
 import { Config } from "./types/config.types";
-import { ColorsMap, Theme } from "./types/theme.types";
+import { Theme } from "./types/theme.types";
 import { extractNewVariables } from "./utils/extractNewVariables";
 import { createTheme, removeThemes } from "./utils/theme";
 import { mergeNestedObjects } from "./utils/theme";
+import { getSelectorsWithPrefix } from "./prefix/prefix";
 
 const basePath = path.resolve(__dirname, path.join("..", "css"));
 const baseCSS = fs.readFileSync(basePath + "/base.css", "utf-8");
@@ -49,6 +50,7 @@ const config = plugin.withOptions(
       let configTheme: Config = {
         defaultStyle: configValue.defaultStyle ?? true,
         removeThemes: configValue.removeThemes || [],
+        prefix: configValue.prefix,
         themes: [
           {
             themeName: "light",
@@ -101,7 +103,17 @@ const config = plugin.withOptions(
       }
 
       addBase(baseObj);
-      addComponents(componentsObj);
+      // If we receive prefix  we will apply to all the components
+      if (configValue.prefix) {
+        // remove all the white spaces
+        const componentsPrefixed = getSelectorsWithPrefix(
+          configValue.prefix,
+          componentsObj
+        );
+        addComponents(componentsPrefixed);
+      } else {
+        addComponents(componentsObj);
+      }
       addUtilities(utilitiesObj);
     },
 
