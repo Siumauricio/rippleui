@@ -1,18 +1,16 @@
-import { ColorsMap, RecursivePartial } from "../types/theme.types";
 import { ColorsVariableMap } from "../types/variables.types";
 import { applyOpacityValue } from "./applyOpacityValue";
 
-export const extractNewVariables = (
-  obj1: ColorsVariableMap,
-  obj2: RecursivePartial<ColorsMap>
-): { [key: string]: any } => {
+export const extractNewVariables = <T extends object, U extends object>(
+  obj1: T,
+  obj2: U
+): Record<string, T> => {
   const keys1 = Object.keys(obj1);
 
   return Object.keys(obj2)
     .filter((key) => !keys1.includes(key))
     .reduce((acc, key) => {
-      // @ts-ignore
-      acc[key] = applyOpacityValue(`--${key}`);
+      acc[key as keyof ColorsVariableMap] = applyOpacityValue(`--${key}`) as T;
       return acc;
-    }, {});
+    }, {} as Record<string, T>);
 };
