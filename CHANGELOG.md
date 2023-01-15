@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Siumauricio/rippleui/compare/v1.5.0...v1.6.0) (2023-01-15)
+
+
+### Features
+
+* **config:** add prefix option ([349498a](https://github.com/Siumauricio/rippleui/commit/349498af48cdc99ee33142e9262e87352c8a1cf7))
+
+
+### Bug Fixes
+
+* **tooltip:** allow to use breakpoints ([99de37e](https://github.com/Siumauricio/rippleui/commit/99de37ed10e2e4a2720b71a70c2537f5b49199fa))
+
+
+### Refactor
+
+* add custom color ([fb16455](https://github.com/Siumauricio/rippleui/commit/fb16455e7fcdfa4a6592bc288e530e83bb3cfcf7))
+* **button-group:** add direction to horizontal class ([c14f6d2](https://github.com/Siumauricio/rippleui/commit/c14f6d2447d060f9bdb58730cf2c74cd483315d0))
+* **card:** change shadow box to sm ([4ca5d94](https://github.com/Siumauricio/rippleui/commit/4ca5d94840424434dbc9955bb34dc6da63ce1aa6))
+* **config:** update types ([baceb83](https://github.com/Siumauricio/rippleui/commit/baceb83c2733d3713e145d163a163ced768c5d4f))
+* **input and select:** adjust height to be more standard size ([6073359](https://github.com/Siumauricio/rippleui/commit/607335948f211addc8b4173a6002a0c46467afdc))
+* **landing-page:** update design and add new sections ([fc504e4](https://github.com/Siumauricio/rippleui/commit/fc504e43658675fa78ea29a1111e385e136fc222))
+* **tabs:** support for radio tabs ([f8b0e89](https://github.com/Siumauricio/rippleui/commit/f8b0e895c2e09ab0dc3f55d25f55597f9779d241))
+
 ## [1.5.0](https://github.com/Siumauricio/rippleui/compare/v1.4.0...v1.5.0) (2023-01-07)
 
 ### Features
