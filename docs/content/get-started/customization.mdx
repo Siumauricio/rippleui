@@ -158,13 +158,33 @@ module.exports = {
 };
 ```
 
+
+### Prefix
+
+To add a prefix to each RippleUI class you can use the `prefix` string property:
+
+```js disableTabs={true}
+module.exports = {
+  /** @type {import('rippleui').Config} */
+  rippleui: {
+    prefix: "prefix-",
+  },
+};
+```
+
+Now your classes will be prefixed like this example:
+
+1. .btn transform to  .prefix-btn
+2. .input transform to .prefix-input
+
 <Attributes >
 <Attributes.Title>Config Props</Attributes.Title>
 
 | className    | type        | Description                                                                     |
 | ------------ | ----------- | ------------------------------------------------------------------------------- |
 | defaultStyle | `boolean`   | Will apply by default bg-color and color to the root element `(default: true)`  |
-| removeThemes | `string[]` | The list of themes to remove `(default: [])`                                    |
+| prefix       | `string`    | The prefix for the classes `(default: "")`                                      |
+| removeThemes | `string[]`  | The list of themes to remove `(default: [])`                                    |
 | themes       | `Theme[]`   | The list of themes to add, modify you can also add new variables in each theme. |
 
 <Attributes.Title>Theme</Attributes.Title>
