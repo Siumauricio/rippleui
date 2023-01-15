@@ -27,6 +27,10 @@
   @apply rounded-xl;
 }
 
+.btn-group-horizontal {
+  @apply flex-row;
+}
+
 .btn-group-horizontal > *:first-child {
   @apply rounded-none rounded-l-xl;
 }

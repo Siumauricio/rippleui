@@ -66,3 +66,27 @@
 .tabs-boxed .tab.tab-active {
   @apply bg-gray-400 text-content1;
 }
+
+.tab-toggle {
+  @apply absolute h-0 w-0 appearance-none opacity-0;
+}
+
+.tab-toggle:checked + .tab {
+  @apply border-b-primary text-primary;
+}
+
+.tabs-underline .tab-toggle + .tab {
+  @apply relative  pb-2;
+}
+.tabs-underline .tab-toggle:checked + .tab::before {
+  @apply absolute bottom-0 left-0 z-10  h-0.5  w-full bg-primary content-[""];
+  transition: transform 0.3s ease;
+}
+
+.tab-toggle:checked + .tab.tab-pill {
+  @apply bg-gray-400 text-content1;
+}
+
+.tabs-boxed .tab-toggle:checked + .tab {
+  @apply bg-gray-400 text-content1;
+}

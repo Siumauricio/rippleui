@@ -171,7 +171,7 @@ export const Searcher = ({ isMobile = false }: Props) => {
             onFocus={onFocus}
             onChange={(e) => setValue(e.target.value)}
             type="search"
-            className="input py-2 px-8"
+            className="input px-8"
             autoComplete="off"
             placeholder="Search"
           />
