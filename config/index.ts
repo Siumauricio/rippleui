@@ -16,6 +16,7 @@ import { extractNewVariables } from "./utils/extractNewVariables";
 import { createTheme, removeThemes } from "./utils/theme";
 import { mergeNestedObjects } from "./utils/theme";
 import { getSelectorsWithPrefix } from "./prefix/prefix";
+import { sortThemes } from "./utils/sortThemes";
 
 const basePath = path.resolve(__dirname, path.join("..", "css"));
 const baseCSS = fs.readFileSync(basePath + "/base.css", "utf-8");
@@ -80,25 +81,31 @@ const config = plugin.withOptions(
         const newThemes = removeThemes(themesToRemove, configThemes);
 
         if (newThemes.length > 0) {
-          newThemes.forEach((theme) => {
-            const colorsPrefix = addPrefix({ ...theme.colors });
-            const colorsConverted = palleteToRGB(colorsPrefix);
-            const themeUpdated = {
-              ...theme,
-              colors: colorsConverted,
-            };
+          const unsortedThemes = newThemes
+            .map((theme) => {
+              const colorsPrefix = addPrefix({ ...theme.colors });
+              const colorsConverted = palleteToRGB(colorsPrefix);
+              const themeUpdated = {
+                ...theme,
+                colors: colorsConverted,
+              };
 
-            let mergedTheme;
-            if (theme.themeName === "light") {
-              mergedTheme = mergeNestedObjects(lightTheme, themeUpdated);
-            } else if (theme.themeName === "dark") {
-              mergedTheme = mergeNestedObjects(darkTheme, themeUpdated);
-            } else {
-              mergedTheme = themeUpdated as Theme;
-            }
-            const newTheme = createTheme(mergedTheme as Theme);
-            addBase([...newTheme]);
-          });
+              let mergedTheme;
+              if (theme.themeName === "light") {
+                mergedTheme = mergeNestedObjects(lightTheme, themeUpdated);
+              } else if (theme.themeName === "dark") {
+                mergedTheme = mergeNestedObjects(darkTheme, themeUpdated);
+              } else {
+                mergedTheme = themeUpdated as Theme;
+              }
+              const newTheme = createTheme(mergedTheme as Theme);
+              return newTheme;
+            })
+            .flat();
+
+          // We are gonna sort by specify, 1. :root 2. @media prefers-color-scheme, 3.[data-theme]
+          const sortedThemes = sortThemes(unsortedThemes);
+          addBase(sortedThemes);
         }
       }
 
