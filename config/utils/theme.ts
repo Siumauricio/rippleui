@@ -56,7 +56,7 @@ export const createTheme = (theme: Theme) => {
       }),
       ...(theme.prefersColorScheme && {
         [`@media (prefers-color-scheme:${theme.colorScheme})`]: {
-          [`[data-theme=${theme.themeName}]`]: {
+          [`:root,[data-theme=${theme.themeName}]`]: {
             colorScheme: theme.colorScheme,
             ...theme.colors,
           },
