@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/Siumauricio/rippleui/compare/v1.6.0...v1.6.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* Dark mode with 'media' is not supported ([41d24ce](https://github.com/Siumauricio/rippleui/commit/41d24ce8030ca3fef67da1ce2eb2ffdc8d2d754d))
+
 ## [1.6.0](https://github.com/Siumauricio/rippleui/compare/v1.5.0...v1.6.0) (2023-01-15)
 
 
