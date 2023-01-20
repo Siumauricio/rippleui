@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/Siumauricio/rippleui/compare/v1.6.1...v1.6.2) (2023-01-20)
+
+
+### Bug Fixes
+
+* **inputs:** add focus state ([823dcc7](https://github.com/Siumauricio/rippleui/commit/823dcc78188c56e75519609ed0fcf5a50cb3133f))
+
 ### [1.6.1](https://github.com/Siumauricio/rippleui/compare/v1.6.0...v1.6.1) (2023-01-19)
 
 
