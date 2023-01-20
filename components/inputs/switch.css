@@ -1,16 +1,16 @@
 .switch {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --switch-bg: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-500));
   --switch-border: rgb(var(--gray-500));
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
   --switch-border-hover: rgb(var(--gray-600));
-  --switch-bg-hover: inherit;
+  --switch-bg-hover: rgb(var(--gray-500));
   --checkline-color: rgb(var(--white));
-  --circle-color: rgb(var(--gray-500));
-  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer  appearance-none rounded-xl border border-[var(--switch-border)] bg-[var(--switch-bg)]   align-top  outline-none;
+  --circle-color: rgb(var(--gray-50));
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer appearance-none   rounded-xl   border border-[var(--switch-border)]  bg-[var(--switch-bg)] align-top outline-none focus:outline-2 focus-visible:outline   focus-visible:outline-offset-2  focus-visible:outline-primary;
 }
 
 .switch::after {
@@ -22,15 +22,12 @@
 .switch:checked {
   --circle-color: rgb(var(--white));
   @apply border-[var(--switch-border-checked)] bg-[var(--switch-bg-checked)];
-  --d-o: 0.3s;
-  --d-t: 0.6s;
-  --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   --o: 1;
   --r: 43deg;
 }
 
 .switch:disabled {
-  --circle-color: rgb(var(--gray-200));
+  /* --circle-color: rgb(var(--gray-50)); */
   @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
 }
 
@@ -66,26 +63,31 @@
 .switch-primary {
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .switch-secondary {
   --switch-bg-checked: rgb(var(--secondary));
   --switch-border-checked: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .switch-success {
   --switch-bg-checked: rgb(var(--success));
   --switch-border-checked: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .switch-error {
   --switch-bg-checked: rgb(var(--error));
   --switch-border-checked: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .switch-warning {
   --switch-bg-checked: rgb(var(--warning));
   --switch-border-checked: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* bordered */
@@ -95,6 +97,7 @@
   --switch-border-checked: rgb(var(--primary));
   --switch-border: rgb(var(--primary));
   --switch-border-hover: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
   /* --switch-bg-hover: var(--backgroundPrimary); */
 }
 
@@ -103,6 +106,7 @@
   --switch-border-checked: rgb(var(--secondary));
   --switch-border: rgb(var(--secondary));
   --switch-border-hover: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .switch-bordered-success {
@@ -110,6 +114,7 @@
   --switch-border-checked: rgb(var(--success));
   --switch-border: rgb(var(--success));
   --switch-border-hover: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .switch-bordered-error {
@@ -117,6 +122,7 @@
   --switch-border-checked: rgb(var(--error));
   --switch-border: rgb(var(--error));
   --switch-border-hover: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .switch-bordered-warning {
@@ -124,43 +130,58 @@
   --switch-border-checked: rgb(var(--warning));
   --switch-border: rgb(var(--warning));
   --switch-border-hover: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* Ghost */
 
 .switch-ghost-primary {
-  --switch-bg-checked: rgb(var(--primary));
-  --switch-border-checked: rgb(var(--primary));
+  --switch-bg: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-500));
+  --switch-bg-hover: rgb(var(--gray-50));
   --switch-border-hover: rgb(var(--primary));
-  --checkline-color: rgb(var(--primary));
+  --switch-bg-checked: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .switch-ghost-secondary {
-  --switch-bg-checked: rgb(var(--secondary));
-  --switch-border-checked: rgb(var(--secondary));
+  --switch-bg: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-500));
+  --switch-bg-hover: rgb(var(--gray-50));
   --switch-border-hover: rgb(var(--secondary));
-  --checkline-color: rgb(var(--secondary));
+  --switch-border-checked: rgb(var(--secondary));
+  --switch-bg-checked: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .switch-ghost-success {
-  --switch-bg-checked: rgb(var(--success));
-  --switch-border-checked: rgb(var(--success));
+  --switch-bg: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-500));
+  --switch-bg-hover: rgb(var(--gray-50));
   --switch-border-hover: rgb(var(--success));
-  --checkline-color: rgb(var(--success));
+  --switch-border-checked: rgb(var(--success));
+  --switch-bg-checked: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .switch-ghost-error {
-  --switch-bg-checked: rgb(var(--error));
-  --switch-border-checked: rgb(var(--error));
+  --switch-bg: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-500));
+  --switch-bg-hover: rgb(var(--gray-50));
   --switch-border-hover: rgb(var(--error));
-  --checkline-color: rgb(var(--error));
+  --switch-border-checked: rgb(var(--error));
+  --switch-bg-checked: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .switch-ghost-warning {
-  --switch-bg-checked: rgb(var(--warning));
-  --switch-border-checked: rgb(var(--warning));
+  --switch-bg: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-500));
+  --switch-bg-hover: rgb(var(--gray-50));
   --switch-border-hover: rgb(var(--warning));
-  --checkline-color: rgb(var(--warning));
+  --switch-border-checked: rgb(var(--warning));
+  --switch-bg-checked: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* Sizes */

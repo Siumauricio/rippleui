@@ -9,7 +9,7 @@
   --checkbox-bg-hover: rgb(var(--gray-200));
   --checkline-color: rgb(var(--white));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none;
+  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none focus:outline-2   focus-visible:outline   focus-visible:outline-offset-2 focus-visible:outline-primary;
 }
 
 .checkbox::after {
@@ -52,26 +52,31 @@
 .checkbox-primary {
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .checkbox-secondary {
   --checkbox-bg-checked: rgb(var(--secondary));
   --checkbox-border-checked: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .checkbox-success {
   --checkbox-bg-checked: rgb(var(--success));
   --checkbox-border-checked: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .checkbox-error {
   --checkbox-bg-checked: rgb(var(--error));
   --checkbox-border-checked: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .checkbox-warning {
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* bordered */
@@ -81,6 +86,7 @@
   --checkbox-border-checked: rgb(var(--primary));
   --checkbox-border: rgb(var(--primary));
   --checkbox-border-hover: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
   /* --checkbox-bg-hover: var(--backgroundPrimary); */
 }
 
@@ -89,6 +95,7 @@
   --checkbox-border-checked: rgb(var(--secondary));
   --checkbox-border: rgb(var(--secondary));
   --checkbox-border-hover: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .checkbox-bordered-success {
@@ -96,6 +103,7 @@
   --checkbox-border-checked: rgb(var(--success));
   --checkbox-border: rgb(var(--success));
   --checkbox-border-hover: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .checkbox-bordered-error {
@@ -103,6 +111,7 @@
   --checkbox-border-checked: rgb(var(--error));
   --checkbox-border: rgb(var(--error));
   --checkbox-border-hover: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .checkbox-bordered-warning {
@@ -110,6 +119,7 @@
   --checkbox-border-checked: rgb(var(--warning));
   --checkbox-border: rgb(var(--warning));
   --checkbox-border-hover: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* Ghost */
@@ -118,30 +128,35 @@
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
   --checkbox-border-hover: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .checkbox-ghost-secondary {
   --checkbox-bg-checked: rgb(var(--secondary));
   --checkbox-border-checked: rgb(var(--secondary));
   --checkbox-border-hover: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .checkbox-ghost-success {
   --checkbox-bg-checked: rgb(var(--success));
   --checkbox-border-checked: rgb(var(--success));
   --checkbox-border-hover: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .checkbox-ghost-error {
   --checkbox-bg-checked: rgb(var(--error));
   --checkbox-border-checked: rgb(var(--error));
   --checkbox-border-hover: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .checkbox-ghost-warning {
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
   --checkbox-border-hover: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* Sizes */

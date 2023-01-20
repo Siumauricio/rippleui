@@ -3,7 +3,7 @@
 }
 
 .accordion {
-  @apply relative flex flex-col;
+  @apply relative flex flex-col focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-500;
 }
 
 .accordion-group-secondary .accordion-title {
@@ -76,7 +76,7 @@
   > .accordion
   .accordion-toggle:checked
   ~ .accordion-title,
-.accordion:focus .accordion-title,
+.accordion-group.accordion-group-hover .accordion:focus .accordion-title,
 .accordion-group.accordion-group-hover
   > .accordion.accordion-open
   .accordion-title {
