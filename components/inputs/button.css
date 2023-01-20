@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl  bg-gray-200 px-5 text-center text-sm font-medium  transition-transform focus:outline-none active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl bg-gray-200 px-5 text-center text-sm font-medium transition-transform  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-500  active:scale-[0.97];
 }
 
 .btn:where(
@@ -15,47 +15,47 @@
 
 /* Primary Colors */
 .btn-primary {
-  @apply bg-primary;
+  @apply bg-primary focus-visible:outline-primary;
 }
 
 .btn-secondary {
-  @apply bg-secondary;
+  @apply bg-secondary focus-visible:outline-secondary;
 }
 
 .btn-success {
-  @apply bg-success;
+  @apply bg-success  focus-visible:outline-success;
 }
 
 .btn-error {
-  @apply bg-error;
+  @apply bg-error focus-visible:outline-error;
 }
 
 .btn-warning {
-  @apply bg-warning;
+  @apply bg-warning focus-visible:outline-warning;
 }
 
 /* Outline colors */
 .btn-outline {
-  @apply border-2 border-gray-500 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-gray-300 hover:bg-gray-300;
+  @apply border-2 border-gray-500 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-gray-300 hover:bg-gray-300 focus-visible:outline-gray-600;
 }
 .btn-outline-primary {
-  @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary  hover:text-white;
+  @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary hover:text-white  focus-visible:outline-primary;
 }
 
 .btn-outline-secondary {
-  @apply border-2 border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white;
+  @apply border-2 border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white focus-visible:outline-secondary;
 }
 
 .btn-outline-success {
-  @apply border-2 border-success bg-transparent  text-success transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white;
+  @apply border-2 border-success bg-transparent  text-success  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white focus-visible:outline-success;
 }
 
 .btn-outline-error {
-  @apply border-2 border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white;
+  @apply border-2 border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white focus-visible:outline-error;
 }
 
 .btn-outline-warning {
-  @apply border-2 border-warning bg-transparent  text-warning transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white;
+  @apply border-2 border-warning bg-transparent  text-warning  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white focus-visible:outline-warning;
 }
 
 /* Button Sizes */
@@ -64,7 +64,7 @@
 }
 
 .btn-sm {
-  @apply h-[2rem] min-h-[2rem] rounded-lg  px-3 text-sm;
+  @apply h-8 min-h-[2rem] rounded-lg  px-3 text-sm;
 }
 
 .btn-md {
@@ -72,11 +72,11 @@
 }
 
 .btn-lg {
-  @apply h-[3rem] min-h-[3rem]  px-6 text-lg;
+  @apply h-12 min-h-[3rem]  px-6 text-lg;
 }
 
 .btn-xl {
-  @apply h-[4rem] min-h-[4rem]  rounded-2xl px-8 text-xl;
+  @apply h-16 min-h-[4rem]  rounded-2xl px-8 text-xl;
 }
 
 .btn:disabled {

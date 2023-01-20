@@ -9,7 +9,7 @@
   --radio-bg-hover: rgb(var(--gray-200));
   --checkline-color: rgb(var(--white));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)]   align-top   accent-backgroundPrimary outline-none;
+  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)] align-top accent-backgroundPrimary  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary;
 }
 .radio:after {
   transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
@@ -52,26 +52,31 @@
 .radio-primary {
   --radio-bg-checked: rgb(var(--primary));
   --radio-border-checked: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .radio-secondary {
   --radio-bg-checked: rgb(var(--secondary));
   --radio-border-checked: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .radio-success {
   --radio-bg-checked: rgb(var(--success));
   --radio-border-checked: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .radio-error {
   --radio-bg-checked: rgb(var(--error));
   --radio-border-checked: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .radio-warning {
   --radio-bg-checked: rgb(var(--warning));
   --radio-border-checked: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* bordered */
@@ -80,6 +85,7 @@
   --radio-bg-checked: rgb(var(--primary));
   --radio-border-checked: rgb(var(--primary));
   --radio-border-hover: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .radio-bordered-secondary {
@@ -87,6 +93,7 @@
   --radio-bg-checked: rgb(var(--secondary));
   --radio-border-checked: rgb(var(--secondary));
   --radio-border-hover: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .radio-bordered-success {
@@ -94,6 +101,7 @@
   --radio-bg-checked: rgb(var(--success));
   --radio-border-checked: rgb(var(--success));
   --radio-border-hover: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .radio-bordered-error {
@@ -101,6 +109,7 @@
   --radio-bg-checked: rgb(var(--error));
   --radio-border-checked: rgb(var(--error));
   --radio-border-hover: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .radio-bordered-warning {
@@ -108,6 +117,7 @@
   --radio-bg-checked: rgb(var(--warning));
   --radio-border-checked: rgb(var(--warning));
   --radio-border-hover: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 
 /* Ghost */
@@ -116,30 +126,35 @@
   --radio-bg-checked: rgb(var(--primary));
   --radio-border-checked: rgb(var(--primary));
   --radio-border-hover: rgb(var(--primary));
+  @apply focus-visible:outline-primary;
 }
 
 .radio-ghost-secondary {
   --radio-bg-checked: rgb(var(--secondary));
   --radio-border-checked: rgb(var(--secondary));
   --radio-border-hover: rgb(var(--secondary));
+  @apply focus-visible:outline-secondary;
 }
 
 .radio-ghost-success {
   --radio-bg-checked: rgb(var(--success));
   --radio-border-checked: rgb(var(--success));
   --radio-border-hover: rgb(var(--success));
+  @apply focus-visible:outline-success;
 }
 
 .radio-ghost-error {
   --radio-bg-checked: rgb(var(--error));
   --radio-border-checked: rgb(var(--error));
   --radio-border-hover: rgb(var(--error));
+  @apply focus-visible:outline-error;
 }
 
 .radio-ghost-warning {
   --radio-bg-checked: rgb(var(--warning));
   --radio-border-checked: rgb(var(--warning));
   --radio-border-hover: rgb(var(--warning));
+  @apply focus-visible:outline-warning;
 }
 /* Sizes */
 
