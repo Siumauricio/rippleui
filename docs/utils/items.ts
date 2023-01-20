@@ -48,16 +48,44 @@ export const items: Items[] = [
         href: "/docs/components/button-group",
         children: "ButtonGroup",
       },
+
       { href: "/docs/components/card", children: "Card" },
       { href: "/docs/components/checkbox", children: "Checkbox" },
+
       { href: "/docs/components/drawer", children: "Drawer" },
+      {
+        href: "/docs/components/divider",
+        children: "Divider",
+        disabled: true,
+      },
       { href: "/docs/components/dropdown", children: "Dropdown" },
       { href: "/docs/components/input", children: "Input" },
+      {
+        href: "/docs/components/link",
+        children: "Link",
+        disabled: true,
+      },
       { href: "/docs/components/modal", children: "Modal" },
+      {
+        href: "/docs/components/pagination",
+        children: "Pagination",
+        disabled: true,
+      },
       { href: "/docs/components/navbar", children: "Navbar" },
       { href: "/docs/components/radio", children: "Radio" },
       { href: "/docs/components/select", children: "Select" },
+      {
+        href: "/docs/components/skeleton",
+        children: "Skeleton",
+        disabled: true,
+      },
       { href: "/docs/components/switch", children: "Switch" },
+
+      {
+        href: "/docs/components/stepper",
+        children: "Stepper",
+        disabled: true,
+      },
       { href: "/docs/components/tabs", children: "Tabs" },
       { href: "/docs/components/table", children: "Table" },
       { href: "/docs/components/textarea", children: "Textarea" },
