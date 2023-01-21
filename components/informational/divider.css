@@ -27,7 +27,3 @@
 .divider-vertical::after {
   @apply h-full  w-px  bg-gray-500 content-[""];
 }
-
-.divider-start {
-  @apply justify-start;
-}
