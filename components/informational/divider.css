@@ -1,0 +1,33 @@
+.divider:not(:empty) {
+  @apply gap-4;
+}
+
+.divider {
+  @apply my-4 flex h-4 flex-row items-center whitespace-nowrap;
+}
+
+.divider::before,
+.divider-horizontal::before {
+  @apply h-px w-full  bg-gray-500 content-[""];
+}
+
+.divider::after,
+.divider-horizontal::after {
+  @apply h-px w-full  bg-gray-500 content-[""];
+}
+
+.divider-vertical {
+  @apply my-0 mx-4 h-full w-4  flex-col;
+}
+
+.divider-vertical::before {
+  @apply h-full w-px  bg-gray-500 content-[""];
+}
+
+.divider-vertical::after {
+  @apply h-full  w-px  bg-gray-500 content-[""];
+}
+
+.divider-start {
+  @apply justify-start;
+}
