@@ -1,0 +1,56 @@
+.pagination {
+  @apply flex  gap-2;
+}
+
+.pagination .btn {
+  @apply min-w-[2.5rem] border border-transparent px-0 py-2 hover:bg-gray-300;
+}
+
+.pagination .btn.btn-active {
+  @apply border-primary bg-primary text-white;
+}
+
+.pagination input:checked + .btn {
+  @apply border-primary bg-primary text-white;
+}
+
+.pagination input:disabled + .btn {
+  @apply pointer-events-none opacity-50;
+}
+
+.pagination input[type="radio"] {
+  @apply invisible absolute opacity-0;
+}
+
+.pagination.pagination-compact {
+  @apply gap-0;
+}
+
+.pagination.pagination-compact .btn {
+  @apply border-transparent;
+}
+
+.pagination.pagination-bordered .btn {
+  @apply border border-gray-500;
+}
+
+.pagination.pagination-bordered .btn.btn-active {
+  @apply border-primary;
+}
+
+.pagination.pagination-compact :where(.btn:first-of-type) {
+  @apply rounded-r-none;
+}
+
+.pagination.pagination-compact :where(.btn:last-of-type) {
+  @apply rounded-l-none;
+}
+
+.pagination.pagination-compact
+  :where(.btn:not(:first-of-type):not(:last-of-type)) {
+  @apply rounded-none;
+}
+
+.pagination.pagination-rounded .btn {
+  @apply rounded-full;
+}

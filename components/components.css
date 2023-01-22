@@ -18,6 +18,7 @@
 @import "./informational/accordion.css";
 @import "./informational/tabs.css";
 @import "./informational/divider.css";
+@import "./informational/pagination.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
