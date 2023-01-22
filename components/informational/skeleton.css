@@ -1,0 +1,41 @@
+@keyframes skeletonWave {
+  0% {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes skeletonPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skeleton {
+  animation: skeletonWave 2.5s linear infinite;
+  background: linear-gradient(
+    270deg,
+    rgb(var(--gray-800)),
+    rgb(var(--gray-600)),
+    rgb(var(--gray-600)),
+    rgb(var(--gray-800))
+  );
+  background-size: 400% 100%;
+  transition: opacity 300ms ease-out;
+  @apply h-full w-full opacity-50;
+}
+
+.skeleton-pulse {
+  animation: skeletonPulse 2s linear infinite;
+  background: no-repeat;
+  animation-delay: 0.5s;
+  @apply h-full w-full  bg-gray-600;
+}
