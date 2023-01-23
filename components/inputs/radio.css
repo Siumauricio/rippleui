@@ -9,12 +9,7 @@
   --radio-bg-hover: rgb(var(--gray-200));
   --checkline-color: rgb(var(--white));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-  @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)] align-top accent-backgroundPrimary  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary;
-}
-.radio:after {
-  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-    opacity var(--d-o, 0.2s);
-  @apply absolute top-0 left-0 block content-[""];
+  @apply relative m-0 flex h-5 w-5 cursor-pointer appearance-none items-center justify-center rounded-full border border-[var(--radio-border)] bg-[var(--radio-bg)] align-top accent-backgroundPrimary  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary;
 }
 .radio:checked {
   @apply border-[var(--radio-border-checked)] bg-[var(--radio-bg-checked)];
@@ -45,7 +40,9 @@
 }
 
 .radio::after {
-  @apply h-[19px] w-[19px] rounded-full bg-[var(--checkline-color)] opacity-0;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @apply relative flex h-full w-5 rounded-full bg-[var(--checkline-color)] opacity-0  duration-150  content-[""];
   transform: scale(var(--s, 0.7));
 }
 
@@ -179,7 +176,7 @@
 }
 
 .radio.radio-md::after {
-  @apply h-[19px] w-[19px];
+  @apply w-5;
 }
 
 .radio-lg {
