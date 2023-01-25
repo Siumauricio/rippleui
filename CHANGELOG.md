@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/Siumauricio/rippleui/compare/v1.6.2...v1.7.0) (2023-01-25)
+
+
+### Features
+
+* **divider:** divider component ([c3b67d9](https://github.com/Siumauricio/rippleui/commit/c3b67d9c9399fb11da102d720af53ec8c9e77712))
+* **link:** link component ([ddde65c](https://github.com/Siumauricio/rippleui/commit/ddde65c8de7ae68623be4566555a9b4faf0f8a24))
+* **pagination:** pagination component ([853564c](https://github.com/Siumauricio/rippleui/commit/853564c95ccef803f8a6f93f6497008bb9ad463b))
+* **skeleton:** skeleton component ([b50e16f](https://github.com/Siumauricio/rippleui/commit/b50e16f74f691a5e64af24baa7ce7cb3240ed99c))
+* **stepper:** add stepper component ([875385c](https://github.com/Siumauricio/rippleui/commit/875385c85d3a2dae6bf40f1b01f768e1a36a5eef))
+
+
+### Bug Fixes
+
+* **radio:** center the circle ([0206530](https://github.com/Siumauricio/rippleui/commit/0206530dc13b2d588c6159590f1cfce370c92c1c))
+
 ### [1.6.2](https://github.com/Siumauricio/rippleui/compare/v1.6.1...v1.6.2) (2023-01-20)
 
 
