@@ -18,9 +18,9 @@ export const Sidebar = () => {
     setRouterDefined(router.asPath.split("#")[0]);
   }, [router.asPath]);
   return (
-    <div>
+    <>
       <input type="checkbox" id="drawer-toggle" className="drawer-toggle" />
-      <label htmlFor="drawer-toggle">
+      <label htmlFor="drawer-toggle" className="cursor-pointer">
         <MenuIcon />
       </label>
       <label className="overlay  h-screen" htmlFor="drawer-toggle"></label>
@@ -28,7 +28,7 @@ export const Sidebar = () => {
       <div className="drawer-left drawer h-screen">
         <div className="h-screen ">
           <label
-            className="btn btn-circle btn-ghost absolute right-1  top-1"
+            className="btn-circle btn-ghost btn absolute right-1  top-1"
             htmlFor="drawer-toggle"
           >
             <XIcon />
@@ -54,7 +54,9 @@ export const Sidebar = () => {
                         <label
                           className={clsx(
                             active && "text-content1",
-                            link.disabled && "pointer-events-none text-content3"
+                            link.disabled &&
+                              "pointer-events-none text-content3",
+                            "cursor-pointer hover:text-content1"
                           )}
                           htmlFor="drawer-toggle"
                           onClick={() => {
@@ -66,6 +68,11 @@ export const Sidebar = () => {
                         {/* </Link> */}
                         {link.disabled && (
                           <span className="badge ml-1">Soon</span>
+                        )}
+                        {link.isNew && (
+                          <span className="badge badge-flat-primary ml-1">
+                            New
+                          </span>
                         )}
                       </li>
                     </ul>
@@ -100,6 +107,6 @@ export const Sidebar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
