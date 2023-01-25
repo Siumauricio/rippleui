@@ -1,0 +1,293 @@
+---
+title: Pagination
+description:  Pagination is used to split content into multiple pages.
+---
+
+# Pagination
+
+Ripple UI comes with  Pagination component which is used to split content into multiple pages.
+
+### Default
+
+Simple example of Pagination.
+
+<div className="pagination">
+    <button className="btn">0</button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button className="btn">3</button>
+    <button className="btn">4</button>
+</div>
+
+```html
+<div className="pagination">
+    <button className="btn">0</button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button className="btn">3</button>
+    <button className="btn">4</button>
+</div>
+```
+
+### With Icons
+
+Pagination with icons.
+
+  <div className="pagination">
+    <button className="btn">
+        <svg
+        width="18"
+        height="18"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M12.2574 5.59165C11.9324 5.26665 11.4074 5.26665 11.0824 5.59165L7.25742 9.41665C6.93242 9.74165 6.93242 10.2667 7.25742 10.5917L11.0824 14.4167C11.4074 14.7417 11.9324 14.7417 12.2574 14.4167C12.5824 14.0917 12.5824 13.5667 12.2574 13.2417L9.02409 9.99998L12.2574 6.76665C12.5824 6.44165 12.5741 5.90832 12.2574 5.59165Z"
+            fill="#969696"
+        />
+        </svg>
+    </button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button className="btn">3</button>
+    <button className="btn">
+        <svg
+        width="18"
+        height="18"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.74375 5.2448C7.41875 5.5698 7.41875 6.0948 7.74375 6.4198L10.9771 9.65314L7.74375 12.8865C7.41875 13.2115 7.41875 13.7365 7.74375 14.0615C8.06875 14.3865 8.59375 14.3865 8.91875 14.0615L12.7437 10.2365C13.0687 9.91147 13.0687 9.38647 12.7437 9.06147L8.91875 5.23647C8.60208 4.9198 8.06875 4.9198 7.74375 5.2448Z"
+            fill="#969696"
+        />
+        </svg>
+    </button>
+</div>
+
+
+```html
+  <div className="pagination">
+    <button className="btn">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+    <path fillRule="evenodd" clipRule="evenodd"d="M12.2574 5.59165C11.9324 5.26665 11.4074 5.26665 11.0824 5.59165L7.25742 9.41665C6.93242 9.74165 6.93242 10.2667 7.25742 10.5917L11.0824 14.4167C11.4074 14.7417 11.9324 14.7417 12.2574 14.4167C12.5824 14.0917 12.5824 13.5667 12.2574 13.2417L9.02409 9.99998L12.2574 6.76665C12.5824 6.44165 12.5741 5.90832 12.2574 5.59165Z" fill="#969696"/>
+    </svg>
+    </button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button className="btn">3</button>
+    <button className="btn">
+        <svg width="18"  height="18"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd"  clipRule="evenodd" d="M7.74375 5.2448C7.41875 5.5698 7.41875 6.0948 7.74375 6.4198L10.9771 9.65314L7.74375 12.8865C7.41875 13.2115 7.41875 13.7365 7.74375 14.0615C8.06875 14.3865 8.59375 14.3865 8.91875 14.0615L12.7437 10.2365C13.0687 9.91147 13.0687 9.38647 12.7437 9.06147L8.91875 5.23647C8.60208 4.9198 8.06875 4.9198 7.74375 5.2448Z" fill="#969696"/>
+        </svg>
+    </button>
+</div>
+```
+
+###  Disabled item
+
+Pagination button disabled.
+
+<div className="pagination">
+    <button className="btn">0</button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button disabled className="btn">...</button>
+    <button className="btn">4</button>
+</div>
+
+```html
+  <div className="pagination">
+    <button className="btn">0</button>
+    <button className="btn btn-active">1</button>
+    <button className="btn">2</button>
+    <button disabled className="btn">...</button>
+    <button className="btn">4</button>
+</div>
+```
+
+### Pagination as radio
+
+Pagination as radio.
+
+<div className="pagination">
+    <input type="radio" name="pagination-1" id="pgn-1"/>
+    <label htmlFor="pgn-1" className="btn"> 1 </label>
+    <input type="radio" name="pagination-1" id="pgn-2" />
+    <label htmlFor="pgn-2" className="btn"> 2 </label>
+    <input type="radio" name="pagination-1" id="pgn-3" />
+    <label htmlFor="pgn-3" className="btn"> 3 </label>
+    <input type="radio" name="pagination-1" id="paginacao4" />
+</div>
+
+```html
+<div className="pagination">
+    <input type="radio" name="pagination-1" id="pgn-1"/>
+    <label htmlFor="pgn-1" className="btn"> 1 </label>
+    <input type="radio" name="pagination-1" id="pgn-2" />
+    <label htmlFor="pgn-2" className="btn"> 2 </label>
+    <input type="radio" name="pagination-1" id="pgn-3" />
+    <label htmlFor="pgn-3" className="btn"> 3 </label>
+    <input type="radio" name="pagination-1" id="paginacao4" />
+</div>
+```
+
+### Compact pagination
+
+Compact pagination.
+
+ <div className="pagination pagination-compact">
+    <input type="radio" name="pagination-2" id="pgn-4"/>
+    <label htmlFor="pgn-4" className="btn"> 1 </label>
+    <input type="radio" name="pagination-2" id="pgn-5" />
+    <label htmlFor="pgn-5" className="btn"> 2 </label>
+    <input type="radio" name="pagination-2" id="pgn-6" />
+    <label htmlFor="pgn-6" className="btn"> 3 </label>
+</div>
+
+```html
+ <div className="pagination pagination-compact">
+    <input type="radio" name="pagination-2" id="pgn-4"/>
+    <label htmlFor="pgn-4" className="btn"> 1 </label>
+    <input type="radio" name="pagination-2" id="pgn-5" />
+    <label htmlFor="pgn-5" className="btn"> 2 </label>
+    <input type="radio" name="pagination-2" id="pgn-6" />
+    <label htmlFor="pgn-6" className="btn"> 3 </label>
+</div>
+```
+
+### Pagination bordered 
+
+Pagination bordered.
+
+<div className="flex flex-col gap-4">
+    <div className="pagination pagination-compact pagination-bordered">
+        <input type="radio" name="pagination-3" id="pgn-7"/>
+        <label htmlFor="pgn-7" className="btn"> 1 </label>
+        <input type="radio" name="pagination-3" id="pgn-8" />
+        <label htmlFor="pgn-8" className="btn"> 2 </label>
+        <input type="radio" name="pagination-3" id="pgn-9" />
+        <label htmlFor="pgn-9" className="btn"> 3 </label>
+    </div>
+
+    <div className="pagination pagination-bordered">
+        <input type="radio" name="pagination-4" id="pgn-10" />
+        <label htmlFor="pgn-10" className="btn"> 1 </label>
+        <input type="radio" name="pagination-4" id="pgn-11" />
+        <label htmlFor="pgn-11" className="btn"> 2 </label>
+        <input type="radio" name="pagination-4" id="pgn-12" />
+        <label htmlFor="pgn-12" className="btn"> 3 </label>
+    </div>
+</div>
+
+```html
+<div className="pagination pagination-compact pagination-bordered">
+    <input type="radio" name="pagination-3" id="pgn-7"/>
+    <label htmlFor="pgn-7" className="btn"> 1 </label>
+    <input type="radio" name="pagination-3" id="pgn-8" />
+    <label htmlFor="pgn-8" className="btn"> 2 </label>
+    <input type="radio" name="pagination-3" id="pgn-9" />
+    <label htmlFor="pgn-9" className="btn"> 3 </label>
+</div>
+
+<div className="pagination pagination-bordered">
+    <input type="radio" name="pagination-4" id="pgn-10" />
+    <label htmlFor="pgn-10" className="btn"> 1 </label>
+    <input type="radio" name="pagination-4" id="pgn-11" />
+    <label htmlFor="pgn-11" className="btn"> 2 </label>
+    <input type="radio" name="pagination-4" id="pgn-12" />
+    <label htmlFor="pgn-12" className="btn"> 3 </label>
+</div>
+```
+
+### Rounded
+
+Rounded pagination.
+
+ <div className="pagination pagination-rounded">
+    <input type="radio" name="pagination-5" id="pgn-13" />
+    <label htmlFor="pgn-13" className="btn"> 1</label>
+    <input type="radio" name="pagination-5" id="pgn-14" />
+    <label htmlFor="pgn-14" className="btn"> 2 </label>
+    <input type="radio" name="pagination-5" id="pgn-15" />
+    <label htmlFor="pgn-15" className="btn"> 3 </label>
+</div>
+
+```html
+ <div className="pagination pagination-rounded">
+    <input type="radio" name="pagination-5" id="pgn-13" />
+    <label htmlFor="pgn-13" className="btn"> 1</label>
+    <input type="radio" name="pagination-5" id="pgn-14" />
+    <label htmlFor="pgn-14" className="btn"> 2 </label>
+    <input type="radio" name="pagination-5" id="pgn-15" />
+    <label htmlFor="pgn-15" className="btn"> 3 </label>
+</div>
+```
+
+
+### Scrollable
+
+Add scroll to pagination.
+
+<div className="pagination w-full max-w-xs overflow-auto">
+    <input type="radio" name="pagination-6" id="pgn-16"/>
+    <label htmlFor="pgn-16" className="btn"> 1</label>
+    <input type="radio" name="pagination-6" id="pgn-17" />
+    <label htmlFor="pgn-17" className="btn"> 2 </label>
+    <input type="radio" name="pagination-6" id="pgn-18" />
+    <label htmlFor="pgn-18" className="btn"> 3 </label>
+    <input type="radio" name="pagination-6" id="pgn-19" />
+    <label htmlFor="pgn-19" className="btn">4</label>
+    <input type="radio" name="pagination-6" id="pgn-20" />
+    <label htmlFor="pgn-20" className="btn">5</label>
+    <input type="radio" name="pagination-6" id="pgn-21" />
+    <label htmlFor="pgn-21" className="btn">6</label>
+    <input type="radio" name="pagination-6" id="pgn-22" />
+    <label htmlFor="pgn-22" className="btn">7</label>
+</div>
+
+```html
+<div className="pagination w-full max-w-xs overflow-auto">
+    <input type="radio" name="pagination-6" id="pgn-16"/>
+    <label htmlFor="pgn-16" className="btn"> 1</label>
+    <input type="radio" name="pagination-6" id="pgn-17" />
+    <label htmlFor="pgn-17" className="btn"> 2 </label>
+    <input type="radio" name="pagination-6" id="pgn-18" />
+    <label htmlFor="pgn-18" className="btn"> 3 </label>
+    <input type="radio" name="pagination-6" id="pgn-19" />
+    <label htmlFor="pgn-19" className="btn">4</label>
+    <input type="radio" name="pagination-6" id="pgn-20" />
+    <label htmlFor="pgn-20" className="btn">5</label>
+    <input type="radio" name="pagination-6" id="pgn-21" />
+    <label htmlFor="pgn-21" className="btn">6</label>
+    <input type="radio" name="pagination-6" id="pgn-22" />
+    <label htmlFor="pgn-22" className="btn">7</label>
+</div>
+```
+
+
+<Attributes >
+<Attributes.Title>Pagination Classes</Attributes.Title>
+
+| className                 | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| pagination            | Pagination base className                              |
+| pagination-bordered   | Add border to pagination                           |
+| pagination-compact    | Remove margin and padding between each button      |
+| pagination-rounded    | Add border radius to each button pagination        |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Modal"
+  hrefLeft="/docs/components/modal"
+  contentRight="Navbar"
+  hrefRight="/docs/components/navbar"
+/>
+

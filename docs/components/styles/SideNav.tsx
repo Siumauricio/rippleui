@@ -11,7 +11,7 @@ export const SideNav = () => {
     setRouterDefined(router.asPath.split("#")[0]);
   }, [router.asPath]);
   return (
-    <nav className="sidenav hide-scrollbar sticky top-0 h-screen flex-[0_0_auto] overflow-y-auto px-12 pt-24 pb-8">
+    <nav className="sidenav sticky top-0 h-screen flex-[0_0_auto] overflow-y-auto px-12 pt-24 pb-8 hide-scrollbar">
       <h4 className="ml-[-1.2rem] pb-[10px] text-xl font-semibold">
         Documentation
       </h4>
@@ -29,7 +29,8 @@ export const SideNav = () => {
                   className="whitespace-nowrap text-content2 first-of-type:pt-2 hover:text-content1"
                 >
                   <NextLink
-                    {...link}
+                    href={link.href}
+                    // {...link}
                     className={clsx(
                       active && "text-content1",
                       link.disabled && "pointer-events-none text-content3"
@@ -37,6 +38,9 @@ export const SideNav = () => {
                   >
                     {link.children}
                     {link.disabled && <span className="badge ml-1">Soon</span>}
+                    {link.isNew && (
+                      <span className="badge badge-flat-primary ml-1">New</span>
+                    )}
                   </NextLink>
                 </li>
               );

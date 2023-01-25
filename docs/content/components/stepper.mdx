@@ -1,0 +1,536 @@
+---
+title: Stepper
+description:  Stepper is a component that shows the progress of a task through numbered steps.
+---
+
+# Stepper
+
+Ripple UI comes with a  Stepper component that shows the progress of a task through numbered steps.
+
+### Default
+
+Simple example of Stepper.
+
+<ol className="steps">
+    <li className="step  overflow-hidden">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step  overflow-hidden">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step  overflow-hidden">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+<ol className="steps">
+    <li className="step  overflow-hidden">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step  overflow-hidden">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step  overflow-hidden">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+### Vertical Orientation
+
+Stepper can be displayed vertically.
+
+
+<ol className="steps steps-vertical">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+       <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+<ol className="steps">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+       <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+### With active states
+
+Stepper can be displayed with active states.
+
+1. step-done: The step is completed.
+2. step-active: The step is currently active.
+3. withou any class: The step is waiting and be as gray color.
+
+<ol className="steps">
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step step-primary step-active overflow-hidden">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+<ol className="steps">
+    <li className="step step-primary step-done  overflow-hidden">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step step-primary step-done  overflow-hidden">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step step-primary step-active  overflow-hidden">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+### Colors
+
+Stepper can be displayed with different colors.
+
+<div className="flex flex-col gap-2">
+    <ol className="steps">
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+</div>
+
+```html
+
+<div className="flex flex-col gap-2">
+
+    <ol className="steps">
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-primary step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-secondary step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-success step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-error step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+    <ol className="steps">
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">1</div>
+            <h3>Done</h3>
+        </li>
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">2</div>
+            <h3>In progress</h3>
+        </li>
+        <li className="step step-warning step-done overflow-hidden">
+            <div className="step-circle">3</div>
+            <h3>Waiting</h3>
+        </li>
+    </ol>
+
+</div>
+```
+
+### With icons
+
+Stepper with icons.
+
+ <ol className="steps">
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>Done</h3>
+    </li>
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+ <ol className="steps">
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>Done</h3>
+    </li>
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step step-primary step-done overflow-hidden">
+        <div className="step-circle">
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.49987 13.475L4.6082 10.5833C4.2832 10.2583 3.7582 10.2583 3.4332 10.5833C3.1082 10.9083 3.1082 11.4333 3.4332 11.7583L6.91654 15.2416C7.24154 15.5666 7.76654 15.5666 8.09154 15.2416L16.9082 6.42498C17.2332 6.09998 17.2332 5.57498 16.9082 5.24998C16.5832 4.92498 16.0582 4.92498 15.7332 5.24998L7.49987 13.475Z"
+            className="fill-primary"
+            />
+        </svg>
+        </div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+### Scrollable
+
+Stepper can be scrollable if you have alot of steps.
+
+<ol className="steps overflow-auto max-w-sm">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">4</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">5</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">6</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+<ol className="steps overflow-auto max-w-sm">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">4</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">5</div>
+        <h3>Waiting</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">6</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+### Responsive
+
+Stepper responsive.
+
+<ol className="steps steps-vertical lg:steps-horizontal">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+
+```html
+<ol className="steps steps-vertical lg:steps-horizontal">
+    <li className="step">
+        <div className="step-circle">1</div>
+        <h3>Done</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">2</div>
+        <h3>In progress</h3>
+    </li>
+    <li className="step">
+        <div className="step-circle">3</div>
+        <h3>Waiting</h3>
+    </li>
+</ol>
+```
+
+<Attributes >
+<Attributes.Title>Stepper classes</Attributes.Title>
+
+| class                 | Description                                      |
+| --------------------- | -------------------------------------------------- |
+| steps                 | steps clase base                                  |
+| steps-vertical        | steps in vertical orientation                     |
+| steps-horizontal      | steps in horizontal orientation                   |
+| step                  | step clase base                                   |
+| step-primary          | step primary color                                |
+| step-secondary        | step secondary color                              |
+| step-success          | step success color                                |
+| step-error            | step error color                                  |
+| step-warning          | step warning color                                |
+| step-circle           | step circle                                       |
+| step-done             | the step is completed                             |
+| step-active           | the step is currently active                      |
+
+
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Switch"
+  hrefLeft="/docs/components/switch"
+  contentRight="Tabs"
+  hrefRight="/docs/components/tabs"
+/>
+
