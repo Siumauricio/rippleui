@@ -20,6 +20,7 @@
 @import "./informational/divider.css";
 @import "./informational/pagination.css";
 @import "./informational/skeleton.css";
+@import "./informational/stepper.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
