@@ -1,0 +1,99 @@
+@keyframes indeterminate-progress-bar {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.progress {
+  @apply relative appearance-none overflow-hidden rounded-full;
+}
+
+.progress::-webkit-progress-bar {
+  @apply rounded-full bg-gray-400;
+}
+
+.progress::-webkit-progress-value {
+  @apply rounded-full bg-primary;
+}
+
+.progress-xs {
+  @apply h-1;
+}
+
+.progress-sm {
+  @apply h-2;
+}
+
+.progress-md {
+  @apply h-4;
+}
+
+.progress-lg {
+  @apply h-5;
+}
+
+.progress-xl {
+  @apply h-7;
+}
+
+.progress-indeterminate::after {
+  animation: indeterminate-progress-bar 0.9s infinite;
+  @apply absolute bottom-0  top-0 w-1/3 rounded-full bg-primary content-[""];
+}
+
+.progress-primary::-webkit-progress-value,
+.progress-flat-primary::-webkit-progress-value,
+.progress-primary.progress-indeterminate::after,
+.progress-flat-primary.progress-indeterminate::after {
+  @apply bg-primary;
+}
+
+.progress-secondary::-webkit-progress-value,
+.progress-flat-secondary::-webkit-progress-value,
+.progress-secondary.progress-indeterminate::after,
+.progress-flat-secondary.progress-indeterminate::after {
+  @apply bg-secondary;
+}
+
+.progress-success::-webkit-progress-value,
+.progress-flat-success::-webkit-progress-value,
+.progress-success.progress-indeterminate::after {
+  @apply bg-success;
+}
+
+.progress-error::-webkit-progress-value,
+.progress-flat-error::-webkit-progress-value,
+.progress-error.progress-indeterminate::after,
+.progress-flat-error.progress-indeterminate::after {
+  @apply bg-error;
+}
+
+.progress-warning::-webkit-progress-value,
+.progress-flat-warning::-webkit-progress-value,
+.progress-warning.progress-indeterminate::after,
+.progress-flat-warning.progress-indeterminate::after {
+  @apply bg-warning;
+}
+
+.progress-flat-primary::-webkit-progress-bar {
+  @apply bg-blue-400;
+}
+
+.progress-flat-secondary::-webkit-progress-bar {
+  @apply bg-purple-400;
+}
+
+.progress-flat-success::-webkit-progress-bar {
+  @apply bg-green-400;
+}
+
+.progress-flat-error::-webkit-progress-bar {
+  @apply bg-red-400;
+}
+
+.progress-flat-warning::-webkit-progress-bar {
+  @apply bg-yellow-400;
+}
