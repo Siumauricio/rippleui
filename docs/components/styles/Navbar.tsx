@@ -24,7 +24,7 @@ export const Navbar = () => {
     <nav
       className={clsx(
         scrollY > 35 && "border-b border-gray-500",
-        "navbar navbar-sticky navbar-glass  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
+        "navbar-sticky navbar-glass navbar  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl">
@@ -78,7 +78,7 @@ export const Navbar = () => {
             License
           </Link>
         </div>
-        <div className="navbar-end gap-6 sm:gap-3">
+        <div className="navbar-end gap-6 md:gap-3">
           <Link
             href={"https://discord.gg/b9ZqWsmqsj"}
             className="hidden cursor-pointer lg:flex"
