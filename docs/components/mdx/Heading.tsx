@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { titleToSlug } from "../../utils/titleToSlug";
 
 interface Props {
   children?: React.ReactNode;
@@ -12,7 +11,6 @@ interface Props {
 
 export const Heading = ({ id = "", level = 1, children, className }: Props) => {
   const router = useRouter();
-
   useEffect(() => {
     if (router.asPath.split("#")[1] === id) {
       const element = document.getElementById(id);
@@ -70,13 +68,15 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
       >
         {children}
 
-        <span
+        <a
+          aria-hidden="true"
+          href={`#${id}`}
           className={
             "mark text-xl font-semibold  text-content2 opacity-0 transition-opacity ease-in-out"
           }
         >
           #
-        </span>
+        </a>
         <span
           className="pointer-events-none relative top-[-90px] left-0 opacity-0"
           id={id}
@@ -92,10 +92,7 @@ export const headingDynamic = ({ level }: Props) => {
   // eslint-disable-next-line react/display-name
   return (props: Props) => {
     return (
-      <Heading
-        level={level}
-        id={titleToSlug(props.children?.toString() as string)}
-      >
+      <Heading level={level} id={props.id}>
         {props.children}
       </Heading>
     );
