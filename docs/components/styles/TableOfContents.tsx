@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { Headings } from "../../utils/getToc";
 import clsx from "clsx";
+import { useScrollSpy } from "../../hooks/useScrollSpy";
 
 interface Props {
   toc: Headings[];
@@ -10,44 +11,48 @@ interface Props {
 
 export const TableOfContents = ({ toc }: Props) => {
   const router = useRouter();
+  const isChangelog = toc[0]?.title === "Changelog";
+  const margin = isChangelog ? "0% 0% -100% 0%" : "0% 0% -80% 0%";
   const [routerDefined, setRouterDefined] = useState("");
-  const items = toc.filter(
-    (item) => item.id && (item.level === 2 || item.level === 3)
+  const activeId = useScrollSpy(
+    toc.map(({ id }) => `[id="${id}"]`),
+    {
+      rootMargin: margin,
+    }
   );
+
   useEffect(() => {
     setRouterDefined(router.asPath);
   }, []);
 
-  if (items.length < 1) {
+  if (toc.length < 1) {
     return null;
   }
 
   return (
-    <nav className="sticky top-28 mt-12 mb-11 max-h-[calc(var(100vh-51px))] flex-[0_0_auto] self-start border-l border-border pt-1">
+    <nav className=" h-full max-h-[50rem] flex-[0_0_auto] self-start overflow-auto pt-1">
       <ul
         style={{
           margin: "0",
-          padding: "0 1.5rem",
-          width: "min-content",
         }}
       >
-        {items.map((item, i) => {
+        {toc.map((item, i) => {
           const href = `${router.asPath.split("#")[0]}/#${item.id}`;
           const isActive =
             routerDefined !== "" &&
             router.asPath === `${router.asPath.split("#")[0]}#${item.id}`;
-
+          if (item.level === 1) return null;
           return (
-            <li className="mb-4" key={i}>
-              <NextLink
-                href={href}
-                passHref
-                className={clsx(
-                  item.level === 3 && "pl-4",
-                  "inline-flex",
-                  !isActive && "text-content3 hover:text-content2"
-                )}
-              >
+            <li
+              className={clsx(
+                activeId === item.id
+                  ? "border-primary text-content1 before:absolute"
+                  : "text-content3 hover:text-content2",
+                "line-clamp  inline-flex border-l border-border px-6 text-sm leading-7"
+              )}
+              key={i + 1}
+            >
+              <NextLink href={href} passHref>
                 {item.title}
               </NextLink>
             </li>
