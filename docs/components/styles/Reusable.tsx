@@ -2,7 +2,6 @@ import React from "react";
 import { BookIcon } from "../icons/Book";
 import { RecyleIcon } from "../icons/Recyle";
 import { ToolsIcon } from "../icons/Tools";
-import { Comparison } from "./Comparison";
 
 export const Reusable = () => {
   return (
