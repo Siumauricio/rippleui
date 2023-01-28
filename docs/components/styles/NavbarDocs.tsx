@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { RippleUIVersion } from "../../utils/items";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
+import { LogoIcon } from "../icons/LogoIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
 import { DarkModeToggle } from "./DarkModeToggle";
 import { Search } from "./Searcher";
@@ -26,8 +27,16 @@ export const NavbarDocs = () => {
       <div className=" mx-auto flex w-full ">
         <div className="navbar-start">
           <div className="navbar-brand w-full justify-between gap-0 xl:w-auto xl:justify-start">
-            <div className="navbar-item block lg:hidden">
+            <div className="navbar-item flex gap-2 lg:hidden">
               <Sidebar />
+              <Link href={"/"}>
+                <label className=" hidden cursor-pointer text-3xl  font-semibold text-whiteInverted lg:flex">
+                  Ripple UI
+                </label>
+                <div className="flex lg:hidden">
+                  <LogoIcon />
+                </div>
+              </Link>
             </div>
             <Search />
           </div>

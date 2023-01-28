@@ -24,26 +24,22 @@ export const Navbar = () => {
     <nav
       className={clsx(
         scrollY > 35 && "border-b border-gray-500",
-        "navbar navbar-sticky navbar-glass  bg-backgroundSecondary/70 py-3 shadow-none"
+        "navbar navbar-sticky navbar-glass  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl">
         <div className="navbar-start">
           <div className="navbar-brand gap-0">
-            <div className="navbar-item block lg:hidden">
+            <div className="navbar-item flex lg:hidden">
               <Sidebar />
             </div>
-            <Link
-              href={"/"}
-              className="navbar-item   flex-row items-center gap-3 py-2"
-            >
+            <Link href={"/"} className=" flex-row items-center gap-3 py-2">
               <label className=" hidden cursor-pointer text-3xl  font-semibold text-whiteInverted lg:flex">
                 Ripple UI
               </label>
               <div className="flex lg:hidden">
                 <LogoIcon />
               </div>
-              {/*  */}
             </Link>
           </div>
         </div>
@@ -82,7 +78,7 @@ export const Navbar = () => {
             License
           </Link>
         </div>
-        <div className="navbar-end  gap-3">
+        <div className="navbar-end gap-6 sm:gap-3">
           <Link
             href={"https://discord.gg/b9ZqWsmqsj"}
             className="hidden cursor-pointer lg:flex"
