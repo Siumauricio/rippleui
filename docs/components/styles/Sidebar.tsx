@@ -6,10 +6,8 @@ import { items } from "../../utils/items";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { MenuIcon } from "../icons/MenuIcon";
-import { SearchIcon } from "../icons/SearchIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
 import { XIcon } from "../icons/XIcon";
-import { Searcher } from "./Searcher";
 
 export const Sidebar = () => {
   const router = useRouter();
@@ -35,7 +33,6 @@ export const Sidebar = () => {
           </label>
           <div className="flex flex-col gap-2 border-b border-border px-6 py-4">
             <p className="text-2xl font-bold">Components</p>
-            <Searcher isMobile />
           </div>
 
           <div className="flex flex-col gap-2 divide-y divide-border  px-6 pb-6">
@@ -65,7 +62,6 @@ export const Sidebar = () => {
                         >
                           {link.children}
                         </label>
-                        {/* </Link> */}
                         {link.disabled && (
                           <span className="badge ml-1">Soon</span>
                         )}
