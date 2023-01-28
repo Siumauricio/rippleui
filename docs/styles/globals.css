@@ -6,6 +6,10 @@
 html {
   font-family: "Inter", sans-serif;
 }
+:root {
+  --vp-layout-max-width: 1440px;
+  --vp-sidebar-width: 272px;
+}
 
 pre * {
   font-family: "Roboto Mono" !important;
@@ -19,4 +23,31 @@ pre * {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.sidebar {
+  --vp-layout-max-width: 1440px;
+  --vp-sidebar-width: 272px;
+  /* --vp-layout-max-width: 1465px;
+  padding-left: max(
+    32px,
+    calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)
+  ); */
+  /* width: calc(
+    (100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) -
+      32px
+  ); */
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.content {
+  --vp-layout-max-width: 1440px;
+  --vp-sidebar-width: 272px;
+  padding-top: 72px;
 }
