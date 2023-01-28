@@ -99,6 +99,15 @@ export const items: Items[] = [
       { href: "/docs/components/kbd", children: "Kbd", disabled: true },
     ],
   },
+  {
+    title: "More",
+    links: [
+      {
+        href: "/docs/more/changelog",
+        children: "Changelog",
+      },
+    ],
+  },
 ];
 
 export const RippleUIVersion = version.version;

@@ -13,7 +13,8 @@ import { DocsLayout } from "../../components/layout/DocsLayout";
 import { getRoutes } from "../../utils/getRoutes";
 import Meta from "../../components/mdx/layout/Meta";
 import rehypeExtractHeadings, { Headings } from "../../utils/getToc";
-import remarkMdxCodeMeta from 'remark-mdx-code-meta';
+import remarkMdxCodeMeta from "remark-mdx-code-meta";
+import rehypeSlug from "rehype-slug";
 
 const components = {
   ...MDXcomponents,
@@ -54,20 +55,26 @@ export async function getStaticProps(context: any) {
   const params = context.params.page as string[];
   const pathFile = params.join("/");
 
-  const sourceFile = fs.readFileSync(
+  let sourceFile = fs.readFileSync(
     path.join(process.cwd() + `/content/${pathFile}.mdx`),
     "utf8"
   );
   const headings: any = [];
 
+  if (pathFile === "more/changelog") {
+    sourceFile = fs.readFileSync("../CHANGELOG.md", {
+      encoding: "utf8",
+    });
+  }
+
   const source = sourceFile;
   const mdxSource = await serialize(source, {
     parseFrontmatter: true,
     mdxOptions: {
-      remarkPlugins: [remarkMdxCodeMeta,remarkGfm],
-      rehypePlugins: [[rehypeExtractHeadings, { rank: 1, headings },]],
+      remarkPlugins: [remarkMdxCodeMeta, remarkGfm],
+      rehypePlugins: [[rehypeSlug], [rehypeExtractHeadings, { headings }]],
     },
   });
-  return { props: { source: mdxSource, headings } };
+  return { props: { source: mdxSource, headings: headings } };
 }
 export default docs;
