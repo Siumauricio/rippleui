@@ -1,0 +1,198 @@
+.range {
+  color: rgb(var(--primary));
+  --circle-color: rgb(var(--white));
+  --left-track-color: rgb(var(--primary));
+  --circle-border: rgb(var(--primary));
+  --track-color: rgb(var(--gray-400));
+  --brightness-hover: 180%;
+  --brightness-down: 80%;
+  --thumb-height: 1.125em;
+  --track-height: 0.2em;
+  --clip-edges: 0.125em;
+  --thumb-width: 1.125em;
+  --border-size: 4.5px;
+}
+
+.range {
+  @apply relative overflow-x-hidden  bg-transparent;
+}
+
+.range:active {
+  @apply cursor-grabbing;
+}
+
+.range:disabled {
+  @apply cursor-not-allowed opacity-30;
+}
+
+/* WebKit styles*/
+.range,
+.range::-webkit-slider-runnable-track,
+.range::-webkit-slider-thumb {
+  @apply h-[var(--thumb-height)] appearance-none;
+}
+
+.range::-webkit-slider-runnable-track,
+.range::-webkit-slider-thumb {
+  @apply relative;
+}
+
+.range::-webkit-slider-thumb {
+  --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+  --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+  --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+  --clip-further: calc(100% + 1px);
+  --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0
+    100vmax var(--left-track-color);
+
+  width: var(--thumb-width, var(--thumb-height));
+  background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
+    50% calc(var(--track-height) + 1px);
+  background: var(--circle-color);
+  box-shadow: var(--box-fill);
+  clip-path: polygon(
+    100% -1px,
+    var(--clip-edges) -1px,
+    0 var(--clip-top),
+    -100vmax var(--clip-top),
+    -100vmax var(--clip-bottom),
+    0 var(--clip-bottom),
+    var(--clip-edges) 100%,
+    var(--clip-further) var(--clip-further)
+  );
+  border-width: var(--border-size);
+  @apply relative top-[50%] -translate-y-1/2 rounded-full border-solid border-[var(--circle-border)] brightness-100;
+}
+
+.range:hover::-webkit-slider-thumb {
+  @apply cursor-grab;
+}
+
+.range:active::-webkit-slider-thumb {
+  @apply cursor-grabbing  brightness-[var(--brightness-down)];
+}
+
+.range::-webkit-slider-runnable-track {
+  @apply h-[var(--track-height)] items-center rounded-full bg-[var(--track-color)];
+}
+
+.range:disabled::-webkit-slider-thumb {
+  @apply cursor-not-allowed;
+}
+
+/* Firefox specific styles  */
+
+.range,
+.range::-moz-range-track,
+.range::-moz-range-thumb {
+  @apply h-[var(--thumb-height)] appearance-none;
+}
+
+.range::-moz-range-thumb {
+  --thumb-height: 0.625em;
+  --thumb-width: 0.625em;
+  border-width: var(--border-size);
+  @apply h-[var(--thumb-height)] w-[var(--thumb-width)] cursor-grab rounded-full border-solid border-[var(--circle-border)] bg-[var(--circle-color)];
+}
+
+.range:active::-moz-range-thumb {
+  @apply cursor-grabbing;
+}
+
+.range::-moz-range-track {
+  @apply w-full bg-[var(--track-color)];
+}
+
+.range::-moz-range-progress {
+  @apply appearance-none bg-[var(--left-track-color)];
+}
+
+.range::-moz-range-track,
+.range::-moz-range-progress {
+  --track-height: 0.125em;
+  @apply h-[calc(var(--track-height)+1px)] rounded-full;
+}
+
+.range::-moz-range-thumb,
+.range::-moz-range-progress {
+  @apply brightness-100;
+}
+
+.range:active::-moz-range-thumb,
+.range:active::-moz-range-progress {
+  @apply brightness-[var(--brightness-down)];
+}
+
+.range:disabled::-moz-range-thumb {
+  @apply cursor-not-allowed;
+}
+
+/* General */
+.range-primary {
+  --left-track-color: rgb(var(--primary));
+  --circle-border: rgb(var(--primary));
+  @apply text-primary;
+}
+
+.range-secondary {
+  --left-track-color: rgb(var(--secondary));
+  --circle-border: rgb(var(--secondary));
+  @apply text-secondary;
+}
+
+.range-success {
+  --left-track-color: rgb(var(--success));
+  --circle-border: rgb(var(--success));
+  @apply text-success;
+}
+
+.range-error {
+  --left-track-color: rgb(var(--error));
+  --circle-border: rgb(var(--error));
+  @apply text-error;
+}
+
+.range-warning {
+  --left-track-color: rgb(var(--warning));
+  --circle-border: rgb(var(--warning));
+  @apply text-warning;
+}
+
+.range-flat-primary {
+  --left-track-color: rgb(var(--primary));
+  --circle-border: rgb(var(--primary));
+  --track-color: rgb(var(--blue-400));
+  @apply text-primary;
+}
+
+.range-flat-secondary {
+  --left-track-color: rgb(var(--secondary));
+  --circle-border: rgb(var(--secondary));
+  --track-color: rgb(var(--purple-400));
+  @apply text-secondary;
+}
+
+.range-flat-success {
+  --left-track-color: rgb(var(--success));
+  --circle-border: rgb(var(--success));
+  --track-color: rgb(var(--green-400));
+  @apply text-success;
+}
+
+.range-flat-error {
+  --left-track-color: rgb(var(--error));
+  --circle-border: rgb(var(--error));
+  --track-color: rgb(var(--red-400));
+  @apply text-error;
+}
+
+.range-flat-warning {
+  --left-track-color: rgb(var(--warning));
+  --circle-border: rgb(var(--warning));
+  --track-color: rgb(var(--yellow-400));
+  @apply text-warning;
+}
+
+.range-vertical {
+  transform: rotate(270deg);
+}
