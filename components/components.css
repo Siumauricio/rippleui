@@ -22,6 +22,7 @@
 @import "./informational/pagination.css";
 @import "./informational/skeleton.css";
 @import "./informational/stepper.css";
+@import "./informational/progress.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
