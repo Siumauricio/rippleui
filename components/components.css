@@ -8,6 +8,7 @@
 @import "./inputs/switch.css";
 @import "./inputs/button-group.css";
 @import "./inputs/dropdown.css";
+@import "./inputs/range.css";
 @import "./informational/modal.css";
 @import "./informational/badge.css";
 @import "./informational/tooltip.css";
