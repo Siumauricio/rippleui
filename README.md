@@ -75,6 +75,10 @@ Here is a list of all of the components that are currently available in RippleUI
 - Skeleton
 - Stepper
 - Link
+- Dots (Status)
+- Range
+- Progress
+- KBD
 - More components soon....
 
 ## 🤝 Contributing
