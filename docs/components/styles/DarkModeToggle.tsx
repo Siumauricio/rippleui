@@ -16,7 +16,7 @@ export const DarkModeToggle = () => {
 
   return (
     <div className="dropdown">
-      <label className="flex" tabIndex={0}>
+      <label className="flex" tabIndex={0} aria-label="Toggle Dark Mode">
         {theme === "light" ? (
           <svg
             className="cursor-pointer"
@@ -46,7 +46,7 @@ export const DarkModeToggle = () => {
         )}
       </label>
       <div className="dropdown-menu w-32 rounded-lg border border-border">
-        <a
+        <span
           tabIndex={-1}
           className="dropdown-item flex-row gap-2 text-sm"
           onClick={() => setTheme("light")}
@@ -64,8 +64,8 @@ export const DarkModeToggle = () => {
             ></path>
           </svg>
           <span>Light</span>{" "}
-        </a>
-        <a
+        </span>
+        <span
           tabIndex={-1}
           className="dropdown-item flex-row gap-2 text-sm"
           onClick={() => setTheme("dark")}
@@ -83,8 +83,8 @@ export const DarkModeToggle = () => {
             ></path>
           </svg>
           <span>Dark</span>{" "}
-        </a>
-        <a
+        </span>
+        <span
           tabIndex={-1}
           className="dropdown-item flex-row gap-2 text-sm"
           onClick={() => setTheme("system")}
@@ -105,7 +105,7 @@ export const DarkModeToggle = () => {
             />
           </svg>
           <span>System</span>{" "}
-        </a>
+        </span>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ export const Hero = () => {
             <div>
               <div className="relative hidden lg:flex">
                 <div className="pointer-events-none absolute top-3  left-0 flex items-center pl-2 ">
-                  <SearchIcon />
+                  <SearchIcon className="h-4 w-5 fill-content3" />
                 </div>
               </div>
               <input
@@ -88,7 +88,7 @@ export const Hero = () => {
                   <label className="btn flex" tabIndex={0}>
                     <span>Dropdown</span>
                   </label>
-                  <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
+                  <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
                     <div className="dropdown-item">
                       <p className="text-sm leading-5 text-content1">
                         Signed in as

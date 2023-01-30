@@ -78,6 +78,7 @@ export const Sidebar = () => {
             ))}
             <div className="flex gap-3  pt-4">
               <Link
+                aria-label="RippleUI Discord"
                 href={"https://discord.gg/b9ZqWsmqsj"}
                 className="cursor-pointer"
                 target={"_blank"}
@@ -85,6 +86,7 @@ export const Sidebar = () => {
                 <DiscordIcon />
               </Link>
               <Link
+                aria-label="Creator Of RippleUI"
                 href={"https://twitter.com/Siumauricio"}
                 target={"_blank"}
                 className="cursor-pointer"
@@ -93,6 +95,7 @@ export const Sidebar = () => {
               </Link>
 
               <Link
+                aria-label="RippleUI Github"
                 href={"https://github.com/Siumauricio/rippleui"}
                 target="_blank"
                 className="cursor-pointer "

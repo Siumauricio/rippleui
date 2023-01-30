@@ -24,7 +24,7 @@ export const Navbar = () => {
     <nav
       className={clsx(
         scrollY > 35 && "border-b border-gray-500",
-        "navbar-sticky navbar-glass navbar  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
+        "navbar navbar-sticky navbar-glass  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl">
@@ -33,7 +33,11 @@ export const Navbar = () => {
             <div className="navbar-item flex lg:hidden">
               <Sidebar />
             </div>
-            <Link href={"/"} className=" flex-row items-center gap-3 py-2">
+            <Link
+              aria-label="Ripple UI Logo"
+              href={"/"}
+              className=" flex-row items-center gap-3 py-2"
+            >
               <label className=" hidden cursor-pointer text-3xl  font-semibold text-whiteInverted lg:flex">
                 Ripple UI
               </label>
@@ -80,6 +84,7 @@ export const Navbar = () => {
         </div>
         <div className="navbar-end gap-6 md:gap-3">
           <Link
+            aria-label="Discord"
             href={"https://discord.gg/b9ZqWsmqsj"}
             className="hidden cursor-pointer lg:flex"
             target={"_blank"}
@@ -88,6 +93,7 @@ export const Navbar = () => {
           </Link>
 
           <Link
+            aria-label="Twitter"
             href={"https://twitter.com/Siumauricio"}
             target={"_blank"}
             className="hidden cursor-pointer lg:flex"
@@ -95,6 +101,7 @@ export const Navbar = () => {
             <TwitterIcon />
           </Link>
           <Link
+            aria-label="Github"
             href={"https://github.com/Siumauricio/rippleui"}
             target="_blank"
             className="hidden cursor-pointer lg:flex"

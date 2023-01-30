@@ -29,7 +29,7 @@ export const NavbarDocs = () => {
           <div className="navbar-brand w-full justify-between gap-0 xl:w-auto xl:justify-start">
             <div className="navbar-item flex gap-2 lg:hidden">
               <Sidebar />
-              <Link href={"/"}>
+              <Link aria-label="Ripple UI Logo" href={"/"}>
                 <label className=" hidden cursor-pointer text-3xl  font-semibold text-whiteInverted lg:flex">
                   Ripple UI
                 </label>
@@ -82,6 +82,7 @@ export const NavbarDocs = () => {
           </div>
           <div className="flex h-full items-center justify-center gap-4">
             <Link
+              aria-label="RippleUI Discord"
               href={"https://discord.gg/b9ZqWsmqsj"}
               className="hidden cursor-pointer lg:flex"
               target={"_blank"}
@@ -90,6 +91,7 @@ export const NavbarDocs = () => {
             </Link>
 
             <Link
+              aria-label="Creator of RippleUI"
               href={"https://twitter.com/Siumauricio"}
               target={"_blank"}
               className="hidden cursor-pointer lg:flex"
@@ -97,6 +99,7 @@ export const NavbarDocs = () => {
               <TwitterIcon />
             </Link>
             <Link
+              aria-label="RippleUI Github"
               href={"https://github.com/Siumauricio/rippleui"}
               target="_blank"
               className="hidden cursor-pointer lg:flex"
