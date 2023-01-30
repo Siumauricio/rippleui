@@ -14,12 +14,12 @@ export const Comparison = () => {
         RippleUI comes with a set of pre-defined classes that you can use to
         build your UI.
       </p>
-      <div className="flex  flex-col justify-center gap-10  xl:flex-row xl:gap-20">
-        <div className="flex flex-col items-center ">
+      <div className="flex  flex-col justify-center gap-10  max-xl:items-center xl:flex-row xl:gap-20">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
             hideIcon
             disableTabs
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full  hide-scrollbar"
             language="html"
             disabledFormat
           >
@@ -43,14 +43,13 @@ export const Comparison = () => {
         </div>
         <div className="mx-auto w-full max-w-[40rem] border border-border xl:mx-0 xl:w-0"></div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
-            disableTabs
-            disabledFormat
             hideIcon
-            iconClass="sm:max-w-xl top-10"
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            disableTabs
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full hide-scrollbar"
             language="html"
+            disabledFormat
           >
             {`<button class="btn btn-secondary">                    
     Click me 
@@ -60,14 +59,14 @@ export const Comparison = () => {
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
-      <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
-        <div className="flex flex-col items-center">
+      <div className="flex  flex-col justify-center gap-10 max-xl:items-center xl:flex-row xl:gap-20">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
-            disableTabs
-            disabledFormat
             hideIcon
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            disableTabs
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full hide-scrollbar"
             language="html"
+            disabledFormat
           >
             {`<input 
   class="shadow appearance-none border border-red-500 
@@ -85,13 +84,13 @@ export const Comparison = () => {
         </div>
         <div className="mx-auto w-full max-w-[40rem] border border-border xl:mx-0 xl:w-0"></div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
-           disableTabs
-            disabledFormat
             hideIcon
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            disableTabs
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full hide-scrollbar"
             language="html"
+            disabledFormat
           >
             {`
             <input class="input input-primary">                    
@@ -103,14 +102,14 @@ export const Comparison = () => {
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
-      <div className="flex  flex-col justify-center gap-10 xl:flex-row xl:gap-20">
-        <div className="flex flex-col items-center">
+      <div className="flex  flex-col justify-center gap-10 max-xl:items-center xl:flex-row xl:gap-20">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
             hideIcon
-            disabledFormat
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto hide-scrollbar"
-            language="html"
             disableTabs
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full hide-scrollbar"
+            language="html"
+            disabledFormat
           >
             {`<div 
     class="relative inline-block w-10 mr-2 
@@ -144,13 +143,13 @@ export const Comparison = () => {
         </div>
         <div className="mx-auto w-full max-w-[40rem] border border-border xl:mx-0 xl:w-0"></div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex w-full flex-col items-center sm:max-w-lg">
           <CodeBlock
-           disableTabs
-            disabledFormat
             hideIcon
-            blockClass="sm:max-w-lg h-60 overflow-hidden w-full sm:w-auto"
+            disableTabs
+            blockClass="sm:max-w-lg h-60 overflow-hidden w-full  hide-scrollbar"
             language="html"
+            disabledFormat
           >
             {`
             <input class="switch" type="checkbox">                 

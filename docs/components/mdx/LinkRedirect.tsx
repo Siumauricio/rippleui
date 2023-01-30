@@ -63,6 +63,7 @@ const LinkRedirect = ({
       </div>
       <a
         className="cursor-pointer text-primary hover:text-blue-800"
+        rel="noreferrer nofollow"
         href={
           "https://github.com/Siumauricio/rippleui/tree/main/docs/content" +
           urlContent +

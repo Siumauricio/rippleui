@@ -11,7 +11,7 @@ export const Hero = () => {
           <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pb-24 sm:pt-20  lg:pt-52">
             <div className="flex flex-col gap-4">
               <h1>
-                <span className="text-primary text-[40px] font-bold leading-none  sm:text-5xl lg:text-6xl">
+                <span className="text-[40px] font-bold leading-none text-primary  sm:text-5xl lg:text-6xl">
                   Ripple UI
                 </span>{" "}
                 <span className="text-[40px] font-bold leading-none sm:text-5xl lg:text-6xl">
@@ -19,7 +19,7 @@ export const Hero = () => {
                 </span>
               </h1>
 
-              <p className="text-content2 pr-10  text-base">
+              <p className="pr-10 text-base  text-content2">
                 Ripple UI is a collection of components and utilities that are
                 used to build modern interfaces. It is built on top of Tailwind
                 CSS.
@@ -28,7 +28,7 @@ export const Hero = () => {
             <div className="flex flex-row flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-4">
               <Link
                 href={"/docs/get-started/installation"}
-                className="btn-rounded btn-primary btn-md btn btn-block whitespace-nowrap sm:w-48"
+                className="btn-primary btn-md btn-block btn-rounded btn whitespace-nowrap sm:w-48"
               >
                 Get Started
               </Link>
@@ -46,13 +46,13 @@ export const Hero = () => {
             <div className="btn-group ">
               <button className="btn ">Primary</button>
               <button className="btn ">Primary</button>
-              <button className="btn btn-active">Primary</button>
+              <button className="btn-active btn">Primary</button>
               <button className="btn ">Primary</button>
             </div>
             <div>
               <div className="relative hidden lg:flex">
                 <div className="pointer-events-none absolute top-3  left-0 flex items-center pl-2 ">
-                  <SearchIcon />
+                  <SearchIcon className="h-4 w-5 fill-content3" />
                 </div>
               </div>
               <input
@@ -84,36 +84,36 @@ export const Hero = () => {
             </div>
             <div className="flex justify-between">
               <div className="dropdown-container">
-                <div className="dropdown-open dropdown">
+                <div className="dropdown dropdown-open">
                   <label className="btn flex" tabIndex={0}>
                     <span>Dropdown</span>
                   </label>
-                  <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
+                  <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
                     <div className="dropdown-item">
-                      <p className="text-content1 text-sm leading-5">
+                      <p className="text-sm leading-5 text-content1">
                         Signed in as
                       </p>
-                      <p className="text-content2 truncate text-sm leading-5">
+                      <p className="truncate text-sm leading-5 text-content2">
                         <strong>tom@example</strong>
                       </p>
                     </div>
                     <a
                       tabIndex={-1}
-                      className="dropdown-item dropdown-active text-content2 flex w-full justify-between text-left text-sm leading-5"
+                      className="dropdown-item dropdown-active flex w-full justify-between text-left text-sm leading-5 text-content2"
                       role="menuitem"
                     >
                       <span>Account settings</span>
                     </a>
                     <a
                       tabIndex={-1}
-                      className="dropdown-item text-content2 flex w-full justify-between text-left text-sm leading-5"
+                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
                       role="menuitem"
                     >
                       <span>Subscriptions</span>
                     </a>
 
                     <a
-                      className="dropdown-item text-content2 flex w-full justify-between text-left text-sm leading-5"
+                      className="dropdown-item flex w-full justify-between text-left text-sm leading-5 text-content2"
                       role="menuitem"
                     >
                       <span>License</span>

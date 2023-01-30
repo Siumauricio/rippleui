@@ -106,8 +106,6 @@ export const CodeBlock = ({
     }
   }, [languageSelected]);
 
-  // console.log(codeParsed)
-
   return (
     <>
       {!disableTabs ? (
@@ -121,7 +119,7 @@ export const CodeBlock = ({
               onClick={clickHandler}
             >
               <span
-                className="tooltip tooltip-bottom tooltip-primary "
+                className="tooltip-left tooltip-primary tooltip lg:tooltip-top"
                 data-tooltip={tooltipText}
               >
                 <CopyIcon />
@@ -167,7 +165,7 @@ export const CodeBlock = ({
               onClick={clickHandler}
             >
               <span
-                className="tooltip tooltip-bottom tooltip-primary "
+                className="tooltip-left tooltip-primary tooltip lg:tooltip-left"
                 data-tooltip={tooltipText}
               >
                 <CopyIcon />

@@ -63,6 +63,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link
+                aria-label="RippleUI Discord"
                 href={"https://discord.gg/b9ZqWsmqsj"}
                 target="_blank"
                 className="hover:underline"
@@ -72,6 +73,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link
+                aria-label="Creator of RippleUI"
                 href={"https://twitter.com/Siumauricio"}
                 target="_blank"
                 className="hover:underline"

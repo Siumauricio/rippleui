@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import NextLink from "next/link";
-import { items } from "../../utils/items";
 import clsx from "clsx";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { items } from "../../utils/items";
+import { BookIcon } from "../icons/BookIcon";
+import { ChangelogIcon } from "../icons/ChangelogIcon";
+import { ComponentsIcon } from "../icons/ComponentsIcon";
+import { LogoIcon } from "../icons/LogoIcon";
 
 export const SideNav = () => {
   const router = useRouter();
@@ -11,43 +15,73 @@ export const SideNav = () => {
     setRouterDefined(router.asPath.split("#")[0]);
   }, [router.asPath]);
   return (
-    <nav className="sidenav sticky top-0 h-screen flex-[0_0_auto] overflow-y-auto px-12 pt-24 pb-8 hide-scrollbar">
-      <h4 className="ml-[-1.2rem] pb-[10px] text-xl font-semibold">
-        Documentation
-      </h4>
-      {items.map((item) => (
-        <div key={item.title} className="pb-4">
-          <span className="ml-[-1.2rem] text-base font-semibold text-content1">
-            {item.title}
-          </span>
-          <ul className="column flex flex-col gap-1.5">
-            {item.links.map((link) => {
-              const active = routerDefined === link.href;
-              return (
-                <li
-                  key={link.href}
-                  className="whitespace-nowrap text-content2 first-of-type:pt-2 hover:text-content1"
-                >
-                  <NextLink
-                    href={link.href}
-                    // {...link}
-                    className={clsx(
-                      active && "text-content1",
-                      link.disabled && "pointer-events-none text-content3"
-                    )}
+    <aside className="sidebar fixed top-0 bottom-0 left-0 z-[60] hidden max-w-full overflow-auto bg-backgroundSecondary p-[0px_32px_96px] pr-8 pb-32  lg:flex 2xl:w-[calc((100%-(var(--vp-layout-max-width)-64px))/2+var(--vp-sidebar-width)-32px)] 2xl:pl-[max(32px,calc((100%-(1465px-64px))/2))]">
+      <nav
+        className="nav w-44"
+        id="SidebarNav"
+        aria-labelledby="sidebar-aria-label"
+      >
+        <Link
+          href={"/"}
+          className="flex gap-2 border-b border-border pt-4 pb-6 pl-1"
+        >
+          <LogoIcon />
+          <span className="font-semibold">RippleUI</span>
+        </Link>
+
+        {items.map((item) => (
+          <div
+            key={item.title}
+            className="border-b border-border py-4 last-of-type:py-3"
+          >
+            <span className=" flex text-sm font-bold text-content1">
+              {item.title === "Get started" ? (
+                <div className="mr-2 rounded-md bg-purple-500">
+                  <BookIcon />
+                </div>
+              ) : item.title === "Components" ? (
+                <div className=" mr-2 flex items-center rounded-md bg-blue-500">
+                  <ComponentsIcon />
+                </div>
+              ) : (
+                <div className=" mr-2 flex items-center rounded-md bg-green-500">
+                  <ChangelogIcon />
+                </div>
+              )}
+              {item.title}
+            </span>
+            <ul className="column flex flex-col gap-1.5">
+              {item.links.map((link) => {
+                const active = routerDefined === link.href;
+                return (
+                  <li
+                    key={link.href}
+                    className="ml-9 whitespace-nowrap text-sm font-medium text-content2 first-of-type:pt-2 hover:text-content1"
                   >
-                    {link.children}
-                    {link.disabled && <span className="badge ml-1">Soon</span>}
-                    {link.isNew && (
-                      <span className="badge badge-flat-primary ml-1">New</span>
-                    )}
-                  </NextLink>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ))}
-    </nav>
+                    <Link
+                      href={link.href}
+                      className={clsx(
+                        active && "text-primary",
+                        link.disabled && "pointer-events-none text-content3"
+                      )}
+                    >
+                      {link.children}
+                      {link.disabled && (
+                        <span className="badge ml-1">Soon</span>
+                      )}
+                      {link.isNew && (
+                        <span className="badge badge-flat-primary ml-1">
+                          New
+                        </span>
+                      )}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </nav>
+    </aside>
   );
 };

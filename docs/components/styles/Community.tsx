@@ -9,6 +9,7 @@ export const Community = () => {
       </h2>
       <div className="mx-auto flex  w-full flex-row flex-wrap justify-center  gap-4">
         <Link
+          aria-label="RippleUI Discord"
           href={"https://discord.gg/b9ZqWsmqsj"}
           className="card cursor-pointer p-8 shadow-md transition-colors hover:bg-gray-300"
           target={"_blank"}
@@ -37,6 +38,7 @@ export const Community = () => {
           </div>
         </Link>
         <Link
+          aria-label="RippleUI Github"
           href={"https://github.com/Siumauricio/rippleui"}
           target="_blank"
           className="card cursor-pointer p-8  shadow-md transition-colors hover:bg-gray-300"
@@ -65,6 +67,7 @@ export const Community = () => {
           </div>
         </Link>
         <Link
+          aria-label="Creator of RippleUI"
           href={"https://twitter.com/Siumauricio"}
           className="card cursor-pointer p-8 shadow-md  transition-colors hover:bg-gray-300"
           target={"_blank"}

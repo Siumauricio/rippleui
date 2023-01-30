@@ -27,7 +27,7 @@ module.exports = {
 };
 ```
 
-#### How to customize default themes?
+### How to customize default themes?
 
 To customize the default themes which is `light` and `dark` you can use the `theme` array property:
 
@@ -57,7 +57,7 @@ module.exports = {
 };
 ```
 
-#### How to add a new theme?
+### How to add a new theme?
 
 To add a new theme you can use the `theme` array property:
 
@@ -79,7 +79,7 @@ module.exports = {
 };
 ```
 
-#### How to remove a theme?
+### How to remove a theme?
 
 To remove a theme you can use the `removeThemes` array property:
 
@@ -92,7 +92,7 @@ module.exports = {
 };
 ```
 
-#### How to create a new theme but with another variables?
+### How to create a new theme but with another variables?
 
 To create a new theme or existing ones but with another variables you can use the `theme` array property:
 
@@ -120,7 +120,7 @@ module.exports = {
 };
 ```
 
-#### How to disable the background color and color that comes by default?
+### How to disable the background color and color that comes by default?
 
 To disable the background color and color that comes by default you can use the `defaultStyle` boolean property:
 
@@ -133,7 +133,7 @@ module.exports = {
 };
 ```
 
-#### How to set a preference theme?
+### How to set a preference theme?
 
 To set a theme with preference you can use the `prefersColorScheme` boolean property:
 
@@ -177,7 +177,10 @@ Now your classes will be prefixed like this example:
 1. .btn transform to  .prefix-btn
 2. .input transform to .prefix-input
 
+
+## API
 <Attributes >
+
 <Attributes.Title>Config Props</Attributes.Title>
 
 | className    | type        | Description                                                                     |
@@ -189,7 +192,7 @@ Now your classes will be prefixed like this example:
 
 <Attributes.Title>Theme</Attributes.Title>
 
-```ts
+```ts disableTabs={true}
 interface Theme {
   themeName: "light" | "dark" | string;
   colorScheme: "dark" | "light";

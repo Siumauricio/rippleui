@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { ArrowLeft } from "../icons/ChevronLeft";
 import { ArrowRight } from "../icons/ArrowRight";
 import { DarkModeToggle } from "./DarkModeToggle";
 
@@ -102,7 +101,7 @@ export const DarkMode = () => {
             </div>
             <div className="flex flex-col self-center">
               <span
-                className="tooltip tooltip-top tooltip-secondary"
+                className="tooltip-top tooltip-secondary tooltip"
                 data-tooltip="Toggle Dark Mode"
               >
                 <DarkModeToggle />
@@ -174,7 +173,7 @@ export const DarkMode = () => {
       <div className="flex justify-center pt-16">
         <Link
           href={"/docs/get-started/installation"}
-          className="btn-secondary btn btn-ghost w-fit text-content2"
+          className="btn-secondary btn-ghost btn w-fit text-content2"
         >
           Go to Documentation
           <ArrowRight />

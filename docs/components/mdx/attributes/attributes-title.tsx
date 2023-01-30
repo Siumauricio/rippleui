@@ -12,9 +12,9 @@ const AttributesTitle: React.FC<React.PropsWithChildren<AttributesTitleProps>> =
       children?.toString().toLowerCase() as string
     );
     return (
-      <div className="mb-3 ">
-        <h4 className="title text-2xl font-semibold">
-          <code className="cursor-pointer text-2xl font-semibold text-primary transition-all hover:text-blue-500">
+      <div className="">
+        <h3 className="title text-2xl font-semibold">
+          <code className="cursor-pointer text-2xl font-semibold text-primary transition-all hover:text-primary/70">
             <Link href={"#" + titleWithSlug}>`{children}`</Link>
           </code>
           <span
@@ -23,7 +23,7 @@ const AttributesTitle: React.FC<React.PropsWithChildren<AttributesTitleProps>> =
           >
             &nbsp;
           </span>
-        </h4>
+        </h3>
       </div>
     );
   });
