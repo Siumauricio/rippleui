@@ -3,6 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { items } from "../../utils/items";
+import { BookIcon } from "../icons/BookIcon";
+import { ChangelogIcon } from "../icons/ChangelogIcon";
+import { ComponentsIcon } from "../icons/ComponentsIcon";
 import { LogoIcon } from "../icons/LogoIcon";
 
 export const SideNav = () => {
@@ -31,7 +34,20 @@ export const SideNav = () => {
             key={item.title}
             className="border-b border-border py-4 last-of-type:py-3"
           >
-            <span className=" text-sm font-bold text-content1">
+            <span className=" flex text-sm font-bold text-content1">
+              {item.title === "Get started" ? (
+                <div className="mr-2 rounded-md bg-purple-500">
+                  <BookIcon />
+                </div>
+              ) : item.title === "Components" ? (
+                <div className=" mr-2 flex items-center rounded-md bg-blue-500">
+                  <ComponentsIcon />
+                </div>
+              ) : (
+                <div className=" mr-2 flex items-center rounded-md bg-green-500">
+                  <ChangelogIcon />
+                </div>
+              )}
               {item.title}
             </span>
             <ul className="column flex flex-col gap-1.5">
@@ -40,12 +56,12 @@ export const SideNav = () => {
                 return (
                   <li
                     key={link.href}
-                    className="whitespace-nowrap text-sm font-medium text-content2 first-of-type:pt-2 hover:text-content1"
+                    className="ml-9 whitespace-nowrap text-sm font-medium text-content2 first-of-type:pt-2 hover:text-content1"
                   >
                     <Link
                       href={link.href}
                       className={clsx(
-                        active && "text-content1",
+                        active && "text-primary",
                         link.disabled && "pointer-events-none text-content3"
                       )}
                     >

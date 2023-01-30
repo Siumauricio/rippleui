@@ -3,6 +3,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { items } from "../../utils/items";
+import { BookIcon } from "../icons/BookIcon";
+
+import { ChangelogIcon } from "../icons/ChangelogIcon";
+import { ComponentsIcon } from "../icons/ComponentsIcon";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { MenuIcon } from "../icons/MenuIcon";
@@ -23,8 +27,8 @@ export const Sidebar = () => {
       </label>
       <label className="overlay  h-screen" htmlFor="drawer-toggle"></label>
 
-      <div className="drawer-left drawer h-screen">
-        <div className="h-screen ">
+      <div className="drawer-left drawer">
+        <div className="pb-10">
           <label
             className="btn-circle btn-ghost btn absolute right-1  top-1"
             htmlFor="drawer-toggle"
@@ -38,19 +42,34 @@ export const Sidebar = () => {
           <div className="flex flex-col gap-2 divide-y divide-border  px-6 pb-6">
             {items.map((item) => (
               <div key={item.title} className=" pt-4">
-                <span className="font-semibold">{item.title}</span>
+                <span className="flex font-semibold text-content1">
+                  {item.title === "Get started" ? (
+                    <div className="mr-2 rounded-md bg-purple-500">
+                      <BookIcon />
+                    </div>
+                  ) : item.title === "Components" ? (
+                    <div className=" mr-2 flex items-center rounded-md bg-blue-500">
+                      <ComponentsIcon />
+                    </div>
+                  ) : (
+                    <div className=" mr-2 flex items-center rounded-md bg-green-500">
+                      <ChangelogIcon />
+                    </div>
+                  )}
+                  {item.title}
+                </span>
                 {item.links.map((link, index) => {
                   const active = routerDefined === link.href;
                   return (
                     <ul
                       key={index}
-                      className="space-x-5 space-y-1 text-content2 "
+                      className="space-x-9 space-y-1 text-content2 "
                     >
                       <li></li>
                       <li>
                         <label
                           className={clsx(
-                            active && "text-content1",
+                            active && "text-primary",
                             link.disabled &&
                               "pointer-events-none text-content3",
                             "cursor-pointer hover:text-content1"
