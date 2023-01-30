@@ -1,0 +1,100 @@
+---
+title: Range
+description:   Range is a component that allows you to select a range of values.
+---
+
+# Range
+
+Ripple UI comes with a range component that allows you to select a range of values.
+
+## Default
+
+Simple example of a range.
+
+<input type="range" className="range" />
+
+```html
+<input type="range" className="range" />
+```
+
+## Colors
+
+You can use different colors for the range.
+
+<div className="flex flex-col gap-4 w-fit">
+<input type="range" className="range range-primary" />
+<input type="range" className="range range-secondary" />
+<input type="range" className="range range-success" />
+<input type="range" className="range range-warning" />
+<input type="range" className="range range-error" />
+</div>
+
+```html
+<input type="range" className="range range-primary" />
+<input type="range" className="range range-secondary" />
+<input type="range" className="range range-success" />
+<input type="range" className="range range-warning" />
+<input type="range" className="range range-error" />
+```
+
+## Flated 
+
+You can use another variant of the range.
+
+<div className="flex flex-col items-center gap-4  w-fit">
+    <input type="range" className="range range-flat-primary" />
+    <input type="range" className="range range-flat-secondary" />
+    <input type="range" className="range range-flat-success" />
+    <input type="range" className="range range-flat-warning" />
+    <input type="range" className="range range-flat-error" />
+</div>
+
+```html
+<input type="range" className="range range-flat-primary" />
+<input type="range" className="range range-flat-secondary" />
+<input type="range" className="range range-flat-success" />
+<input type="range" className="range range-flat-warning" />
+<input type="range" className="range range-flat-error" />
+```
+
+## Vertical orientation
+
+You can use the range in a vertical orientation.
+
+Make sure to set or `height` or `margin` to the range.
+
+<input type="range" className="range range-vertical my-14" />
+
+
+```html
+<input type="range" className="range range-vertical mt-14" />
+```
+
+
+
+## API
+<Attributes>
+<Attributes.Title>Range Classes</Attributes.Title>
+
+| class         | Description          |
+| ------------- | -------------------- |
+| range         | The default range class  |
+| range-primary |  Will apply the primary color to the range |
+| range-secondary |  Will apply the secondary color to the range |
+| range-success |  Will apply the success color to the range |
+| range-warning |  Will apply the warning color to the range |
+| range-error |  Will apply the error color to the range |
+| range-flat-primary |  Will apply the primary color to the range and the track right will have a blue color |
+| range-flat-secondary |  Will apply the secondary color to the range and the track right will have a blue color |
+| range-flat-success |  Will apply the success color to the range and the track right will have a blue color |
+| range-flat-warning |  Will apply the warning color to the range and the track right will have a blue color |
+| range-flat-error |  Will apply the error color to the range and the track right will have a blue color |
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Radio"
+  hrefLeft="/docs/components/radio"
+  contentRight="Select"
+  hrefRight="/docs/components/select"
+/>

@@ -1,0 +1,121 @@
+---
+title: Dots
+description: Dots component allow to show a status of a process.
+---
+
+# Dots
+
+Ripple UI comes with dots component allow to show a status of a process.
+
+## Default
+
+Simple example of a dots.
+
+<span className="dot flex"></span>
+
+
+```html
+<span className="dot flex"></span>
+```
+
+## Colors
+
+You can change the color of the dots.
+
+<div className="flex flex-row gap-4 ">
+    <span className="dot flex"></span>
+    <span className="dot dot-primary flex"></span>
+    <span className="dot dot-secondary flex"></span>
+    <span className="dot dot-success flex"></span>
+    <span className="dot dot-warning flex"></span>
+    <span className="dot dot-error flex"></span>
+</div>
+
+```html
+<span className="dot flex"></span>
+<span className="dot dot-primary flex"></span>
+<span className="dot dot-secondary flex"></span>
+<span className="dot dot-success flex"></span>
+<span className="dot dot-warning flex"></span>
+<span className="dot dot-error flex"></span>
+```
+
+## With text
+
+You can add text to the dots.
+
+<span className="flex items-center gap-2">
+    <span className="dot"></span>
+    <span> Cancelled</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-primary"></span>
+    <span> Ready</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-error"></span>
+    <span> Cancelled</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-secondary"></span>
+    <span> Waiting</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-success"></span>
+    <span> Success</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-warning"></span>
+    <span> Warning</span>
+</span>
+
+```html
+<span className="flex items-center gap-2">
+    <span className="dot"></span>
+    <span> Cancelled</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-primary"></span>
+    <span> Ready</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-error"></span>
+    <span> Cancelled</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-secondary"></span>
+    <span> Waiting</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-success"></span>
+    <span> Success</span>
+</span>
+<span className="flex items-center gap-2">
+    <span className="dot dot-warning"></span>
+    <span> Warning</span>
+</span>
+```
+
+
+## API
+<Attributes>
+<Attributes.Title>Dots Classes</Attributes.Title>
+
+| class        | Description          |
+| ------------- | -------------------- |
+| dot | Default dot clase base |
+| dot-primary | Primary dot color |
+| dot-secondary | Secondary dot color |
+| dot-success | Success dot color |
+| dot-warning | Warning dot color |
+| dot-error | Error dot color |
+
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Drawer"
+  hrefLeft="/docs/components/drawer"
+  contentRight="Divider"
+  hrefRight="/docs/components/divider"
+/>

@@ -1,0 +1,112 @@
+---
+title: Progress
+description:  Progress is a component that allows you to show the progress of a task.
+---
+
+# Progress
+
+Ripple UI comes with a progress component that allows you to show the progress of a task.
+
+## Default
+
+Simple example of a progress.
+
+ <progress className="progress" value="50" max="100"></progress>
+
+```html
+<progress className="progress" value="50" max="100"></progress>
+```
+
+## Colors
+
+You can use different colors to the progress.
+
+<div className="flex flex-col gap-4 w-fit">
+    <progress className="progress progress-primary" value="50" max="100"></progress>
+    <progress className="progress progress-secondary" value="50" max="100"></progress>
+    <progress className="progress progress-success" value="50" max="100"></progress>
+    <progress className="progress progress-warning" value="50" max="100"></progress>
+    <progress className="progress progress-error" value="50" max="100"></progress>
+</div>
+    
+```html
+<progress className="progress progress-primary" value="50" max="100"></progress>
+<progress className="progress progress-secondary" value="50" max="100"></progress>
+<progress className="progress progress-success" value="50" max="100"></progress>
+<progress className="progress progress-warning" value="50" max="100"></progress>
+<progress className="progress progress-error" value="50" max="100"></progress>
+```
+
+## Flat
+
+You can use different colors to the progress.
+
+<div className="flex flex-col gap-4 w-fit">
+    <progress className="progress progress-flat-primary" value="50" max="100"></progress>
+    <progress className="progress progress-flat-secondary" value="50" max="100"></progress>
+    <progress className="progress progress-flat-success" value="50" max="100"></progress>
+    <progress className="progress progress-flat-warning" value="50" max="100"></progress>
+    <progress className="progress progress-flat-error" value="50" max="100"></progress>
+</div>
+
+```html
+<progress className="progress progress-flat-primary" value="50" max="100"></progress>
+<progress className="progress progress-flat-secondary" value="50" max="100"></progress>
+<progress className="progress progress-flat-success" value="50" max="100"></progress>
+<progress className="progress progress-flat-warning" value="50" max="100"></progress>
+<progress className="progress progress-flat-error" value="50" max="100"></progress>
+```
+
+## Indeterminate
+
+You can have an indeterminate progress.
+
+<div className="flex flex-col gap-4 w-fit">
+    <progress className="progress progress-indeterminate"></progress>
+    <progress className="progress progress-flat-primary progress-indeterminate"></progress>
+    <progress className="progress progress-flat-error progress-indeterminate"></progress>
+</div>
+
+```html
+<progress className="progress progress-indeterminate"></progress>
+<progress className="progress progress-flat-primary progress-indeterminate"></progress>
+<progress className="progress progress-flat-error progress-indeterminate"></progress>
+```
+
+
+
+
+
+
+
+
+
+
+## API
+<Attributes>
+<Attributes.Title>Progress Classes</Attributes.Title>
+
+| class        | Description          |
+| ------------- | -------------------- |
+| progress | The progress class |
+| progress-primary | The progress class with primary color |
+| progress-secondary | The progress class with secondary color |
+| progress-success | The progress class with success color |
+| progress-warning | The progress class with warning color |
+| progress-error | The progress class with error color |
+| progress-flat-primary | The progress class with primary color and background with blue color |
+| progress-flat-secondary | The progress class with secondary color and background with purple color |
+| progress-flat-success | The progress class with success color and background with green color |
+| progress-flat-warning | The progress class with warning color and background with yellow color |
+| progress-flat-error | The progress class with error color and background with red color |
+| progress-indeterminate | The bar of progress will be infinite |
+
+
+</Attributes>
+
+<LinkRedirect
+  contentLeft="Pagination"
+  hrefLeft="/docs/components/pagination"
+  contentRight="Navbar"
+  hrefRight="/docs/components/navbar"
+/>
