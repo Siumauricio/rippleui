@@ -53,6 +53,7 @@ export const items: Items[] = [
       { href: "/docs/components/checkbox", children: "Checkbox" },
 
       { href: "/docs/components/drawer", children: "Drawer" },
+      { href: "/docs/components/dots", children: "Dots", isNew: true },
       {
         href: "/docs/components/divider",
         children: "Divider",
@@ -74,11 +75,11 @@ export const items: Items[] = [
       {
         href: "/docs/components/progress",
         children: "Progress",
-        disabled: true,
+        isNew: true,
       },
       { href: "/docs/components/navbar", children: "Navbar" },
       { href: "/docs/components/radio", children: "Radio" },
-      { href: "/docs/components/range", children: "Range", disabled: true },
+      { href: "/docs/components/range", children: "Range", isNew: true },
       { href: "/docs/components/select", children: "Select" },
       {
         href: "/docs/components/skeleton",
@@ -96,7 +97,7 @@ export const items: Items[] = [
       { href: "/docs/components/table", children: "Table" },
       { href: "/docs/components/textarea", children: "Textarea" },
       { href: "/docs/components/tooltip", children: "Tooltip" },
-      { href: "/docs/components/kbd", children: "Kbd", disabled: true },
+      { href: "/docs/components/kbd", children: "Kbd", isNew: true },
     ],
   },
   {
