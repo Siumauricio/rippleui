@@ -23,15 +23,13 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
   const calculateHeadingLevel = (level: number) => {
     switch (level) {
       case 1:
-        return "text-5xl font-semibold";
+        return "text-4xl lg:leading-4 font-extrabold";
       case 2:
-        return "text-4xl font-semibold";
+        return "text-2xl leading-5 font-semibold";
       case 3:
-        return "text-3xl font-semibold";
-      case 4:
-        return "text-2xl font-semibold";
+        return "font-semibold text-xl leading-6";
       default:
-        return "text-xl font-semibold";
+        return "font-semibold text-base leading-6";
     }
   };
   const getCSS = (level: number): string => {
@@ -60,7 +58,7 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
     <>
       <CustomTag
         className={clsx(
-          "flex cursor-pointer items-center gap-2 hover:text-gray-1100",
+          "flex cursor-pointer items-center gap-2 text-content1 hover:text-gray-1100 ",
           getCSS(level),
           calculateHeadingLevel(level)
         )}

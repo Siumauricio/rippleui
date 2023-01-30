@@ -13,7 +13,9 @@ const AttributesTable: React.FC<Props> = ({ children }) => {
             {child.type == "table" ? (
               <div className="overflow-x-auto pt-10">{child}</div>
             ) : (
-              <div className="my-5 overflow-auto">{child}</div>
+              <div className="mb-5 overflow-auto first-of-type:mb-5 first-of-type:mt-2">
+                {child}
+              </div>
             )}
           </>
         );
