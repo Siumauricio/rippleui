@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/Siumauricio/rippleui/compare/v1.7.0...v1.8.0) (2023-01-30)
+
+
+### Features
+
+* **dot:** dot component ([a11a242](https://github.com/Siumauricio/rippleui/commit/a11a242e60b5a61173ba1f29631d12dd1828a7e9))
+* **kbd:** kbd component ([5586892](https://github.com/Siumauricio/rippleui/commit/5586892f18d0a6fbe910bfdce210200b62a80f28))
+* **progress:** progress bar ([0b1fc86](https://github.com/Siumauricio/rippleui/commit/0b1fc861544e1b5d5b17f520fbd3ec14d0848562))
+* **range:** range component ([4d5223d](https://github.com/Siumauricio/rippleui/commit/4d5223d1af11ea8a093724eacc7b763f418b15a2))
+
 ## [1.7.0](https://github.com/Siumauricio/rippleui/compare/v1.6.2...v1.7.0) (2023-01-25)
 
 
