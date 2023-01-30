@@ -24,6 +24,7 @@
 @import "./informational/stepper.css";
 @import "./informational/kbd.css";
 @import "./informational/progress.css";
+@import "./informational/dot.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";

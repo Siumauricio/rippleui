@@ -1,0 +1,43 @@
+.dot {
+  @apply h-2.5 min-h-[10px] w-2.5  min-w-[10px] select-none  rounded-[50%] bg-gray-700 leading-3;
+}
+
+.dot-primary {
+  @apply bg-primary;
+}
+
+.dot-secondary {
+  @apply bg-secondary;
+}
+
+.dot-success {
+  @apply bg-success;
+}
+
+.dot-error {
+  @apply bg-error;
+}
+
+.dot-warning {
+  @apply bg-warning;
+}
+
+.dot-xs {
+  @apply h-1.5 min-h-[7px] w-1.5 min-w-[7px] leading-[8px];
+}
+
+.dot-sm {
+  @apply h-2 min-h-[8px] w-2 min-w-[8px] leading-[9px];
+}
+
+.dot-md {
+  @apply h-2.5 min-h-[10px] w-2.5 min-w-[10px] leading-[11px];
+}
+
+.dot-lg {
+  @apply h-3 min-h-[12px] w-3 min-w-[12px] leading-[13px];
+}
+
+.dot-xl {
+  @apply h-3.5 min-h-[14px] w-3.5 min-w-[14px] leading-[15px];
+}
