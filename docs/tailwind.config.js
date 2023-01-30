@@ -31,6 +31,5 @@ module.exports = {
     require("rippleui")({
       ...config,
     }),
-    require("@tailwindcss/typography"),
   ],
 };
