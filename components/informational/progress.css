@@ -8,11 +8,15 @@
 }
 
 .progress {
-  @apply relative appearance-none overflow-hidden rounded-full;
+  @apply relative h-4  appearance-none overflow-hidden rounded-full bg-gray-400;
 }
 
 .progress::-webkit-progress-bar {
   @apply rounded-full bg-gray-400;
+}
+
+.progress::-moz-progress-bar {
+  @apply rounded-full bg-primary;
 }
 
 .progress::-webkit-progress-value {
@@ -39,6 +43,7 @@
   @apply h-7;
 }
 
+.progress:indeterminate::after,
 .progress-indeterminate::after {
   animation: indeterminate-progress-bar 0.9s infinite;
   @apply absolute bottom-0  top-0 w-1/3 rounded-full bg-primary content-[""];
@@ -46,6 +51,8 @@
 
 .progress-primary::-webkit-progress-value,
 .progress-flat-primary::-webkit-progress-value,
+.progress-primary.progress:indeterminate::after,
+.progress-flat-primary.progress:indeterminate::after,
 .progress-primary.progress-indeterminate::after,
 .progress-flat-primary.progress-indeterminate::after {
   @apply bg-primary;
@@ -53,6 +60,8 @@
 
 .progress-secondary::-webkit-progress-value,
 .progress-flat-secondary::-webkit-progress-value,
+.progress-secondary.progress:indeterminate::after,
+.progress-flat-secondary.progress:indeterminate::after,
 .progress-secondary.progress-indeterminate::after,
 .progress-flat-secondary.progress-indeterminate::after {
   @apply bg-secondary;
@@ -60,12 +69,17 @@
 
 .progress-success::-webkit-progress-value,
 .progress-flat-success::-webkit-progress-value,
-.progress-success.progress-indeterminate::after {
+.progress-success.progress:indeterminate::after,
+.progress-flat-success.progress:indeterminate::after,
+.progress-success.progress-indeterminate::after,
+.progress-flat-success.progress-indeterminate::after {
   @apply bg-success;
 }
 
 .progress-error::-webkit-progress-value,
 .progress-flat-error::-webkit-progress-value,
+.progress-error.progress:indeterminate::after,
+.progress-flat-error.progress:indeterminate::after,
 .progress-error.progress-indeterminate::after,
 .progress-flat-error.progress-indeterminate::after {
   @apply bg-error;
@@ -73,27 +87,86 @@
 
 .progress-warning::-webkit-progress-value,
 .progress-flat-warning::-webkit-progress-value,
+.progress-warning.progress:indeterminate::after,
+.progress-flat-warning.progress:indeterminate::after,
 .progress-warning.progress-indeterminate::after,
 .progress-flat-warning.progress-indeterminate::after {
   @apply bg-warning;
 }
 
-.progress-flat-primary::-webkit-progress-bar {
+.progress-flat-primary::-webkit-progress-bar,
+.progress-flat-primary.progress-indeterminate {
   @apply bg-blue-400;
 }
 
-.progress-flat-secondary::-webkit-progress-bar {
+.progress-flat-secondary::-webkit-progress-bar,
+.progress-flat-secondary.progress-indeterminate {
   @apply bg-purple-400;
 }
 
-.progress-flat-success::-webkit-progress-bar {
+.progress-flat-success::-webkit-progress-bar,
+.progress-flat-success.progress-indeterminate {
   @apply bg-green-400;
 }
 
-.progress-flat-error::-webkit-progress-bar {
+.progress-flat-error::-webkit-progress-bar,
+.progress-flat-error.progress-indeterminate {
   @apply bg-red-400;
 }
 
-.progress-flat-warning::-webkit-progress-bar {
+.progress-flat-warning::-webkit-progress-bar,
+.progress-flat-warning.progress-indeterminate {
   @apply bg-yellow-400;
+}
+
+/* Firefox Target */
+@supports (-moz-appearance: none) {
+  .progress-flat-primary {
+    @apply bg-blue-400;
+  }
+
+  .progress-flat-secondary {
+    @apply bg-purple-400;
+  }
+
+  .progress-flat-success {
+    @apply bg-green-400;
+  }
+
+  .progress-flat-error {
+    @apply bg-red-400;
+  }
+
+  .progress-flat-warning {
+    @apply bg-yellow-400;
+  }
+
+  .progress-primary::-moz-progress-bar,
+  .progress-flat-primary::-moz-progress-bar {
+    @apply bg-primary;
+  }
+
+  .progress-secondary::-moz-progress-bar,
+  .progress-flat-secondary::-moz-progress-bar {
+    @apply bg-secondary;
+  }
+
+  .progress-success::-moz-progress-bar,
+  .progress-flat-success::-moz-progress-bar {
+    @apply bg-success;
+  }
+
+  .progress-error::-moz-progress-bar,
+  .progress-flat-error::-moz-progress-bar {
+    @apply bg-error;
+  }
+
+  .progress-warning::-moz-progress-bar,
+  .progress-flat-warning::-moz-progress-bar {
+    @apply bg-warning;
+  }
+
+  .progress:indeterminate::-moz-progress-bar {
+    @apply bg-transparent;
+  }
 }
