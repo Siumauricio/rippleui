@@ -9,13 +9,13 @@
   --switch-bg-hover: rgb(var(--gray-500));
   --checkline-color: rgb(var(--white));
   --circle-color: rgb(var(--gray-50));
-  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
   @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer appearance-none   rounded-xl   border border-[var(--switch-border)]  bg-[var(--switch-bg)] align-top outline-none focus:outline-2 focus-visible:outline   focus-visible:outline-offset-2  focus-visible:outline-primary;
 }
 
 .switch::after {
-  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-    opacity var(--d-o, 0.2s);
+  transition: transform var(--d-t, 0.15s) var(--d-t-e, ease),
+    opacity var(--d-o, 0.15s);
   @apply absolute top-0 left-0 block content-[""];
 }
 
@@ -27,7 +27,6 @@
 }
 
 .switch:disabled {
-  /* --circle-color: rgb(var(--gray-50)); */
   @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
 }
 
@@ -45,7 +44,6 @@
 
 /* CheckLine */
 .switch::after {
-  /* background: var(--ab, var(--border)); */
   transform: translateX(var(--x, 0));
   @apply left-[2px] top-[2px] h-[15px] w-[15px] rounded-full bg-[var(--circle-color)];
 }

@@ -67,7 +67,6 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
         {children}
 
         <a
-          aria-hidden="true"
           href={`#${id}`}
           className={
             "mark text-xl font-semibold  text-content2 opacity-0 transition-opacity ease-in-out"

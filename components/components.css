@@ -25,6 +25,7 @@
 @import "./informational/kbd.css";
 @import "./informational/progress.css";
 @import "./informational/dot.css";
+@import "./informational/form-control.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
