@@ -61,26 +61,32 @@ You can use different colors to the progress.
 
 You can have an indeterminate progress.
 
+
+
+
+<div class="alert mb-5 h-16">
+	<svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" >
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 26C22.9 26 22 25.1 22 24V16C22 14.9 22.9 14 24 14C25.1 14 26 14.9 26 16V24C26 25.1 25.1 26 24 26ZM26 34H22V30H26V34Z" class="fill-gray-1000" />
+	</svg>
+        <span class="text-content2">Since indeterminate progress doesn't work in the same way in all the browsers we suggest using indeterminate class inside a div</span>
+
+</div>
 <div className="flex flex-col gap-4 w-fit">
-    <progress className="progress progress-indeterminate"></progress>
-    <progress className="progress progress-flat-primary progress-indeterminate"></progress>
-    <progress className="progress progress-flat-error progress-indeterminate"></progress>
+    <progress className="progress"></progress>
+    <progress className="progress progress-flat-primary "></progress>
+    <progress className="progress progress-flat-error "></progress>
+    <div className="progress progress-indeterminate"></div>
 </div>
 
 ```html
-<progress className="progress progress-indeterminate"></progress>
-<progress className="progress progress-flat-primary progress-indeterminate"></progress>
-<progress className="progress progress-flat-error progress-indeterminate"></progress>
+<!-- This will work on Edge or Chrome -->
+<progress className="progress "></progress>
+<progress className="progress progress-flat-primary "></progress>
+<progress className="progress progress-flat-error"></progress>
+
+    <!-- For Safari, Firefox or Any other browser -->
+<div className="progress progress-indeterminate"></div>
 ```
-
-
-
-
-
-
-
-
-
 
 ## API
 <Attributes>
@@ -104,9 +110,3 @@ You can have an indeterminate progress.
 
 </Attributes>
 
-<LinkRedirect
-  contentLeft="Pagination"
-  hrefLeft="/docs/components/pagination"
-  contentRight="Navbar"
-  hrefRight="/docs/components/navbar"
-/>

@@ -1,6 +1,6 @@
 export const jsxToHtml = (code: string) => {
   const regexExpr =
-    /className|htmlFor|tabIndex|autoFocus|autoComplete|fillRule|clipRule|defaultChecked|strokeLinecap|strokeLinejoin|strokeWidth/g;
+    /className|htmlFor|tabIndex|autoFocus|autoComplete|fillRule|clipRule|defaultChecked|strokeLinecap|strokeLinejoin|strokeWidth|enableBackground/g;
   const replacedProps = code.replace(regexExpr, (match) => {
     if (match === "className") {
       return "class";
@@ -20,8 +20,11 @@ export const jsxToHtml = (code: string) => {
       return "stroke-linejoin";
     } else if (match === "strokeWidth") {
       return "stroke-width";
+    } else if (match === "enableBackground") {
+      return "enable-background";
     }
     return match.toLowerCase();
   });
+
   return replacedProps;
 };

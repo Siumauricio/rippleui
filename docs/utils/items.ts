@@ -60,6 +60,7 @@ export const items: Items[] = [
         isNew: true,
       },
       { href: "/docs/components/dropdown", children: "Dropdown" },
+      { href: "/docs/components/forms", children: "Forms", isNew: true },
       { href: "/docs/components/input", children: "Input" },
       {
         href: "/docs/components/link",

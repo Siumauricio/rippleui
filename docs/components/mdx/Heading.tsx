@@ -47,7 +47,7 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
     }
   };
   const seRouteId = () => {
-    if (id) {
+    if (id && level !== 1) {
       router.push(`${router.asPath.split("#")[0]}#${id}`);
     }
   };
@@ -58,28 +58,43 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
     <>
       <CustomTag
         className={clsx(
-          "flex cursor-pointer items-center gap-2 text-content1 hover:text-gray-1100 ",
+          level !== 1 && "cursor-pointer",
+          "group -ml-4 flex  scroll-m-24  items-center gap-2 pl-4 text-content1 hover:text-gray-1100",
           getCSS(level),
           calculateHeadingLevel(level)
         )}
         onClick={seRouteId}
+        id={id}
       >
-        {children}
+        {level !== 1 && (
+          <a
+            href={`#${id}`}
+            className="absolute -ml-10 flex items-center border-0 opacity-0 group-hover:opacity-100"
+            aria-label="Anchor"
+          >
+            ​
+            <div className="flex h-6 w-6 items-center justify-center rounded-md text-gray-800 shadow-sm ring-1 ring-gray-900/20 hover:text-gray-1000 hover:shadow hover:ring-slate-900/50  ">
+              <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path
+                  d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        )}
 
-        <a
-          href={`#${id}`}
+        {/* <a
+        
           className={
-            "mark text-xl font-semibold  text-content2 opacity-0 transition-opacity ease-in-out"
+            "absolute -ml-10 flex items-center border-0 opacity-0 group-hover:opacity-100"
           }
         >
           #
-        </a>
-        <span
-          className="pointer-events-none relative top-[-90px] left-0 opacity-0"
-          id={id}
-        >
-          &nbsp;
-        </span>
+        </a> */}
+        <span className={clsx(level === 1 && "py-3")}>{children}</span>
       </CustomTag>
     </>
   );
