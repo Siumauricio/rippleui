@@ -12,7 +12,7 @@ interface Props {
 export const TableOfContents = ({ toc }: Props) => {
   const router = useRouter();
   const isChangelog = toc[0]?.title === "Changelog";
-  const margin = isChangelog ? "0% 0% -100% 0%" : "0% 0% -80% 0%";
+  const margin = isChangelog ? "0% 0% -80% 0%" : "0% 0% -70% 0%";
   const [routerDefined, setRouterDefined] = useState("");
   const activeId = useScrollSpy(
     toc.map(({ id }) => `[id="${id}"]`),

@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/Siumauricio/rippleui/compare/v1.8.0...v1.8.1) (2023-02-03)
+
+
+### Features
+
+* **forms:** forms component ([dbea29a](https://github.com/Siumauricio/rippleui/commit/dbea29a991461ba9b2b3a8ad8cb93a349a87deaf))
+
+
+### Bug Fixes
+
+* **progress:** Fix indeterminate progress bar on cross-platform ([92337b6](https://github.com/Siumauricio/rippleui/commit/92337b67a6b3d38b0aa725f5890e631d07a81fe9))
+
+
+### Refactor
+
+* **dot:** set display value ([632a425](https://github.com/Siumauricio/rippleui/commit/632a42583adb77f8220459942aceff23cdf42803))
+* **progress:** set width by default ([31c8a16](https://github.com/Siumauricio/rippleui/commit/31c8a1601ddd969531553d0fee9cbeec64f715e4))
+* **switch:** reduce transition duration ([fed5324](https://github.com/Siumauricio/rippleui/commit/fed5324c9c9dae9b4ac9d0c0746a4b91119fd1a9))
+
 ## [1.8.0](https://github.com/Siumauricio/rippleui/compare/v1.7.0...v1.8.0) (2023-01-30)
 
 
