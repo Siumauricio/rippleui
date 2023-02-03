@@ -8,7 +8,7 @@
 }
 
 .progress {
-  @apply relative h-4  appearance-none overflow-hidden rounded-full bg-gray-400;
+  @apply relative h-4 w-40 appearance-none overflow-hidden rounded-full bg-gray-400;
 }
 
 .progress::-webkit-progress-bar {
