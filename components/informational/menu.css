@@ -1,0 +1,61 @@
+.menu {
+  @apply flex w-full flex-col gap-2;
+}
+
+.menu-section {
+  @apply flex flex-col gap-2;
+}
+
+.menu-title {
+  @apply text-xs font-normal;
+}
+
+.menu-items {
+  @apply flex flex-col gap-1.5;
+}
+
+.menu-item {
+  @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 transition-transform  hover:bg-gray-300 active:scale-[0.97] active:bg-gray-400;
+}
+
+.menu-item-disabled {
+  @apply pointer-events-none cursor-not-allowed text-content3 active:scale-[1];
+}
+
+.menu-item-no-animation {
+  transition: none;
+  @apply active:scale-[1];
+}
+
+.menu-active {
+  @apply bg-gray-400;
+}
+
+.menu-item.menu-active {
+  @apply bg-gray-400;
+}
+
+.menu-toggle {
+  @apply hidden;
+}
+
+.menu-item-collapse {
+  transition: padding 0.2s, grid-template-rows 0.2s;
+  @apply grid grid-rows-[0fr] overflow-hidden;
+}
+
+.menu-toggle:checked ~ .menu-item-collapse {
+  @apply grid-rows-[1fr] border-none;
+}
+
+.menu-item:focus-within ~ .menu-item-collapse {
+  @apply grid-rows-[1fr] border-none;
+}
+
+.menu-icon {
+  @apply transition-transform duration-200;
+}
+
+.menu-toggle:checked ~ .menu-item .menu-icon {
+  @apply rotate-90;
+}
