@@ -1,0 +1,219 @@
+@layer components {
+  .popover {
+    @apply relative inline-block w-max text-left;
+  }
+
+  .popover-trigger {
+    @apply inline-flex;
+  }
+
+  .popover-content {
+    transition-property: transform, opacity, visibility;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    @apply invisible absolute right-0 z-[49] flex w-56 origin-top-right   scale-95 transform flex-col  rounded-xl  border border-border   bg-gray-200 p-2 py-2 opacity-0 shadow-lg outline-none;
+  }
+
+  .popover-content-bottom-center {
+    @apply invisible left-1/2 right-full top-full  mt-2  w-56 origin-top  -translate-x-1/2;
+  }
+
+  .popover-content-top-center {
+    @apply invisible left-1/2 right-full bottom-full mb-2 w-56 origin-bottom -translate-x-1/2;
+  }
+
+  .popover-content-bottom-right {
+    @apply invisible left-0 mt-2 w-56 origin-top-left;
+  }
+
+  .popover-content-bottom-left {
+    @apply invisible right-0 mt-2 w-56 origin-top-right;
+  }
+
+  .popover-content-left {
+    @apply invisible bottom-auto top-1/2 right-full mr-2  mt-0 w-56 origin-right -translate-y-1/2;
+  }
+
+  .popover-content-right {
+    @apply invisible bottom-auto top-1/2 left-[100%] ml-2 mt-0 w-56 origin-left -translate-y-1/2;
+  }
+
+  .popover-content-left-bottom {
+    @apply invisible right-[100%] mr-2 mt-0 w-56  origin-top-right -translate-y-10;
+  }
+
+  .popover-content-right-bottom {
+    @apply invisible left-[100%] ml-2 mt-0 w-56 origin-top-left -translate-y-10;
+  }
+
+  .popover-content-left-top {
+    @apply invisible right-[100%] bottom-0 mr-2 mt-2 w-56 origin-bottom-right;
+  }
+
+  .popover-content-right-top {
+    @apply invisible left-[100%] bottom-0 ml-2 mt-2 w-56 origin-bottom-left -translate-y-2;
+  }
+
+  .popover-content-top-right {
+    @apply invisible left-1/2 bottom-full ml-[-50%] mb-2 mt-0 w-56 origin-bottom-left -translate-y-2;
+  }
+
+  .popover-content-top-left {
+    @apply invisible left-1/2 bottom-full right-0 ml-auto mb-2 mt-0 w-56 origin-bottom-right -translate-y-2;
+  }
+
+  .popover-open.popover-content-bottom-center,
+  .popover-trigger:focus ~ .popover-content.popover-content-bottom-center,
+  .popover-content-bottom-center:active,
+  .popover-content-bottom-center:focus,
+  .popover-content-bottom-center:focus-within,
+  .popover-content-bottom-center:focus-visible {
+    @apply visible  -translate-x-1/2   scale-100 opacity-100;
+  }
+
+  .popover-open.popover-content-top-center,
+  .popover-trigger:focus ~ .popover-content.popover-content-top-center,
+  .popover-content-top-center:active,
+  .popover-content-top-center:focus,
+  .popover-content-top-center:focus-within,
+  .popover-content-top-center:focus-visible {
+    @apply visible  -translate-x-1/2  scale-100  opacity-100;
+  }
+
+  .popover-open.popover-content-bottom-right,
+  .popover-trigger:focus ~ .popover-content.popover-content-bottom-right,
+  .popover-content-bottom-right:active,
+  .popover-content-bottom-right:focus,
+  .popover-content-bottom-right:focus-within,
+  .popover-content-bottom-right:focus-visible {
+    @apply visible  translate-x-0   scale-100 opacity-100;
+  }
+  .popover-open.popover-content-bottom-left,
+  .popover-trigger:focus ~ .popover-content.popover-content-bottom-left,
+  .popover-content-bottom-left:active,
+  .popover-content-bottom-left:focus,
+  .popover-content-bottom-left:focus-within,
+  .popover-content-bottom-left:focus-visible {
+    @apply visible  translate-x-0  scale-100 opacity-100;
+  }
+  .popover-open.popover-content-left,
+  .popover-trigger:focus ~ .popover-content.popover-content-left,
+  .popover-content-left:active,
+  .popover-content-left:focus,
+  .popover-content-left:focus-within,
+  .popover-content-left:focus-visible {
+    @apply visible left-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
+  }
+  .popover-open.popover-content-right,
+  .popover-trigger:focus ~ .popover-content.popover-content-right,
+  .popover-content-right:active,
+  .popover-content-right:focus,
+  .popover-content-right:focus-within,
+  .popover-content-right:focus-visible {
+    @apply visible right-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
+  }
+  .popover-open.popover-content-left-bottom,
+  .popover-open.popover-content-right-bottom,
+  .popover-trigger:focus ~ .popover-content.popover-content-left-bottom,
+  .popover-content-left-bottom:active,
+  .popover-content-left-bottom:focus,
+  .popover-content-left-bottom:focus-within,
+  .popover-content-left-bottom:focus-visible,
+  .popover-trigger:focus ~ .popover-content.popover-content-right-bottom,
+  .popover-content-right-bottom:active,
+  .popover-content-right-bottom:focus,
+  .popover-content-right-bottom:focus-within,
+  .popover-content-right-bottom:focus-visible {
+    @apply visible translate-x-0 -translate-y-10 scale-100 opacity-100;
+  }
+  .popover-open,
+  .popover-trigger:focus ~ .popover-content.popover-content-left-top,
+  .popover-content-left-top:active,
+  .popover-content-left-top:focus,
+  .popover-content-left-top:focus-within,
+  .popover-content-left-top:focus-visible,
+  .popover-trigger:focus ~ .popover-content.popover-content-right-top,
+  .popover-content-right-top:active,
+  .popover-content-right-top:focus,
+  .popover-content-right-top:focus-within,
+  .popover-content-right-top:focus-visible {
+    @apply visible translate-x-0 translate-y-0 scale-100 opacity-100;
+  }
+  .popover-open.popover-content-top-right,
+  .popover-open.popover-content-top-left,
+  .popover-trigger:focus ~ .popover-content.popover-content-top-right,
+  .popover-content-top-right:active,
+  .popover-content-top-right:focus,
+  .popover-content-top-right:focus-within,
+  .popover-content-top-right:focus-visible,
+  .popover-trigger:focus ~ .popover-content.popover-content-top-left,
+  .popover-content-top-left:active,
+  .popover-content-top-left:focus,
+  .popover-content-top-left:focus-within,
+  .popover-content-top-left:focus-visible {
+    @apply visible translate-x-0 -translate-y-0 scale-100 opacity-100;
+  }
+
+  .popover-arrow {
+    @apply absolute h-[0.7rem] w-[0.7rem] border-border bg-gray-200;
+  }
+
+  .popover-content-bottom-center .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply left-1/2 top-0 border-l border-t;
+  }
+
+  .popover-content-top-center .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply -bottom-3 left-1/2 border-r border-b;
+  }
+
+  .popover-content-bottom-right .popover-arrow {
+    transform: translate(50%, -50%) rotate(45deg);
+    @apply top-0 left-4 border-l border-t;
+  }
+
+  .popover-content-bottom-left .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply top-0 right-4 border-l border-t;
+  }
+
+  .popover-content-left .popover-arrow {
+    transform: translate(50%, -50%) rotate(45deg);
+    @apply right-0 top-1/2 border-r border-t;
+  }
+
+  .popover-content-right .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply left-0 top-1/2 border-l border-b;
+  }
+
+  .popover-content-left-bottom .popover-arrow {
+    transform: translate(50%, 50%) rotate(45deg);
+    @apply top-4 right-0 border-r border-t;
+  }
+  .popover-content-right-bottom .popover-arrow {
+    transform: translate(-50%, 50%) rotate(45deg);
+    @apply left-0 top-4 border-l border-b;
+  }
+
+  .popover-content-left-top .popover-arrow {
+    transform: translate(50%, -50%) rotate(45deg);
+    @apply bottom-4 right-0 border-r border-t;
+  }
+
+  .popover-content-right-top .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply left-0 bottom-4 border-l border-b;
+  }
+
+  .popover-content-top-right .popover-arrow {
+    transform: translate(50%, -50%) rotate(45deg);
+    @apply -bottom-3 left-4 border-r border-b;
+  }
+
+  .popover-content-top-left .popover-arrow {
+    transform: translate(-50%, -50%) rotate(45deg);
+    @apply -bottom-3 right-4 border-r border-b;
+  }
+}
