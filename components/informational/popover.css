@@ -61,6 +61,8 @@
   @apply invisible left-full  bottom-0    origin-bottom-left translate-y-5 -translate-x-2;
 }
 
+.popover-open .popover-content,
+.popover-open .popover-bottom-center,
 .popover .popover-trigger:focus ~ .popover-content,
 .popover-open .popover-bottom-center,
 .popover-hover:hover .popover-trigger ~ .popover-content,
