@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl bg-gray-200 px-5 text-center text-sm font-medium transition-transform  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-500  active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl bg-gray-200 px-5 text-center text-sm font-medium text-content1 transition-transform  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-500  active:scale-[0.97];
 }
 
 .btn:where(
