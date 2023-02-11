@@ -10,7 +10,7 @@
   transition-property: transform, opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  @apply invisible absolute  left-1/2 right-full z-[49] flex w-56 origin-top-right -translate-y-2   -translate-x-1/2 scale-95 transform flex-col  rounded-xl  border border-transparent   bg-gray-200 p-2 py-2 opacity-0 shadow-lg outline-none;
+  @apply invisible absolute  left-1/2 right-full z-[49]  flex w-56 origin-top -translate-y-2   -translate-x-1/2 scale-95 transform flex-col  rounded-xl  border border-transparent   bg-gray-200 p-2 opacity-0 shadow-lg outline-none;
 }
 
 .popover-bottom-center {
@@ -24,7 +24,6 @@
 .popover-bottom-left {
   @apply invisible right-0 left-auto    origin-top-right -translate-y-2 translate-x-0;
 }
-/* Hp;aaaa */
 .popover-top-center {
   @apply invisible left-1/2 right-full bottom-full   origin-bottom translate-y-2 -translate-x-1/2;
 }
@@ -34,7 +33,7 @@
 }
 
 .popover-top-left {
-  @apply invisible left-1/2 bottom-full right-0 ml-auto  w-56 origin-bottom-right translate-y-2 translate-x-0;
+  @apply invisible left-1/2 bottom-full right-0 ml-auto  origin-bottom-right translate-y-2 translate-x-0;
 }
 
 .popover-left {
