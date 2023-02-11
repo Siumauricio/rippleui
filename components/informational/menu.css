@@ -15,7 +15,8 @@
 }
 
 .menu-item {
-  @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 transition-transform duration-[120ms] hover:bg-gray-300 active:scale-[0.97] active:bg-gray-400;
+  transition: transform 0.12s ease;
+  @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 hover:bg-gray-300 active:scale-[0.97] active:bg-gray-400;
 }
 
 .menu-item-disabled {
@@ -23,13 +24,11 @@
 }
 
 .menu-item-no-animation {
-  transition: none;
-  @apply active:scale-[1];
+  @apply transition-none active:scale-[1];
 }
 
 .menu-item.menu-active {
-  transition: none;
-  @apply bg-gray-400  active:scale-[1];
+  @apply bg-gray-400  transition-none active:scale-[1];
 }
 
 .menu-toggle {
