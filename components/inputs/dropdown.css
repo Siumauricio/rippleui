@@ -40,7 +40,7 @@
 }
 
 .dropdown-menu-top-center {
-  @apply invisible left-1/2 right-[100%] bottom-full mb-2  w-56 origin-bottom -translate-x-1/2;
+  @apply invisible left-1/2 right-[100%] bottom-full   w-56 origin-bottom -translate-x-1/2;
 }
 
 .dropdown-menu-bottom-right {
@@ -52,35 +52,35 @@
 }
 
 .dropdown-menu-top-right {
-  @apply invisible left-1/2 bottom-full ml-[-50%] mb-2  w-56 origin-bottom-left -translate-y-2;
+  @apply invisible left-1/2 bottom-full ml-[-50%]   w-56 origin-bottom-left -translate-y-2;
 }
 
 .dropdown-menu-top-left {
-  @apply invisible left-1/2 bottom-full right-0 ml-auto mb-2  w-56 origin-bottom-right -translate-y-2;
+  @apply invisible left-1/2 bottom-full right-0 ml-auto   w-56 origin-bottom-right -translate-y-2;
 }
 
 .dropdown-menu-left {
-  @apply invisible bottom-auto top-1/2 right-[100%] mr-2   w-56 origin-right -translate-y-1/2;
+  @apply invisible bottom-auto top-1/2 right-[100%]    w-56 origin-right -translate-y-1/2;
 }
 
 .dropdown-menu-right {
-  @apply invisible bottom-auto top-1/2 left-[100%] ml-2  w-56 origin-left -translate-y-1/2;
+  @apply invisible bottom-auto top-1/2 left-[100%]   w-56 origin-left -translate-y-1/2;
 }
 
 .dropdown-menu-left-bottom {
-  @apply invisible right-[100%] mr-2  w-56  origin-top-right -translate-y-10;
+  @apply invisible right-[100%]   w-56  origin-top-right -translate-y-10;
 }
 
 .dropdown-menu-right-bottom {
-  @apply invisible left-[100%] ml-2 mt-0 w-56 origin-top-left -translate-y-10;
+  @apply invisible left-[100%]   w-56 origin-top-left -translate-y-10;
 }
 
 .dropdown-menu-left-top {
-  @apply invisible right-[100%] bottom-0 mr-2  w-56 origin-bottom-right;
+  @apply invisible right-[100%] bottom-0   w-56 origin-bottom-right;
 }
 
 .dropdown-menu-right-top {
-  @apply invisible left-[100%] bottom-0 ml-2  w-56 origin-bottom-left -translate-y-2;
+  @apply invisible left-[100%] bottom-0   w-56 origin-bottom-left -translate-y-2;
 }
 
 /* Only Bottom Side  */
