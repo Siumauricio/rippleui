@@ -84,11 +84,11 @@ export const Hero = () => {
             </div>
             <div className="flex justify-between">
               <div className="dropdown-container">
-                <div className="dropdown dropdown-open">
-                  <label className="btn flex" tabIndex={0}>
+                <div className="dropdown-open dropdown">
+                  <label className="btn my-2 flex" tabIndex={0}>
                     <span>Dropdown</span>
                   </label>
-                  <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
+                  <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
                     <div className="dropdown-item">
                       <p className="text-sm leading-5 text-content1">
                         Signed in as

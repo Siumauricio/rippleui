@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { ArrowRight } from "../icons/ArrowRight";
-import { DarkModeToggle } from "./DarkModeToggle";
+import { DarkModeSwitcher } from "./DarkModeSwitcher";
 
 export const DarkMode = () => {
   return (
@@ -101,10 +101,10 @@ export const DarkMode = () => {
             </div>
             <div className="flex flex-col self-center">
               <span
-                className="tooltip-top tooltip-secondary tooltip"
+                className="tooltip tooltip-top tooltip-secondary"
                 data-tooltip="Toggle Dark Mode"
               >
-                <DarkModeToggle />
+                <DarkModeSwitcher />
               </span>
             </div>
             <div className="w-full max-w-lg">

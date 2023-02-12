@@ -1,0 +1,720 @@
+---
+title: Popover
+description:  Popover is a component in a floating container that can be used to display a information in a dissmissible way.
+---
+
+# Popover
+
+Ripple UI comes with Popover component in a floating container that can be used to display a information in a dissmissible way.
+
+<div className="alert mb-5">
+	<svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" >
+		<path fillRule="evenodd" clipRule="evenodd" d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 26C22.9 26 22 25.1 22 24V16C22 14.9 22.9 14 24 14C25.1 14 26 14.9 26 16V24C26 25.1 25.1 26 24 26ZM26 34H22V30H26V34Z" className="fill-gray-1000" />
+	</svg>
+        <span className="text-content2">Is required to add tabIndex="0" to the popover-trigger and popover-content to have focusable element</span>
+
+</div>
+
+## Default
+
+Simple example of a Popover.
+
+<div className="flex justify-center">
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+```html
+<div className="popover">
+     <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+    <div className="popover-content" tabIndex="0">
+        <div className="popover-arrow"></div>
+        <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+    </div>
+</div>
+```
+
+## Center bottom and top
+
+Popover can be positioned to the center bottom and top.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-center" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-center" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-center" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-center" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+
+## Bottom left and right
+
+Popover can be positioned to the bottom left and right.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-bottom-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Top left and right
+
+Popover can be positioned to the top left and right.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-top-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Left and right
+
+Popover can be positioned to the left and right.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Left and right at top
+
+Popover can be positioned to the left and right at top.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left-top" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right-top" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left-top" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right-top" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Left and right at bottom
+
+Popover can be positioned to the left and right at bottom.
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left-bottom" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right-bottom" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-left-bottom" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+    <div className="popover">
+        <label className="popover-trigger mx-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content popover-right-bottom" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Bordered
+
+Popover can be bordered.
+
+<div className="flex justify-center gap-2">
+    <div className="popover popover-border">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover popover-border">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content" tabIndex="0">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Hover
+
+Popover can be triggered on hover.
+
+<div className="flex justify-center gap-2">
+    <div className="popover popover-hover">
+        <label className="popover-trigger my-2 btn" >Hover</label>
+        <div className="popover-content">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover popover-hover">
+        <label className="popover-trigger my-2 btn" >Hover</label>
+        <div className="popover-content">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+## Opened
+
+Popover can be opened by default.
+
+<div className="flex justify-center gap-2 pb-32">
+    <div className="popover popover-open">
+        <label className="popover-trigger my-2 btn" >Opened</label>
+        <div className="popover-content">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+</div>
+
+```html
+    <div className="popover popover-open">
+        <label className="popover-trigger my-2 btn" >Hover</label>
+        <div className="popover-content">
+            <div className="popover-arrow"></div>
+            <div className="p-4 text-sm">And here's some amazing content. It's very engaging. Right?</div>
+        </div>
+    </div>
+```
+
+
+## Responsive
+
+Example of responsive popover.
+
+
+<div className="flex justify-center gap-2">
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content w-screen max-w-sm" tabIndex="0">
+            <div className="popover-arrow"></div>
+             <div className="overflow-hidden rounded-lg">
+                <div className="relative grid gap-8 p-7 lg:grid-cols-1">
+                  <a
+                    href="##"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <path
+                          d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
+                          stroke="#FB923C"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Insights</p>
+                      <p className="text-sm text-content2">Measure actions your users take</p>
+                    </div></a >
+                    <a href="##"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <path
+                          d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
+                          stroke="#FB923C"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Automations</p>
+                      <p className="text-sm text-content2">Create your own targeted content</p>
+                    </div></a
+                  ><a
+                    href="##"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <rect
+                          x="13"
+                          y="32"
+                          width="2"
+                          height="4"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="17"
+                          y="28"
+                          width="2"
+                          height="8"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="21"
+                          y="24"
+                          width="2"
+                          height="12"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="25"
+                          y="20"
+                          width="2"
+                          height="16"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="29"
+                          y="16"
+                          width="2"
+                          height="20"
+                          fill="#FB923C"
+                        ></rect>
+                        <rect
+                          x="33"
+                          y="12"
+                          width="2"
+                          height="24"
+                          fill="#FB923C"
+                        ></rect>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Reports</p>
+                      <p className="text-sm text-content2"> Keep track of your growth  </p>
+                    </div></a >
+                </div>
+                <div className="bg-gray-100 p-4">
+                  <a
+                    href="##"
+                    className="flow-root rounded-md px-2 py-2 ease-in-out hover:bg-gray-300 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
+                    <span className="flex items-center">
+                        <span className="text-sm font-medium text-content1">Documentation</span>
+                      </span>
+                    <span className="block text-sm text-content2">Start integrating products and tools</span>
+                    </a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+```html
+    <div className="popover">
+        <label className="popover-trigger my-2 btn" tabIndex="0">Click</label>
+        <div className="popover-content w-screen max-w-sm" tabIndex="0">
+            <div className="popover-arrow"></div>
+             <div className="overflow-hidden rounded-lg">
+                <div className="relative grid gap-8 p-7 lg:grid-cols-1">
+                  <a
+                    href="##"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <path
+                          d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
+                          stroke="#FB923C"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Insights</p>
+                      <p className="text-sm text-content2">Measure actions your users take</p>
+                    </div></a >
+                    <a href="#"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <path
+                          d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
+                          stroke="#FB923C"
+                          strokeWidth="2"
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
+                          stroke="#FDBA74"
+                          strokeWidth="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Automations</p>
+                      <p className="text-sm text-content2">Create your own targeted content</p>
+                    </div></a
+                  ><a
+                    href="##"
+                    className="-m-3 flex items-center rounded-lg p-2 ease-in-out hover:bg-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    ><div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+                    >
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="48"
+                          height="48"
+                          rx="8"
+                          fill="#FFEDD5"
+                        ></rect>
+                        <rect
+                          x="13"
+                          y="32"
+                          width="2"
+                          height="4"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="17"
+                          y="28"
+                          width="2"
+                          height="8"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="21"
+                          y="24"
+                          width="2"
+                          height="12"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="25"
+                          y="20"
+                          width="2"
+                          height="16"
+                          fill="#FDBA74"
+                        ></rect>
+                        <rect
+                          x="29"
+                          y="16"
+                          width="2"
+                          height="20"
+                          fill="#FB923C"
+                        ></rect>
+                        <rect
+                          x="33"
+                          y="12"
+                          width="2"
+                          height="24"
+                          fill="#FB923C"
+                        ></rect>
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-content1">Reports</p>
+                      <p className="text-sm text-content2"> Keep track of your growth  </p>
+                    </div></a >
+                </div>
+                <div className="bg-gray-100 p-4">
+                  <a
+                    href="##"
+                    className="flow-root rounded-md px-2 py-2 ease-in-out hover:bg-gray-300 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
+                    <span className="flex items-center">
+                        <span className="text-sm font-medium text-content1">Documentation</span>
+                      </span>
+                    <span className="block text-sm text-content2">Start integrating products and tools</span>
+                    </a>
+                </div>
+              </div>
+        </div>
+    </div>
+```
+
+
+
+## API
+<Attributes>
+<Attributes.Title>Popover Classes</Attributes.Title>
+
+| className         | Description          |
+| ------------- | -------------------- |
+| popover | The popover container |
+| popover-trigger | Trigger to open the popover |
+| popover-content | Container of all the content |
+| popover-arrow | Class to show arrow |
+| popover-open | The popover will be opened by default |
+| popover-hover | The popover will be opened on hover |
+| popover-border | The popover-content and arrow will have a border |
+| popover-bottom-center | The popover will be positioned at the bottom center |
+| popover-bottom-left | The popover will be positioned at the bottom left |
+| popover-bottom-right | The popover will be positioned at the bottom right |
+| popover-top-center | The popover will be positioned at the top center |
+| popover-top-left | The popover will be positioned at the top left |
+| popover-top-right | The popover will be positioned at the top right |
+| popover-left | The popover will be positioned at the left center |
+| popover-left-top | The popover will be positioned at the left top |
+| popover-left-bottom | The popover will be positioned at the left bottom |
+| popover-right | The popover will be positioned at the right center |
+| popover-right-top | The popover will be positioned at the right top |
+| popover-right-bottom | The popover will be positioned at the right bottom |
+
+
+</Attributes>
+
+

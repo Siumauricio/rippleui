@@ -36,7 +36,7 @@ Simple example of a dropdown.
 
 <div className="dropdown-container justify-center">
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -47,7 +47,7 @@ Simple example of a dropdown.
 
 ```html
 <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn" tabIndex="0">Click</label>
     <div className="dropdown-menu">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -56,25 +56,74 @@ Simple example of a dropdown.
   </div>
 ```
 
+## Center bottom and top
+
+Dropdowns can be at the center, bottom and top.
+
+<div className="flex justify-center gap-2">
+<div className="dropdown-container justify-center">
+  <div className="dropdown">
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-center">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+      </div>
+  </div>
+</div>
+
+<div className="dropdown-container justify-center">
+  <div className="dropdown">
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-top-center">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+      </div>
+  </div>
+</div>
+</div>
+
+```html
+<div className="dropdown-container justify-center">
+  <div className="dropdown">
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-center">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+      </div>
+  </div>
+</div>
+
+<div className="dropdown-container justify-center">
+  <div className="dropdown">
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-top-center">
+        <a className="dropdown-item text-sm">Profile</a>
+        <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
+        <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
+      </div>
+  </div>
+</div>
+```
+
 ## Bottom left and right
 
-Dropdowns can have different positions.
+Dropdowns can be positioned at the bottom left and right.
 
-<div className="flex gap-3 justify-center">
-<div className="dropdown-container">
+<div className="flex gap-2 justify-center">
   <div className="dropdown">
-    <label className="btn flex" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-left">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
 </div>
 
-<div className="dropdown-container ">
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right" >
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -82,48 +131,42 @@ Dropdowns can have different positions.
     </div>
   </div>
 </div>
-</div>
 
 ```html
-
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu">
-      <a className="dropdown-item text-sm">Profile</a>
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-left">
+        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-  </div>
-
+</div>
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-bottom-right">
+    <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right" >
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
-</div>
+  </div>
 ```
 
 ## Top left and right
 
 Dropdown in top left and right.
 
-<div className="flex gap-3 justify-center">
+<div className="flex gap-2 justify-center">
 
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-top-left">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-
-
-
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-top-right">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -134,17 +177,16 @@ Dropdown in top left and right.
 </div>
 
 ```html
-<div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+  <div className="dropdown">
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-top-left">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-
   <div className="dropdown">
-    <label className="btn" tabIndex="0">Options</label>
+    <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-top-right">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -157,9 +199,9 @@ Dropdown in top left and right.
 
 Dropdown in left and right.
 
-<div className="flex gap-3 justify-center">
+<div className="flex gap-2 justify-center">
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-left">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -168,7 +210,7 @@ Dropdown in left and right.
 </div>
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-right">
          <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -179,7 +221,7 @@ Dropdown in left and right.
 
 ```html
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-left">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -188,7 +230,7 @@ Dropdown in left and right.
 </div>
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-right">
          <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -197,13 +239,13 @@ Dropdown in left and right.
   </div>
 ```
 
-## Left bottom and top
+## Left and right at top
 
-Dropdown in left bottom and top.
+Dropdown in  left and right at top.
 
 <div className="flex gap-3 justify-center">
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-left-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -212,8 +254,8 @@ Dropdown in left bottom and top.
   </div>
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-left-top">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
@@ -223,7 +265,7 @@ Dropdown in left bottom and top.
 
 ```html
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn mx-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-left-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -232,8 +274,8 @@ Dropdown in left bottom and top.
   </div>
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-left-top">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
@@ -241,15 +283,15 @@ Dropdown in left bottom and top.
 </div>
 ```
 
-## Right bottom and top
+## Left and right at bottom
 
-Dropdown in right bottom and top.
+Dropdown in left and right at bottom.
 
-<div className="flex gap-3 justify-center">
+<div className="flex gap-2 justify-center">
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-right-bottom">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-left-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
@@ -259,8 +301,8 @@ Dropdown in right bottom and top.
 
 
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-right-top">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
@@ -271,23 +313,21 @@ Dropdown in right bottom and top.
 
 ```html
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-right-bottom">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-left-bottom">
         <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-right-top">
+  <label className="btn mx-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-right-bottom">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
   </div>
-
 ```
 
 ## Opened
@@ -296,7 +336,7 @@ Dropdown opened.
 
 <div className="mb-32 justify-center flex">
   <div className="dropdown dropdown-open ">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right shadow-lg">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -306,9 +346,9 @@ Dropdown opened.
 </div>
 
 ```html
-<div className="dropdown dropdown-open">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-bottom-right">
+  <div className="dropdown dropdown-open ">
+  <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right shadow-lg">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
@@ -320,7 +360,7 @@ Dropdown opened.
 Dropdown on hover.
 <div className="justify-center flex">
   <div className="dropdown dropdown-hover">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu  dropdown-menu-bottom-right">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -331,7 +371,7 @@ Dropdown on hover.
 
 ```html
   <div className="dropdown dropdown-hover">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu  dropdown-menu-bottom-right">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -347,7 +387,7 @@ Dropdown with divider.
 
 <div className="justify-center flex">
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
        <a className="dropdown-item text-sm">Profile</a>
         <div className="dropdown-divider" role="separator"></div>
@@ -358,8 +398,8 @@ Dropdown with divider.
 </div>
 
 ```html
-<div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <div className="dropdown">
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
        <a className="dropdown-item text-sm">Profile</a>
         <div className="dropdown-divider" role="separator"></div>
@@ -375,18 +415,18 @@ Dropdown with border.
 
 <div className="justify-center flex">
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right border border-gray-500">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm"> Subscriptions</a>
     </div>
     </div>
-    </div>
+</div>
 
 ```html
- <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <div className="dropdown">
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right border border-gray-500">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -401,7 +441,7 @@ Dropdown with active item.
 
 <div className="justify-center flex">
   <div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
+  <label className="btn my-2" tabIndex="0">Click</label>
     <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
@@ -411,9 +451,9 @@ Dropdown with active item.
     </div>
 
 ```html
-<div className="dropdown">
-  <label className="btn" tabIndex="0">Options</label>
-    <div className="dropdown-menu dropdown-menu-bottom-right  gap-1">
+  <div className="dropdown">
+  <label className="btn my-2" tabIndex="0">Click</label>
+    <div className="dropdown-menu dropdown-menu-bottom-right gap-1">
        <a className="dropdown-item text-sm">Profile</a>
         <a tabIndex="-1" className="dropdown-item text-sm">Account settings</a>
         <a tabIndex="-1" className="dropdown-item text-sm dropdown-active"> Subscriptions</a>
@@ -435,6 +475,7 @@ Dropdown with active item.
 | dropdown-item              | Will style a element as dropdown item |
 | dropdown-active            | Will style a element as active        |
 | dropdown-divider           | Will apply a border separator         |
+| dropdown-item-no-animation | Will disable the animation on click   |
 | dropdown-menu-bottom-right | Will position to the bottom right     |
 | dropdown-menu-bottom-left  | Will position to the bottom left      |
 | dropdown-menu-top-right    | Will position to the top right        |
@@ -445,6 +486,8 @@ Dropdown with active item.
 | dropdown-menu-right-top    | Will position to the right top        |
 | dropdown-menu-left         | Will position to the left             |
 | dropdown-menu-right        | Will position to the right            |
+| dropdown-menu-bottom-center| Will position to the bottom center    |
+| dropdown-menu-top-center   | Will position to the top center       |
 
 </Attributes>
 

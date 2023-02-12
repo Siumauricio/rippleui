@@ -7,7 +7,7 @@ import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { LogoIcon } from "../icons/LogoIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
-import { DarkModeToggle } from "./DarkModeToggle";
+import { DarkModeSwitcher } from "./DarkModeSwitcher";
 import { Search } from "./Searcher";
 import { Sidebar } from "./Sidebar";
 
@@ -38,7 +38,13 @@ export const NavbarDocs = () => {
                 </div>
               </Link>
             </div>
-            <Search />
+            <div className="flex items-center gap-4">
+              <div className="flex self-center lg:hidden">
+                <DarkModeSwitcher />
+              </div>
+
+              <Search />
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden justify-end gap-4 lg:flex">
@@ -78,7 +84,7 @@ export const NavbarDocs = () => {
             </Link>
           </div>
           <div className="flex border-r border-gray-500 py-2 pr-3.5">
-            <DarkModeToggle />
+            <DarkModeSwitcher />
           </div>
           <div className="flex h-full items-center justify-center gap-4">
             <Link
