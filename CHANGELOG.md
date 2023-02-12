@@ -2,87 +2,92 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.8.1](https://github.com/Siumauricio/rippleui/compare/v1.8.0...v1.8.1) (2023-02-03)
-
+## [1.9.0](https://github.com/Siumauricio/rippleui/compare/v1.8.1...v1.9.0) (2023-02-12)
 
 ### Features
 
-* **forms:** forms component ([dbea29a](https://github.com/Siumauricio/rippleui/commit/dbea29a991461ba9b2b3a8ad8cb93a349a87deaf))
-
-
-### Bug Fixes
-
-* **progress:** Fix indeterminate progress bar on cross-platform ([92337b6](https://github.com/Siumauricio/rippleui/commit/92337b67a6b3d38b0aa725f5890e631d07a81fe9))
-
+- **menu:** menu component ([f151b47](https://github.com/Siumauricio/rippleui/commit/f151b470487e32a9d324b13dd4aedf4605776163))
+- **popover:** popover component ([3ff80c2](https://github.com/Siumauricio/rippleui/commit/3ff80c2d5374f49e80fe99c107d57db507024151))
 
 ### Refactor
 
-* **dot:** set display value ([632a425](https://github.com/Siumauricio/rippleui/commit/632a42583adb77f8220459942aceff23cdf42803))
-* **progress:** set width by default ([31c8a16](https://github.com/Siumauricio/rippleui/commit/31c8a1601ddd969531553d0fee9cbeec64f715e4))
-* **switch:** reduce transition duration ([fed5324](https://github.com/Siumauricio/rippleui/commit/fed5324c9c9dae9b4ac9d0c0746a4b91119fd1a9))
+- **button:** set text color to default variant ([895d034](https://github.com/Siumauricio/rippleui/commit/895d034861083041047358db14968cc0942d2aca))
+- **dropdown:** add center bottom and top variant ([4793894](https://github.com/Siumauricio/rippleui/commit/4793894837884ac3e472301e91d85f51b9c33793))
+- **dropdown:** removed border and add scale to dropdown item ([2dacaf7](https://github.com/Siumauricio/rippleui/commit/2dacaf7b807fe67a1e5a18d3cbfdf772a7238924))
+- **dropdown:** removed margin to menu ([20c7502](https://github.com/Siumauricio/rippleui/commit/20c7502375ce3e46d77802c59a47b419b6b05ca2))
+- **dropdown:** set width only to a main menu class ([83a7417](https://github.com/Siumauricio/rippleui/commit/83a7417c4f952e029852b2dd6047f9370e62b4b2))
+- **dropdown:** simplify selectors and change transition duration on transform ([7e31aa6](https://github.com/Siumauricio/rippleui/commit/7e31aa6394aa7ea02a5352ee433873ae17e98a89))
+
+### [1.8.1](https://github.com/Siumauricio/rippleui/compare/v1.8.0...v1.8.1) (2023-02-03)
+
+### Features
+
+- **forms:** forms component ([dbea29a](https://github.com/Siumauricio/rippleui/commit/dbea29a991461ba9b2b3a8ad8cb93a349a87deaf))
+
+### Bug Fixes
+
+- **progress:** Fix indeterminate progress bar on cross-platform ([92337b6](https://github.com/Siumauricio/rippleui/commit/92337b67a6b3d38b0aa725f5890e631d07a81fe9))
+
+### Refactor
+
+- **dot:** set display value ([632a425](https://github.com/Siumauricio/rippleui/commit/632a42583adb77f8220459942aceff23cdf42803))
+- **progress:** set width by default ([31c8a16](https://github.com/Siumauricio/rippleui/commit/31c8a1601ddd969531553d0fee9cbeec64f715e4))
+- **switch:** reduce transition duration ([fed5324](https://github.com/Siumauricio/rippleui/commit/fed5324c9c9dae9b4ac9d0c0746a4b91119fd1a9))
 
 ## [1.8.0](https://github.com/Siumauricio/rippleui/compare/v1.7.0...v1.8.0) (2023-01-30)
 
-
 ### Features
 
-* **dot:** dot component ([a11a242](https://github.com/Siumauricio/rippleui/commit/a11a242e60b5a61173ba1f29631d12dd1828a7e9))
-* **kbd:** kbd component ([5586892](https://github.com/Siumauricio/rippleui/commit/5586892f18d0a6fbe910bfdce210200b62a80f28))
-* **progress:** progress bar ([0b1fc86](https://github.com/Siumauricio/rippleui/commit/0b1fc861544e1b5d5b17f520fbd3ec14d0848562))
-* **range:** range component ([4d5223d](https://github.com/Siumauricio/rippleui/commit/4d5223d1af11ea8a093724eacc7b763f418b15a2))
+- **dot:** dot component ([a11a242](https://github.com/Siumauricio/rippleui/commit/a11a242e60b5a61173ba1f29631d12dd1828a7e9))
+- **kbd:** kbd component ([5586892](https://github.com/Siumauricio/rippleui/commit/5586892f18d0a6fbe910bfdce210200b62a80f28))
+- **progress:** progress bar ([0b1fc86](https://github.com/Siumauricio/rippleui/commit/0b1fc861544e1b5d5b17f520fbd3ec14d0848562))
+- **range:** range component ([4d5223d](https://github.com/Siumauricio/rippleui/commit/4d5223d1af11ea8a093724eacc7b763f418b15a2))
 
 ## [1.7.0](https://github.com/Siumauricio/rippleui/compare/v1.6.2...v1.7.0) (2023-01-25)
 
-
 ### Features
 
-* **divider:** divider component ([c3b67d9](https://github.com/Siumauricio/rippleui/commit/c3b67d9c9399fb11da102d720af53ec8c9e77712))
-* **link:** link component ([ddde65c](https://github.com/Siumauricio/rippleui/commit/ddde65c8de7ae68623be4566555a9b4faf0f8a24))
-* **pagination:** pagination component ([853564c](https://github.com/Siumauricio/rippleui/commit/853564c95ccef803f8a6f93f6497008bb9ad463b))
-* **skeleton:** skeleton component ([b50e16f](https://github.com/Siumauricio/rippleui/commit/b50e16f74f691a5e64af24baa7ce7cb3240ed99c))
-* **stepper:** add stepper component ([875385c](https://github.com/Siumauricio/rippleui/commit/875385c85d3a2dae6bf40f1b01f768e1a36a5eef))
-
+- **divider:** divider component ([c3b67d9](https://github.com/Siumauricio/rippleui/commit/c3b67d9c9399fb11da102d720af53ec8c9e77712))
+- **link:** link component ([ddde65c](https://github.com/Siumauricio/rippleui/commit/ddde65c8de7ae68623be4566555a9b4faf0f8a24))
+- **pagination:** pagination component ([853564c](https://github.com/Siumauricio/rippleui/commit/853564c95ccef803f8a6f93f6497008bb9ad463b))
+- **skeleton:** skeleton component ([b50e16f](https://github.com/Siumauricio/rippleui/commit/b50e16f74f691a5e64af24baa7ce7cb3240ed99c))
+- **stepper:** add stepper component ([875385c](https://github.com/Siumauricio/rippleui/commit/875385c85d3a2dae6bf40f1b01f768e1a36a5eef))
 
 ### Bug Fixes
 
-* **radio:** center the circle ([0206530](https://github.com/Siumauricio/rippleui/commit/0206530dc13b2d588c6159590f1cfce370c92c1c))
+- **radio:** center the circle ([0206530](https://github.com/Siumauricio/rippleui/commit/0206530dc13b2d588c6159590f1cfce370c92c1c))
 
 ### [1.6.2](https://github.com/Siumauricio/rippleui/compare/v1.6.1...v1.6.2) (2023-01-20)
 
-
 ### Bug Fixes
 
-* **inputs:** add focus state ([823dcc7](https://github.com/Siumauricio/rippleui/commit/823dcc78188c56e75519609ed0fcf5a50cb3133f))
+- **inputs:** add focus state ([823dcc7](https://github.com/Siumauricio/rippleui/commit/823dcc78188c56e75519609ed0fcf5a50cb3133f))
 
 ### [1.6.1](https://github.com/Siumauricio/rippleui/compare/v1.6.0...v1.6.1) (2023-01-19)
 
-
 ### Bug Fixes
 
-* Dark mode with 'media' is not supported ([41d24ce](https://github.com/Siumauricio/rippleui/commit/41d24ce8030ca3fef67da1ce2eb2ffdc8d2d754d))
+- Dark mode with 'media' is not supported ([41d24ce](https://github.com/Siumauricio/rippleui/commit/41d24ce8030ca3fef67da1ce2eb2ffdc8d2d754d))
 
 ## [1.6.0](https://github.com/Siumauricio/rippleui/compare/v1.5.0...v1.6.0) (2023-01-15)
 
-
 ### Features
 
-* **config:** add prefix option ([349498a](https://github.com/Siumauricio/rippleui/commit/349498af48cdc99ee33142e9262e87352c8a1cf7))
-
+- **config:** add prefix option ([349498a](https://github.com/Siumauricio/rippleui/commit/349498af48cdc99ee33142e9262e87352c8a1cf7))
 
 ### Bug Fixes
 
-* **tooltip:** allow to use breakpoints ([99de37e](https://github.com/Siumauricio/rippleui/commit/99de37ed10e2e4a2720b71a70c2537f5b49199fa))
-
+- **tooltip:** allow to use breakpoints ([99de37e](https://github.com/Siumauricio/rippleui/commit/99de37ed10e2e4a2720b71a70c2537f5b49199fa))
 
 ### Refactor
 
-* add custom color ([fb16455](https://github.com/Siumauricio/rippleui/commit/fb16455e7fcdfa4a6592bc288e530e83bb3cfcf7))
-* **button-group:** add direction to horizontal class ([c14f6d2](https://github.com/Siumauricio/rippleui/commit/c14f6d2447d060f9bdb58730cf2c74cd483315d0))
-* **card:** change shadow box to sm ([4ca5d94](https://github.com/Siumauricio/rippleui/commit/4ca5d94840424434dbc9955bb34dc6da63ce1aa6))
-* **config:** update types ([baceb83](https://github.com/Siumauricio/rippleui/commit/baceb83c2733d3713e145d163a163ced768c5d4f))
-* **input and select:** adjust height to be more standard size ([6073359](https://github.com/Siumauricio/rippleui/commit/607335948f211addc8b4173a6002a0c46467afdc))
-* **landing-page:** update design and add new sections ([fc504e4](https://github.com/Siumauricio/rippleui/commit/fc504e43658675fa78ea29a1111e385e136fc222))
-* **tabs:** support for radio tabs ([f8b0e89](https://github.com/Siumauricio/rippleui/commit/f8b0e895c2e09ab0dc3f55d25f55597f9779d241))
+- add custom color ([fb16455](https://github.com/Siumauricio/rippleui/commit/fb16455e7fcdfa4a6592bc288e530e83bb3cfcf7))
+- **button-group:** add direction to horizontal class ([c14f6d2](https://github.com/Siumauricio/rippleui/commit/c14f6d2447d060f9bdb58730cf2c74cd483315d0))
+- **card:** change shadow box to sm ([4ca5d94](https://github.com/Siumauricio/rippleui/commit/4ca5d94840424434dbc9955bb34dc6da63ce1aa6))
+- **config:** update types ([baceb83](https://github.com/Siumauricio/rippleui/commit/baceb83c2733d3713e145d163a163ced768c5d4f))
+- **input and select:** adjust height to be more standard size ([6073359](https://github.com/Siumauricio/rippleui/commit/607335948f211addc8b4173a6002a0c46467afdc))
+- **landing-page:** update design and add new sections ([fc504e4](https://github.com/Siumauricio/rippleui/commit/fc504e43658675fa78ea29a1111e385e136fc222))
+- **tabs:** support for radio tabs ([f8b0e89](https://github.com/Siumauricio/rippleui/commit/f8b0e895c2e09ab0dc3f55d25f55597f9779d241))
 
 ## [1.5.0](https://github.com/Siumauricio/rippleui/compare/v1.4.0...v1.5.0) (2023-01-07)
 

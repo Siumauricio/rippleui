@@ -7,7 +7,7 @@ import { DiscordIcon } from "../icons/DiscordIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import { LogoIcon } from "../icons/LogoIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
-import { DarkModeToggle } from "./DarkModeToggle";
+import { DarkModeSwitcher } from "./DarkModeSwitcher";
 import { Search } from "./Searcher";
 import { Sidebar } from "./Sidebar";
 
@@ -108,7 +108,7 @@ export const Navbar = () => {
           >
             <GithubIcon />
           </Link>
-          <DarkModeToggle />
+          <DarkModeSwitcher />
           <Search />
         </div>
       </div>

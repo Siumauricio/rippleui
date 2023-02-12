@@ -53,11 +53,10 @@ export const items: Items[] = [
       { href: "/docs/components/checkbox", children: "Checkbox" },
 
       { href: "/docs/components/drawer", children: "Drawer" },
-      { href: "/docs/components/dots", children: "Dots", isNew: true },
+      { href: "/docs/components/dots", children: "Dots" },
       {
         href: "/docs/components/divider",
         children: "Divider",
-        isNew: true,
       },
       { href: "/docs/components/dropdown", children: "Dropdown" },
       { href: "/docs/components/forms", children: "Forms", isNew: true },
@@ -65,40 +64,41 @@ export const items: Items[] = [
       {
         href: "/docs/components/link",
         children: "Link",
-        isNew: true,
       },
       { href: "/docs/components/modal", children: "Modal" },
+      { href: "/docs/components/menu", children: "Menu", isNew: true },
       {
         href: "/docs/components/pagination",
         children: "Pagination",
+      },
+      {
+        href: "/docs/components/popover",
+        children: "Popover",
         isNew: true,
       },
       {
         href: "/docs/components/progress",
         children: "Progress",
-        isNew: true,
       },
       { href: "/docs/components/navbar", children: "Navbar" },
       { href: "/docs/components/radio", children: "Radio" },
-      { href: "/docs/components/range", children: "Range", isNew: true },
+      { href: "/docs/components/range", children: "Range" },
       { href: "/docs/components/select", children: "Select" },
       {
         href: "/docs/components/skeleton",
         children: "Skeleton",
-        isNew: true,
       },
       { href: "/docs/components/switch", children: "Switch" },
 
       {
         href: "/docs/components/stepper",
         children: "Stepper",
-        isNew: true,
       },
       { href: "/docs/components/tabs", children: "Tabs" },
       { href: "/docs/components/table", children: "Table" },
       { href: "/docs/components/textarea", children: "Textarea" },
       { href: "/docs/components/tooltip", children: "Tooltip" },
-      { href: "/docs/components/kbd", children: "Kbd", isNew: true },
+      { href: "/docs/components/kbd", children: "Kbd" },
     ],
   },
   {

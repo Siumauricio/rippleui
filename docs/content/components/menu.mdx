@@ -1,0 +1,521 @@
+---
+title: Menu
+description:  Menu is a navigation component that allows you to display a list of links or element.
+---
+
+# Menu
+
+Menu is a navigation component that allows you to display a list of links or element.
+
+## Default
+
+Simple example of a Menu.
+
+ <nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+
+
+```html
+ <nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+```
+
+## Active item
+
+You can set an active item.
+
+<nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item menu-active">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+
+```html
+<nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item menu-active">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+```
+
+## Disabled item
+
+You can set a disabled item.
+
+<nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item menu-item-disabled">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+
+```html
+<nav className="menu bg-gray-100 p-2 rounded-md">
+    <section className="menu-section">
+        <ul className="menu-items">
+        <li className="menu-item menu-item-disabled">General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+```
+
+## With title in menu section
+
+You can set a title for each section.
+
+<nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item"> General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+
+
+```html
+<nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item"> General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+</nav>
+```
+
+## With divider
+
+You can add a divider between menu sections.
+
+<nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item"> General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+        <div className="divider my-0"></div>
+    <section className="menu-section">
+        <span className="menu-title">Settings</span>
+        <ul className="menu-items">
+        <li className="menu-item">Profile</li>
+        <li className="menu-item">Payments</li>
+        <li className="menu-item">Email</li>
+        <li className="menu-item">Invoices</li>
+        </ul>
+    </section>
+</nav>
+
+```html
+<nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item"> General</li>
+        <li className="menu-item">Teams</li>
+        <li className="menu-item">Projects</li>
+        <li className="menu-item">Calendar</li>
+        </ul>
+    </section>
+        <div className="divider my-0"></div>
+    <section className="menu-section">
+        <span className="menu-title">Settings</span>
+        <ul className="menu-items">
+        <li className="menu-item">Profile</li>
+        <li className="menu-item">Payments</li>
+        <li className="menu-item">Email</li>
+        <li className="menu-item">Invoices</li>
+        </ul>
+    </section>
+</nav>
+```
+
+
+## With icons at start
+
+You can add icons to menu items to start side of the menu item.
+
+  <nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item">
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5ZM15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6C13.66 6 15 7.34 15 9ZM6 17C6 15 10 13.9 12 13.9C14 13.9 18 15 18 17V18H6V17Z"
+                fill="#969696"
+            ></path>
+            </svg>
+            <span> General </span>
+        </li>
+        <li className="menu-item">
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V18H12C10.89 18 10 17.1 10 16ZM13 8C12.45 8 12 8.45 12 9V15C12 15.55 12.45 16 13 16H22V8H13ZM16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5Z"
+            ></path>
+            </svg> 
+            <span> Payments </span>
+        </li>
+        </ul>
+    </section>
+</nav>
+
+```html
+  <nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item">
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5ZM15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6C13.66 6 15 7.34 15 9ZM6 17C6 15 10 13.9 12 13.9C14 13.9 18 15 18 17V18H6V17Z"
+            ></path>
+            </svg>
+            <span> General </span>
+        </li>
+        <li className="menu-item">
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V18H12C10.89 18 10 17.1 10 16ZM13 8C12.45 8 12 8.45 12 9V15C12 15.55 12.45 16 13 16H22V8H13ZM16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5Z"
+            ></path>
+            </svg> 
+            <span> Payments </span>
+        </li>
+        </ul>
+    </section>
+</nav>
+```
+
+## With icons at the end
+
+You can also move the icons to the end of the menu item.
+
+  <nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item justify-between">
+          <span> General </span>
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5ZM15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6C13.66 6 15 7.34 15 9ZM6 17C6 15 10 13.9 12 13.9C14 13.9 18 15 18 17V18H6V17Z"
+            ></path>
+            </svg>
+        </li>
+        <li className="menu-item justify-between">
+            <span> Payments </span>
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V18H12C10.89 18 10 17.1 10 16ZM13 8C12.45 8 12 8.45 12 9V15C12 15.55 12.45 16 13 16H22V8H13ZM16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5Z"
+            ></path>
+            </svg> 
+
+        </li>
+        </ul>
+    </section>
+</nav>
+
+```html
+  <nav className="menu bg-gray-100 p-4 rounded-md">
+    <section className="menu-section">
+        <span className="menu-title">Main menu</span>
+        <ul className="menu-items">
+        <li className="menu-item justify-between">
+          <span> General </span>
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5ZM15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6C13.66 6 15 7.34 15 9ZM6 17C6 15 10 13.9 12 13.9C14 13.9 18 15 18 17V18H6V17Z"
+            ></path>
+            </svg>
+        </li>
+        <li className="menu-item justify-between">
+            <span> Payments </span>
+            <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 fill-content3"
+            >
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.1 3 19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V18H12C10.89 18 10 17.1 10 16ZM13 8C12.45 8 12 8.45 12 9V15C12 15.55 12.45 16 13 16H22V8H13ZM16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5Z"
+            ></path>
+            </svg> 
+
+        </li>
+        </ul>
+    </section>
+</nav>
+```
+
+## Menu collapsable
+
+You can have menu items inside a collapsable
+
+<nav className="menu p-4 bg-backgroundSecondary rounded-md">
+<section className="menu-section">
+    <span className="menu-title">Main menu</span>
+    <ul className="menu-items">
+    <li>
+        <input
+        type="checkbox"
+        id="menu-1"
+        className="menu-toggle"
+        />
+        <label className="menu-item justify-between" htmlFor="menu-1">
+        <span>General</span>
+        <span className="menu-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"  className="w-4 h-4 stroke-content3">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
+            </span>
+        </label>
+
+        <div className="menu-item-collapse">
+        <div className="min-h-0">
+            <label className="menu-item-disabled menu-item ml-6"> Accounts  </label>
+            <label className="menu-item ml-6"> Billing </label>
+            <label className="menu-item ml-6"> Security </label>
+        </div>
+        </div>
+    </li>
+    <li>
+        <label className="menu-item" tabIndex="0" role="button">Settings  </label>
+    </li>
+    <li className="menu-item">Profile</li>
+    </ul>
+</section>
+</nav>
+
+```html
+<nav className="menu p-4 bg-backgroundSecondary rounded-md">
+<section className="menu-section">
+    <span className="menu-title">Main menu</span>
+    <ul className="menu-items">
+    <li>
+        <input
+        type="checkbox"
+        id="menu-1"
+        className="menu-toggle"
+        />
+        <label className="menu-item justify-between" htmlFor="menu-1">
+        <span>General</span>
+        <span className="menu-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"  className="w-4 h-4 stroke-content3">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
+            </span>
+        </label>
+
+        <div className="menu-item-collapse">
+        <div className="min-h-0">
+            <label className="menu-item-disabled menu-item ml-6"> Accounts  </label>
+            <label className="menu-item ml-6"> Billing </label>
+            <label className="menu-item ml-6"> Security </label>
+        </div>
+        </div>
+    </li>
+    <li>
+        <label className="menu-item" tabIndex="0" role="button">Settings  </label>
+    </li>
+    <li className="menu-item">Profile</li>
+    </ul>
+</section>
+</nav>
+```
+
+## Custom rotation on menu item
+
+You can add a custom rotation to the menu item icon using a custom selector in the className attribute of the input element.
+
+<nav className="menu p-4 bg-backgroundSecondary rounded-md">
+<section className="menu-section">
+    <span className="menu-title">Main menu</span>
+    <ul className="menu-items">
+    <li>
+        <input
+        type="checkbox"
+        id="menu-2"
+        className="menu-toggle [&:checked~.menu-item>.menu-icon]:-rotate-90"
+        />
+        <label className="menu-item justify-between" htmlFor="menu-2">
+        <span>General</span>
+        <span className="menu-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"  className="w-4 h-4 stroke-content3">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
+            </span>
+        </label>
+
+        <div className="menu-item-collapse">
+        <div className="min-h-0">
+            <label className="menu-item-disabled menu-item ml-6"> Accounts  </label>
+            <label className="menu-item ml-6"> Billing </label>
+            <label className="menu-item ml-6"> Security </label>
+        </div>
+        </div>
+    </li>
+    <li>
+        <label className="menu-item" tabIndex="0" role="button">Settings  </label>
+    </li>
+    <li className="menu-item">Profile</li>
+    </ul>
+</section>
+</nav>
+
+```html
+<nav className="menu p-4 bg-backgroundSecondary rounded-md">
+<section className="menu-section">
+    <span className="menu-title">Main menu</span>
+    <ul className="menu-items">
+    <li>
+        <input
+        type="checkbox"
+        id="menu-2"
+        className="menu-toggle [&:checked~.menu-item>.menu-icon]:-rotate-90"
+        />
+        <label className="menu-item justify-between" htmlFor="menu-2">
+        <span>General</span>
+        <span className="menu-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"  className="w-4 h-4 stroke-content3">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
+            </span>
+        </label>
+
+        <div className="menu-item-collapse">
+        <div className="min-h-0">
+            <label className="menu-item-disabled menu-item ml-6"> Accounts  </label>
+            <label className="menu-item ml-6"> Billing </label>
+            <label className="menu-item ml-6"> Security </label>
+        </div>
+        </div>
+    </li>
+    <li>
+        <label className="menu-item" tabIndex="0" role="button">Settings  </label>
+    </li>
+    <li className="menu-item">Profile</li>
+    </ul>
+</section>
+</nav>
+```
+
+
+## API
+<Attributes>
+<Attributes.Title>Menu Classes</Attributes.Title>
+
+| className                   | Description                                      |
+| ----------------------- | ------------------------------------------------ |
+| menu                    | Menu base class                                |
+| menu-section            | class to agrupate a menu-items                              |
+| menu-title              | class to define a menu title                              |
+| menu-items              | class to list all menu items                         |
+| menu-item               | class to define a menu item                         |
+| menu-item-disabled      | class to mark menu item disabled               |
+| menu-item-active        | class to mark menu item active                 |
+| menu-toggle             | class to define a menu toggle checkbox         |
+| menu-item-collapse      | class to define a menu item collapsable     |
+| menu-icon               | class to define a menu icon                         |
+| menu-item-no-animation  | class to disable animation on menu item     |
+
+
+</Attributes>
+

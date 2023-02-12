@@ -42,7 +42,7 @@ module.exports = {
 To use a component, simply include the appropriate HTML markup in your project and apply the relevant classes using the class naming.
 
 ```html
-<button class="btn btn-primary">Click me!</button>
+<button class="btn-primary btn">Click me!</button>
 ```
 
 ## 🎨 Components
@@ -80,6 +80,8 @@ Here is a list of all of the components that are currently available in RippleUI
 - Progress
 - KBD
 - Forms
+- Menu
+- Popover
 - More components soon....
 
 ## 🤝 Contributing

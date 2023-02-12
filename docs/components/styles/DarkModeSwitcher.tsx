@@ -1,7 +1,8 @@
+import clsx from "clsx";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 
-export const DarkModeToggle = () => {
+export const DarkModeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -45,10 +46,13 @@ export const DarkModeToggle = () => {
           </svg>
         )}
       </label>
-      <div className="dropdown-menu w-32 rounded-lg border border-border">
+      <div className="dropdown-menu mt-2 w-32 rounded-lg border border-border">
         <span
           tabIndex={-1}
-          className="dropdown-item flex-row gap-2 text-sm"
+          className={clsx(
+            theme === "light" && "dropdown-active",
+            "dropdown-item flex-row gap-2 text-sm"
+          )}
           onClick={() => setTheme("light")}
         >
           <svg
@@ -67,7 +71,10 @@ export const DarkModeToggle = () => {
         </span>
         <span
           tabIndex={-1}
-          className="dropdown-item flex-row gap-2 text-sm"
+          className={clsx(
+            theme === "dark" && "dropdown-active",
+            "dropdown-item flex-row gap-2 text-sm"
+          )}
           onClick={() => setTheme("dark")}
         >
           <svg
@@ -86,7 +93,10 @@ export const DarkModeToggle = () => {
         </span>
         <span
           tabIndex={-1}
-          className="dropdown-item flex-row gap-2 text-sm"
+          className={clsx(
+            theme === "system" && "dropdown-active",
+            "dropdown-item flex-row gap-2 text-sm"
+          )}
           onClick={() => setTheme("system")}
         >
           <svg
