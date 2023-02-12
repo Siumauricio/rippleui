@@ -121,7 +121,7 @@
 .popover-hover:hover .popover-trigger ~ .popover-content.popover-right-bottom,
 .popover:not(.popover-hover)
   .popover-right-bottom:where(:focus, :focus-within, :focus-visible) {
-  @apply visible translate-x-0 -translate-y-1/2 scale-100 opacity-100;
+  @apply visible translate-x-0 -translate-y-10 scale-100 opacity-100;
 }
 
 .popover-open .popover-left-top,
