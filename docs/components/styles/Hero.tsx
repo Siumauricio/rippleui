@@ -85,7 +85,7 @@ export const Hero = () => {
             <div className="flex justify-between">
               <div className="dropdown-container">
                 <div className="dropdown-open dropdown">
-                  <label className="btn flex" tabIndex={0}>
+                  <label className="btn my-2 flex" tabIndex={0}>
                     <span>Dropdown</span>
                   </label>
                   <div className="dropdown-menu-bottom-right dropdown-menu gap-1">
