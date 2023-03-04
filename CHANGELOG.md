@@ -11,9 +11,19 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Refactor
 
-- change tokens colors to not clash with tailwind colors ([c2f1171](https://github.com/Siumauricio/rippleui/commit/c2f1171302dd7aae119a8b97fdaec2441c960c4e))
 - **config:** add example of standalone cli ([2019a8b](https://github.com/Siumauricio/rippleui/commit/2019a8bfc7a96d338fcec174c1544120462353d4))
 - **menu,popover,button,dropdown:** prevent components vibrate on click ([6b41ef8](https://github.com/Siumauricio/rippleui/commit/6b41ef8bca9cc6b004993c13f76491e59be0fd78))
+
+### Breaking Changes
+
+- Change tokens colors to not clash with tailwind colors ([c2f1171](https://github.com/Siumauricio/rippleui/commit/c2f1171302dd7aae119a8b97fdaec2441c960c4e)) #39
+  Since the classes that we use are clashing with tailwindcss default colors.
+  The colors have the same name the only thing will change is the last `token` and follow the same semantic as [RadixUI](https://www.radix-ui.com/docs/colors/palette-composition/the-scales#colors) e.g:
+
+|  Old Token  | New Token |
+| :---------: | :-------: |
+| bg-blue-500 | bg-blue-6 |
+| bg-red-900  | bg-red-10 |
 
 ## [1.9.0](https://github.com/Siumauricio/rippleui/compare/v1.8.1...v1.9.0) (2023-02-12)
 
