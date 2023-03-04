@@ -1,5 +1,5 @@
 .kbd {
-  @apply inline-flex h-fit items-center justify-center whitespace-nowrap rounded-md border  border-gray-500 bg-gray-200 py-1.5 px-2.5 text-xs font-semibold shadow-[0px_1.5px_0px_rgba(0,0,0,0.1)];
+  @apply border-gray-6 bg-gray-3 inline-flex h-fit items-center justify-center whitespace-nowrap  rounded-md border py-1.5 px-2.5 text-xs font-semibold shadow-[0px_1.5px_0px_rgba(0,0,0,0.1)];
 }
 
 .kbd-xs {

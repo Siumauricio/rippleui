@@ -23,11 +23,11 @@
 }
 
 .step-circle {
-  @apply flex min-h-[2rem] min-w-[2rem] items-center justify-center rounded-full border border-gray-500 bg-gray-200 text-content1;
+  @apply border-gray-6 bg-gray-3 flex min-h-[2rem] min-w-[2rem] items-center justify-center rounded-full border text-content1;
 }
 
 .step:not(:last-child):after {
-  @apply relative  h-px min-h-0 w-full min-w-[2rem] flex-1 bg-gray-500 content-[""];
+  @apply bg-gray-6  relative h-px min-h-0 w-full min-w-[2rem] flex-1 content-[""];
 }
 .steps-horizontal .step:not(:last-child):after {
   @apply relative  h-px min-h-0 w-full min-w-[2rem] flex-1  content-[""];
@@ -59,40 +59,40 @@
 
 .step-done.step-primary .step-circle,
 .step-done .step-circle {
-  @apply border-blue-600 bg-blue-300 text-content1;
+  @apply border-blue-7 bg-blue-4 text-content1;
 }
 .step-done.step-primary::after {
-  @apply bg-blue-600;
+  @apply bg-blue-7;
 }
 
 .step-done.step-secondary .step-circle {
-  @apply border-purple-600 bg-purple-300 text-content1;
+  @apply border-purple-7 bg-purple-4 text-content1;
 }
 
 .step-done.step-secondary::after {
-  @apply bg-purple-600;
+  @apply bg-purple-7;
 }
 
 .step-done.step-success .step-circle {
-  @apply border-green-600 bg-green-300 text-content1;
+  @apply border-green-7 bg-green-4 text-content1;
 }
 
 .step-done.step-success::after {
-  @apply bg-green-600;
+  @apply bg-green-7;
 }
 
 .step-done.step-error .step-circle {
-  @apply border-red-600 bg-red-300 text-content1;
+  @apply border-red-7 bg-red-4 text-content1;
 }
 
 .step-done.step-error::after {
-  @apply bg-red-600;
+  @apply bg-red-7;
 }
 
 .step-done.step-warning .step-circle {
-  @apply border-yellow-600 bg-yellow-300 text-content1;
+  @apply border-yellow-7 bg-yellow-4 text-content1;
 }
 
 .step-done.step-warning::after {
-  @apply bg-yellow-600;
+  @apply bg-yellow-7;
 }

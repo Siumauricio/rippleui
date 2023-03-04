@@ -7,7 +7,7 @@ html:has(.drawer-toggle:checked) {
 }
 
 .drawer {
-  @apply fixed top-0 left-0 z-[9999] h-screen w-full max-w-xs -translate-x-full overflow-auto bg-gray-50 transition-transform duration-150 ease-out;
+  @apply bg-gray-1 fixed top-0 left-0 z-[9999] h-screen w-full max-w-xs -translate-x-full overflow-auto transition-transform duration-150 ease-out;
 }
 
 .drawer-right {

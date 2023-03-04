@@ -48,7 +48,7 @@ export function Search() {
     <>
       <button
         type="button"
-        className="flex  h-5 w-5 items-center justify-start  hover:border-gray-600 md:h-auto md:w-64 md:flex-none md:rounded-lg  md:border md:border-gray-500 md:bg-backgroundSecondary md:py-2 md:pl-4 md:pr-3.5   md:text-sm"
+        className="hover:border-gray-7  md:border-gray-6 flex h-5 w-5  items-center justify-start md:h-auto md:w-64 md:flex-none  md:rounded-lg md:border md:bg-backgroundSecondary md:py-2 md:pl-4 md:pr-3.5   md:text-sm"
         onClick={onOpen}
       >
         <SearchIcon className="-ml-2 h-5 w-5 flex-none fill-content3 " />

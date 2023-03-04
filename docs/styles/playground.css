@@ -25,7 +25,7 @@
  */
 
 [data-theme="dark"] {
-  --backgroundTheme: rgb(var(--gray-200));
+  --backgroundTheme: rgb(var(--gray-3));
 }
 
 [data-theme="light"] {

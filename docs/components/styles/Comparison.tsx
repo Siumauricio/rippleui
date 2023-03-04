@@ -24,21 +24,21 @@ export const Comparison = () => {
             disabledFormat
           >
             {`<button 
-        class="bg-purple-800 hover:bg-purple-700 
-        focus:bg-purple-800 active:bg-purple-900 
+        class="bg-purple-9 hover:bg-purple-8 
+        focus:bg-purple-9 active:bg-purple-10 
         text-white py-2 px-4 rounded-lg shadow-lg 
         hover:shadow-xl focus:shadow-2xl 
-        active:shadow-3xl hover:text-purple-100 
-        focus:text-purple-200 active:text-purple-300">
+        active:shadow-3xl hover:text-purple-2 
+        focus:text-purple-3 active:text-purple-4">
     Click me
 </button>`}
           </CodeBlock>
           <button
-            className="active:shadow-3xl w-fit rounded-lg bg-purple-800 
-              py-2  px-4 text-white shadow-lg hover:bg-purple-700 hover:text-purple-100 hover:shadow-xl 
-              focus:bg-purple-800 focus:text-purple-200 focus:shadow-2xl active:bg-purple-900 active:text-purple-300"
+            className="active:shadow-3xl w-fit rounded-lg bg-purple-9 
+              py-2  px-4 text-white shadow-lg hover:bg-purple-8 hover:text-purple-2 hover:shadow-xl 
+              focus:bg-purple-9 focus:text-purple-3 focus:shadow-2xl active:bg-purple-10 active:text-purple-4"
           >
-            Click
+            Click me
           </button>
         </div>
         <div className="mx-auto w-full max-w-[40rem] border border-border xl:mx-0 xl:w-0"></div>
@@ -55,7 +55,7 @@ export const Comparison = () => {
     Click me 
 </button>`}
           </CodeBlock>
-          <button className="btn-secondary btn">Click</button>
+          <button className="btn-secondary btn">Click me </button>
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
@@ -69,8 +69,8 @@ export const Comparison = () => {
             disabledFormat
           >
             {`<input 
-  class="shadow appearance-none border border-red-500 
-  rounded w-full py-2 px-3 text-gray-700 mb-3 
+  class="shadow appearance-none border border-red-6 
+  rounded w-full py-2 px-3 text-gray-8 mb-3 
   leading-tight focus:outline-none 
   focus:shadow-outline" 
   placeholder="Username"
@@ -78,7 +78,7 @@ export const Comparison = () => {
 `}
           </CodeBlock>
           <input
-            className="focus:shadow-outline mb-3  appearance-none rounded border border-blue-500 py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+            className="focus:shadow-outline mb-3  appearance-none rounded border border-blue-6 py-2 px-3 leading-tight text-gray-8 shadow focus:outline-none"
             placeholder="Username"
           />
         </div>
@@ -123,7 +123,7 @@ export const Comparison = () => {
     <label  
       class="toggle-label block 
       overflow-hidden h-6 rounded-full 
-      bg-gray-300 cursor-pointer">
+      bg-gray-4 cursor-pointer">
     </label>
 </div>
 `}
@@ -137,7 +137,7 @@ export const Comparison = () => {
             />
             <label
               htmlFor="toggle"
-              className="toggle-label block h-6 cursor-pointer overflow-hidden rounded-full bg-gray-300"
+              className="toggle-label block h-6 cursor-pointer overflow-hidden rounded-full bg-gray-4"
             ></label>
           </div>
         </div>

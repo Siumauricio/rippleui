@@ -118,8 +118,8 @@ test("it should merge 2 object", (t) => {
     prefersColorScheme: false,
     // @ts-ignore
     colors: {
-      "gray-400": "#4a5568",
-      "gray-500": "#718096",
+      "gray-5": "#4a5568",
+      "gray-6": "#718096",
     },
   };
 

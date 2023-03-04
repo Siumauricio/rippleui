@@ -58,7 +58,7 @@
   height: -webkit-fill-available;
   height: calc(var(--docsearch-vh, 1vh) * 100);
   background: var(--docsearch-modal-background);
-  @apply border border-border shadow-2xl shadow-gray-200;
+  @apply shadow-gray-3 border border-border shadow-2xl;
 }
 
 .DocSearch-SearchBar {
@@ -267,7 +267,7 @@
 .DocSearch-Prefill:hover,
 .DocSearch-Prefill:focus {
   outline: none;
-  @apply bg-gray-400;
+  @apply bg-gray-5;
 }
 
 .DocSearch-Hit[aria-selected="true"] mark {
@@ -321,7 +321,7 @@ svg.DocSearch-Hit-Select-Icon {
 
 .DocSearch-Hit-action-button:focus,
 .DocSearch-Hit-action-button:hover {
-  @apply bg-gray-600;
+  @apply bg-gray-7;
 }
 
 .DocSearch-Hit-content-wrapper {
@@ -459,6 +459,6 @@ svg.DocSearch-Hit-Select-Icon {
     justify-content: center;
     border-radius: theme("borderRadius.md");
     margin-right: 0.375rem;
-    @apply bg-gray-200 text-content3;
+    @apply bg-gray-3 text-content3;
   }
 }

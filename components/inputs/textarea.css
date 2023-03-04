@@ -1,5 +1,5 @@
 .textarea {
-  @apply h-fit w-full max-w-xs rounded-xl border-2  border-gray-500 bg-gray-50  py-2.5 px-3 text-base text-content1 outline-none;
+  @apply border-gray-6 bg-gray-1 h-fit w-full max-w-xs  rounded-xl border-2  py-2.5 px-3 text-base text-content1 outline-none;
 }
 
 /* Colors */

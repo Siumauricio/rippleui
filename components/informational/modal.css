@@ -22,5 +22,5 @@ html:has(.modal-state:checked) {
 }
 
 .modal-content {
-  @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-gray-50 p-6 transition duration-75 ease-in-out;
+  @apply bg-gray-1 relative h-max max-h-[calc(100%-10%)] max-w-lg  scale-90 overflow-auto rounded-xl p-6 transition duration-75 ease-in-out;
 }

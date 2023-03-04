@@ -11,7 +11,7 @@ export const Community = () => {
         <Link
           aria-label="RippleUI Discord"
           href={"https://discord.gg/b9ZqWsmqsj"}
-          className="card cursor-pointer p-8 shadow-md transition-colors hover:bg-gray-300"
+          className="card cursor-pointer p-8 shadow-md transition-colors hover:bg-gray-4"
           target={"_blank"}
         >
           <div className="bg-discordIcon flex h-fit w-fit flex-col items-center justify-center rounded-full p-3.5">
@@ -41,9 +41,9 @@ export const Community = () => {
           aria-label="RippleUI Github"
           href={"https://github.com/Siumauricio/rippleui"}
           target="_blank"
-          className="card cursor-pointer p-8  shadow-md transition-colors hover:bg-gray-300"
+          className="card cursor-pointer p-8  shadow-md transition-colors hover:bg-gray-4"
         >
-          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-gray-500 p-3.5">
+          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-gray-6 p-3.5">
             <svg
               width="30"
               height="30"
@@ -69,10 +69,10 @@ export const Community = () => {
         <Link
           aria-label="Creator of RippleUI"
           href={"https://twitter.com/Siumauricio"}
-          className="card cursor-pointer p-8 shadow-md  transition-colors hover:bg-gray-300"
+          className="card cursor-pointer p-8 shadow-md  transition-colors hover:bg-gray-4"
           target={"_blank"}
         >
-          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-blue-800 p-3.5">
+          <div className="flex h-fit w-fit flex-col items-center justify-center rounded-full bg-blue-9 p-3.5">
             <svg
               width="30"
               height="30"

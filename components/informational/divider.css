@@ -8,12 +8,12 @@
 
 .divider::before,
 .divider-horizontal::before {
-  @apply h-px w-full  bg-gray-500 content-[""];
+  @apply bg-gray-6 h-px  w-full content-[""];
 }
 
 .divider::after,
 .divider-horizontal::after {
-  @apply h-px w-full  bg-gray-500 content-[""];
+  @apply bg-gray-6 h-px  w-full content-[""];
 }
 
 .divider-vertical {
@@ -21,9 +21,9 @@
 }
 
 .divider-vertical::before {
-  @apply h-full w-px  bg-gray-500 content-[""];
+  @apply bg-gray-6 h-full  w-px content-[""];
 }
 
 .divider-vertical::after {
-  @apply h-full  w-px  bg-gray-500 content-[""];
+  @apply bg-gray-6  h-full  w-px content-[""];
 }

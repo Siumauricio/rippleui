@@ -14,8 +14,8 @@ test("should accept the following colors", (t) => {
   expect(regex.pattern.test("bg-black")).toBe(true);
   expect(regex.pattern.test("bg-blackInverted")).toBe(true);
   expect(regex.pattern.test("bg-whiteInverted")).toBe(true);
-  expect(regex.pattern.test("bg-blue-50")).toBe(true);
-  expect(regex.pattern.test("bg-blue-100")).toBe(true);
+  expect(regex.pattern.test("bg-blue-1")).toBe(true);
+  expect(regex.pattern.test("bg-blue-2")).toBe(true);
 });
 
 test("should not accept the following colors", (t) => {

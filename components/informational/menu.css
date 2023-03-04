@@ -16,7 +16,7 @@
 
 .menu-item {
   transition: transform 0.12s ease;
-  @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 hover:bg-gray-300 active:scale-[0.97] active:bg-gray-400;
+  @apply active:bg-gray-5 hover:bg-gray-4 flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 active:scale-[0.97];
 }
 
 .menu-item-disabled {
@@ -28,7 +28,7 @@
 }
 
 .menu-item.menu-active {
-  @apply bg-gray-400  transition-none active:scale-[1];
+  @apply bg-gray-5  transition-none active:scale-[1];
 }
 
 .menu-toggle {

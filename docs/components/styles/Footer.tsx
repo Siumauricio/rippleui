@@ -4,7 +4,7 @@ import { LogoIcon } from "../icons/LogoIcon";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-200">
+    <footer className="bg-gray-3">
       <div className="mx-auto grid max-w-7xl grid-cols-1  gap-8 px-6  py-24 sm:grid-cols-4 lg:grid-cols-5">
         <div className="flex flex-col gap-3 md:mb-0">
           <div className="flex items-center">
