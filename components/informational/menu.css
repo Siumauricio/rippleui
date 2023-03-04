@@ -17,9 +17,7 @@
 .menu-item {
   transition-property: transform, opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  will-change: transform;
-  @apply active:bg-gray-5 hover:bg-gray-4 flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 active:scale-[0.97];
+  @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 duration-150 will-change-transform hover:bg-gray-4 active:scale-[0.97] active:bg-gray-5;
 }
 
 .menu-item-disabled {

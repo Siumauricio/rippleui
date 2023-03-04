@@ -1,10 +1,8 @@
 /* Base Button */
 .btn {
-  transition-duration: 150ms;
   transition-property: color, transform;
   transition-timing-function: ease-in;
-  will-change: transform;
-  @apply focus-visible:outline-gray-6 bg-gray-3 inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl px-5 text-center text-sm font-medium text-content1  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2  active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl bg-gray-3 px-5 text-center text-sm font-medium text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
 }
 
 .btn:where(
@@ -40,7 +38,7 @@
 
 /* Outline colors */
 .btn-outline {
-  @apply focus-visible:outline-gray-7 border-gray-6 hover:border-gray-4 hover:bg-gray-4 border-2 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke];
+  @apply border-2 border-gray-6 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-gray-4 hover:bg-gray-4 focus-visible:outline-gray-7;
 }
 .btn-outline-primary {
   @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary hover:text-white  focus-visible:outline-primary;
@@ -100,7 +98,7 @@
 }
 
 .btn-loading {
-  @apply before:border-t-gray-9 before:border-gray-6 pointer-events-none cursor-not-allowed select-none before:mr-2 before:box-border before:h-4 before:w-4 before:animate-spin before:rounded-[50%] before:border-2 before:content-[''];
+  @apply pointer-events-none cursor-not-allowed select-none before:mr-2 before:box-border before:h-4 before:w-4 before:animate-spin before:rounded-[50%] before:border-2 before:border-gray-6 before:border-t-gray-9 before:content-[''];
 }
 
 .btn-no-animation {
@@ -108,7 +106,7 @@
 }
 
 .btn-ghost {
-  @apply hover:bg-gray-4 border-none bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke];
+  @apply border-none bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-gray-4;
 }
 
 .btn-active {

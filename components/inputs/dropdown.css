@@ -9,9 +9,7 @@
 .dropdown-menu {
   transition-property: transform, opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  will-change: transform;
-  @apply invisible absolute right-0 z-[49]  flex w-56 origin-top-right  -translate-y-2  scale-95 transform flex-col rounded-xl   bg-gray-3 p-2 opacity-0 shadow-2xl outline-none;
+  @apply invisible absolute right-0 z-[49] flex w-56  origin-top-right -translate-y-2 scale-95  transform  flex-col rounded-xl bg-gray-3 p-2   opacity-0 shadow-2xl outline-none duration-150 will-change-transform;
 }
 
 .dropdown-item {
