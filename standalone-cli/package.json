@@ -1,11 +1,11 @@
 {
-  "name": "tailwindcss-rippleui",
+  "name": "tailwindcss-standalone",
   "version": "0.0.0",
   "bin": "standalone.js",
   "scripts": {
     "build": "pkg . --compress Brotli --no-bytecode --public-packages \"*\" --public",
     "prebuild": "rimraf dist",
-    "postbuild": "move-file dist/tailwindcss-rippleui-macos-x64 dist/tailwindcss-macos-x64 && move-file dist/tailwindcss-rippleui-macos-arm64 dist/tailwindcss-macos-arm64 && move-file dist/tailwindcss-rippleui-win-x64.exe dist/tailwindcss-windows-x64.exe && move-file dist/tailwindcss-rippleui-win-arm64.exe dist/tailwindcss-windows-arm64.exe && move-file dist/tailwindcss-rippleui-linuxstatic-x64 dist/tailwindcss-linux-x64 && move-file dist/tailwindcss-rippleui-linuxstatic-arm64 dist/tailwindcss-linux-arm64 && move-file dist/tailwindcss-rippleui-linuxstatic-armv7 dist/tailwindcss-linux-armv7",
+    "postbuild": "move-file dist/tailwindcss-standalone-macos-x64 dist/tailwindcss-macos-x64 && move-file dist/tailwindcss-standalone-macos-arm64 dist/tailwindcss-macos-arm64 && move-file dist/tailwindcss-standalone-win-x64.exe dist/tailwindcss-windows-x64.exe && move-file dist/tailwindcss-standalone-win-arm64.exe dist/tailwindcss-windows-arm64.exe && move-file dist/tailwindcss-standalone-linuxstatic-x64 dist/tailwindcss-linux-x64 && move-file dist/tailwindcss-standalone-linuxstatic-arm64 dist/tailwindcss-linux-arm64 && move-file dist/tailwindcss-standalone-linuxstatic-armv7 dist/tailwindcss-linux-armv7",
     "test": "jest"
   },
   "devDependencies": {
@@ -19,8 +19,8 @@
     "move-file-cli": "^3.0.0",
     "pkg": "^5.8.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^3.2.4",
-    "rippleui": "latest"
+    "rippleui": "^1.9.1",
+    "tailwindcss": "^3.2.4"
   },
   "pkg": {
     "assets": "node_modules/tailwindcss/lib/css/preflight.css",
