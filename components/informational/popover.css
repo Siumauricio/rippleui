@@ -10,6 +10,7 @@
   transition-property: transform, opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  will-change: transform;
   @apply bg-gray-3 invisible  absolute left-1/2 right-full  z-[49] flex w-56 origin-top   -translate-y-2 -translate-x-1/2 scale-95 transform  flex-col  rounded-xl border   border-transparent p-2 opacity-0 shadow-lg outline-none;
 }
 

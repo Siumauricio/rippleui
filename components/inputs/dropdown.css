@@ -7,16 +7,20 @@
 }
 
 .dropdown-menu {
-  @apply bg-gray-3 invisible absolute right-0  z-[49] flex w-56  origin-top-right  -translate-y-2 scale-95 transform flex-col   rounded-xl p-2 opacity-0 shadow-2xl outline-none transition-all;
+  transition-property: transform, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  will-change: transform;
+  @apply invisible absolute right-0 z-[49]  flex w-56 origin-top-right  -translate-y-2  scale-95 transform flex-col rounded-xl   bg-gray-3 p-2 opacity-0 shadow-2xl outline-none;
 }
 
 .dropdown-item {
   transition: transform 0.12s ease;
-  @apply active:bg-gray-5 hover:bg-gray-4 flex w-full cursor-pointer flex-col  rounded-[5px] p-2 active:scale-[0.97];
+  @apply flex w-full cursor-pointer flex-col rounded-[5px] p-2  hover:bg-gray-4 active:scale-[0.97] active:bg-gray-5;
 }
 
 .dropdown-item.dropdown-active {
-  @apply hover:bg-gray-5 transition-none active:scale-[1];
+  @apply transition-none hover:bg-gray-5 active:scale-[1];
 }
 
 .dropdown-divider {
@@ -24,7 +28,7 @@
 }
 
 .dropdown-divider::before {
-  @apply bg-gray-6 absolute top-0  right-0 -left-2   h-px content-[""];
+  @apply absolute top-0 right-0  -left-2 h-px   bg-gray-6 content-[""];
 }
 
 .dropdown-active {

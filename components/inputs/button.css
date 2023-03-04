@@ -1,7 +1,7 @@
 /* Base Button */
 .btn {
   transition-duration: 150ms;
-  transition-property: background, color, transform;
+  transition-property: color, transform;
   transition-timing-function: ease-in;
   will-change: transform;
   @apply focus-visible:outline-gray-6 bg-gray-3 inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl px-5 text-center text-sm font-medium text-content1  focus:outline-2 focus-visible:outline focus-visible:outline-offset-2  active:scale-[0.97];

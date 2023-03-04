@@ -15,7 +15,10 @@
 }
 
 .menu-item {
-  transition: transform 0.12s ease;
+  transition-property: transform, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  will-change: transform;
   @apply active:bg-gray-5 hover:bg-gray-4 flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm text-content1 active:scale-[0.97];
 }
 
@@ -36,7 +39,7 @@
 }
 
 .menu-item-collapse {
-  transition: padding 0.2s, grid-template-rows 0.2s;
+  transition: padding 0.15s, grid-template-rows 0.15s;
   @apply grid grid-rows-[0fr] overflow-hidden;
 }
 
@@ -49,7 +52,7 @@
 }
 
 .menu-icon {
-  @apply transition-transform duration-200;
+  @apply transition-transform duration-300;
 }
 
 .menu-toggle:checked ~ .menu-item .menu-icon {
