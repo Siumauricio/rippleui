@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <nav
       className={clsx(
-        scrollY > 35 && "border-b border-gray-500",
+        scrollY > 35 && "border-gray-6 border-b",
         "navbar navbar-sticky navbar-glass  bg-backgroundPrimary/70 py-3 shadow-none sm:bg-backgroundSecondary/70"
       )}
     >

@@ -4,24 +4,24 @@
 }
 
 .table > thead > tr th:first-child {
-  @apply rounded-l-md border-y border-l border-gray-500;
+  @apply border-gray-6 rounded-l-md border-y border-l;
 }
 
 .table > thead > tr th:last-child {
-  @apply rounded-r-md border-y border-r border-gray-500;
+  @apply border-gray-6 rounded-r-md border-y border-r;
 }
 
 .table > thead > tr :not(.th:first-child, .th:last-child) {
-  @apply border-y  border-gray-500;
+  @apply border-gray-6  border-y;
 }
 
 .table > thead > tr > th {
-  @apply whitespace-nowrap bg-gray-200 py-4 px-2.5 text-start text-sm font-normal text-content1;
+  @apply bg-gray-3 whitespace-nowrap py-4 px-2.5 text-start text-sm font-normal text-content1;
 }
 
 .table > tbody > tr > td,
 .table > tbody > tr > th {
-  @apply whitespace-nowrap border-b border-gray-500 py-4 px-2.5 text-start text-sm text-content2;
+  @apply border-gray-6 whitespace-nowrap border-b py-4 px-2.5 text-start text-sm text-content2;
 }
 
 /* Compact */
@@ -56,11 +56,11 @@
 /* Zebra */
 .table.table-zebra > tbody > tr:nth-child(even) > td,
 .table.table-zebra > tbody > tr:nth-child(even) > th {
-  @apply bg-gray-200;
+  @apply bg-gray-3;
 }
 
 /* Hover */
 .table.table-hover > tbody > tr:hover > td,
 .table.table-hover > tbody > tr:hover > th {
-  @apply bg-gray-200;
+  @apply bg-gray-3;
 }

@@ -21,7 +21,7 @@ export const NavbarDocs = () => {
   return (
     <nav
       className={
-        "navbar navbar-sticky navbar-glass border-b border-gray-500  py-2 shadow-none md:py-3 lg:pl-64 2xl:pl-[calc((100vw-var(--vp-layout-max-width))/1.9+var(--vp-sidebar-width))]"
+        "navbar navbar-sticky navbar-glass border-gray-6 border-b  py-2 shadow-none md:py-3 lg:pl-64 2xl:pl-[calc((100vw-var(--vp-layout-max-width))/1.9+var(--vp-sidebar-width))]"
       }
     >
       <div className=" mx-auto flex w-full ">
@@ -48,7 +48,7 @@ export const NavbarDocs = () => {
           </div>
         </div>
         <div className="navbar-center hidden justify-end gap-4 lg:flex">
-          <div className="flex border-r border-gray-500 pr-1">
+          <div className="border-gray-6 flex border-r pr-1">
             <Link
               className={clsx(
                 "navbar-item text-sm",
@@ -83,7 +83,7 @@ export const NavbarDocs = () => {
               v.{RippleUIVersion}
             </Link>
           </div>
-          <div className="flex border-r border-gray-500 py-2 pr-3.5">
+          <div className="border-gray-6 flex border-r py-2 pr-3.5">
             <DarkModeSwitcher />
           </div>
           <div className="flex h-full items-center justify-center gap-4">

@@ -59,7 +59,7 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
       <CustomTag
         className={clsx(
           level !== 1 && "cursor-pointer",
-          "group -ml-4 flex  scroll-m-24  items-center gap-2 pl-4 text-content1 hover:text-gray-1100",
+          "hover:text-gray-12 group -ml-4  flex  scroll-m-24 items-center gap-2 pl-4 text-content1",
           getCSS(level),
           calculateHeadingLevel(level)
         )}
@@ -73,7 +73,7 @@ export const Heading = ({ id = "", level = 1, children, className }: Props) => {
             aria-label="Anchor"
           >
             ​
-            <div className="flex h-6 w-6 items-center justify-center rounded-md text-gray-800 shadow-sm ring-1 ring-gray-900/20 hover:text-gray-1000 hover:shadow hover:ring-slate-900/50  ">
+            <div className="hover:text-gray-11 ring-gray-10/20 hover:ring-slate-10/50 text-gray-9 flex h-6 w-6 items-center justify-center rounded-md shadow-sm ring-1 hover:shadow  ">
               <svg width="12" height="12" fill="none" aria-hidden="true">
                 <path
                   d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10"

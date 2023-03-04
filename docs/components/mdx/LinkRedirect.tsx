@@ -45,7 +45,7 @@ const LinkRedirect = ({
         {!hideLeft && (
           <Link
             href={hrefLeft}
-            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-gray-300"
+            className="hover:bg-gray-4 flex items-center gap-1 rounded-lg bg-transparent p-2"
           >
             <ArrowLeft />
             {contentLeft}
@@ -54,7 +54,7 @@ const LinkRedirect = ({
         {!hideRight && (
           <Link
             href={hrefRight}
-            className="flex items-center gap-1 rounded-lg bg-transparent p-2 hover:bg-gray-300"
+            className="hover:bg-gray-4 flex items-center gap-1 rounded-lg bg-transparent p-2"
           >
             {contentRight}
             <ChevronRight />
@@ -63,7 +63,7 @@ const LinkRedirect = ({
       </div>
       <div className="py-10 sm:py-0">
         <a
-          className="cursor-pointer text-primary hover:text-blue-800"
+          className="hover:text-blue-9 cursor-pointer text-primary"
           rel="noreferrer nofollow"
           href={
             "https://github.com/Siumauricio/rippleui/tree/main/docs/content" +

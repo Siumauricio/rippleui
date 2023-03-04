@@ -8,11 +8,11 @@
 }
 
 .progress {
-  @apply relative h-4 w-40 appearance-none overflow-hidden rounded-full bg-gray-400;
+  @apply bg-gray-5 relative h-4 w-40 appearance-none overflow-hidden rounded-full;
 }
 
 .progress::-webkit-progress-bar {
-  @apply rounded-full bg-gray-400;
+  @apply bg-gray-5 rounded-full;
 }
 
 .progress::-moz-progress-bar {
@@ -96,49 +96,49 @@
 
 .progress-flat-primary::-webkit-progress-bar,
 .progress-flat-primary.progress-indeterminate {
-  @apply bg-blue-400;
+  @apply bg-blue-5;
 }
 
 .progress-flat-secondary::-webkit-progress-bar,
 .progress-flat-secondary.progress-indeterminate {
-  @apply bg-purple-400;
+  @apply bg-purple-5;
 }
 
 .progress-flat-success::-webkit-progress-bar,
 .progress-flat-success.progress-indeterminate {
-  @apply bg-green-400;
+  @apply bg-green-5;
 }
 
 .progress-flat-error::-webkit-progress-bar,
 .progress-flat-error.progress-indeterminate {
-  @apply bg-red-400;
+  @apply bg-red-5;
 }
 
 .progress-flat-warning::-webkit-progress-bar,
 .progress-flat-warning.progress-indeterminate {
-  @apply bg-yellow-400;
+  @apply bg-yellow-5;
 }
 
 /* Firefox Target */
 @supports (-moz-appearance: none) {
   .progress-flat-primary {
-    @apply bg-blue-400;
+    @apply bg-blue-5;
   }
 
   .progress-flat-secondary {
-    @apply bg-purple-400;
+    @apply bg-purple-5;
   }
 
   .progress-flat-success {
-    @apply bg-green-400;
+    @apply bg-green-5;
   }
 
   .progress-flat-error {
-    @apply bg-red-400;
+    @apply bg-red-5;
   }
 
   .progress-flat-warning {
-    @apply bg-yellow-400;
+    @apply bg-yellow-5;
   }
 
   .progress-primary::-moz-progress-bar,

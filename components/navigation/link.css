@@ -1,6 +1,6 @@
 .link {
   transition-property: color, background-color, transform, underline;
-  @apply inline-flex cursor-pointer items-center text-base text-content1  duration-150 hover:text-content2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-500;
+  @apply focus-visible:outline-gray-6 inline-flex cursor-pointer items-center text-base  text-content1 duration-150 hover:text-content2 focus-visible:outline-2 focus-visible:outline-offset-2;
 }
 
 .link-primary {
@@ -32,7 +32,7 @@
 }
 
 .link-ghost {
-  @apply rounded-2xl py-1 px-2 hover:bg-gray-300 hover:text-content1;
+  @apply hover:bg-gray-4 rounded-2xl py-1 px-2 hover:text-content1;
 }
 
 .link-ghost-primary {

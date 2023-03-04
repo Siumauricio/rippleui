@@ -9,7 +9,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/my-react-app"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300"
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1"
       >
         <svg
           width="100"
@@ -45,7 +45,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/nextjs-example"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="101"
@@ -76,7 +76,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/vuejs-example"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="101"
@@ -106,7 +106,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/my-angular-project"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="101"
@@ -137,7 +137,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/my-remix-app"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           x-comp="Wordmark"
@@ -247,7 +247,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/gastby-example"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="101"
@@ -270,7 +270,7 @@ export const ExamplesRepositories = () => {
           "https://github.com/Siumauricio/rippleui/tree/main/examples/my-svelte-app"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="101"
@@ -297,7 +297,7 @@ export const ExamplesRepositories = () => {
           "https://codi.link/PGxpbmsNCiAgcmVsPSJzdHlsZXNoZWV0Ig0KICBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL3JpcHBsZXVpL2Rpc3QvY3NzL3N0eWxlcy5jc3MiDQovPg0KDQo8IS0tIEFuZCAtLT4NCjxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi50YWlsd2luZGNzcy5jb20iPjwvc2NyaXB0Pg0KDQo8YnV0dG9uIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiPkhlbGxvIFdvcmxkITwvYnV0dG9uPg==%7C%7C"
         }
         target="_blank"
-        className="flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 hover:bg-gray-300 "
+        className="hover:bg-gray-4 flex w-fit cursor-pointer flex-col gap-2 rounded-lg border border-border p-5 transition-transform hover:-translate-y-1 "
       >
         <svg
           width="100"

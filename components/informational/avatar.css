@@ -1,5 +1,5 @@
 .avatar {
-  @apply relative  inline-flex h-10 w-10   max-w-xs bg-gray-200 align-top text-xs;
+  @apply bg-gray-3  relative inline-flex h-10   w-10 max-w-xs align-top text-xs;
 }
 
 .avatar > * {
@@ -23,7 +23,7 @@
 }
 
 .avatar-ring {
-  @apply ring-2 ring-gray-500;
+  @apply ring-gray-6 ring-2;
 }
 .avatar-ring-primary {
   @apply ring-2 ring-primary;
@@ -56,11 +56,11 @@
 
 .avatar-online.avatar-squared::before {
   transform: translate(50%, -50%);
-  @apply absolute right-0 top-0 flex h-2 w-2    items-center justify-center overflow-auto rounded-full border-2 border-success bg-green-500 content-[""];
+  @apply bg-green-6 absolute right-0 top-0 flex h-2    w-2 items-center justify-center overflow-auto rounded-full border-2 border-success content-[""];
 }
 
 .avatar-online:not(.avatar-squared)::before {
-  @apply absolute right-0  block h-2 w-2 overflow-auto rounded-full border-2 border-success bg-green-500 content-[""];
+  @apply bg-green-6 absolute  right-0 block h-2 w-2 overflow-auto rounded-full border-2 border-success content-[""];
 }
 
 .avatar-group {
@@ -81,7 +81,7 @@
         .avatar-ring-warning
       )
   ) {
-  @apply ring-gray-500;
+  @apply ring-gray-6;
 }
 
 .avatar-xs {

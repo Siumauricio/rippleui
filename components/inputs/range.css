@@ -3,7 +3,7 @@
   --circle-color: rgb(var(--white));
   --left-track-color: rgb(var(--primary));
   --circle-border: rgb(var(--primary));
-  --track-color: rgb(var(--gray-400));
+  --track-color: rgb(var(--gray-5));
   --brightness-hover: 180%;
   --brightness-down: 80%;
   --thumb-height: 1.125em;
@@ -161,35 +161,35 @@
 .range-flat-primary {
   --left-track-color: rgb(var(--primary));
   --circle-border: rgb(var(--primary));
-  --track-color: rgb(var(--blue-400));
+  --track-color: rgb(var(--blue-5));
   @apply text-primary;
 }
 
 .range-flat-secondary {
   --left-track-color: rgb(var(--secondary));
   --circle-border: rgb(var(--secondary));
-  --track-color: rgb(var(--purple-400));
+  --track-color: rgb(var(--purple-5));
   @apply text-secondary;
 }
 
 .range-flat-success {
   --left-track-color: rgb(var(--success));
   --circle-border: rgb(var(--success));
-  --track-color: rgb(var(--green-400));
+  --track-color: rgb(var(--green-5));
   @apply text-success;
 }
 
 .range-flat-error {
   --left-track-color: rgb(var(--error));
   --circle-border: rgb(var(--error));
-  --track-color: rgb(var(--red-400));
+  --track-color: rgb(var(--red-5));
   @apply text-error;
 }
 
 .range-flat-warning {
   --left-track-color: rgb(var(--warning));
   --circle-border: rgb(var(--warning));
-  --track-color: rgb(var(--yellow-400));
+  --track-color: rgb(var(--yellow-5));
   @apply text-warning;
 }
 

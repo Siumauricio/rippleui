@@ -44,15 +44,15 @@ export const Sidebar = () => {
               <div key={item.title} className=" pt-4">
                 <span className="flex font-semibold text-content1">
                   {item.title === "Get started" ? (
-                    <div className="mr-2 rounded-md bg-purple-500">
+                    <div className="bg-purple-6 mr-2 rounded-md">
                       <BookIcon />
                     </div>
                   ) : item.title === "Components" ? (
-                    <div className=" mr-2 flex items-center rounded-md bg-blue-500">
+                    <div className=" bg-blue-6 mr-2 flex items-center rounded-md">
                       <ComponentsIcon />
                     </div>
                   ) : (
-                    <div className=" mr-2 flex items-center rounded-md bg-green-500">
+                    <div className=" bg-green-6 mr-2 flex items-center rounded-md">
                       <ChangelogIcon />
                     </div>
                   )}

@@ -23,19 +23,31 @@
   animation: skeletonWave 2.5s linear infinite;
   background: linear-gradient(
     270deg,
-    rgb(var(--gray-800)),
-    rgb(var(--gray-600)),
-    rgb(var(--gray-600)),
-    rgb(var(--gray-800))
+    rgb(var(--gray-9)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-9))
   );
   background-size: 400% 100%;
   transition: opacity 300ms ease-out;
   @apply h-full w-full opacity-50;
 }
 
+.skeleton-static {
+  background: linear-gradient(
+    270deg,
+    rgb(var(--gray-9)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-9))
+  );
+  background-size: 400% 100%;
+  @apply h-full w-full opacity-40;
+}
+
 .skeleton-pulse {
   animation: skeletonPulse 2s linear infinite;
   background: no-repeat;
   animation-delay: 0.5s;
-  @apply h-full w-full  bg-gray-600;
+  @apply bg-gray-7 h-full  w-full;
 }

@@ -9,8 +9,7 @@
 .popover-content {
   transition-property: transform, opacity, visibility;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  @apply invisible absolute  left-1/2 right-full z-[49]  flex w-56 origin-top -translate-y-2   -translate-x-1/2 scale-95 transform flex-col  rounded-xl  border border-transparent   bg-gray-200 p-2 opacity-0 shadow-lg outline-none;
+  @apply invisible absolute left-1/2 right-full  z-[49] flex w-56  origin-top -translate-y-2 -translate-x-1/2 scale-95   transform flex-col rounded-xl border  border-transparent  bg-gray-3 p-2   opacity-0 shadow-lg outline-none duration-150 will-change-transform;
 }
 
 .popover-bottom-center {
@@ -149,7 +148,7 @@
   @apply visible translate-x-0 translate-y-0 scale-100 opacity-100;
 }
 .popover-arrow {
-  @apply absolute h-[0.7rem] w-[0.7rem] border-transparent bg-gray-200;
+  @apply absolute h-[0.7rem] w-[0.7rem] border-transparent bg-gray-3;
 }
 .popover-border .popover-content .popover-arrow,
 .popover-border .popover-content {

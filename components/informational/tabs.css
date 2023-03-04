@@ -11,7 +11,7 @@
 }
 
 .tab-bordered {
-  @apply border-b-2 border-gray-500 py-2;
+  @apply border-gray-6 border-b-2 py-2;
 }
 
 .tab {
@@ -44,15 +44,15 @@
 }
 
 .tab-pill:not(.tab-active) {
-  @apply hover:bg-gray-300 active:bg-gray-400;
+  @apply active:bg-gray-5 hover:bg-gray-4;
 }
 
 .tab-pill.tab-active {
-  @apply border-gray-500 bg-gray-400 text-content1;
+  @apply border-gray-6 bg-gray-5 text-content1;
 }
 
 .tabs-boxed {
-  @apply rounded-xl bg-gray-200 p-1;
+  @apply bg-gray-3 rounded-xl p-1;
 }
 
 .tabs-boxed .tab {
@@ -60,11 +60,11 @@
 }
 
 .tabs-boxed .tab:not(.tab-active) {
-  @apply hover:bg-gray-300 hover:text-content1 active:bg-gray-400;
+  @apply active:bg-gray-5 hover:bg-gray-4 hover:text-content1;
 }
 
 .tabs-boxed .tab.tab-active {
-  @apply bg-gray-400 text-content1;
+  @apply bg-gray-5 text-content1;
 }
 
 .tab-toggle {
@@ -84,9 +84,9 @@
 }
 
 .tab-toggle:checked + .tab.tab-pill {
-  @apply bg-gray-400 text-content1;
+  @apply bg-gray-5 text-content1;
 }
 
 .tabs-boxed .tab-toggle:checked + .tab {
-  @apply bg-gray-400 text-content1;
+  @apply bg-gray-5 text-content1;
 }

@@ -1,14 +1,14 @@
 .switch {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --switch-bg: rgb(var(--gray-500));
-  --switch-border: rgb(var(--gray-500));
+  --switch-bg: rgb(var(--gray-6));
+  --switch-border: rgb(var(--gray-6));
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
-  --switch-border-hover: rgb(var(--gray-600));
-  --switch-bg-hover: rgb(var(--gray-500));
+  --switch-border-hover: rgb(var(--gray-7));
+  --switch-bg-hover: rgb(var(--gray-6));
   --checkline-color: rgb(var(--white));
-  --circle-color: rgb(var(--gray-50));
+  --circle-color: rgb(var(--gray-1));
   transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
   @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer appearance-none   rounded-xl   border border-[var(--switch-border)]  bg-[var(--switch-bg)] align-top outline-none focus:outline-2 focus-visible:outline   focus-visible:outline-offset-2  focus-visible:outline-primary;
 }
@@ -27,7 +27,7 @@
 }
 
 .switch:disabled {
-  @apply cursor-not-allowed border-gray-600 bg-gray-600 opacity-50;
+  @apply border-gray-7 bg-gray-7 cursor-not-allowed opacity-50;
 }
 
 .switch:disabled:checked {
@@ -134,18 +134,18 @@
 /* Ghost */
 
 .switch-ghost-primary {
-  --switch-bg: rgb(var(--gray-50));
-  --circle-color: rgb(var(--gray-500));
-  --switch-bg-hover: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
   --switch-border-hover: rgb(var(--primary));
   --switch-bg-checked: rgb(var(--primary));
   @apply focus-visible:outline-primary;
 }
 
 .switch-ghost-secondary {
-  --switch-bg: rgb(var(--gray-50));
-  --circle-color: rgb(var(--gray-500));
-  --switch-bg-hover: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
   --switch-border-hover: rgb(var(--secondary));
   --switch-border-checked: rgb(var(--secondary));
   --switch-bg-checked: rgb(var(--secondary));
@@ -153,9 +153,9 @@
 }
 
 .switch-ghost-success {
-  --switch-bg: rgb(var(--gray-50));
-  --circle-color: rgb(var(--gray-500));
-  --switch-bg-hover: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
   --switch-border-hover: rgb(var(--success));
   --switch-border-checked: rgb(var(--success));
   --switch-bg-checked: rgb(var(--success));
@@ -163,9 +163,9 @@
 }
 
 .switch-ghost-error {
-  --switch-bg: rgb(var(--gray-50));
-  --circle-color: rgb(var(--gray-500));
-  --switch-bg-hover: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
   --switch-border-hover: rgb(var(--error));
   --switch-border-checked: rgb(var(--error));
   --switch-bg-checked: rgb(var(--error));
@@ -173,9 +173,9 @@
 }
 
 .switch-ghost-warning {
-  --switch-bg: rgb(var(--gray-50));
-  --circle-color: rgb(var(--gray-500));
-  --switch-bg-hover: rgb(var(--gray-50));
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
   --switch-border-hover: rgb(var(--warning));
   --switch-border-checked: rgb(var(--warning));
   --switch-bg-checked: rgb(var(--warning));

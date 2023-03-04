@@ -13,7 +13,7 @@ export const BookIcon = () => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M15.5 7c1.093 0 2.617.27 3.5.743V17c-.883-.473-2.407-.743-3.5-.743s-2.117.27-3 .743V7.743a6.344 6.344 0 0 1 3-.743Z"
-        className="fill-purple-700 "
+        className="fill-purple-8 "
       ></path>
     </svg>
   );
