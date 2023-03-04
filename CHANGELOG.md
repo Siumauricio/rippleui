@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/Siumauricio/rippleui/compare/v1.9.0...v1.9.1) (2023-03-04)
+
+### Features
+
+- **config:** add standalone-cli executables ([f170e2b](https://github.com/Siumauricio/rippleui/commit/f170e2b4f49f3501be10d182dc87ec1038e5419b))
+- **skeleton:** add static variant ([c7e8137](https://github.com/Siumauricio/rippleui/commit/c7e813704a1fadfc809b675cc65625f7cdc50f9a))
+
+### Refactor
+
+- change tokens colors to not clash with tailwind colors ([c2f1171](https://github.com/Siumauricio/rippleui/commit/c2f1171302dd7aae119a8b97fdaec2441c960c4e))
+- **config:** add example of standalone cli ([2019a8b](https://github.com/Siumauricio/rippleui/commit/2019a8bfc7a96d338fcec174c1544120462353d4))
+- **menu,popover,button,dropdown:** prevent components vibrate on click ([6b41ef8](https://github.com/Siumauricio/rippleui/commit/6b41ef8bca9cc6b004993c13f76491e59be0fd78))
+
 ## [1.9.0](https://github.com/Siumauricio/rippleui/compare/v1.8.1...v1.9.0) (2023-02-12)
 
 ### Features
