@@ -24,19 +24,17 @@ export const Comparison = () => {
             disabledFormat
           >
             {`<button 
-        class="bg-purple-9 hover:bg-purple-8 
-        focus:bg-purple-9 active:bg-purple-10 
-        text-white py-2 px-4 rounded-lg shadow-lg 
-        hover:shadow-xl focus:shadow-2xl 
-        active:shadow-3xl hover:text-purple-2 
-        focus:text-purple-3 active:text-purple-4">
+  class="active:shadow-3xl inline-flex w-fit rounded-lg 
+        bg-purple-10  py-2 px-4 text-sm font-semibold 
+        text-white shadow-lg transition-transform 
+        hover:bg-purple-8 hover:shadow-xl active:scale-95">
     Click me
 </button>`}
           </CodeBlock>
           <button
-            className="active:shadow-3xl w-fit rounded-lg bg-purple-9 
-              py-2  px-4 text-white shadow-lg hover:bg-purple-8 hover:text-purple-2 hover:shadow-xl 
-              focus:bg-purple-9 focus:text-purple-3 focus:shadow-2xl active:bg-purple-10 active:text-purple-4"
+            className="active:shadow-3xl inline-flex w-fit rounded-lg 
+              bg-purple-10  py-2 px-4 text-sm font-semibold text-white shadow-lg transition-transform hover:bg-purple-8
+              hover:shadow-xl active:scale-95"
           >
             Click me
           </button>
@@ -69,17 +67,19 @@ export const Comparison = () => {
             disabledFormat
           >
             {`<input 
-  class="shadow appearance-none border border-red-6 
-  rounded w-full py-2 px-3 text-gray-8 mb-3 
-  leading-tight focus:outline-none 
-  focus:shadow-outline" 
-  placeholder="Username"
+  class="focus:shadow-outline mb-3 
+  w-full max-w-xs appearance-none 
+  rounded-lg border-2 border-blue-9 
+  bg-transparent py-2 px-3 leading-tight 
+  text-gray-8 shadow focus:outline-none
+  placeholder:text-gray-400" 
+  placeholder="Type here"
 >
 `}
           </CodeBlock>
           <input
-            className="focus:shadow-outline mb-3  appearance-none rounded border border-blue-6 py-2 px-3 leading-tight text-gray-8 shadow focus:outline-none"
-            placeholder="Username"
+            className="focus:shadow-outline mb-3 w-full max-w-xs appearance-none rounded-lg border-2 border-blue-9 bg-transparent py-2 px-3 leading-tight text-gray-8 shadow placeholder:text-gray-400 focus:outline-none"
+            placeholder="Type here"
           />
         </div>
         <div className="mx-auto w-full max-w-[40rem] border border-border xl:mx-0 xl:w-0"></div>
@@ -98,7 +98,7 @@ export const Comparison = () => {
 
   `}
           </CodeBlock>
-          <input className="input-primary input" placeholder="Username" />
+          <input className="input-primary input" placeholder="Type here" />
         </div>
       </div>
       <span className="text-center text-content2">Another comparison.</span>
