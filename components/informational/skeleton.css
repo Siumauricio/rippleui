@@ -33,6 +33,18 @@
   @apply h-full w-full opacity-50;
 }
 
+.skeleton-static {
+  background: linear-gradient(
+    270deg,
+    rgb(var(--gray-9)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-7)),
+    rgb(var(--gray-9))
+  );
+  background-size: 400% 100%;
+  @apply h-full w-full opacity-40;
+}
+
 .skeleton-pulse {
   animation: skeletonPulse 2s linear infinite;
   background: no-repeat;
