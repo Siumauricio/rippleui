@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.2](https://github.com/Siumauricio/rippleui/compare/v1.9.1...v1.9.2) (2023-03-05)
+
+### Refactor
+
+- **checkbox, radio, range, switch:** set static white value ([f3ccb18](https://github.com/Siumauricio/rippleui/commit/f3ccb1859fbb7f9e8a5afec9976620566584f776)) [#39](https://github.com/Siumauricio/rippleui/issues/39)
+- **config:** remove white and black colors ([ad88491](https://github.com/Siumauricio/rippleui/commit/ad884915099bb6be0137cfa0c4de864a0f61a8f0)) [#39](https://github.com/Siumauricio/rippleui/issues/39)
+
 ### [1.9.1](https://github.com/Siumauricio/rippleui/compare/v1.9.0...v1.9.1) (2023-03-04)
 
 ### Features
