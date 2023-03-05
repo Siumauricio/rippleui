@@ -1,6 +1,6 @@
 /* Base Button */
 .btn {
-  transition-property: color, transform;
+  transition-property: color, transform, background-color, border-color;
   transition-timing-function: ease-in;
   @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-xl bg-gray-3 px-5 text-center text-sm font-medium text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
 }
@@ -111,4 +111,24 @@
 
 .btn-active {
   @apply bg-gray-5;
+}
+
+.btn-solid-primary {
+  @apply bg-blue-4 text-blue-11  hover:bg-blue-5 focus-visible:outline-blue-6 active:bg-blue-6;
+}
+
+.btn-solid-secondary {
+  @apply bg-purple-4 text-purple-11 hover:bg-purple-5 focus-visible:outline-purple-6 active:bg-purple-6;
+}
+
+.btn-solid-success {
+  @apply bg-green-4 text-green-11 hover:bg-green-5 focus-visible:outline-green-6 active:bg-green-6;
+}
+
+.btn-solid-error {
+  @apply bg-red-4 text-red-11 hover:bg-red-5 focus-visible:outline-red-6 active:bg-red-6;
+}
+
+.btn-solid-warning {
+  @apply bg-yellow-4 text-yellow-11 hover:bg-yellow-5 focus-visible:outline-yellow-6 active:bg-yellow-6;
 }

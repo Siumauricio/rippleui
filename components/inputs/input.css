@@ -1,5 +1,5 @@
 .input {
-  @apply border-gray-6 bg-gray-1 h-10 w-full max-w-xs  rounded-xl border-2 px-3 text-base text-content1 outline-none;
+  @apply h-10 w-full max-w-xs rounded-xl border-2  border-gray-6 bg-gray-1 px-3 text-base text-content1 outline-none;
 }
 
 /* Colors */
@@ -82,4 +82,30 @@
 
 .input-block {
   @apply max-w-full;
+}
+
+/* Solid */
+
+.input-solid {
+  @apply border-transparent bg-gray-5 text-gray-12 placeholder:text-gray-10;
+}
+
+.input-solid-primary {
+  @apply border-transparent bg-blue-5 text-blue-11 placeholder:text-blue-9;
+}
+
+.input-solid-secondary {
+  @apply border-transparent bg-purple-5 text-purple-11 placeholder:text-purple-9;
+}
+
+.input-solid-success {
+  @apply border-transparent bg-green-5 text-green-11 placeholder:text-green-9;
+}
+
+.input-solid-warning {
+  @apply border-transparent bg-yellow-5 text-yellow-11 placeholder:text-yellow-11;
+}
+
+.input-solid-error {
+  @apply border-transparent bg-red-5 text-red-11 placeholder:text-red-9;
 }

@@ -20,7 +20,7 @@
   --r: 43deg;
 }
 .radio:disabled {
-  @apply border-gray-7 bg-gray-7 cursor-not-allowed opacity-50;
+  @apply cursor-not-allowed border-gray-7 bg-gray-7 opacity-50;
 }
 
 .radio:disabled + label {
@@ -193,4 +193,50 @@
 
 .radio.radio-xl::after {
   @apply h-[26px] w-[26px];
+}
+
+.radio-solid {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--gray-6));
+  @apply border-transparent bg-gray-5;
+}
+
+.radio-solid-primary {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--blue-6));
+  --radio-bg-checked: rgb(var(--primary));
+  --radio-border-checked: rgb(var(--primary));
+  @apply border-transparent bg-blue-5;
+}
+
+.radio-solid-secondary {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--purple-6));
+  --radio-bg-checked: rgb(var(--secondary));
+  --radio-border-checked: rgb(var(--secondary));
+  @apply border-transparent bg-purple-5;
+}
+
+.radio-solid-success {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--green-6));
+  --radio-bg-checked: rgb(var(--success));
+  --radio-border-checked: rgb(var(--success));
+  @apply border-transparent bg-green-5;
+}
+
+.radio-solid-warning {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--yellow-6));
+  --radio-bg-checked: rgb(var(--warning));
+  --radio-border-checked: rgb(var(--warning));
+  @apply border-transparent bg-yellow-5;
+}
+
+.radio-solid-error {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--red-6));
+  --radio-bg-checked: rgb(var(--error));
+  --radio-border-checked: rgb(var(--error));
+  @apply border-transparent bg-red-5;
 }
