@@ -145,6 +145,8 @@ const background: BackgroundVariables = {
   backgroundPrimary: applyOpacityValue("--backgroundPrimary"),
   backgroundSecondary: applyOpacityValue("--backgroundSecondary"),
   border: applyOpacityValue("--border"),
+  black: applyOpacityValue("--black"),
+  white: applyOpacityValue("--white"),
 };
 
 const text: TextVariables = {

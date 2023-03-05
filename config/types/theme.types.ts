@@ -36,7 +36,9 @@ export type BaseScale =
 export type BackgroundScale =
   | "backgroundPrimary"
   | "backgroundSecondary"
-  | "border";
+  | "border"
+  | "black"
+  | "white";
 
 export type TextScale =
   | "content1"
