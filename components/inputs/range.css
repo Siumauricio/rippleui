@@ -1,6 +1,6 @@
 .range {
   color: rgb(var(--primary));
-  --circle-color: rgb(var(--white));
+  --circle-color: rgb(255 255 255);
   --left-track-color: rgb(var(--primary));
   --circle-border: rgb(var(--primary));
   --track-color: rgb(var(--gray-5));
