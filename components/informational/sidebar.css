@@ -1,0 +1,39 @@
+.sidebar {
+  @apply sticky top-0 z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-2;
+}
+
+.sidebar-title {
+  @apply flex w-full items-center  font-semibold text-content1;
+}
+
+.sidebar-content {
+  @apply flex h-full w-full flex-col  overflow-y-auto py-6;
+}
+
+.sidebar-footer {
+  @apply flex w-full flex-col text-content1;
+}
+
+.sidebar-mobile {
+  @apply sticky top-0 z-[55]  h-screen w-fit;
+}
+
+.sidebar-mobile .sidebar {
+  @apply transition-transform duration-150;
+}
+
+.sidebar-state {
+  @apply hidden;
+}
+
+.sidebar-state:checked ~ .sidebar {
+  @apply ml-0  translate-x-0;
+}
+
+html:has(.sidebar-state:checked) {
+  @apply overflow-hidden;
+}
+
+.sidebar-state:checked ~ .sidebar-overlay {
+  @apply fixed inset-0 z-50 bg-black/60 opacity-80 transition-all;
+}
