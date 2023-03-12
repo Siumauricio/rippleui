@@ -28,6 +28,7 @@
 @import "./informational/form-control.css";
 @import "./informational/menu.css";
 @import "./informational/popover.css";
+@import "./informational/sidebar.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
