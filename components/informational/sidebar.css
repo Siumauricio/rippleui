@@ -1,9 +1,5 @@
 .sidebar {
-  @apply sticky z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-2;
-}
-
-.sidebar-sticky {
-  @apply sticky top-0 z-10;
+  @apply sticky top-0 z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-2;
 }
 
 .sidebar-title {
