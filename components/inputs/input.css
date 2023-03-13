@@ -87,25 +87,25 @@
 /* Solid */
 
 .input-solid {
-  @apply border-transparent bg-gray-5 text-gray-12 placeholder:text-gray-10;
+  @apply border-transparent bg-gray-4 text-gray-12 placeholder:text-gray-10;
 }
 
 .input-solid-primary {
-  @apply border-transparent bg-blue-5 text-blue-11 placeholder:text-blue-9;
+  @apply border-transparent bg-blue-4 text-blue-11 placeholder:text-blue-9;
 }
 
 .input-solid-secondary {
-  @apply border-transparent bg-purple-5 text-purple-11 placeholder:text-purple-9;
+  @apply border-transparent bg-purple-4 text-purple-11 placeholder:text-purple-9;
 }
 
 .input-solid-success {
-  @apply border-transparent bg-green-5 text-green-11 placeholder:text-green-9;
+  @apply border-transparent bg-green-4 text-green-11 placeholder:text-green-9;
 }
 
 .input-solid-warning {
-  @apply border-transparent bg-yellow-5 text-yellow-11 placeholder:text-yellow-11;
+  @apply border-transparent bg-yellow-4 text-yellow-11 placeholder:text-yellow-11;
 }
 
 .input-solid-error {
-  @apply border-transparent bg-red-5 text-red-11 placeholder:text-red-9;
+  @apply border-transparent bg-red-4 text-red-11 placeholder:text-red-9;
 }

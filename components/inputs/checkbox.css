@@ -204,46 +204,46 @@
 /* Solid */
 .checkbox-solid {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-6));
-  @apply border-transparent bg-gray-5;
+  --checkbox-bg-hover: rgb(var(--gray-5));
+  @apply border-transparent bg-gray-4;
 }
 
 .checkbox-solid-primary {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--blue-6));
+  --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
-  @apply border-transparent bg-blue-5;
+  @apply border-transparent bg-gray-4;
 }
 
 .checkbox-solid-secondary {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--purple-6));
+  --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--secondary));
   --checkbox-border-checked: rgb(var(--secondary));
-  @apply border-transparent bg-purple-5;
+  @apply border-transparent bg-gray-4;
 }
 
 .checkbox-solid-success {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--green-6));
+  --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--success));
   --checkbox-border-checked: rgb(var(--success));
-  @apply border-transparent bg-green-5;
+  @apply border-transparent bg-gray-4;
 }
 
 .checkbox-solid-warning {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--yellow-6));
+  --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
-  @apply border-transparent bg-yellow-5;
+  @apply border-transparent bg-gray-4;
 }
 
 .checkbox-solid-error {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--red-6));
+  --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--error));
   --checkbox-border-checked: rgb(var(--error));
-  @apply border-transparent bg-red-5;
+  @apply border-transparent bg-gray-4;
 }
