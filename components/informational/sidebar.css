@@ -1,5 +1,5 @@
 .sidebar {
-  @apply sticky z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-4;
+  @apply sticky z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-2;
 }
 
 .sidebar-sticky {
@@ -23,7 +23,7 @@
 }
 
 .sidebar-mobile .sidebar {
-  @apply transition-all;
+  @apply transition-transform duration-150;
 }
 
 .sidebar-state {
