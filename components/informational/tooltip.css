@@ -1,8 +1,8 @@
 .tooltip,
 .tooltip-hover,
 .tooltip-click {
-  --tooltip-bg: rgb(var(--black));
-  --tooltip-border: rgb(var(--black));
+  --tooltip-bg: #000000;
+  --tooltip-border: #000000;
   @apply relative;
 }
 
