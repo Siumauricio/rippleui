@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/Siumauricio/rippleui/compare/v1.9.2...v1.10.0) (2023-03-20)
+
+
+### Features
+
+* **button, checkbox, input, radio, select, textarea:** add solid variant ([53a0e54](https://github.com/Siumauricio/rippleui/commit/53a0e546389d0518bc969250eea6e5bdda5261d0))
+* **sidebar:** sidebar component ([e99276f](https://github.com/Siumauricio/rippleui/commit/e99276f541236cd53a589bf1bfcb40c559c61aee))
+
+
+### Bug Fixes
+
+* **tooltip:** set value instead variable ([28c3aa9](https://github.com/Siumauricio/rippleui/commit/28c3aa9a837d10500618429960edf392493da43e))
+
+
 ### [1.9.2](https://github.com/Siumauricio/rippleui/compare/v1.9.1...v1.9.2) (2023-03-05)
 
 ### Refactor
