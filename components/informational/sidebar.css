@@ -1,5 +1,17 @@
 .sidebar {
-  @apply sticky top-0 z-[55] flex h-screen w-full  translate-x-0 flex-col justify-between bg-gray-2;
+  @apply z-[55] flex h-screen w-full max-w-[18rem] translate-x-0 flex-col justify-between  bg-gray-2;
+}
+
+.sidebar-sticky {
+  @apply sticky;
+}
+
+.sidebar-fixed-left {
+  @apply fixed left-0;
+}
+
+.sidebar-fixed-right {
+  @apply fixed right-0;
 }
 
 .sidebar-title {
@@ -15,10 +27,6 @@
 }
 
 .sidebar-mobile {
-  @apply sticky top-0 z-[55]  h-screen w-fit;
-}
-
-.sidebar-mobile .sidebar {
   @apply transition-transform duration-150;
 }
 
