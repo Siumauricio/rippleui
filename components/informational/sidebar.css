@@ -1,5 +1,5 @@
 .sidebar {
-  @apply z-[55] flex h-screen w-full max-w-[18rem] translate-x-0 flex-col justify-between  bg-gray-2;
+  @apply top-0 z-[55] flex h-screen w-full max-w-[18rem] translate-x-0 flex-col  justify-between bg-gray-2;
 }
 
 .sidebar-sticky {
