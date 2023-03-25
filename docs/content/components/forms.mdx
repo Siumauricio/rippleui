@@ -1,6 +1,6 @@
 ---
 title: Forms
-description:  Forms are the standard way to receive user inputted data. They can be used for collecting information from users for any purpose, such as to complete a purchase, to register for a service, or to simply subscribe to an email newsletter.
+description:  Forms are the standard way to receive user inputted data. They can be used htmlFor collecting information from users htmlFor any purpose, such as to complete a purchase, to register htmlFor a service, or to simply subscribe to an email newsletter.
 ---
 
 # Forms
@@ -104,7 +104,131 @@ Simple example of a Form.
 </div>
 ```
 
-### Form with authentication providers
+## Solid Variant
+
+Solid variant of the form.
+
+
+
+<section className="bg-gray-2 rounded-xl">
+
+      <div className="p-8 shadow-lg ">
+        <form  className="space-y-4">
+          <div className="w-full">
+            <label className="sr-only" htmlFor="name">Name</label>
+            <input
+              className="input input-solid max-w-full"
+              placeholder="Name"
+              type="text"
+              id="name"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="sr-only" htmlFor="email">Email</label>
+              <input
+                className="input input-solid"
+                placeholder="Email address"
+                type="email"
+                id="email"
+              />
+            </div>
+
+            <div>
+              <label className="sr-only" htmlFor="phone">Phone</label>
+              <input
+                className="input input-solid"
+                placeholder="Phone Number"
+                type="tel"
+                id="phone"
+              />
+            </div>
+          </div>
+
+          <div className="w-full">
+            <label className="sr-only" htmlFor="message">Message</label>
+
+            <textarea
+              className="textarea textarea-solid max-w-full"
+              placeholder="Message"
+              rows="8"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div className="mt-4">
+            <button
+              type="button"
+              className="w-full rounded-lg btn btn-primary"
+            > Send Enquiry </button>
+          </div>
+        </form>
+      </div>
+</section>
+
+
+```html
+<section className="bg-gray-2 rounded-xl">
+
+      <div className="p-8 shadow-lg ">
+        <form  className="space-y-4">
+          <div className="w-full">
+            <label className="sr-only" htmlFor="name">Name</label>
+            <input
+              className="input input-solid max-w-full"
+              placeholder="Name"
+              type="text"
+              id="name"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="sr-only" htmlFor="email">Email</label>
+              <input
+                className="input input-solid"
+                placeholder="Email address"
+                type="email"
+                id="email"
+              />
+            </div>
+
+            <div>
+              <label className="sr-only" htmlFor="phone">Phone</label>
+              <input
+                className="input input-solid"
+                placeholder="Phone Number"
+                type="tel"
+                id="phone"
+              />
+            </div>
+          </div>
+
+          <div className="w-full">
+            <label className="sr-only" htmlFor="message">Message</label>
+
+            <textarea
+              className="textarea textarea-solid max-w-full"
+              placeholder="Message"
+              rows="8"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div className="mt-4">
+            <button
+              type="button"
+              className="rounded-lg btn btn-primary btn-block"
+            > Send Enquiry </button>
+          </div>
+        </form>
+      </div>
+</section>
+``` 
+
+
+## Form with authentication providers
 
 Examples using authentication providers.
 
@@ -274,7 +398,7 @@ Examples using authentication providers.
 </form>
 ```
 
-### Form inside a modal
+## Form inside a modal
 
 Login form inside a modal
 
@@ -521,7 +645,7 @@ Login form inside a modal
       </article>
 ```
 
-### States
+## States
 
 You can use the following code to display error or success messages.
 
@@ -586,7 +710,7 @@ You can use the following code to display error or success messages.
 </div>
 ```
 
-### Forms with icons
+## Forms with icons
 
 You can set icons to the left or right of the input.
 
@@ -844,10 +968,10 @@ You can set icons to the left or right of the input.
 | className                 | Description                   |
 | --------------------- | ----------------------------- |
 | form-group            | wrapper to agrupate a form                |
-| form-field            | wrapper for a form-label, form-label-alt and form-control          |
+| form-field            | wrapper htmlFor a form-label, form-label-alt and form-control          |
 | form-label            | add styles to a title of form element         |
 | form-label-alt        | className to display any important information like error, success           |
-| form-control          | wrapper for input, textarea, select, checkbox or any other form element           |
+| form-control          | wrapper htmlFor input, textarea, select, checkbox or any other form element           |
 </Attributes>
 
 

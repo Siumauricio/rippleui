@@ -15,7 +15,7 @@ export const SideNav = () => {
     setRouterDefined(router.asPath.split("#")[0]);
   }, [router.asPath]);
   return (
-    <aside className="sidebar fixed top-0 bottom-0 left-0 z-[60] hidden max-w-full overflow-auto bg-backgroundSecondary p-[0px_32px_96px] pr-8 pb-32  lg:flex 2xl:w-[calc((100%-(var(--vp-layout-max-width)-64px))/2+var(--vp-sidebar-width)-32px)] 2xl:pl-[max(32px,calc((100%-(1465px-64px))/2))]">
+    <aside className="sidebar-layout fixed top-0 bottom-0 left-0 z-[60] hidden max-w-full overflow-auto bg-backgroundSecondary p-[0px_32px_96px] pr-8 pb-32  lg:flex 2xl:w-[calc((100%-(var(--vp-layout-max-width)-64px))/2+var(--vp-sidebar-width)-32px)] 2xl:pl-[max(32px,calc((100%-(1465px-64px))/2))]">
       <nav
         className="nav w-44"
         id="SidebarNav"
@@ -36,15 +36,15 @@ export const SideNav = () => {
           >
             <span className=" flex text-sm font-bold text-content1">
               {item.title === "Get started" ? (
-                <div className="bg-purple-6 mr-2 rounded-md">
+                <div className="mr-2 rounded-md bg-purple-6">
                   <BookIcon />
                 </div>
               ) : item.title === "Components" ? (
-                <div className=" bg-blue-6 mr-2 flex items-center rounded-md">
+                <div className=" mr-2 flex items-center rounded-md bg-blue-6">
                   <ComponentsIcon />
                 </div>
               ) : (
-                <div className=" bg-green-6 mr-2 flex items-center rounded-md">
+                <div className=" mr-2 flex items-center rounded-md bg-green-6">
                   <ChangelogIcon />
                 </div>
               )}
@@ -72,6 +72,11 @@ export const SideNav = () => {
                       {link.isNew && (
                         <span className="badge badge-flat-primary ml-1">
                           New
+                        </span>
+                      )}
+                      {link.isUpdated && (
+                        <span className="badge badge-flat-secondary ml-1">
+                          Updated
                         </span>
                       )}
                     </Link>

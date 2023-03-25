@@ -43,14 +43,18 @@ export const items: Items[] = [
       { href: "/docs/components/avatar", children: "Avatar" },
       { href: "/docs/components/badge", children: "Badge" },
       { href: "/docs/components/breadcrumb", children: "Breadcrumb" },
-      { href: "/docs/components/button", children: "Button" },
+      { href: "/docs/components/button", children: "Button", isUpdated: true },
       {
         href: "/docs/components/button-group",
         children: "ButtonGroup",
       },
 
       { href: "/docs/components/card", children: "Card" },
-      { href: "/docs/components/checkbox", children: "Checkbox" },
+      {
+        href: "/docs/components/checkbox",
+        children: "Checkbox",
+        isUpdated: true,
+      },
 
       { href: "/docs/components/drawer", children: "Drawer" },
       { href: "/docs/components/dots", children: "Dots" },
@@ -60,7 +64,7 @@ export const items: Items[] = [
       },
       { href: "/docs/components/dropdown", children: "Dropdown" },
       { href: "/docs/components/forms", children: "Forms", isNew: true },
-      { href: "/docs/components/input", children: "Input" },
+      { href: "/docs/components/input", children: "Input", isUpdated: true },
       {
         href: "/docs/components/link",
         children: "Link",
@@ -81,9 +85,10 @@ export const items: Items[] = [
         children: "Progress",
       },
       { href: "/docs/components/navbar", children: "Navbar" },
-      { href: "/docs/components/radio", children: "Radio" },
+      { href: "/docs/components/radio", children: "Radio", isUpdated: true },
       { href: "/docs/components/range", children: "Range" },
-      { href: "/docs/components/select", children: "Select" },
+      { href: "/docs/components/select", children: "Select", isUpdated: true },
+      { href: "/docs/components/sidebar", children: "Sidebar", isNew: true },
       {
         href: "/docs/components/skeleton",
         children: "Skeleton",
@@ -96,7 +101,11 @@ export const items: Items[] = [
       },
       { href: "/docs/components/tabs", children: "Tabs" },
       { href: "/docs/components/table", children: "Table" },
-      { href: "/docs/components/textarea", children: "Textarea" },
+      {
+        href: "/docs/components/textarea",
+        children: "Textarea",
+        isUpdated: true,
+      },
       { href: "/docs/components/tooltip", children: "Tooltip" },
       { href: "/docs/components/kbd", children: "Kbd" },
     ],
