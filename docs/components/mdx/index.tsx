@@ -9,6 +9,7 @@ import { ExamplesRepositories } from "./ExamplesRepositories";
 import { Pallete } from "../styles/Pallete";
 import { CDN } from "./CDN";
 import { CodeBlock } from "../playground/CodeBlock";
+import WindowResizer from "./Resizable";
 export { default as Attributes } from "./attributes";
 
 export const MDXcomponents = {
@@ -18,6 +19,7 @@ export const MDXcomponents = {
   h3: headingDynamic({ level: 3 }),
   h4: headingDynamic({ level: 4 }),
   h5: headingDynamic({ level: 5 }),
+  WindowResizer: WindowResizer,
   a: Link,
   li: Li,
   pre: CodeBlock,

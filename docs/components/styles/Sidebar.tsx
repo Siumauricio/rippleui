@@ -44,15 +44,15 @@ export const Sidebar = () => {
               <div key={item.title} className=" pt-4">
                 <span className="flex font-semibold text-content1">
                   {item.title === "Get started" ? (
-                    <div className="bg-purple-6 mr-2 rounded-md">
+                    <div className="mr-2 rounded-md bg-purple-6">
                       <BookIcon />
                     </div>
                   ) : item.title === "Components" ? (
-                    <div className=" bg-blue-6 mr-2 flex items-center rounded-md">
+                    <div className=" mr-2 flex items-center rounded-md bg-blue-6">
                       <ComponentsIcon />
                     </div>
                   ) : (
-                    <div className=" bg-green-6 mr-2 flex items-center rounded-md">
+                    <div className=" mr-2 flex items-center rounded-md bg-green-6">
                       <ChangelogIcon />
                     </div>
                   )}
@@ -87,6 +87,11 @@ export const Sidebar = () => {
                         {link.isNew && (
                           <span className="badge badge-flat-primary ml-1">
                             New
+                          </span>
+                        )}
+                        {link.isUpdated && (
+                          <span className="badge badge-flat-secondary ml-1">
+                            Updated
                           </span>
                         )}
                       </li>

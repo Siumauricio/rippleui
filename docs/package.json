@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "css:components": "npx tailwindcss -i styles/globals.css -o public/globals.css -m",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "npm run css:components && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,6 +20,7 @@
     "clsx": "^1.2.1",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
+    "framer-motion": "^10.6.1",
     "hast-util-heading-rank": "^2.1.0",
     "hast-util-to-string": "^2.0.0",
     "next": "13.0.5",
@@ -32,7 +34,7 @@
     "react-dom": "18.2.0",
     "rehype-slug": "^5.1.0",
     "remark-mdx-code-meta": "^2.0.0",
-    "rippleui": "^1.9.2",
+    "rippleui": "^1.10.0",
     "typescript": "4.9.3"
   },
   "devDependencies": {
