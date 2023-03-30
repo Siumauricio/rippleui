@@ -1,10 +1,5 @@
 @import "tailwindcss/base";
 
-*,
-html {
-  font-family: "Inter", sans-serif;
-}
-
 html {
   -webkit-tap-highlight-color: transparent;
 }
