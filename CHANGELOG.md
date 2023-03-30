@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/Siumauricio/rippleui/compare/v1.10.0...v1.10.1) (2023-03-30)
+
+
+### Refactor
+
+* remove default font ([4b8b4a9](https://github.com/Siumauricio/rippleui/commit/4b8b4a914a6aafae2d5f8cfa2cee7f3ab1354d45))
+
 ## [1.10.0](https://github.com/Siumauricio/rippleui/compare/v1.9.2...v1.10.0) (2023-03-20)
 
 
