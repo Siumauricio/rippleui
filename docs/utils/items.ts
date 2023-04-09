@@ -43,7 +43,7 @@ export const items: Items[] = [
       { href: "/docs/components/avatar", children: "Avatar" },
       { href: "/docs/components/badge", children: "Badge" },
       { href: "/docs/components/breadcrumb", children: "Breadcrumb" },
-      { href: "/docs/components/button", children: "Button", isUpdated: true },
+      { href: "/docs/components/button", children: "Button" },
       {
         href: "/docs/components/button-group",
         children: "ButtonGroup",
@@ -53,7 +53,6 @@ export const items: Items[] = [
       {
         href: "/docs/components/checkbox",
         children: "Checkbox",
-        isUpdated: true,
       },
 
       { href: "/docs/components/drawer", children: "Drawer" },
@@ -63,14 +62,14 @@ export const items: Items[] = [
         children: "Divider",
       },
       { href: "/docs/components/dropdown", children: "Dropdown" },
-      { href: "/docs/components/forms", children: "Forms", isNew: true },
-      { href: "/docs/components/input", children: "Input", isUpdated: true },
+      { href: "/docs/components/forms", children: "Forms" },
+      { href: "/docs/components/input", children: "Input" },
       {
         href: "/docs/components/link",
         children: "Link",
       },
       { href: "/docs/components/modal", children: "Modal" },
-      { href: "/docs/components/menu", children: "Menu", isNew: true },
+      { href: "/docs/components/menu", children: "Menu" },
       {
         href: "/docs/components/pagination",
         children: "Pagination",
@@ -78,16 +77,20 @@ export const items: Items[] = [
       {
         href: "/docs/components/popover",
         children: "Popover",
-        isNew: true,
       },
       {
         href: "/docs/components/progress",
         children: "Progress",
       },
       { href: "/docs/components/navbar", children: "Navbar" },
-      { href: "/docs/components/radio", children: "Radio", isUpdated: true },
+      { href: "/docs/components/radio", children: "Radio" },
       { href: "/docs/components/range", children: "Range" },
-      { href: "/docs/components/select", children: "Select", isUpdated: true },
+      {
+        href: "/docs/components/spinners",
+        children: "Spinners",
+        isNew: true,
+      },
+      { href: "/docs/components/select", children: "Select" },
       { href: "/docs/components/sidebar", children: "Sidebar", isNew: true },
       {
         href: "/docs/components/skeleton",
@@ -104,7 +107,6 @@ export const items: Items[] = [
       {
         href: "/docs/components/textarea",
         children: "Textarea",
-        isUpdated: true,
       },
       { href: "/docs/components/tooltip", children: "Tooltip" },
       { href: "/docs/components/kbd", children: "Kbd" },
