@@ -4,41 +4,30 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.11.0](https://github.com/Siumauricio/rippleui/compare/v1.10.1...v1.11.0) (2023-04-09)
 
-
 ### Features
 
-* **spinner:** spinner component ([eb83aff](https://github.com/Siumauricio/rippleui/commit/eb83aff381ee98f99dc15bfaa6bcd098c1c65960))
-
-
-### Bug Fixes
-
-*  https://github.com/Siumauricio/rippleui/issues/88 ([80aced4](https://github.com/Siumauricio/rippleui/commit/80aced40d37ec9f003ea4184fa4885dce60e29db))
-
+- **spinner:** spinner component ([eb83aff](https://github.com/Siumauricio/rippleui/commit/eb83aff381ee98f99dc15bfaa6bcd098c1c65960))
 
 ### Refactor
 
-* **switch:** set gray-7 to border hover ([4f5325b](https://github.com/Siumauricio/rippleui/commit/4f5325b7d80f4959aaa4e6e4caeabec1de769471))
+- **switch:** set gray-7 to border hover ([4f5325b](https://github.com/Siumauricio/rippleui/commit/4f5325b7d80f4959aaa4e6e4caeabec1de769471))
 
 ### [1.10.1](https://github.com/Siumauricio/rippleui/compare/v1.10.0...v1.10.1) (2023-03-30)
 
-
 ### Refactor
 
-* remove default font ([4b8b4a9](https://github.com/Siumauricio/rippleui/commit/4b8b4a914a6aafae2d5f8cfa2cee7f3ab1354d45))
+- remove default font ([4b8b4a9](https://github.com/Siumauricio/rippleui/commit/4b8b4a914a6aafae2d5f8cfa2cee7f3ab1354d45))
 
 ## [1.10.0](https://github.com/Siumauricio/rippleui/compare/v1.9.2...v1.10.0) (2023-03-20)
 
-
 ### Features
 
-* **button, checkbox, input, radio, select, textarea:** add solid variant ([53a0e54](https://github.com/Siumauricio/rippleui/commit/53a0e546389d0518bc969250eea6e5bdda5261d0))
-* **sidebar:** sidebar component ([e99276f](https://github.com/Siumauricio/rippleui/commit/e99276f541236cd53a589bf1bfcb40c559c61aee))
-
+- **button, checkbox, input, radio, select, textarea:** add solid variant ([53a0e54](https://github.com/Siumauricio/rippleui/commit/53a0e546389d0518bc969250eea6e5bdda5261d0))
+- **sidebar:** sidebar component ([e99276f](https://github.com/Siumauricio/rippleui/commit/e99276f541236cd53a589bf1bfcb40c559c61aee))
 
 ### Bug Fixes
 
-* **tooltip:** set value instead variable ([28c3aa9](https://github.com/Siumauricio/rippleui/commit/28c3aa9a837d10500618429960edf392493da43e))
-
+- **tooltip:** set value instead variable ([28c3aa9](https://github.com/Siumauricio/rippleui/commit/28c3aa9a837d10500618429960edf392493da43e))
 
 ### [1.9.2](https://github.com/Siumauricio/rippleui/compare/v1.9.1...v1.9.2) (2023-03-05)
 

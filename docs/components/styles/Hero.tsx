@@ -10,6 +10,7 @@ export const Hero = () => {
         <div className="flex flex-row justify-center px-4 md:gap-24">
           <div className="flex max-w-3xl flex-col gap-4 pt-10 sm:gap-0 sm:pb-24 sm:pt-20  lg:pt-52">
             <div className="flex flex-col gap-4">
+              <div className="spinn"></div>
               <h1>
                 <span className="text-[40px] font-bold leading-none text-primary  sm:text-5xl lg:text-6xl">
                   Ripple UI
@@ -51,12 +52,12 @@ export const Hero = () => {
             </div>
             <div>
               <div className="relative hidden lg:flex">
-                <div className="pointer-events-none absolute top-3  left-0 flex items-center pl-2 ">
+                <div className="pointer-events-none absolute left-0  top-3 flex items-center pl-2 ">
                   <SearchIcon className="h-4 w-5 fill-content3" />
                 </div>
               </div>
               <input
-                className="input input-block hidden py-2 px-8 lg:flex"
+                className="input input-block hidden px-8 py-2 lg:flex"
                 placeholder="Search..."
               />
             </div>
