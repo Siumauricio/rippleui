@@ -1,0 +1,327 @@
+.spinner-ring {
+  --spinner-color: var(--primary);
+  --spinner-size: 40px;
+  --spinner-speed: 2s;
+  animation: rotate var(--spinner-speed) linear infinite;
+  @apply h-[--spinner-size] w-[--spinner-size] origin-center align-middle;
+}
+
+.spinner-ring circle {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: spinner-ring-stretch calc(var(--spinner-speed) * 0.75) ease-in-out
+    infinite;
+  @apply fill-none stroke-[rgb(var(--spinner-color))];
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-ring-stretch {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dashoffset: -124px;
+  }
+}
+/* 2 */
+.spinner-dot-pulse {
+  --spinner-size: 40px;
+  --spinner-speed: 1.2s;
+  --spinner-color: var(--primary);
+
+  @apply relative flex h-[calc(var(--spinner-size*0.27))] w-[--spinner-size] items-center justify-between;
+}
+
+.spinner-pulse-dot,
+.spinner-dot-pulse::before,
+.spinner-dot-pulse::after {
+  @apply block h-[calc(var(--spinner-size)*0.18)] w-[calc(var(--spinner-size)*0.18)] scale-0 rounded-[50%] bg-[rgb(var(--spinner-color))] content-[""];
+}
+
+.spinner-dot-pulse::before {
+  animation: spinner-pulse var(--spinner-speed) ease-in-out infinite;
+}
+
+.spinner-pulse-dot {
+  animation: spinner-pulse var(--spinner-speed) ease-in-out
+    calc(var(--spinner-speed) * 0.125) infinite both;
+}
+
+.spinner-dot-pulse::after {
+  animation: spinner-pulse var(--spinner-speed) ease-in-out
+    calc(var(--spinner-speed) * 0.25) infinite;
+}
+
+@keyframes spinner-pulse {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/* 3 */
+
+.spinner-wave {
+  --spinner-size: 47px;
+  --spinner-speed: 1s;
+  --spinner-color: var(--primary);
+  flex-flow: row nowrap;
+  @apply flex h-[calc(var(--spinner-size)*0.17)] w-[--spinner-size] items-center justify-between pt-[calc(var(--spinner-size)*0.34)];
+}
+
+.spinner-wave-dot {
+  @apply h-[calc(var(--spinner-size)*0.17)] w-[calc(var(--spinner-size)*0.17)] flex-shrink-0 rounded-[50%] bg-[rgb(var(--spinner-color))] will-change-transform;
+}
+
+.spinner-wave-dot:nth-child(1) {
+  animation: jump var(--spinner-speed) ease-in-out
+    calc(var(--spinner-speed) * -0.45) infinite;
+}
+
+.spinner-wave-dot:nth-child(2) {
+  animation: jump var(--spinner-speed) ease-in-out
+    calc(var(--spinner-speed) * -0.3) infinite;
+}
+
+.spinner-wave-dot:nth-child(3) {
+  animation: jump var(--spinner-speed) ease-in-out
+    calc(var(--spinner-speed) * -0.15) infinite;
+}
+
+.spinner-wave-dot:nth-child(4) {
+  animation: jump var(--spinner-speed) ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+}
+
+/* 4 */
+.spinner-dot-circle {
+  --spinner-size: 40px;
+  --spinner-speed: 0.9s;
+  --spinner-color: var(--primary);
+  @apply relative flex h-[--spinner-size] w-[--spinner-size] items-center justify-start;
+}
+
+.spinner-dot {
+  @apply absolute top-0 left-0 flex h-full w-full items-center justify-start;
+}
+
+.spinner-dot::before {
+  animation: pulse calc(var(--spinner-speed) * 1.111) ease-in-out infinite;
+  @apply h-1/5 w-1/5 scale-0 rounded-[50%] bg-[rgb(var(--spinner-color))] opacity-50 content-[""];
+}
+
+.spinner-dot:nth-child(2) {
+  @apply rotate-45;
+}
+
+.spinner-dot:nth-child(2)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.875);
+}
+
+.spinner-dot:nth-child(3) {
+  @apply rotate-90;
+}
+
+.spinner-dot:nth-child(3)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.75);
+}
+
+.spinner-dot:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+.spinner-dot:nth-child(4)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.625);
+}
+
+.spinner-dot:nth-child(5) {
+  @apply rotate-180;
+}
+
+.spinner-dot:nth-child(5)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.5);
+}
+
+.spinner-dot:nth-child(6) {
+  transform: rotate(225deg);
+}
+
+.spinner-dot:nth-child(6)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.375);
+}
+
+.spinner-dot:nth-child(7) {
+  transform: rotate(270deg);
+}
+
+.spinner-dot:nth-child(7)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.25);
+}
+
+.spinner-dot:nth-child(8) {
+  transform: rotate(315deg);
+}
+
+.spinner-dot:nth-child(8)::before {
+  animation-delay: calc(var(--spinner-speed) * -0.125);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 5 */
+
+.spinner-circle {
+  --spinner-size: 40px;
+  --stroke-width: calc(var(--spinner-size) / 7);
+  --accent-opacity: 0.25;
+  --spinner-color: var(--primary);
+  --spinner-speed: 1s;
+  @apply relative h-[--spinner-size] w-[--spinner-size];
+}
+
+.spinner-circle::before,
+.spinner-circle::after {
+  border-width: var(--stroke-width);
+  animation: linear var(--spinner-speed) infinite circle-spin;
+  @apply absolute inset-0 rotate-0 rounded-[50%] border-solid content-[""];
+}
+
+.spinner-circle::before {
+  border-color: rgb(var(--spinner-color)) rgb(var(--spinner-color))
+    rgb(var(--spinner-color)) transparent;
+  @apply opacity-[--accent-opacity];
+}
+
+.spinner-circle::after {
+  border-color: transparent transparent transparent rgb(var(--spinner-color));
+}
+
+/* 6 */
+.spinner-simple {
+  --spinner-size: 40px;
+  --stroke-width: calc(var(--spinner-size) / 7);
+  --spinner-color: var(--primary);
+  --spinner-speed: 1s;
+  border-width: var(--stroke-width);
+  border-color: rgb(var(--spinner-color)) rgb(var(--spinner-color))
+    rgb(var(--spinner-color)) transparent;
+  animation: linear var(--spinner-speed) infinite circle-spin;
+  @apply h-[--spinner-size] w-[--spinner-size] rotate-0 rounded-[50%] border-solid;
+}
+
+@keyframes circle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 7 */
+
+.spinner-dot-intermittent {
+  --spinner-size: 40px;
+  --spinner-color: var(--primary);
+  --spinner-color-opacity: rgb(var(--spinner-color) / 0.25);
+  --spinner-speed: 0.7s;
+  --calculation-1: calc(var(--spinner-size) * 2 / 3);
+  --calculation-2: calc(var(--spinner-size) * -2 / 3);
+  animation: flash var(--spinner-speed) ease-out infinite alternate;
+  @apply relative mx-[--calculation-1] h-[calc(var(--spinner-size)/4)] w-[calc(var(--spinner-size)/4)] rounded-[50%];
+}
+
+@keyframes flash {
+  0% {
+    background-color: var(--spinner-color-opacity);
+    box-shadow: var(--calculation-1) 0 var(--spinner-color-opacity),
+      var(--calculation-2) 0 rgb(var(--spinner-color));
+  }
+  50% {
+    background-color: rgb(var(--spinner-color));
+    box-shadow: var(--calculation-1) 0 var(--spinner-color-opacity),
+      var(--calculation-2) 0 var(--spinner-color-opacity);
+  }
+  100% {
+    background-color: var(--spinner-color-opacity);
+    box-shadow: var(--calculation-1) 0 rgb(var(--spinner-color)),
+      var(--calculation-2) 0 var(--spinner-color-opacity);
+  }
+}
+
+.spinner-primary {
+  --spinner-color: var(--primary);
+}
+
+.spinner-secondary {
+  --spinner-color: var(--secondary);
+}
+
+.spinner-success {
+  --spinner-color: var(--success);
+}
+
+.spinner-error {
+  --spinner-color: var(--error);
+}
+
+.spinner-warning {
+  --spinner-color: var(--warning);
+}
+
+.spinner-xs {
+  --spinner-size: 20px;
+}
+
+.spinner-sm {
+  --spinner-size: 30px;
+}
+
+.spinner-md {
+  --spinner-size: 40px;
+}
+
+.spinner-lg {
+  --spinner-size: 50px;
+}
+
+.spinner-xl {
+  --spinner-size: 60px;
+}
