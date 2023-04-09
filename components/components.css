@@ -29,6 +29,7 @@
 @import "./informational/menu.css";
 @import "./informational/popover.css";
 @import "./informational/sidebar.css";
+@import "./informational/spinner.css";
 @import "./navigation/navbar.css";
 @import "./navigation/breadcrumb.css";
 @import "./navigation/drawer.css";
