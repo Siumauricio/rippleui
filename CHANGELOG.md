@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/Siumauricio/rippleui/compare/v1.10.1...v1.11.0) (2023-04-09)
+
+
+### Features
+
+* **spinner:** spinner component ([eb83aff](https://github.com/Siumauricio/rippleui/commit/eb83aff381ee98f99dc15bfaa6bcd098c1c65960))
+
+
+### Bug Fixes
+
+*  https://github.com/Siumauricio/rippleui/issues/88 ([80aced4](https://github.com/Siumauricio/rippleui/commit/80aced40d37ec9f003ea4184fa4885dce60e29db))
+
+
+### Refactor
+
+* **switch:** set gray-7 to border hover ([4f5325b](https://github.com/Siumauricio/rippleui/commit/4f5325b7d80f4959aaa4e6e4caeabec1de769471))
+
 ### [1.10.1](https://github.com/Siumauricio/rippleui/compare/v1.10.0...v1.10.1) (2023-03-30)
 
 
