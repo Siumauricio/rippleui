@@ -5,7 +5,7 @@
   --switch-border: rgb(var(--gray-6));
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
-  --switch-border-hover: rgb(var(--gray-7));
+  --switch-border-hover: rgb(var(--gray-6));
   --switch-bg-hover: rgb(var(--gray-6));
   --checkline-color: rgb(255 255 255);
   --circle-color: rgb(var(--gray-1));
