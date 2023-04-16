@@ -1,0 +1,91 @@
+.input-file {
+  @apply h-10 w-full max-w-xs appearance-none rounded-xl border-2  border-gray-6 bg-gray-1  pr-3 text-base text-content1 focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6;
+}
+
+.input-file::-webkit-file-upload-button {
+  @apply mr-4 inline-flex h-full cursor-pointer select-none items-center justify-center border-none bg-gray-3 px-5 text-center text-sm font-medium text-content1;
+}
+
+.input-file-primary {
+  @apply border-primary focus-visible:outline-primary;
+}
+
+.input-file-primary::-webkit-file-upload-button {
+  @apply bg-primary text-white focus-visible:outline-primary;
+}
+
+.input-file-secondary {
+  @apply border-secondary  focus-visible:outline-secondary;
+}
+
+.input-file-secondary::-webkit-file-upload-button {
+  @apply bg-secondary text-white focus-visible:outline-secondary;
+}
+
+.input-file-success {
+  @apply border-success  focus-visible:outline-success;
+}
+
+.input-file-success::-webkit-file-upload-button {
+  @apply bg-success text-black focus-visible:outline-success;
+}
+
+.input-file-error {
+  @apply border-error  focus-visible:outline-error;
+}
+
+.input-file-error::-webkit-file-upload-button {
+  @apply bg-error text-white focus-visible:outline-error;
+}
+
+.input-file-warning {
+  @apply border-warning focus-visible:outline-warning;
+}
+
+.input-file-warning::-webkit-file-upload-button {
+  @apply bg-warning text-black focus-visible:outline-warning;
+}
+
+.input-file-xs {
+  @apply h-6 rounded-lg  text-xs;
+}
+
+.input-file-xs::-webkit-file-upload-button {
+  @apply px-2 text-xs;
+}
+
+.input-file-sm {
+  @apply h-8 text-sm;
+}
+
+.input-file-sm::-webkit-file-upload-button {
+  @apply px-3 text-sm;
+}
+
+.input-file-md {
+  @apply h-10 text-base;
+}
+
+.input-file-md::-webkit-file-upload-button {
+  @apply px-5 text-sm;
+}
+
+.input-file-lg {
+  @apply h-11 text-base;
+}
+
+.input-file-lg::-webkit-file-upload-button {
+  @apply px-6 text-base;
+}
+
+.input-file-xl {
+  @apply h-12 text-lg;
+}
+
+.input-file-xl::-webkit-file-upload-button {
+  @apply px-6 text-xl;
+}
+
+.input-file:disabled {
+  @apply pointer-events-none select-none opacity-50;
+}
