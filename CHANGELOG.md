@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/Siumauricio/rippleui/compare/v1.11.0...v1.12.0) (2023-04-16)
+
+
+### Features
+
+* **input-file:** input-file component ([d187acf](https://github.com/Siumauricio/rippleui/commit/d187acfea2e9dbd0574474dd73860a1f7eaeb201))
+* **v1.11.0:** docs ([557ce78](https://github.com/Siumauricio/rippleui/commit/557ce78963baf2d4328d4a93a9d53398c7703669))
+
 ## [1.11.0](https://github.com/Siumauricio/rippleui/compare/v1.10.1...v1.11.0) (2023-04-09)
 
 ### Features
