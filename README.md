@@ -84,6 +84,7 @@ Here is a list of all of the components that are currently available in RippleUI
 - Popover
 - Sidebar
 - Spinners / Loaders
+- Input File
 - More components soon....
 
 ## 🤝 Contributing
