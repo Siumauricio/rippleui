@@ -46,7 +46,7 @@ export const items: Items[] = [
       { href: "/docs/components/button", children: "Button" },
       {
         href: "/docs/components/button-group",
-        children: "ButtonGroup",
+        children: "Button Group",
       },
 
       { href: "/docs/components/card", children: "Card" },
@@ -63,7 +63,13 @@ export const items: Items[] = [
       },
       { href: "/docs/components/dropdown", children: "Dropdown" },
       { href: "/docs/components/forms", children: "Forms" },
+
       { href: "/docs/components/input", children: "Input" },
+      {
+        href: "/docs/components/input-file",
+        children: "Input File",
+        isNew: true,
+      },
       {
         href: "/docs/components/link",
         children: "Link",

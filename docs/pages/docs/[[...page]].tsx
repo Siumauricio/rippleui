@@ -79,7 +79,13 @@ function getPrevNext(route: string) {
     const links = item.links;
 
     for (let i = 0; i < links.length; i++) {
-      if (links[i].children?.toString().toLowerCase() === children) {
+      console.log(
+        links[i].children?.toString().toLowerCase().replace(" ", "-")
+      );
+      if (
+        links[i].children?.toString().toLowerCase().replace(" ", "-") ===
+        children
+      ) {
         if (i > 0) {
           prev = links[i - 1];
         }
