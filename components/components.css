@@ -9,6 +9,7 @@
 @import "./inputs/button-group.css";
 @import "./inputs/dropdown.css";
 @import "./inputs/range.css";
+@import "./inputs/input-file.css";
 @import "./informational/modal.css";
 @import "./informational/badge.css";
 @import "./informational/tooltip.css";
