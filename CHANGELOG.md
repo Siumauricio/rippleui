@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.1](https://github.com/Siumauricio/rippleui/compare/v1.12.0...v1.12.1) (2023-04-23)
+
+
+### Bug Fixes
+
+* **file-input:** add support for firefox and add rounded to button on safari ([#95](https://github.com/Siumauricio/rippleui/issues/95)) ([14a3262](https://github.com/Siumauricio/rippleui/commit/14a3262d1ec44b3e57b4cf6d3c4d4c7b457c0c20))
+
 ## [1.12.0](https://github.com/Siumauricio/rippleui/compare/v1.11.0...v1.12.0) (2023-04-16)
 
 

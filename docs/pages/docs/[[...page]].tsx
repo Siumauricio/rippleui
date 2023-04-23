@@ -79,9 +79,6 @@ function getPrevNext(route: string) {
     const links = item.links;
 
     for (let i = 0; i < links.length; i++) {
-      console.log(
-        links[i].children?.toString().toLowerCase().replace(" ", "-")
-      );
       if (
         links[i].children?.toString().toLowerCase().replace(" ", "-") ===
         children
