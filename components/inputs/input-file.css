@@ -1,8 +1,9 @@
 .input-file {
-  @apply h-10 w-full max-w-xs appearance-none rounded-xl border-2  border-gray-6 bg-gray-1  pr-3 text-base text-content1 focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6;
+  @apply h-10 w-full max-w-xs appearance-none overflow-hidden rounded-xl border-2  border-gray-6 bg-gray-1  pr-3 text-base text-content1 focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6;
 }
 
-.input-file::-webkit-file-upload-button {
+.input-file::-webkit-file-upload-button,
+.input-file::file-selector-button {
   @apply mr-4 inline-flex h-full cursor-pointer select-none items-center justify-center border-none bg-gray-3 px-5 text-center text-sm font-medium text-content1;
 }
 
@@ -88,4 +89,26 @@
 
 .input-file:disabled {
   @apply pointer-events-none select-none opacity-50;
+}
+
+/* Firefox */
+
+.input-file-primary::file-selector-button {
+  @apply bg-primary text-white focus-visible:outline-primary;
+}
+
+.input-file-secondary::file-selector-button {
+  @apply bg-secondary text-white focus-visible:outline-secondary;
+}
+
+.input-file-success::file-selector-button {
+  @apply bg-success text-black focus-visible:outline-success;
+}
+
+.input-file-error::file-selector-button {
+  @apply bg-error text-white focus-visible:outline-error;
+}
+
+.input-file-warning::file-selector-button {
+  @apply bg-warning text-black focus-visible:outline-warning;
 }
