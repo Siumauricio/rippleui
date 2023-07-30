@@ -23,11 +23,11 @@
 }
 
 .step-circle {
-  @apply border-gray-6 bg-gray-3 flex min-h-[2rem] min-w-[2rem] items-center justify-center rounded-full border text-content1;
+  @apply flex min-h-[2rem] min-w-[2rem] items-center justify-center rounded-full border border-gray-6 bg-gray-3 text-content1;
 }
 
 .step:not(:last-child):after {
-  @apply bg-gray-6  relative h-px min-h-0 w-full min-w-[2rem] flex-1 content-[""];
+  @apply relative  h-px min-h-0 w-full min-w-[2rem] flex-1 bg-gray-6 content-[""];
 }
 .steps-horizontal .step:not(:last-child):after {
   @apply relative  h-px min-h-0 w-full min-w-[2rem] flex-1  content-[""];
@@ -55,6 +55,10 @@
 
 .step-warning.step-active .step-circle {
   @apply border-warning bg-warning text-white;
+}
+
+.step-info.step-active .step-circle {
+  @apply border-info bg-info text-white;
 }
 
 .step-done.step-primary .step-circle,
@@ -95,4 +99,12 @@
 
 .step-done.step-warning::after {
   @apply bg-yellow-7;
+}
+
+.step-done.step-info .step-circle {
+  @apply border-cyan-7 bg-cyan-4 text-content1;
+}
+
+.step-done.step-info::after {
+  @apply bg-cyan-7;
 }

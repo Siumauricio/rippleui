@@ -31,7 +31,8 @@ export type BaseScale =
   | "success"
   | "error"
   | "warning"
-  | "neutral";
+  | "neutral"
+  | "info";
 
 export type BackgroundScale =
   | "backgroundPrimary"

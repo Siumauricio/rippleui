@@ -158,6 +158,12 @@
   @apply text-warning;
 }
 
+.range-info {
+  --left-track-color: rgb(var(--info));
+  --circle-border: rgb(var(--info));
+  @apply text-info;
+}
+
 .range-flat-primary {
   --left-track-color: rgb(var(--primary));
   --circle-border: rgb(var(--primary));
@@ -191,6 +197,13 @@
   --circle-border: rgb(var(--warning));
   --track-color: rgb(var(--yellow-5));
   @apply text-warning;
+}
+
+.range-flat-info {
+  --left-track-color: rgb(var(--info));
+  --circle-border: rgb(var(--info));
+  --track-color: rgb(var(--cyan-5));
+  @apply text-info;
 }
 
 .range-vertical {

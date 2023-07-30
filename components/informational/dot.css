@@ -1,5 +1,5 @@
 .dot {
-  @apply bg-gray-8 inline-flex h-2.5 min-h-[10px]  w-2.5 min-w-[10px]  select-none rounded-[50%] leading-3;
+  @apply inline-flex h-2.5 min-h-[10px] w-2.5  min-w-[10px] select-none  rounded-[50%] bg-gray-8 leading-3;
 }
 
 .dot-primary {
@@ -22,6 +22,9 @@
   @apply bg-warning;
 }
 
+.dot-info {
+  @apply bg-info;
+}
 .dot-xs {
   @apply h-1.5 min-h-[7px] w-1.5 min-w-[7px] leading-[8px];
 }

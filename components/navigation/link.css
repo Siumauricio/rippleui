@@ -1,6 +1,6 @@
 .link {
   transition-property: color, background-color, transform, underline;
-  @apply focus-visible:outline-gray-6 inline-flex cursor-pointer items-center text-base  text-content1 duration-150 hover:text-content2 focus-visible:outline-2 focus-visible:outline-offset-2;
+  @apply inline-flex cursor-pointer items-center text-base text-content1  duration-150 hover:text-content2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-6;
 }
 
 .link-primary {
@@ -23,6 +23,10 @@
   @apply text-warning hover:text-warning/75 focus-visible:outline-warning;
 }
 
+.link-info {
+  @apply text-info hover:text-info/75 focus-visible:outline-info;
+}
+
 .link-underline {
   @apply underline;
 }
@@ -32,25 +36,29 @@
 }
 
 .link-ghost {
-  @apply hover:bg-gray-4 rounded-2xl py-1 px-2 hover:text-content1;
+  @apply rounded-2xl px-2 py-1 hover:bg-gray-4 hover:text-content1;
 }
 
 .link-ghost-primary {
-  @apply rounded-2xl py-1 px-2  hover:bg-primary/10 hover:text-primary;
+  @apply rounded-2xl px-2 py-1  hover:bg-primary/10 hover:text-primary;
 }
 
 .link-ghost-secondary {
-  @apply rounded-2xl py-1 px-2  hover:bg-secondary/10 hover:text-secondary;
+  @apply rounded-2xl px-2 py-1  hover:bg-secondary/10 hover:text-secondary;
 }
 
 .link-ghost-success {
-  @apply rounded-2xl  py-1 px-2  hover:bg-success/10 hover:text-success;
+  @apply rounded-2xl  px-2 py-1  hover:bg-success/10 hover:text-success;
 }
 
 .link-ghost-error {
-  @apply rounded-2xl  py-1 px-2  hover:bg-error/10 hover:text-error;
+  @apply rounded-2xl  px-2 py-1  hover:bg-error/10 hover:text-error;
 }
 
 .link-ghost-warning {
-  @apply rounded-2xl  py-1 px-2 hover:bg-warning/10 hover:text-warning;
+  @apply rounded-2xl  px-2 py-1 hover:bg-warning/10 hover:text-warning;
+}
+
+.link-ghost-info {
+  @apply hover:bg-info/10  hover:text-info rounded-2xl  px-2 py-1;
 }

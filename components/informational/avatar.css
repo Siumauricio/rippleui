@@ -1,5 +1,5 @@
 .avatar {
-  @apply bg-gray-3  relative inline-flex h-10   w-10 max-w-xs align-top text-xs;
+  @apply relative  inline-flex h-10 w-10   max-w-xs bg-gray-3 align-top text-xs;
 }
 
 .avatar > * {
@@ -23,7 +23,7 @@
 }
 
 .avatar-ring {
-  @apply ring-gray-6 ring-2;
+  @apply ring-2 ring-gray-6;
 }
 .avatar-ring-primary {
   @apply ring-2 ring-primary;
@@ -45,22 +45,27 @@
   @apply rounded-full ring-2 ring-warning;
 }
 
+.avatar-ring-info {
+  @apply ring-info ring-2;
+}
+
 .avatar-online:not(.avatar-squared).avatar-ring,
 .avatar-online:not(.avatar-squared).avatar-ring-primary,
 .avatar-online:not(.avatar-squared).avatar-ring-secondary,
 .avatar-online:not(.avatar-squared).avatar-ring-success,
 .avatar-online:not(.avatar-squared).avatar-ring-error,
-.avatar-online:not(.avatar-squared).avatar-ring-warning {
+.avatar-online:not(.avatar-squared).avatar-ring-warning,
+.avatar-online:not(.avatar-squared).avatar-ring-info {
   @apply rounded-full;
 }
 
 .avatar-online.avatar-squared::before {
   transform: translate(50%, -50%);
-  @apply bg-green-6 absolute right-0 top-0 flex h-2    w-2 items-center justify-center overflow-auto rounded-full border-2 border-success content-[""];
+  @apply absolute right-0 top-0 flex h-2 w-2    items-center justify-center overflow-auto rounded-full border-2 border-success bg-green-6 content-[""];
 }
 
 .avatar-online:not(.avatar-squared)::before {
-  @apply bg-green-6 absolute  right-0 block h-2 w-2 overflow-auto rounded-full border-2 border-success content-[""];
+  @apply absolute right-0  block h-2 w-2 overflow-auto rounded-full border-2 border-success bg-green-6 content-[""];
 }
 
 .avatar-group {
@@ -78,7 +83,8 @@
         .avatar-ring-secondary,
         .avatar-ring-success,
         .avatar-ring-error,
-        .avatar-ring-warning
+        .avatar-ring-warning,
+        .avatar-ring-info
       )
   ) {
   @apply ring-gray-6;
