@@ -9,18 +9,20 @@
 .modal-state {
   @apply hidden;
 }
-.modal-state:checked + .modal {
+.modal-state:checked + .modal,
+.modal-open.modal {
   @apply visible  translate-y-0 scale-100 opacity-100;
 }
 
-html:has(.modal-state:checked) {
+html:has(.modal-state:checked, .modal-open) {
   @apply overflow-hidden;
 }
 
-.modal-state:checked + .modal .modal-content {
+.modal-state:checked + .modal .modal-content,
+.modal-open .modal-content {
   @apply translate-y-0 scale-100;
 }
 
 .modal-content {
-  @apply bg-gray-1 relative h-max max-h-[calc(100%-10%)] max-w-lg  scale-90 overflow-auto rounded-xl p-6 transition duration-75 ease-in-out;
+  @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-gray-1 p-6 transition duration-75 ease-in-out;
 }
