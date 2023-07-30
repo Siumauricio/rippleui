@@ -23,6 +23,10 @@
   @apply border-error;
 }
 
+.input-info {
+  @apply border-info;
+}
+
 /* Ghost */
 
 .input-ghost-primary {
@@ -43,6 +47,10 @@
 
 .input-ghost-error {
   @apply bg-transparent transition-colors hover:border-error focus:border-error;
+}
+
+.input-ghost-info {
+  @apply hover:border-info focus:border-info bg-transparent transition-colors;
 }
 
 /* Size */
@@ -108,4 +116,8 @@
 
 .input-solid-error {
   @apply border-transparent bg-red-4 text-red-11 placeholder:text-red-9;
+}
+
+.input-solid-info {
+  @apply border-transparent bg-cyan-4 text-cyan-12 placeholder:text-cyan-10;
 }

@@ -76,6 +76,12 @@
   @apply focus-visible:outline-warning;
 }
 
+.radio-info {
+  --radio-bg-checked: rgb(var(--info));
+  --radio-border-checked: rgb(var(--info));
+  @apply focus-visible:outline-info;
+}
+
 /* bordered */
 .radio-bordered-primary {
   --radio-border: rgb(var(--primary));
@@ -117,6 +123,14 @@
   @apply focus-visible:outline-warning;
 }
 
+.radio-bordered-info {
+  --radio-border: rgb(var(--info));
+  --radio-bg-checked: rgb(var(--info));
+  --radio-border-checked: rgb(var(--info));
+  --radio-border-hover: rgb(var(--info));
+  @apply focus-visible:outline-info;
+}
+
 /* Ghost */
 
 .radio-ghost-primary {
@@ -152,6 +166,13 @@
   --radio-border-checked: rgb(var(--warning));
   --radio-border-hover: rgb(var(--warning));
   @apply focus-visible:outline-warning;
+}
+
+.radio-ghost-info {
+  --radio-bg-checked: rgb(var(--info));
+  --radio-border-checked: rgb(var(--info));
+  --radio-border-hover: rgb(var(--info));
+  @apply focus-visible:outline-info;
 }
 /* Sizes */
 
@@ -238,5 +259,13 @@
   --radio-bg-hover: rgb(var(--gray-5));
   --radio-bg-checked: rgb(var(--error));
   --radio-border-checked: rgb(var(--error));
+  @apply border-transparent bg-gray-4;
+}
+
+.radio-solid-info {
+  --radio-border-hover: transparent;
+  --radio-bg-hover: rgb(var(--gray-5));
+  --radio-bg-checked: rgb(var(--info));
+  --radio-border-checked: rgb(var(--info));
   @apply border-transparent bg-gray-4;
 }

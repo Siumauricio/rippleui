@@ -27,6 +27,10 @@
   @apply border-warning;
 }
 
+.select-info {
+  @apply border-info;
+}
+
 /* Ghost */
 
 .select-ghost-primary {
@@ -47,6 +51,10 @@
 
 .select-ghost-error {
   @apply transition-colors hover:border-error focus:border-error;
+}
+
+.select-ghost-info {
+  @apply hover:border-info focus:border-info transition-colors;
 }
 
 /* Size */
@@ -112,4 +120,8 @@
 
 .select-solid-error {
   @apply border-transparent bg-red-4 text-red-11;
+}
+
+.select-solid-info {
+  @apply border-transparent bg-cyan-4 text-cyan-11;
 }

@@ -7,6 +7,7 @@ export const baseColors: BaseTheme = {
   success: "23 201 100",
   error: "243 18 96",
   warning: "255 184 0",
+  info: "3 183 219",
 };
 
 export const baseColorsDark: BaseTheme = {
@@ -16,4 +17,5 @@ export const baseColorsDark: BaseTheme = {
   success: "23 201 100",
   error: "243 18 96",
   warning: "255 184 0",
+  info: "3 183 219",
 };

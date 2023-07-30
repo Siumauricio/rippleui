@@ -47,6 +47,14 @@
   @apply bg-warning text-black focus-visible:outline-warning;
 }
 
+.input-file-info {
+  @apply border-info focus-visible:outline-info;
+}
+
+.input-file-info::-webkit-file-upload-button {
+  @apply bg-info focus-visible:outline-info text-white;
+}
+
 .input-file-xs {
   @apply h-6 rounded-lg  text-xs;
 }
@@ -111,4 +119,8 @@
 
 .input-file-warning::file-selector-button {
   @apply bg-warning text-black focus-visible:outline-warning;
+}
+
+.input-file-info::file-selector-button {
+  @apply bg-info focus-visible:outline-info text-white;
 }

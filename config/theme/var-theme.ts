@@ -162,6 +162,7 @@ const baseColors: BaseColorsVariable = {
   success: applyOpacityValue("--success"),
   error: applyOpacityValue("--error"),
   warning: applyOpacityValue("--warning"),
+  info: applyOpacityValue("--info"),
 };
 
 const pallete: PalleteVariables = {

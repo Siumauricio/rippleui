@@ -42,54 +42,54 @@
 .tooltip::before,
 .tooltip::after {
   transform: translate(-50%);
-  @apply bottom-[85%] left-[50%] top-[initial] right-[initial]  mx-0 mb-3 mt-0;
+  @apply bottom-[85%] left-[50%] right-[initial] top-[initial]  mx-0 mb-3 mt-0;
 }
 
 .tooltip::after {
-  @apply mx-0 mb-2 mt-0  border-l-4 border-r-4 border-t-[5px] border-b-0 border-l-transparent border-r-transparent border-t-[var(--tooltip-border)];
+  @apply mx-0 mb-2 mt-0  border-b-0 border-l-4 border-r-4 border-t-[5px] border-l-transparent border-r-transparent border-t-[var(--tooltip-border)];
 }
 
 .tooltip-top::before,
 .tooltip-top::after {
   transform: translate(-50%);
-  @apply bottom-[85%] left-[50%] top-[initial] right-[initial]  mx-0 mb-3 mt-0;
+  @apply bottom-[85%] left-[50%] right-[initial] top-[initial]  mx-0 mb-3 mt-0;
 }
 
 .tooltip-top::after {
-  @apply mx-0 mb-2 mt-0 border-l-4 border-r-4 border-t-[5px] border-b-0 border-l-transparent border-r-transparent border-t-[var(--tooltip-border)];
+  @apply mx-0 mb-2 mt-0 border-b-0 border-l-4 border-r-4 border-t-[5px] border-l-transparent border-r-transparent border-t-[var(--tooltip-border)];
 }
 
 /* Bottom */
 .tooltip-bottom::before,
 .tooltip-bottom::after {
   transform: translate(-50%);
-  @apply top-[85%] left-[50%] bottom-[initial] right-[initial]  m-[12px_0_0_0];
+  @apply bottom-[initial] left-[50%] right-[initial] top-[85%]  m-[12px_0_0_0];
 }
 
 .tooltip-bottom::after {
-  @apply mt-2 border-l-4 border-r-4 border-b-[5px] border-t-0 border-l-transparent border-r-transparent border-b-[var(--tooltip-border)];
+  @apply mt-2 border-b-[5px] border-l-4 border-r-4 border-t-0 border-b-[var(--tooltip-border)] border-l-transparent border-r-transparent;
 }
 
 /* Right */
 .tooltip-right::before,
 .tooltip-right::after {
   transform: translate(0, -50%);
-  @apply top-[50%] left-[95%] bottom-[initial] right-[initial]  m-[0_0_0_12px];
+  @apply bottom-[initial] left-[95%] right-[initial] top-[50%]  m-[0_0_0_12px];
 }
 
 .tooltip-right::after {
-  @apply ml-2 border-t-4 border-r-[5px] border-b-4 border-l-0  border-t-transparent border-r-[var(--tooltip-border)] border-b-transparent;
+  @apply ml-2 border-b-4 border-l-0 border-r-[5px] border-t-4  border-b-transparent border-r-[var(--tooltip-border)] border-t-transparent;
 }
 
 /* Left */
 .tooltip-left::before,
 .tooltip-left::after {
   transform: translate(0, -50%);
-  @apply top-[50%] right-[95%]  bottom-[initial] left-[initial]  m-[0_12px_0_0];
+  @apply bottom-[initial] left-[initial]  right-[95%] top-[50%]  m-[0_12px_0_0];
 }
 
 .tooltip-left::after {
-  @apply mr-2 border-t-4 border-l-[5px] border-b-4 border-r-0 border-t-transparent border-l-[var(--tooltip-border)] border-b-transparent;
+  @apply mr-2 border-b-4 border-l-[5px] border-r-0 border-t-4 border-b-transparent border-l-[var(--tooltip-border)] border-t-transparent;
 }
 
 /*  */
@@ -117,6 +117,11 @@
 .tooltip-error {
   --tooltip-bg: rgb(var(--error));
   --tooltip-border: rgb(var(--error));
+}
+
+.tooltip-info {
+  --tooltip-bg: rgb(var(--info));
+  --tooltip-border: rgb(var(--info));
 }
 
 .tooltip::before.tooltip-open,

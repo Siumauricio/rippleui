@@ -8,11 +8,11 @@
 }
 
 .progress {
-  @apply bg-gray-5 relative h-4 w-40 appearance-none overflow-hidden rounded-full;
+  @apply relative h-4 w-40 appearance-none overflow-hidden rounded-full bg-gray-5;
 }
 
 .progress::-webkit-progress-bar {
-  @apply bg-gray-5 rounded-full;
+  @apply rounded-full bg-gray-5;
 }
 
 .progress::-moz-progress-bar {
@@ -94,6 +94,15 @@
   @apply bg-warning;
 }
 
+.progress-info::-webkit-progress-value,
+.progress-flat-info::-webkit-progress-value,
+.progress-info.progress:indeterminate::after,
+.progress-flat-info.progress:indeterminate::after,
+.progress-info.progress-indeterminate::after,
+.progress-flat-info.progress-indeterminate::after {
+  @apply bg-info;
+}
+
 .progress-flat-primary::-webkit-progress-bar,
 .progress-flat-primary.progress-indeterminate {
   @apply bg-blue-5;
@@ -119,6 +128,11 @@
   @apply bg-yellow-5;
 }
 
+.progress-flat-info::-webkit-progress-bar,
+.progress-flat-info.progress-indeterminate {
+  @apply bg-cyan-5;
+}
+
 /* Firefox Target */
 @supports (-moz-appearance: none) {
   .progress-flat-primary {
@@ -139,6 +153,10 @@
 
   .progress-flat-warning {
     @apply bg-yellow-5;
+  }
+
+  .progress-flat-info {
+    @apply bg-cyan-5;
   }
 
   .progress-primary::-moz-progress-bar,
@@ -164,6 +182,11 @@
   .progress-warning::-moz-progress-bar,
   .progress-flat-warning::-moz-progress-bar {
     @apply bg-warning;
+  }
+
+  .progress-info::-moz-progress-bar,
+  .progress-flat-info::-moz-progress-bar {
+    @apply bg-info;
   }
 
   .progress:indeterminate::-moz-progress-bar {

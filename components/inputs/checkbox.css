@@ -15,7 +15,7 @@
 .checkbox::after {
   transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
     opacity var(--d-o, 0.2s);
-  @apply absolute top-0 left-0 block content-[""];
+  @apply absolute left-0 top-0 block content-[""];
 }
 
 .checkbox:checked {
@@ -46,7 +46,7 @@
 /* CheckLine */
 .checkbox::after {
   transform: rotate(var(--r, 20deg));
-  @apply left-[7px] top-[4px] h-[9px] w-[5px] border-2 border-t-0 border-l-0 border-[var(--checkline-color)];
+  @apply left-[7px] top-[4px] h-[9px] w-[5px] border-2 border-l-0 border-t-0 border-[var(--checkline-color)];
 }
 
 .checkbox-primary {
@@ -77,6 +77,12 @@
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
   @apply focus-visible:outline-warning;
+}
+
+.checkbox-info {
+  --checkbox-bg-checked: rgb(var(--info));
+  --checkbox-border-checked: rgb(var(--info));
+  @apply focus-visible:outline-info;
 }
 
 /* bordered */
@@ -122,6 +128,14 @@
   @apply focus-visible:outline-warning;
 }
 
+.checkbox-bordered-info {
+  --checkbox-bg-checked: rgb(var(--info));
+  --checkbox-border-checked: rgb(var(--info));
+  --checkbox-border: rgb(var(--info));
+  --checkbox-border-hover: rgb(var(--info));
+  @apply focus-visible:outline-info;
+}
+
 /* Ghost */
 
 .checkbox-ghost-primary {
@@ -157,6 +171,13 @@
   --checkbox-border-checked: rgb(var(--warning));
   --checkbox-border-hover: rgb(var(--warning));
   @apply focus-visible:outline-warning;
+}
+
+.checkbox-ghost-info {
+  --checkbox-bg-checked: rgb(var(--info));
+  --checkbox-border-checked: rgb(var(--info));
+  --checkbox-border-hover: rgb(var(--info));
+  @apply focus-visible:outline-info;
 }
 
 /* Sizes */
@@ -245,5 +266,13 @@
   --checkbox-bg-hover: rgb(var(--gray-5));
   --checkbox-bg-checked: rgb(var(--error));
   --checkbox-border-checked: rgb(var(--error));
+  @apply border-transparent bg-gray-4;
+}
+
+.checkbox-solid-info {
+  --checkbox-border-hover: transparent;
+  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-checked: rgb(var(--info));
+  --checkbox-border-checked: rgb(var(--info));
   @apply border-transparent bg-gray-4;
 }

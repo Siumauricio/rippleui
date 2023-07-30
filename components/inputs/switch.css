@@ -16,7 +16,7 @@
 .switch::after {
   transition: transform var(--d-t, 0.15s) var(--d-t-e, ease),
     opacity var(--d-o, 0.15s);
-  @apply absolute top-0 left-0 block content-[""];
+  @apply absolute left-0 top-0 block content-[""];
 }
 
 .switch:checked {
@@ -88,6 +88,12 @@
   @apply focus-visible:outline-warning;
 }
 
+.switch-info {
+  --switch-bg-checked: rgb(var(--info));
+  --switch-border-checked: rgb(var(--info));
+  @apply focus-visible:outline-info;
+}
+
 /* bordered */
 
 .switch-bordered-primary {
@@ -129,6 +135,14 @@
   --switch-border: rgb(var(--warning));
   --switch-border-hover: rgb(var(--warning));
   @apply focus-visible:outline-warning;
+}
+
+.switch-bordered-info {
+  --switch-bg-checked: rgb(var(--info));
+  --switch-border-checked: rgb(var(--info));
+  --switch-border: rgb(var(--info));
+  --switch-border-hover: rgb(var(--info));
+  @apply focus-visible:outline-info;
 }
 
 /* Ghost */
@@ -180,6 +194,16 @@
   --switch-border-checked: rgb(var(--warning));
   --switch-bg-checked: rgb(var(--warning));
   @apply focus-visible:outline-warning;
+}
+
+.switch-ghost-info {
+  --switch-bg: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-6));
+  --switch-bg-hover: rgb(var(--gray-1));
+  --switch-border-hover: rgb(var(--info));
+  --switch-border-checked: rgb(var(--info));
+  --switch-bg-checked: rgb(var(--info));
+  @apply focus-visible:outline-info;
 }
 
 /* Sizes */

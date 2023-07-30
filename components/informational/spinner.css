@@ -127,7 +127,7 @@
 }
 
 .spinner-dot {
-  @apply absolute top-0 left-0 flex h-full w-full items-center justify-start;
+  @apply absolute left-0 top-0 flex h-full w-full items-center justify-start;
 }
 
 .spinner-dot::before {
@@ -304,6 +304,10 @@
 
 .spinner-warning {
   --spinner-color: var(--warning);
+}
+
+.spinner-info {
+  --spinner-color: var(--info);
 }
 
 .spinner-xs {

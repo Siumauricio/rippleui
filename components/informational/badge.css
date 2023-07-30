@@ -1,5 +1,5 @@
 .badge {
-  @apply border-gray-3 bg-gray-3  inline-flex items-center whitespace-nowrap rounded-full border  py-[0.3rem]  px-2 text-center align-middle text-xs font-bold  leading-none text-content1;
+  @apply inline-flex items-center  whitespace-nowrap rounded-full border border-gray-3 bg-gray-3  px-2  py-[0.3rem] text-center align-middle text-xs font-bold  leading-none text-content1;
 }
 
 .badge-primary {
@@ -22,8 +22,12 @@
   @apply border-warning bg-warning text-white;
 }
 
+.badge-info {
+  @apply border-info bg-info text-white;
+}
+
 .badge-outline {
-  @apply border-gray-6 border bg-transparent text-content1;
+  @apply border border-gray-6 bg-transparent text-content1;
 }
 
 .badge-outline-primary {
@@ -46,28 +50,36 @@
   @apply border-warning bg-transparent text-warning;
 }
 
+.badge-outline-info {
+  @apply border-info text-info bg-transparent;
+}
+
 .badge-flat {
-  @apply text-gray-11 bg-gray-4 border-none bg-transparent;
+  @apply border-none bg-gray-4 bg-transparent text-gray-11;
 }
 
 .badge-flat-primary {
-  @apply text-blue-11 bg-blue-4 border-none;
+  @apply border-none bg-blue-4 text-blue-11;
 }
 
 .badge-flat-secondary {
-  @apply text-purple-11 bg-purple-4 border-none;
+  @apply border-none bg-purple-4 text-purple-11;
 }
 
 .badge-flat-success {
-  @apply text-green-11 bg-green-4 border-none;
+  @apply border-none bg-green-4 text-green-11;
 }
 
 .badge-flat-error {
-  @apply text-red-11 bg-red-4 border-none;
+  @apply border-none bg-red-4 text-red-11;
 }
 
 .badge-flat-warning {
-  @apply text-yellow-11 bg-yellow-4 border-none;
+  @apply border-none bg-yellow-4 text-yellow-11;
+}
+
+.badge-flat-info {
+  @apply border-none bg-cyan-4 text-cyan-11;
 }
 
 .badge-xs {
@@ -75,19 +87,19 @@
 }
 
 .badge-sm {
-  @apply py-[0.25rem] px-[0.375rem] text-[0.73rem];
+  @apply px-[0.375rem] py-[0.25rem] text-[0.73rem];
 }
 
 .badge-md {
-  @apply py-[0.3rem] px-2 text-xs leading-none;
+  @apply px-2 py-[0.3rem] text-xs leading-none;
 }
 
 .badge-lg {
-  @apply py-2 px-2.5 text-base leading-none;
+  @apply px-2.5 py-2 text-base leading-none;
 }
 
 .badge-xl {
-  @apply py-2.5 px-3 text-xl leading-none;
+  @apply px-3 py-2.5 text-xl leading-none;
 }
 
 .badge-square {
